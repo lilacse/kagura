@@ -14,7 +14,7 @@ import (
 )
 
 func Handle(ctx context.Context, e *gateway.MessageCreateEvent) (bool, error) {
-	params, ok := commands.ExtractParams("song", e.Message.Content)
+	params, ok := commands.ExtractParamsString("song", e.Message.Content)
 	if !ok {
 		return false, nil
 	}
@@ -84,6 +84,5 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) (bool, error) {
 	songEmbed.Fields = append(songEmbed.Fields, chartEmbeds...)
 
 	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(songEmbed))
-
 	return true, nil
 }

@@ -6,6 +6,7 @@ import (
 
 	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/google/uuid"
+	"github.com/lilacse/kagura/commands/ptt"
 	"github.com/lilacse/kagura/commands/song"
 	"github.com/lilacse/kagura/logger"
 	"github.com/lilacse/kagura/store"
@@ -31,6 +32,7 @@ func handleCommand(e *gateway.MessageCreateEvent) {
 
 	handlers := []CommandHandler{
 		song.Handle,
+		ptt.Handle,
 	}
 
 	for _, handler := range handlers {
