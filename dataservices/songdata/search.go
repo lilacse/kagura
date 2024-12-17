@@ -3,6 +3,7 @@ package songdata
 import (
 	"slices"
 	"strings"
+	"unicode"
 )
 
 type KeyMatchResult struct {
@@ -52,7 +53,10 @@ func keySearch(key string, limit int) []Song {
 				for _, s := range searchKey[searchPos:] {
 					var score int
 
-					if k == s {
+					isSeperator := s == ' ' || !(s >= 'A' && s <= 'Z' || s >= 'a' && s <= 'z' || s >= '0' && s <= '9')
+					isMatch := k == s || (unicode.IsSpace(k) && isSeperator)
+
+					if isMatch {
 						isCont = true
 
 						if isAtStart {
@@ -68,7 +72,7 @@ func keySearch(key string, limit int) []Song {
 						score = 0
 					}
 
-					if s == ' ' || !(s >= 'A' && s <= 'Z' || s >= 'a' && s <= 'z' || s >= '0' && s <= '9') {
+					if isSeperator {
 						if !isAtStart {
 							isNewWord = true
 							wordCount += 1
@@ -82,7 +86,7 @@ func keySearch(key string, limit int) []Song {
 					lastMatchScore = score
 					searchPos += 1
 
-					if k == s {
+					if isMatch {
 						break
 					}
 				}
