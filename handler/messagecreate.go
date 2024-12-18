@@ -2,17 +2,20 @@ package handler
 
 import (
 	"context"
+	"fmt"
+	"runtime/debug"
 	"strings"
 
 	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/google/uuid"
 	"github.com/lilacse/kagura/commands/ptt"
 	"github.com/lilacse/kagura/commands/song"
+	"github.com/lilacse/kagura/embedbuilder"
 	"github.com/lilacse/kagura/logger"
 	"github.com/lilacse/kagura/store"
 )
 
-type CommandHandler func(ctx context.Context, e *gateway.MessageCreateEvent) (bool, error)
+type CommandHandler func(ctx context.Context, e *gateway.MessageCreateEvent) bool
 
 func OnMessageCreate(e *gateway.MessageCreateEvent) {
 	if !e.Author.Bot {
@@ -35,13 +38,18 @@ func handleCommand(e *gateway.MessageCreateEvent) {
 		ptt.Handle,
 	}
 
-	for _, handler := range handlers {
-		isHandled, err := handler(ctx, e)
-		if err != nil {
-			logger.Error(ctx, "error handling command: "+err.Error())
-			return
-		}
+	defer func() {
+		r := recover()
+		if r != nil {
+			logger.Error(ctx, fmt.Sprintf("error handling command: %s\nstack trace: %s", r, debug.Stack()))
 
+			st := store.GetState()
+			st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Error(ctx, fmt.Sprintf("%s", r)))
+		}
+	}()
+
+	for _, handler := range handlers {
+		isHandled := handler(ctx, e)
 		if isHandled {
 			return
 		}

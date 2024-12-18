@@ -15,45 +15,45 @@ import (
 	"github.com/lilacse/kagura/store"
 )
 
-func Handle(ctx context.Context, e *gateway.MessageCreateEvent) (bool, error) {
+func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 	params, ok := commands.ExtractParamsString("ptt", e.Message.Content)
 	if !ok {
-		return false, nil
+		return false
 	}
 
 	st := store.GetState()
 
 	params, scoreStr, ok := commands.ExtractParamReverse(params, 1)
 	if !ok {
-		sendFormatError(ctx, st, e)
-		return true, nil
+		sendFormatError(st, e)
+		return true
 	}
 
 	params, diffStr, ok := commands.ExtractParamReverse(params, 1)
 	if !ok {
-		sendFormatError(ctx, st, e)
-		return true, nil
+		sendFormatError(st, e)
+		return true
 	}
 
 	_, songStr, ok := commands.ExtractParamReverse(params, -1)
 	if !ok {
-		sendFormatError(ctx, st, e)
-		return true, nil
+		sendFormatError(st, e)
+		return true
 	}
 
 	score, err := strconv.Atoi(scoreStr)
 	if err != nil || score > 10009999 {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid score `%s`!", scoreStr)))
-		return true, nil
+		return true
 	} else if score < 100 {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid score `%s`, expecting at least 3 digits!", scoreStr)))
-		return true, nil
+		return true
 	}
 
 	matchSong := songdata.Search(songStr, 1)
 	if len(matchSong) == 0 {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("No matching song found for query `%s`!", songStr)))
-		return true, nil
+		return true
 	}
 
 	song := matchSong[0]
@@ -80,7 +80,7 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) (bool, error) {
 
 	if diffKey == "" {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid difficulty `%s`!", diffStr)))
-		return true, nil
+		return true
 	}
 
 	cc := 0.0
@@ -97,7 +97,7 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) (bool, error) {
 
 	if cc == 0.0 {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Difficulty %s does not exist for the song %s!", strings.ToUpper(diffKey), song.AltTitle)))
-		return true, nil
+		return true
 	}
 
 	// treat scores submitted with 3 digits to 6 digits, we append zeroes to them until it reaches 7 digits
@@ -149,9 +149,9 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) (bool, error) {
 	}
 
 	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(embed))
-	return true, nil
+	return true
 }
 
-func sendFormatError(ctx context.Context, st *state.State, e *gateway.MessageCreateEvent) {
+func sendFormatError(st *state.State, e *gateway.MessageCreateEvent) {
 	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%sptt [song] [diff] [score]`!", store.GetPrefix())))
 }

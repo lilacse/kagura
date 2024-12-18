@@ -13,23 +13,23 @@ import (
 	"github.com/lilacse/kagura/store"
 )
 
-func Handle(ctx context.Context, e *gateway.MessageCreateEvent) (bool, error) {
+func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 	params, ok := commands.ExtractParamsString("song", e.Message.Content)
 	if !ok {
-		return false, nil
+		return false
 	}
 
 	st := store.GetState()
 
 	if params == "" {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError("No search query provided!"))
-		return true, nil
+		return true
 	}
 
 	matched := songdata.Search(params, 1)
 	if len(matched) == 0 {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError("No matching song found!"))
-		return true, nil
+		return true
 	}
 
 	song := matched[0]
@@ -84,5 +84,5 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) (bool, error) {
 	songEmbed.Fields = append(songEmbed.Fields, chartEmbeds...)
 
 	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(songEmbed))
-	return true, nil
+	return true
 }
