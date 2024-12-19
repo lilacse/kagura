@@ -1,6 +1,8 @@
 package commands
 
 import (
+	"fmt"
+	"strconv"
 	"strings"
 	"unicode"
 
@@ -126,4 +128,15 @@ func ExtractParamReverse(param string, wordCount int) (string, string, bool) {
 	startIdx := i + 1
 
 	return param[0:startIdx], param[startIdx:endIdx], true
+}
+
+func ParseScore(scoreStr string) (int, string, bool) {
+	score, err := strconv.Atoi(scoreStr)
+	if err != nil || score > 10009999 {
+		return -1, fmt.Sprintf("Invalid score `%s`!", scoreStr), false
+	} else if score < 100 {
+		return -1, fmt.Sprintf("Invalid score `%s`, expecting at least 3 digits!", scoreStr), false
+	}
+
+	return score, "", true
 }

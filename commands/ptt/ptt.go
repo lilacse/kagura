@@ -41,13 +41,9 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 		return true
 	}
 
-	score, err := strconv.Atoi(scoreStr)
-	if err != nil || score > 10009999 {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid score `%s`!", scoreStr)))
-		return true
-	} else if score < 100 {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid score `%s`, expecting at least 3 digits!", scoreStr)))
-		return true
+	score, errMsg, ok := commands.ParseScore(scoreStr)
+	if !ok {
+		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(errMsg))
 	}
 
 	matchSong := songdata.Search(songStr, 1)
