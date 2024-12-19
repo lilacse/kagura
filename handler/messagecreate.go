@@ -10,6 +10,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/lilacse/kagura/commands/ptt"
 	"github.com/lilacse/kagura/commands/song"
+	"github.com/lilacse/kagura/commands/step"
 	"github.com/lilacse/kagura/embedbuilder"
 	"github.com/lilacse/kagura/logger"
 	"github.com/lilacse/kagura/store"
@@ -36,6 +37,7 @@ func handleCommand(e *gateway.MessageCreateEvent) {
 	handlers := []CommandHandler{
 		song.Handle,
 		ptt.Handle,
+		step.Handle,
 	}
 
 	defer func() {

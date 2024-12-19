@@ -21,15 +21,76 @@ func ExtractParamsString(cmd string, content string) (string, bool) {
 	}
 }
 
+func ExtractParamForward(param string, wordCount int) (string, string, bool) {
+	l := len(param)
+	i := 0
+
+	if l == 0 {
+		return "", "", false
+	}
+
+	// skip spaces at the start of the string
+	for i < l {
+		r := rune(param[i])
+		if !unicode.IsSpace(r) {
+			break
+		}
+		i++
+	}
+
+	startIdx := i
+
+	if startIdx == l {
+		return "", "", false
+	}
+
+	for i < l {
+		r := rune(param[i])
+		if unicode.IsSpace(r) {
+			wordCount--
+		}
+		if wordCount == 0 {
+			break
+		}
+		i++
+	}
+
+	if i == l {
+		wordCount--
+	}
+
+	if wordCount > 0 {
+		return "", "", false
+	}
+
+	endIdx := i
+
+	return param[endIdx:l], param[startIdx:endIdx], true
+}
+
 func ExtractParamReverse(param string, wordCount int) (string, string, bool) {
 	i := len(param) - 1
+	s := 0
 
 	if i < 0 {
 		return "", "", false
 	}
 
-	// skips over trailing spaces
-	for i >= 0 {
+	// find the stopping index to skip spaces at the start of the string
+	for s <= i {
+		r := rune(param[s])
+		if !unicode.IsSpace(r) {
+			break
+		}
+		s++
+	}
+
+	if s > i {
+		return "", "", false
+	}
+
+	// skip trailing spaces
+	for i >= s {
 		r := rune(param[i])
 		if !unicode.IsSpace(r) {
 			break
@@ -39,11 +100,11 @@ func ExtractParamReverse(param string, wordCount int) (string, string, bool) {
 
 	endIdx := i + 1
 
-	if endIdx == 0 {
+	if endIdx == s {
 		return "", "", false
 	}
 
-	for i >= 0 {
+	for i >= s {
 		r := rune(param[i])
 		if unicode.IsSpace(r) {
 			wordCount--
@@ -54,7 +115,7 @@ func ExtractParamReverse(param string, wordCount int) (string, string, bool) {
 		i--
 	}
 
-	if i < 0 {
+	if i < s {
 		wordCount--
 	}
 
