@@ -131,7 +131,8 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 	}
 
 	progress := (2.45*math.Sqrt(ptt) + 2.5) * (float64(step) / 50)
-	formula := fmt.Sprintf("(2.45 * sqrt(%.4f) + 2.5) * (%v / 50) = **%.4f**", ptt, step, progress)
+	floored := math.Floor(progress*10) / 10
+	formula := fmt.Sprintf("(2.45 * sqrt(%.4f) + 2.5) * (%v / 50) = **%.4f** (shown as **%.1f**)", ptt, step, progress, floored)
 
 	embed := discord.Embed{
 		Fields: []discord.EmbedField{
@@ -162,8 +163,9 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 				Name: "Progress gained",
 				Value: fmt.Sprintf(`%s
 
-- For partner progression bonuses, __add__ them to the value above before calculating Play+ and fragment boosts.
-- For Play+ boost, __multiply__ the value by stamina used. For fragment boost, further __multiply__ the value by boost multiplier.`, formula),
+-# - There might be a ±0.1 difference in actual progress gained due to differences in calculation performed by the game.
+-# - For partner progression bonuses, __add__ them to the value above before calculating Play+ and fragment boosts.
+-# - For Play+ boost, __multiply__ the value by stamina used. For fragment boost, further __multiply__ the value by boost multiplier.`, formula),
 			},
 		},
 	}
