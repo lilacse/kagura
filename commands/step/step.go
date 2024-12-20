@@ -150,7 +150,7 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 				Inline: true,
 			},
 			{
-				Name:   "Potential",
+				Name:   "Play Rating",
 				Value:  fmt.Sprintf("%.4f", ptt),
 				Inline: true,
 			},

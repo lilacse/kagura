@@ -15,8 +15,18 @@ import (
 	"github.com/lilacse/kagura/store"
 )
 
+var cmdNames = []string{"ptt", "rating"}
+
 func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := commands.ExtractParamsString("ptt", e.Message.Content)
+	ok := false
+	params := ""
+	for _, n := range cmdNames {
+		params, ok = commands.ExtractParamsString(n, e.Message.Content)
+		if ok {
+			break
+		}
+	}
+
 	if !ok {
 		return false
 	}
@@ -138,7 +148,7 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 				Value: strconv.Itoa(score),
 			},
 			{
-				Name:  "Potential",
+				Name:  "Play Rating",
 				Value: formula,
 			},
 		},
