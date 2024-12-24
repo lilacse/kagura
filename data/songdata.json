@@ -14509,5 +14509,147 @@
     "searchKeys": [
       "swan song"
     ]
+  },
+  {
+    "id": 442,
+    "title": "8-EM",
+    "altTitle": "8-EM",
+    "artist": "Sampling Masters AYA",
+    "charts": [
+      {
+        "id": 1380,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1381,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1382,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1383,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "6.1.0"
+      }
+    ],
+    "searchKeys": [
+      "8-em"
+    ]
+  },
+  {
+    "id": 443,
+    "title": "BlazinG AIR",
+    "altTitle": "BlazinG AIR",
+    "artist": "kanone",
+    "charts": [
+      {
+        "id": 1384,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1385,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1386,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.9,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1387,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.1.0"
+      }
+    ],
+    "searchKeys": [
+      "blazing air"
+    ]
+  },
+  {
+    "id": 444,
+    "title": "DA'AT -The First Seeker of Souls-",
+    "altTitle": "DA'AT -The First Seeker of Souls-",
+    "artist": "\u6c34\u91ce\u5065\u6cbb VS \u5927\u56fd\u594f\u97f3",
+    "charts": [
+      {
+        "id": 1388,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1389,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.4,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1390,
+        "diff": "ftr",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "6.1.0"
+      }
+    ],
+    "searchKeys": [
+      "da'at -the first seeker of souls-"
+    ]
+  },
+  {
+    "id": 445,
+    "title": "Ignition",
+    "altTitle": "Ignition",
+    "artist": "\u30d1\u30bd\u30b3\u30f3\u97f3\u697d\u30af\u30e9\u30d6",
+    "charts": [
+      {
+        "id": 1391,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1392,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "6.1.0"
+      },
+      {
+        "id": 1393,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.1.0"
+      }
+    ],
+    "searchKeys": [
+      "ignition"
+    ]
   }
 ]
