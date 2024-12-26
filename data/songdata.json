@@ -407,7 +407,7 @@
         "ver": "1.0.5"
       },
       {
-        "id": 764,
+        "id": 767,
         "diff": "byd",
         "level": "9+",
         "cc": 9.8,
@@ -510,7 +510,7 @@
         "ver": "1.0.5"
       },
       {
-        "id": 1179,
+        "id": 1182,
         "diff": "etr",
         "level": "8",
         "cc": 8.5,
@@ -549,7 +549,7 @@
         "ver": "1.0.5"
       },
       {
-        "id": 958,
+        "id": 961,
         "diff": "byd",
         "level": "9",
         "cc": 9.1,
@@ -993,7 +993,7 @@
         "ver": "1.0.11"
       },
       {
-        "id": 911,
+        "id": 914,
         "diff": "byd",
         "level": "10",
         "cc": 10.3,
@@ -1128,7 +1128,7 @@
         "ver": "1.1.0"
       },
       {
-        "id": 756,
+        "id": 759,
         "diff": "byd",
         "level": "9+",
         "cc": 9.8,
@@ -1199,7 +1199,7 @@
         "ver": "1.1.2"
       },
       {
-        "id": 1157,
+        "id": 1160,
         "diff": "etr",
         "level": "8+",
         "cc": 8.8,
@@ -2013,7 +2013,7 @@
         "ver": "1.5.0"
       },
       {
-        "id": 954,
+        "id": 957,
         "diff": "byd",
         "level": "10",
         "cc": 10.6,
@@ -2252,7 +2252,7 @@
     "id": 68,
     "title": "Quon",
     "altTitle": "Quon",
-    "artist": "DJ Noriken",
+    "artist": "Feryquitous",
     "charts": [
       {
         "id": 202,
@@ -2274,13 +2274,6 @@
         "level": "9",
         "cc": 9.6,
         "ver": "1.5.5"
-      },
-      {
-        "id": 704,
-        "diff": "byd",
-        "level": "10",
-        "cc": 10.2,
-        "ver": "3.8.0"
       }
     ],
     "searchKeys": [
@@ -2675,7 +2668,7 @@
         "ver": "1.6.4"
       },
       {
-        "id": 1141,
+        "id": 1144,
         "diff": "byd",
         "level": "9+",
         "cc": 9.8,
@@ -2746,7 +2739,7 @@
         "ver": "1.6.6"
       },
       {
-        "id": 1143,
+        "id": 1146,
         "diff": "byd",
         "level": "9",
         "cc": 9.4,
@@ -3016,7 +3009,7 @@
         "ver": "1.7.0"
       },
       {
-        "id": 1180,
+        "id": 1183,
         "diff": "etr",
         "level": "8+",
         "cc": 8.9,
@@ -3606,7 +3599,7 @@
         "ver": "1.9.0"
       },
       {
-        "id": 814,
+        "id": 817,
         "diff": "byd",
         "level": "9",
         "cc": 9.4,
@@ -3645,7 +3638,7 @@
         "ver": "1.9.0"
       },
       {
-        "id": 815,
+        "id": 818,
         "diff": "byd",
         "level": "10",
         "cc": 10.3,
@@ -3748,7 +3741,7 @@
         "ver": "1.9.2"
       },
       {
-        "id": 1144,
+        "id": 1147,
         "diff": "byd",
         "level": "10",
         "cc": 10.5,
@@ -3819,7 +3812,7 @@
         "ver": "2.0.0"
       },
       {
-        "id": 745,
+        "id": 748,
         "diff": "byd",
         "level": "9",
         "cc": 9.6,
@@ -4274,7 +4267,7 @@
         "ver": "2.2.0"
       },
       {
-        "id": 755,
+        "id": 758,
         "diff": "byd",
         "level": "10+",
         "cc": 10.8,
@@ -4633,7 +4626,7 @@
         "ver": "2.4.0"
       },
       {
-        "id": 904,
+        "id": 907,
         "diff": "byd",
         "level": "9+",
         "cc": 9.8,
@@ -4897,7 +4890,7 @@
         "ver": "2.5.0"
       },
       {
-        "id": 1142,
+        "id": 1145,
         "diff": "byd",
         "level": "10+",
         "cc": 10.9,
@@ -5167,7 +5160,7 @@
         "ver": "2.6.0"
       },
       {
-        "id": 1148,
+        "id": 1151,
         "diff": "byd",
         "level": "9+",
         "cc": 9.7,
@@ -5726,7 +5719,7 @@
         "ver": "3.0.5"
       },
       {
-        "id": 972,
+        "id": 975,
         "diff": "byd",
         "level": "9+",
         "cc": 9.7,
@@ -6245,7 +6238,7 @@
         "ver": "3.3.0"
       },
       {
-        "id": 1149,
+        "id": 1152,
         "diff": "byd",
         "level": "10",
         "cc": 10.6,
@@ -7603,26 +7596,65 @@
   },
   {
     "id": 231,
+    "title": "Quon",
+    "altTitle": "Quon (DJ Noriken)",
+    "artist": "DJ Noriken",
+    "charts": [
+      {
+        "id": 704,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "3.8.0"
+      },
+      {
+        "id": 705,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "3.8.0"
+      },
+      {
+        "id": 706,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.7,
+        "ver": "3.8.0"
+      },
+      {
+        "id": 707,
+        "diff": "byd",
+        "level": "10",
+        "cc": 10.2,
+        "ver": "3.8.0"
+      }
+    ],
+    "searchKeys": [
+      "quon (dj noriken)"
+    ]
+  },
+  {
+    "id": 232,
     "title": "Sheriruth (Laur Remix)",
     "altTitle": "Sheriruth (Laur Remix)",
     "artist": "Laur",
     "charts": [
       {
-        "id": 705,
+        "id": 708,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "3.8.0"
       },
       {
-        "id": 706,
+        "id": 709,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "3.8.0"
       },
       {
-        "id": 707,
+        "id": 710,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -7634,27 +7666,27 @@
     ]
   },
   {
-    "id": 232,
+    "id": 233,
     "title": "with U",
     "altTitle": "with U",
     "artist": "t+pazolite & Massive New Krew feat. \u30ea\u30ea\u30a3(CV:\u9752\u6728\u5fd7\u8cb4)",
     "charts": [
       {
-        "id": 708,
+        "id": 711,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "3.8.0"
       },
       {
-        "id": 709,
+        "id": 712,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "3.8.0"
       },
       {
-        "id": 710,
+        "id": 713,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
@@ -7666,27 +7698,27 @@
     ]
   },
   {
-    "id": 233,
+    "id": 234,
     "title": "blue comet",
     "altTitle": "blue comet",
     "artist": "\u3042\u3042\u3042\u3042",
     "charts": [
       {
-        "id": 711,
+        "id": 714,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "3.8.2"
       },
       {
-        "id": 712,
+        "id": 715,
         "diff": "prs",
         "level": "5",
         "cc": 5.0,
         "ver": "3.8.2"
       },
       {
-        "id": 713,
+        "id": 716,
         "diff": "ftr",
         "level": "8",
         "cc": 8.2,
@@ -7698,27 +7730,27 @@
     ]
   },
   {
-    "id": 234,
+    "id": 235,
     "title": "Evening in Scarlet",
     "altTitle": "Evening in Scarlet",
     "artist": "Freezer feat.\u5983\u82fa",
     "charts": [
       {
-        "id": 714,
+        "id": 717,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "3.8.2"
       },
       {
-        "id": 715,
+        "id": 718,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "3.8.2"
       },
       {
-        "id": 716,
+        "id": 719,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
@@ -7730,27 +7762,27 @@
     ]
   },
   {
-    "id": 235,
+    "id": 236,
     "title": "ENERGY SYNERGY MATRIX",
     "altTitle": "ENERGY SYNERGY MATRIX",
     "artist": "Tanchiky",
     "charts": [
       {
-        "id": 717,
+        "id": 720,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "3.8.4"
       },
       {
-        "id": 718,
+        "id": 721,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "3.8.4"
       },
       {
-        "id": 719,
+        "id": 722,
         "diff": "ftr",
         "level": "9",
         "cc": 9.6,
@@ -7762,42 +7794,10 @@
     ]
   },
   {
-    "id": 236,
+    "id": 237,
     "title": "G e n g a o z o",
     "altTitle": "G e n g a o z o",
     "artist": "-45",
-    "charts": [
-      {
-        "id": 720,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.0,
-        "ver": "3.8.6"
-      },
-      {
-        "id": 721,
-        "diff": "prs",
-        "level": "8",
-        "cc": 8.1,
-        "ver": "3.8.6"
-      },
-      {
-        "id": 722,
-        "diff": "ftr",
-        "level": "10",
-        "cc": 10.1,
-        "ver": "3.8.6"
-      }
-    ],
-    "searchKeys": [
-      "g e n g a o z o"
-    ]
-  },
-  {
-    "id": 237,
-    "title": "goldenslaughterer",
-    "altTitle": "goldenslaughterer",
-    "artist": "zts",
     "charts": [
       {
         "id": 723,
@@ -7809,12 +7809,44 @@
       {
         "id": 724,
         "diff": "prs",
+        "level": "8",
+        "cc": 8.1,
+        "ver": "3.8.6"
+      },
+      {
+        "id": 725,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "3.8.6"
+      }
+    ],
+    "searchKeys": [
+      "g e n g a o z o"
+    ]
+  },
+  {
+    "id": 238,
+    "title": "goldenslaughterer",
+    "altTitle": "goldenslaughterer",
+    "artist": "zts",
+    "charts": [
+      {
+        "id": 726,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "3.8.6"
+      },
+      {
+        "id": 727,
+        "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "3.8.6"
       },
       {
-        "id": 725,
+        "id": 728,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -7826,34 +7858,34 @@
     ]
   },
   {
-    "id": 238,
+    "id": 239,
     "title": "lastendconductor",
     "altTitle": "lastendconductor",
     "artist": "zts",
     "charts": [
       {
-        "id": 726,
+        "id": 729,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "3.8.6"
       },
       {
-        "id": 727,
+        "id": 730,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "3.8.6"
       },
       {
-        "id": 728,
+        "id": 731,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
         "ver": "3.8.6"
       },
       {
-        "id": 729,
+        "id": 732,
         "diff": "byd",
         "level": "10",
         "cc": 10.2,
@@ -7865,27 +7897,27 @@
     ]
   },
   {
-    "id": 239,
+    "id": 240,
     "title": "Redolent Shape",
     "altTitle": "Redolent Shape",
     "artist": "Sanaas",
     "charts": [
       {
-        "id": 730,
+        "id": 733,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "3.8.8"
       },
       {
-        "id": 731,
+        "id": 734,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "3.8.8"
       },
       {
-        "id": 732,
+        "id": 735,
         "diff": "ftr",
         "level": "10",
         "cc": 10.2,
@@ -7897,27 +7929,27 @@
     ]
   },
   {
-    "id": 240,
+    "id": 241,
     "title": "Ascent",
     "altTitle": "Ascent",
     "artist": "TANUKI",
     "charts": [
       {
-        "id": 733,
+        "id": 736,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "3.9.0"
       },
       {
-        "id": 734,
+        "id": 737,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "3.9.0"
       },
       {
-        "id": 735,
+        "id": 738,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -7929,27 +7961,27 @@
     ]
   },
   {
-    "id": 241,
+    "id": 242,
     "title": "Cosmica",
     "altTitle": "Cosmica",
     "artist": "Nhato",
     "charts": [
       {
-        "id": 736,
+        "id": 739,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "3.9.0"
       },
       {
-        "id": 737,
+        "id": 740,
         "diff": "prs",
         "level": "5",
         "cc": 5.0,
         "ver": "3.9.0"
       },
       {
-        "id": 738,
+        "id": 741,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.8,
@@ -7961,27 +7993,27 @@
     ]
   },
   {
-    "id": 242,
+    "id": 243,
     "title": "Live Fast Die Young",
     "altTitle": "Live Fast Die Young",
     "artist": "anubasu-anubasu",
     "charts": [
       {
-        "id": 739,
+        "id": 742,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "3.9.0"
       },
       {
-        "id": 740,
+        "id": 743,
         "diff": "prs",
         "level": "8",
         "cc": 8.5,
         "ver": "3.9.0"
       },
       {
-        "id": 741,
+        "id": 744,
         "diff": "ftr",
         "level": "10",
         "cc": 10.6,
@@ -7993,27 +8025,27 @@
     ]
   },
   {
-    "id": 243,
+    "id": 244,
     "title": "Summer Fireworks of Love",
     "altTitle": "Summer Fireworks of Love",
     "artist": "karatoP\u03b1nchii feat.\u306f\u308b\u306e",
     "charts": [
       {
-        "id": 742,
+        "id": 745,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "3.9.0"
       },
       {
-        "id": 743,
+        "id": 746,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "3.9.0"
       },
       {
-        "id": 744,
+        "id": 747,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
@@ -8025,27 +8057,27 @@
     ]
   },
   {
-    "id": 244,
+    "id": 245,
     "title": "Blocked Library",
     "altTitle": "Blocked Library",
     "artist": "\u5f71\u864e\u3002",
     "charts": [
       {
-        "id": 746,
+        "id": 749,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "3.10.0"
       },
       {
-        "id": 747,
+        "id": 750,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "3.10.0"
       },
       {
-        "id": 748,
+        "id": 751,
         "diff": "ftr",
         "level": "9",
         "cc": 9.3,
@@ -8057,27 +8089,27 @@
     ]
   },
   {
-    "id": 245,
+    "id": 246,
     "title": "Blue Rose",
     "altTitle": "Blue Rose",
     "artist": "Cosmograph",
     "charts": [
       {
-        "id": 749,
+        "id": 752,
         "diff": "pst",
         "level": "2",
         "cc": 2.0,
         "ver": "3.10.0"
       },
       {
-        "id": 750,
+        "id": 753,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "3.10.0"
       },
       {
-        "id": 751,
+        "id": 754,
         "diff": "ftr",
         "level": "9",
         "cc": 9.1,
@@ -8089,27 +8121,27 @@
     ]
   },
   {
-    "id": 246,
+    "id": 247,
     "title": "First Snow",
     "altTitle": "First Snow",
     "artist": "\u9ed2\u9b54",
     "charts": [
       {
-        "id": 752,
+        "id": 755,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "3.10.0"
       },
       {
-        "id": 753,
+        "id": 756,
         "diff": "prs",
         "level": "4",
         "cc": 4.5,
         "ver": "3.10.0"
       },
       {
-        "id": 754,
+        "id": 757,
         "diff": "ftr",
         "level": "7+",
         "cc": 7.8,
@@ -8121,48 +8153,16 @@
     ]
   },
   {
-    "id": 247,
+    "id": 248,
     "title": "Lightning Screw",
     "altTitle": "Lightning Screw",
     "artist": "HiTECH NINJA",
     "charts": [
       {
-        "id": 757,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.5,
-        "ver": "3.10.0"
-      },
-      {
-        "id": 758,
-        "diff": "prs",
-        "level": "7+",
-        "cc": 7.8,
-        "ver": "3.10.0"
-      },
-      {
-        "id": 759,
-        "diff": "ftr",
-        "level": "10",
-        "cc": 10.5,
-        "ver": "3.10.0"
-      }
-    ],
-    "searchKeys": [
-      "lightning screw"
-    ]
-  },
-  {
-    "id": 248,
-    "title": "n\u03ad\u03bf \u03ba\u03ccsmo",
-    "altTitle": "n\u03ad\u03bf \u03ba\u03ccsmo",
-    "artist": "ak+q \u00d7 Street",
-    "charts": [
-      {
         "id": 760,
         "diff": "pst",
         "level": "4",
-        "cc": 4.0,
+        "cc": 4.5,
         "ver": "3.10.0"
       },
       {
@@ -8175,6 +8175,38 @@
       {
         "id": 762,
         "diff": "ftr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "3.10.0"
+      }
+    ],
+    "searchKeys": [
+      "lightning screw"
+    ]
+  },
+  {
+    "id": 249,
+    "title": "n\u03ad\u03bf \u03ba\u03ccsmo",
+    "altTitle": "n\u03ad\u03bf \u03ba\u03ccsmo",
+    "artist": "ak+q \u00d7 Street",
+    "charts": [
+      {
+        "id": 763,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "3.10.0"
+      },
+      {
+        "id": 764,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "3.10.0"
+      },
+      {
+        "id": 765,
+        "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
         "ver": "3.10.0"
@@ -8185,13 +8217,13 @@
     ]
   },
   {
-    "id": 249,
+    "id": 250,
     "title": "PRAGMATISM -RESURRECTION-",
     "altTitle": "PRAGMATISM -RESURRECTION-",
     "artist": "Laur",
     "charts": [
       {
-        "id": 763,
+        "id": 766,
         "diff": "byd",
         "level": "11",
         "cc": 11.2,
@@ -8203,42 +8235,10 @@
     ]
   },
   {
-    "id": 250,
+    "id": 251,
     "title": "Final Step!",
     "altTitle": "Final Step!",
     "artist": "Lime",
-    "charts": [
-      {
-        "id": 765,
-        "diff": "pst",
-        "level": "3",
-        "cc": 3.5,
-        "ver": "3.11.0"
-      },
-      {
-        "id": 766,
-        "diff": "prs",
-        "level": "6",
-        "cc": 6.5,
-        "ver": "3.11.0"
-      },
-      {
-        "id": 767,
-        "diff": "ftr",
-        "level": "9",
-        "cc": 9.4,
-        "ver": "3.11.0"
-      }
-    ],
-    "searchKeys": [
-      "final step!"
-    ]
-  },
-  {
-    "id": 251,
-    "title": "Haze of Autumn",
-    "altTitle": "Haze of Autumn",
-    "artist": "karatoP\u03b1nchii feat.\u306f\u308b\u306e",
     "charts": [
       {
         "id": 768,
@@ -8250,12 +8250,44 @@
       {
         "id": 769,
         "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "3.11.0"
+      },
+      {
+        "id": 770,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "3.11.0"
+      }
+    ],
+    "searchKeys": [
+      "final step!"
+    ]
+  },
+  {
+    "id": 252,
+    "title": "Haze of Autumn",
+    "altTitle": "Haze of Autumn",
+    "artist": "karatoP\u03b1nchii feat.\u306f\u308b\u306e",
+    "charts": [
+      {
+        "id": 771,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "3.11.0"
+      },
+      {
+        "id": 772,
+        "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "3.11.0"
       },
       {
-        "id": 770,
+        "id": 773,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -8267,27 +8299,27 @@
     ]
   },
   {
-    "id": 252,
+    "id": 253,
     "title": "Lights of Muse",
     "altTitle": "Lights of Muse",
     "artist": "Ayatsugu_Otowa",
     "charts": [
       {
-        "id": 771,
+        "id": 774,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "3.11.0"
       },
       {
-        "id": 772,
+        "id": 775,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "3.11.0"
       },
       {
-        "id": 773,
+        "id": 776,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.9,
@@ -8299,27 +8331,27 @@
     ]
   },
   {
-    "id": 253,
+    "id": 254,
     "title": "Medusa",
     "altTitle": "Medusa",
     "artist": "HiTECH NINJA",
     "charts": [
       {
-        "id": 774,
+        "id": 777,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "3.11.0"
       },
       {
-        "id": 775,
+        "id": 778,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "3.11.0"
       },
       {
-        "id": 776,
+        "id": 779,
         "diff": "ftr",
         "level": "10",
         "cc": 10.1,
@@ -8331,27 +8363,27 @@
     ]
   },
   {
-    "id": 254,
+    "id": 255,
     "title": "init()",
     "altTitle": "init()",
     "artist": "kamome sano",
     "charts": [
       {
-        "id": 777,
+        "id": 780,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "3.11.2"
       },
       {
-        "id": 778,
+        "id": 781,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "3.11.2"
       },
       {
-        "id": 779,
+        "id": 782,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -8363,27 +8395,27 @@
     ]
   },
   {
-    "id": 255,
+    "id": 256,
     "title": "INTERNET OVERDOSE",
     "altTitle": "INTERNET OVERDOSE",
     "artist": "Aiobahn feat. KOTOKO",
     "charts": [
       {
-        "id": 780,
+        "id": 783,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "3.12.0"
       },
       {
-        "id": 781,
+        "id": 784,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "3.12.0"
       },
       {
-        "id": 782,
+        "id": 785,
         "diff": "ftr",
         "level": "8",
         "cc": 8.4,
@@ -8395,48 +8427,16 @@
     ]
   },
   {
-    "id": 256,
+    "id": 257,
     "title": "Kissing Lucifer",
     "altTitle": "Kissing Lucifer",
     "artist": "ETIA.",
     "charts": [
       {
-        "id": 783,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.5,
-        "ver": "3.12.0"
-      },
-      {
-        "id": 784,
-        "diff": "prs",
-        "level": "7+",
-        "cc": 7.8,
-        "ver": "3.12.0"
-      },
-      {
-        "id": 785,
-        "diff": "ftr",
-        "level": "10",
-        "cc": 10.4,
-        "ver": "3.12.0"
-      }
-    ],
-    "searchKeys": [
-      "kissing lucifer"
-    ]
-  },
-  {
-    "id": 257,
-    "title": "Macrocosmic Modulation",
-    "altTitle": "Macrocosmic Modulation",
-    "artist": "JAKAZiD",
-    "charts": [
-      {
         "id": 786,
         "diff": "pst",
         "level": "4",
-        "cc": 4.0,
+        "cc": 4.5,
         "ver": "3.12.0"
       },
       {
@@ -8449,20 +8449,20 @@
       {
         "id": 788,
         "diff": "ftr",
-        "level": "9+",
-        "cc": 9.8,
+        "level": "10",
+        "cc": 10.4,
         "ver": "3.12.0"
       }
     ],
     "searchKeys": [
-      "macrocosmic modulation"
+      "kissing lucifer"
     ]
   },
   {
     "id": 258,
-    "title": "NEO WINGS",
-    "altTitle": "NEO WINGS",
-    "artist": "SOUND HOLIC feat. Nana Takahashi",
+    "title": "Macrocosmic Modulation",
+    "altTitle": "Macrocosmic Modulation",
+    "artist": "JAKAZiD",
     "charts": [
       {
         "id": 789,
@@ -8474,33 +8474,33 @@
       {
         "id": 790,
         "diff": "prs",
-        "level": "7",
-        "cc": 7.5,
+        "level": "7+",
+        "cc": 7.8,
         "ver": "3.12.0"
       },
       {
         "id": 791,
         "diff": "ftr",
-        "level": "10",
-        "cc": 10.2,
+        "level": "9+",
+        "cc": 9.8,
         "ver": "3.12.0"
       }
     ],
     "searchKeys": [
-      "neo wings"
+      "macrocosmic modulation"
     ]
   },
   {
     "id": 259,
-    "title": "NULCTRL",
-    "altTitle": "NULCTRL",
-    "artist": "Silentroom",
+    "title": "NEO WINGS",
+    "altTitle": "NEO WINGS",
+    "artist": "SOUND HOLIC feat. Nana Takahashi",
     "charts": [
       {
         "id": 792,
         "diff": "pst",
-        "level": "3",
-        "cc": 3.0,
+        "level": "4",
+        "cc": 4.0,
         "ver": "3.12.0"
       },
       {
@@ -8513,6 +8513,38 @@
       {
         "id": 794,
         "diff": "ftr",
+        "level": "10",
+        "cc": 10.2,
+        "ver": "3.12.0"
+      }
+    ],
+    "searchKeys": [
+      "neo wings"
+    ]
+  },
+  {
+    "id": 260,
+    "title": "NULCTRL",
+    "altTitle": "NULCTRL",
+    "artist": "Silentroom",
+    "charts": [
+      {
+        "id": 795,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "3.12.0"
+      },
+      {
+        "id": 796,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "3.12.0"
+      },
+      {
+        "id": 797,
+        "diff": "ftr",
         "level": "9",
         "cc": 9.5,
         "ver": "3.12.0"
@@ -8523,27 +8555,27 @@
     ]
   },
   {
-    "id": 260,
+    "id": 261,
     "title": "Sakura Fubuki",
     "altTitle": "Sakura Fubuki",
     "artist": "Street",
     "charts": [
       {
-        "id": 795,
+        "id": 798,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "3.12.0"
       },
       {
-        "id": 796,
+        "id": 799,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "3.12.0"
       },
       {
-        "id": 797,
+        "id": 800,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
@@ -8555,27 +8587,27 @@
     ]
   },
   {
-    "id": 261,
+    "id": 262,
     "title": "\u00c4vril -Flicka i krans-",
     "altTitle": "\u00c4vril -Flicka i krans-",
     "artist": "Rig\u00ebl Theatre",
     "charts": [
       {
-        "id": 798,
+        "id": 801,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "3.12.0"
       },
       {
-        "id": 799,
+        "id": 802,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "3.12.0"
       },
       {
-        "id": 800,
+        "id": 803,
         "diff": "ftr",
         "level": "8",
         "cc": 8.3,
@@ -8587,13 +8619,13 @@
     ]
   },
   {
-    "id": 262,
+    "id": 263,
     "title": "Ignotus Afterburn",
     "altTitle": "Ignotus Afterburn",
     "artist": "Arcaea Sound Team",
     "charts": [
       {
-        "id": 801,
+        "id": 804,
         "diff": "byd",
         "level": "9+",
         "cc": 9.9,
@@ -8605,13 +8637,13 @@
     ]
   },
   {
-    "id": 263,
+    "id": 264,
     "title": "overdead.",
     "altTitle": "overdead.",
     "artist": "fn",
     "charts": [
       {
-        "id": 802,
+        "id": 805,
         "diff": "byd",
         "level": "10",
         "cc": 10.5,
@@ -8623,13 +8655,13 @@
     ]
   },
   {
-    "id": 264,
+    "id": 265,
     "title": "Red and Blue and Green",
     "altTitle": "Red and Blue and Green",
     "artist": "fn(ArcaeaSoundTeam)",
     "charts": [
       {
-        "id": 803,
+        "id": 806,
         "diff": "byd",
         "level": "10",
         "cc": 10.2,
@@ -8641,13 +8673,13 @@
     ]
   },
   {
-    "id": 265,
+    "id": 266,
     "title": "Singularity VVVIP",
     "altTitle": "Singularity VVVIP",
     "artist": "Arcaea Sound Team against. ETIA.",
     "charts": [
       {
-        "id": 804,
+        "id": 807,
         "diff": "byd",
         "level": "10",
         "cc": 10.4,
@@ -8659,27 +8691,27 @@
     ]
   },
   {
-    "id": 266,
+    "id": 267,
     "title": "Aurgelmir",
     "altTitle": "Aurgelmir",
     "artist": "\u6e9d\u53e3\u3086\u3046\u307e feat. \u5927\u702c\u826f\u3042\u3044",
     "charts": [
       {
-        "id": 805,
+        "id": 808,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "3.12.4"
       },
       {
-        "id": 806,
+        "id": 809,
         "diff": "prs",
         "level": "8",
         "cc": 8.5,
         "ver": "3.12.4"
       },
       {
-        "id": 807,
+        "id": 810,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -8691,27 +8723,27 @@
     ]
   },
   {
-    "id": 267,
+    "id": 268,
     "title": "DDD",
     "altTitle": "DDD",
     "artist": "\u306f\u304c\u306d",
     "charts": [
       {
-        "id": 808,
+        "id": 811,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "3.12.4"
       },
       {
-        "id": 809,
+        "id": 812,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "3.12.4"
       },
       {
-        "id": 810,
+        "id": 813,
         "diff": "ftr",
         "level": "8",
         "cc": 8.5,
@@ -8723,27 +8755,27 @@
     ]
   },
   {
-    "id": 268,
+    "id": 269,
     "title": "Head BONK ache",
     "altTitle": "Head BONK ache",
     "artist": "saaa ft. MC iwata Bros.",
     "charts": [
       {
-        "id": 811,
+        "id": 814,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "3.12.4"
       },
       {
-        "id": 812,
+        "id": 815,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "3.12.4"
       },
       {
-        "id": 813,
+        "id": 816,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
@@ -8755,48 +8787,16 @@
     ]
   },
   {
-    "id": 269,
+    "id": 270,
     "title": "Dancin' on a Cat's Paw",
     "altTitle": "Dancin' on a Cat's Paw",
     "artist": "Ino(chronoize)",
     "charts": [
       {
-        "id": 816,
+        "id": 819,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
-        "ver": "3.12.8"
-      },
-      {
-        "id": 817,
-        "diff": "prs",
-        "level": "6",
-        "cc": 6.0,
-        "ver": "3.12.8"
-      },
-      {
-        "id": 818,
-        "diff": "ftr",
-        "level": "9",
-        "cc": 9.2,
-        "ver": "3.12.8"
-      }
-    ],
-    "searchKeys": [
-      "dancin' on a cat's paw"
-    ]
-  },
-  {
-    "id": 270,
-    "title": "PICO-Pico-Translation!",
-    "altTitle": "PICO-Pico-Translation!",
-    "artist": "t+pazolite,\u306a\u306a\u3072\u3089,Cranky,Pico*",
-    "charts": [
-      {
-        "id": 819,
-        "diff": "pst",
-        "level": "2",
-        "cc": 2.0,
         "ver": "3.12.8"
       },
       {
@@ -8810,19 +8810,19 @@
         "id": 821,
         "diff": "ftr",
         "level": "9",
-        "cc": 9.4,
+        "cc": 9.2,
         "ver": "3.12.8"
       }
     ],
     "searchKeys": [
-      "pico-pico-translation!"
+      "dancin' on a cat's paw"
     ]
   },
   {
     "id": 271,
-    "title": "Prism",
-    "altTitle": "Prism",
-    "artist": "bermei.inazawa ft. Chata",
+    "title": "PICO-Pico-Translation!",
+    "altTitle": "PICO-Pico-Translation!",
+    "artist": "t+pazolite,\u306a\u306a\u3072\u3089,Cranky,Pico*",
     "charts": [
       {
         "id": 822,
@@ -8834,12 +8834,44 @@
       {
         "id": 823,
         "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "3.12.8"
+      },
+      {
+        "id": 824,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "3.12.8"
+      }
+    ],
+    "searchKeys": [
+      "pico-pico-translation!"
+    ]
+  },
+  {
+    "id": 272,
+    "title": "Prism",
+    "altTitle": "Prism",
+    "artist": "bermei.inazawa ft. Chata",
+    "charts": [
+      {
+        "id": 825,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.0,
+        "ver": "3.12.8"
+      },
+      {
+        "id": 826,
+        "diff": "prs",
         "level": "5",
         "cc": 5.0,
         "ver": "3.12.8"
       },
       {
-        "id": 824,
+        "id": 827,
         "diff": "ftr",
         "level": "8",
         "cc": 8.0,
@@ -8851,48 +8883,16 @@
     ]
   },
   {
-    "id": 272,
+    "id": 273,
     "title": "Protoflicker",
     "altTitle": "Protoflicker",
     "artist": "Silentroom",
     "charts": [
       {
-        "id": 825,
+        "id": 828,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
-        "ver": "3.12.8"
-      },
-      {
-        "id": 826,
-        "diff": "prs",
-        "level": "7",
-        "cc": 7.0,
-        "ver": "3.12.8"
-      },
-      {
-        "id": 827,
-        "diff": "ftr",
-        "level": "9+",
-        "cc": 9.8,
-        "ver": "3.12.8"
-      }
-    ],
-    "searchKeys": [
-      "protoflicker"
-    ]
-  },
-  {
-    "id": 273,
-    "title": "Stasis",
-    "altTitle": "Stasis",
-    "artist": "Maozon",
-    "charts": [
-      {
-        "id": 828,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.5,
         "ver": "3.12.8"
       },
       {
@@ -8905,6 +8905,38 @@
       {
         "id": 830,
         "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "3.12.8"
+      }
+    ],
+    "searchKeys": [
+      "protoflicker"
+    ]
+  },
+  {
+    "id": 274,
+    "title": "Stasis",
+    "altTitle": "Stasis",
+    "artist": "Maozon",
+    "charts": [
+      {
+        "id": 831,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "3.12.8"
+      },
+      {
+        "id": 832,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "3.12.8"
+      },
+      {
+        "id": 833,
+        "diff": "ftr",
         "level": "10+",
         "cc": 10.8,
         "ver": "3.12.8"
@@ -8915,42 +8947,10 @@
     ]
   },
   {
-    "id": 274,
+    "id": 275,
     "title": "san skia",
     "altTitle": "san skia",
     "artist": "\u30e6\u30a2\u30df\u30c8\u30b9",
-    "charts": [
-      {
-        "id": 831,
-        "diff": "pst",
-        "level": "3",
-        "cc": 3.5,
-        "ver": "3.12.10"
-      },
-      {
-        "id": 832,
-        "diff": "prs",
-        "level": "6",
-        "cc": 6.0,
-        "ver": "3.12.10"
-      },
-      {
-        "id": 833,
-        "diff": "ftr",
-        "level": "8",
-        "cc": 8.3,
-        "ver": "3.12.10"
-      }
-    ],
-    "searchKeys": [
-      "san skia"
-    ]
-  },
-  {
-    "id": 275,
-    "title": "\u03bc",
-    "altTitle": "\u03bc",
-    "artist": "Frums",
     "charts": [
       {
         "id": 834,
@@ -8962,12 +8962,44 @@
       {
         "id": 835,
         "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "3.12.10"
+      },
+      {
+        "id": 836,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "3.12.10"
+      }
+    ],
+    "searchKeys": [
+      "san skia"
+    ]
+  },
+  {
+    "id": 276,
+    "title": "\u03bc",
+    "altTitle": "\u03bc",
+    "artist": "Frums",
+    "charts": [
+      {
+        "id": 837,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "3.12.10"
+      },
+      {
+        "id": 838,
+        "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "3.12.10"
       },
       {
-        "id": 836,
+        "id": 839,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -8979,27 +9011,27 @@
     ]
   },
   {
-    "id": 276,
+    "id": 277,
     "title": "Altair (feat. *spiLa*)",
     "altTitle": "Altair (feat. *spiLa*)",
     "artist": "kamome sano & you",
     "charts": [
       {
-        "id": 837,
+        "id": 840,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "4.0.0"
       },
       {
-        "id": 838,
+        "id": 841,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "4.0.0"
       },
       {
-        "id": 839,
+        "id": 842,
         "diff": "ftr",
         "level": "8",
         "cc": 8.5,
@@ -9011,34 +9043,34 @@
     ]
   },
   {
-    "id": 277,
+    "id": 278,
     "title": "Arcana Eden",
     "altTitle": "Arcana Eden",
     "artist": "Team Grimoire vs Sakuzyo vs Laur",
     "charts": [
       {
-        "id": 840,
+        "id": 843,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "4.0.0"
       },
       {
-        "id": 841,
+        "id": 844,
         "diff": "prs",
         "level": "8+",
         "cc": 8.7,
         "ver": "4.0.0"
       },
       {
-        "id": 842,
+        "id": 845,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
         "ver": "4.0.0"
       },
       {
-        "id": 843,
+        "id": 846,
         "diff": "byd",
         "level": "11",
         "cc": 11.6,
@@ -9050,27 +9082,27 @@
     ]
   },
   {
-    "id": 278,
+    "id": 279,
     "title": "Defection",
     "altTitle": "Defection",
     "artist": "TeddyLoid feat. DELTA",
     "charts": [
       {
-        "id": 844,
+        "id": 847,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.0.0"
       },
       {
-        "id": 845,
+        "id": 848,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "4.0.0"
       },
       {
-        "id": 846,
+        "id": 849,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -9082,34 +9114,34 @@
     ]
   },
   {
-    "id": 279,
+    "id": 280,
     "title": "Infinite Strife,",
     "altTitle": "Infinite Strife,",
     "artist": "BlackYooh vs. siromaru",
     "charts": [
       {
-        "id": 847,
+        "id": 850,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "4.0.0"
       },
       {
-        "id": 848,
+        "id": 851,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "4.0.0"
       },
       {
-        "id": 849,
+        "id": 852,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
         "ver": "4.0.0"
       },
       {
-        "id": 850,
+        "id": 853,
         "diff": "byd",
         "level": "10+",
         "cc": 10.9,
@@ -9121,34 +9153,34 @@
     ]
   },
   {
-    "id": 280,
+    "id": 281,
     "title": "Pentiment",
     "altTitle": "Pentiment",
     "artist": "Nothing But Requiem with Museo",
     "charts": [
       {
-        "id": 851,
+        "id": 854,
         "diff": "pst",
         "level": "7",
         "cc": 7.0,
         "ver": "4.0.0"
       },
       {
-        "id": 852,
+        "id": 855,
         "diff": "prs",
         "level": "8+",
         "cc": 8.7,
         "ver": "4.0.0"
       },
       {
-        "id": 853,
+        "id": 856,
         "diff": "ftr",
         "level": "10",
         "cc": 10.4,
         "ver": "4.0.0"
       },
       {
-        "id": 854,
+        "id": 857,
         "diff": "byd",
         "level": "11",
         "cc": 11.5,
@@ -9160,42 +9192,10 @@
     ]
   },
   {
-    "id": 281,
+    "id": 282,
     "title": "PUPA",
     "altTitle": "PUPA",
     "artist": "\u30e2\u30ea\u30e2\u30ea\u3042\u3064\u3057",
-    "charts": [
-      {
-        "id": 855,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.0,
-        "ver": "4.0.0"
-      },
-      {
-        "id": 856,
-        "diff": "prs",
-        "level": "7+",
-        "cc": 7.8,
-        "ver": "4.0.0"
-      },
-      {
-        "id": 857,
-        "diff": "ftr",
-        "level": "10",
-        "cc": 10.4,
-        "ver": "4.0.0"
-      }
-    ],
-    "searchKeys": [
-      "pupa"
-    ]
-  },
-  {
-    "id": 282,
-    "title": "Redraw the Colorless World",
-    "altTitle": "Redraw the Colorless World",
-    "artist": "MisomyL",
     "charts": [
       {
         "id": 858,
@@ -9207,12 +9207,44 @@
       {
         "id": 859,
         "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "4.0.0"
+      },
+      {
+        "id": 860,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "4.0.0"
+      }
+    ],
+    "searchKeys": [
+      "pupa"
+    ]
+  },
+  {
+    "id": 283,
+    "title": "Redraw the Colorless World",
+    "altTitle": "Redraw the Colorless World",
+    "artist": "MisomyL",
+    "charts": [
+      {
+        "id": 861,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "4.0.0"
+      },
+      {
+        "id": 862,
+        "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "4.0.0"
       },
       {
-        "id": 860,
+        "id": 863,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
@@ -9224,34 +9256,34 @@
     ]
   },
   {
-    "id": 283,
+    "id": 284,
     "title": "Testify",
     "altTitle": "Testify",
     "artist": "void (Mournfinale) feat. \u661f\u718a\u5357\u5deb",
     "charts": [
       {
-        "id": 861,
+        "id": 864,
         "diff": "pst",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.0.0"
       },
       {
-        "id": 862,
+        "id": 865,
         "diff": "prs",
         "level": "9",
         "cc": 9.4,
         "ver": "4.0.0"
       },
       {
-        "id": 863,
+        "id": 866,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.9,
         "ver": "4.0.0"
       },
       {
-        "id": 864,
+        "id": 867,
         "diff": "byd",
         "level": "12",
         "cc": 12.0,
@@ -9263,48 +9295,16 @@
     ]
   },
   {
-    "id": 284,
+    "id": 285,
     "title": "Trap Crow",
     "altTitle": "Trap Crow",
     "artist": "Puru",
     "charts": [
       {
-        "id": 865,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.5,
-        "ver": "4.0.0"
-      },
-      {
-        "id": 866,
-        "diff": "prs",
-        "level": "7+",
-        "cc": 7.8,
-        "ver": "4.0.0"
-      },
-      {
-        "id": 867,
-        "diff": "ftr",
-        "level": "9+",
-        "cc": 9.9,
-        "ver": "4.0.0"
-      }
-    ],
-    "searchKeys": [
-      "trap crow"
-    ]
-  },
-  {
-    "id": 285,
-    "title": "World Ender",
-    "altTitle": "World Ender",
-    "artist": "sasakure.UK \u00d7 TJ.hangneil",
-    "charts": [
-      {
         "id": 868,
         "diff": "pst",
         "level": "4",
-        "cc": 4.0,
+        "cc": 4.5,
         "ver": "4.0.0"
       },
       {
@@ -9317,12 +9317,44 @@
       {
         "id": 870,
         "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "4.0.0"
+      }
+    ],
+    "searchKeys": [
+      "trap crow"
+    ]
+  },
+  {
+    "id": 286,
+    "title": "World Ender",
+    "altTitle": "World Ender",
+    "artist": "sasakure.UK \u00d7 TJ.hangneil",
+    "charts": [
+      {
+        "id": 871,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "4.0.0"
+      },
+      {
+        "id": 872,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "4.0.0"
+      },
+      {
+        "id": 873,
+        "diff": "ftr",
         "level": "10",
         "cc": 10.0,
         "ver": "4.0.0"
       },
       {
-        "id": 871,
+        "id": 874,
         "diff": "byd",
         "level": "11",
         "cc": 11.1,
@@ -9334,27 +9366,27 @@
     ]
   },
   {
-    "id": 286,
+    "id": 287,
     "title": "Callima Karma",
     "altTitle": "Callima Karma",
     "artist": "t+pazolite vs Feryquitous",
     "charts": [
       {
-        "id": 872,
+        "id": 875,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.0.255"
       },
       {
-        "id": 873,
+        "id": 876,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "4.0.255"
       },
       {
-        "id": 874,
+        "id": 877,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -9366,27 +9398,27 @@
     ]
   },
   {
-    "id": 287,
+    "id": 288,
     "title": "Last",
     "altTitle": "Last",
     "artist": "onoken",
     "charts": [
       {
-        "id": 875,
+        "id": 878,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "4.0.255"
       },
       {
-        "id": 876,
+        "id": 879,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "4.0.255"
       },
       {
-        "id": 877,
+        "id": 880,
         "diff": "ftr",
         "level": "9",
         "cc": 9.0,
@@ -9398,13 +9430,13 @@
     ]
   },
   {
-    "id": 288,
+    "id": 289,
     "title": "Last | Eternity",
     "altTitle": "Last | Eternity",
     "artist": "onoken",
     "charts": [
       {
-        "id": 878,
+        "id": 881,
         "diff": "byd",
         "level": "9+",
         "cc": 9.7,
@@ -9416,13 +9448,13 @@
     ]
   },
   {
-    "id": 289,
+    "id": 290,
     "title": "Last | Moment",
     "altTitle": "Last | Moment",
     "artist": "onoken",
     "charts": [
       {
-        "id": 879,
+        "id": 882,
         "diff": "byd",
         "level": "9",
         "cc": 9.6,
@@ -9434,27 +9466,27 @@
     ]
   },
   {
-    "id": 290,
+    "id": 291,
     "title": "Loveless Dress",
     "altTitle": "Loveless Dress",
     "artist": "\u304b\u306d\u3053\u3061\u306f\u308b",
     "charts": [
       {
-        "id": 880,
+        "id": 883,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.0.255"
       },
       {
-        "id": 881,
+        "id": 884,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "4.0.255"
       },
       {
-        "id": 882,
+        "id": 885,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -9466,42 +9498,10 @@
     ]
   },
   {
-    "id": 291,
+    "id": 292,
     "title": "Ai Drew",
     "altTitle": "Ai Drew",
     "artist": "Feryquitous",
-    "charts": [
-      {
-        "id": 883,
-        "diff": "pst",
-        "level": "3",
-        "cc": 3.5,
-        "ver": "4.1.0"
-      },
-      {
-        "id": 884,
-        "diff": "prs",
-        "level": "6",
-        "cc": 6.5,
-        "ver": "4.1.0"
-      },
-      {
-        "id": 885,
-        "diff": "ftr",
-        "level": "9+",
-        "cc": 9.8,
-        "ver": "4.1.0"
-      }
-    ],
-    "searchKeys": [
-      "ai drew"
-    ]
-  },
-  {
-    "id": 292,
-    "title": "FLUFFY FLASH",
-    "altTitle": "FLUFFY FLASH",
-    "artist": "Kobaryo",
     "charts": [
       {
         "id": 886,
@@ -9526,31 +9526,63 @@
       }
     ],
     "searchKeys": [
-      "fluffy flash"
+      "ai drew"
     ]
   },
   {
     "id": 293,
+    "title": "FLUFFY FLASH",
+    "altTitle": "FLUFFY FLASH",
+    "artist": "Kobaryo",
+    "charts": [
+      {
+        "id": 889,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "4.1.0"
+      },
+      {
+        "id": 890,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "4.1.0"
+      },
+      {
+        "id": 891,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "4.1.0"
+      }
+    ],
+    "searchKeys": [
+      "fluffy flash"
+    ]
+  },
+  {
+    "id": 294,
     "title": "Good bye, Merry-Go-Round.",
     "altTitle": "Good bye, Merry-Go-Round.",
     "artist": "Yooh",
     "charts": [
       {
-        "id": 889,
+        "id": 892,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.1.0"
       },
       {
-        "id": 890,
+        "id": 893,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "4.1.0"
       },
       {
-        "id": 891,
+        "id": 894,
         "diff": "ftr",
         "level": "10",
         "cc": 10.6,
@@ -9562,27 +9594,27 @@
     ]
   },
   {
-    "id": 294,
+    "id": 295,
     "title": "Heart",
     "altTitle": "Heart",
     "artist": "\u524a\u9664 (Violin : Katali)",
     "charts": [
       {
-        "id": 892,
+        "id": 895,
         "diff": "pst",
         "level": "1",
         "cc": 1.0,
         "ver": "4.1.0"
       },
       {
-        "id": 893,
+        "id": 896,
         "diff": "prs",
         "level": "5",
         "cc": 5.0,
         "ver": "4.1.0"
       },
       {
-        "id": 894,
+        "id": 897,
         "diff": "ftr",
         "level": "9",
         "cc": 9.6,
@@ -9594,27 +9626,27 @@
     ]
   },
   {
-    "id": 295,
+    "id": 296,
     "title": "LAMIA",
     "altTitle": "LAMIA",
     "artist": "BlackY",
     "charts": [
       {
-        "id": 895,
+        "id": 898,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "4.1.0"
       },
       {
-        "id": 896,
+        "id": 899,
         "diff": "prs",
         "level": "8",
         "cc": 8.5,
         "ver": "4.1.0"
       },
       {
-        "id": 897,
+        "id": 900,
         "diff": "ftr",
         "level": "11",
         "cc": 11.0,
@@ -9626,27 +9658,27 @@
     ]
   },
   {
-    "id": 296,
+    "id": 297,
     "title": "cocoro*cosmetic",
     "altTitle": "cocoro*cosmetic",
     "artist": "KOTONOHOUSE",
     "charts": [
       {
-        "id": 898,
+        "id": 901,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "4.1.4"
       },
       {
-        "id": 899,
+        "id": 902,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "4.1.4"
       },
       {
-        "id": 900,
+        "id": 903,
         "diff": "ftr",
         "level": "9",
         "cc": 9.2,
@@ -9658,27 +9690,27 @@
     ]
   },
   {
-    "id": 297,
+    "id": 298,
     "title": "Free Myself",
     "altTitle": "Free Myself",
     "artist": "lapix feat. mami",
     "charts": [
       {
-        "id": 901,
+        "id": 904,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.1.4"
       },
       {
-        "id": 902,
+        "id": 905,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "4.1.4"
       },
       {
-        "id": 903,
+        "id": 906,
         "diff": "ftr",
         "level": "10",
         "cc": 10.0,
@@ -9690,27 +9722,27 @@
     ]
   },
   {
-    "id": 298,
+    "id": 299,
     "title": "Capella",
     "altTitle": "Capella",
     "artist": "ARForest",
     "charts": [
       {
-        "id": 905,
+        "id": 908,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.1.6"
       },
       {
-        "id": 906,
+        "id": 909,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.1.6"
       },
       {
-        "id": 907,
+        "id": 910,
         "diff": "ftr",
         "level": "10",
         "cc": 10.2,
@@ -9722,27 +9754,27 @@
     ]
   },
   {
-    "id": 299,
+    "id": 300,
     "title": "Dialnote",
     "altTitle": "Dialnote",
     "artist": "\u4e03\u8349\u304f\u308a\u3080",
     "charts": [
       {
-        "id": 908,
+        "id": 911,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "4.1.6"
       },
       {
-        "id": 909,
+        "id": 912,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "4.1.6"
       },
       {
-        "id": 910,
+        "id": 913,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.8,
@@ -9754,27 +9786,27 @@
     ]
   },
   {
-    "id": 300,
+    "id": 301,
     "title": "Astra walkthrough",
     "altTitle": "Astra walkthrough",
     "artist": "paraoka",
     "charts": [
       {
-        "id": 912,
+        "id": 915,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.2.0"
       },
       {
-        "id": 913,
+        "id": 916,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.2.0"
       },
       {
-        "id": 914,
+        "id": 917,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
@@ -9786,27 +9818,27 @@
     ]
   },
   {
-    "id": 301,
+    "id": 302,
     "title": "Chronicle",
     "altTitle": "Chronicle",
     "artist": "Lime",
     "charts": [
       {
-        "id": 915,
+        "id": 918,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "4.2.0"
       },
       {
-        "id": 916,
+        "id": 919,
         "diff": "prs",
         "level": "8+",
         "cc": 8.9,
         "ver": "4.2.0"
       },
       {
-        "id": 917,
+        "id": 920,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -9818,27 +9850,27 @@
     ]
   },
   {
-    "id": 302,
+    "id": 303,
     "title": "MANTIS (Arcaea Ultra-Bloodrush VIP)",
     "altTitle": "MANTIS (Arcaea Ultra-Bloodrush VIP)",
     "artist": "Akira Complex feat. kiraku",
     "charts": [
       {
-        "id": 918,
+        "id": 921,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "4.2.0"
       },
       {
-        "id": 919,
+        "id": 922,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "4.2.0"
       },
       {
-        "id": 920,
+        "id": 923,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
@@ -9850,27 +9882,27 @@
     ]
   },
   {
-    "id": 303,
+    "id": 304,
     "title": "NULL APOPHENIA",
     "altTitle": "NULL APOPHENIA",
     "artist": "N\u00b2",
     "charts": [
       {
-        "id": 921,
+        "id": 924,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.2.0"
       },
       {
-        "id": 922,
+        "id": 925,
         "diff": "prs",
         "level": "8+",
         "cc": 8.8,
         "ver": "4.2.0"
       },
       {
-        "id": 923,
+        "id": 926,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.7,
@@ -9882,27 +9914,27 @@
     ]
   },
   {
-    "id": 304,
+    "id": 305,
     "title": "Tsuki ni Murakumo, Hana ni Kaze",
     "altTitle": "Tsuki ni Murakumo, Hana ni Kaze",
     "artist": "\u5e7d\u9589\u30b5\u30c6\u30e9\u30a4\u30c8",
     "charts": [
       {
-        "id": 924,
+        "id": 927,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "4.2.0"
       },
       {
-        "id": 925,
+        "id": 928,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "4.2.0"
       },
       {
-        "id": 926,
+        "id": 929,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.7,
@@ -9914,27 +9946,27 @@
     ]
   },
   {
-    "id": 305,
+    "id": 306,
     "title": "World Fragments III(radio edit)",
     "altTitle": "World Fragments III(radio edit)",
     "artist": "xi",
     "charts": [
       {
-        "id": 927,
+        "id": 930,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.2.0"
       },
       {
-        "id": 928,
+        "id": 931,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "4.2.0"
       },
       {
-        "id": 929,
+        "id": 932,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -9946,55 +9978,23 @@
     ]
   },
   {
-    "id": 306,
+    "id": 307,
     "title": "[X]",
     "altTitle": "[X]",
     "artist": "Blacklolita",
     "charts": [
       {
-        "id": 930,
+        "id": 933,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.3.0"
       },
       {
-        "id": 931,
+        "id": 934,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
-        "ver": "4.3.0"
-      },
-      {
-        "id": 932,
-        "diff": "ftr",
-        "level": "10",
-        "cc": 10.6,
-        "ver": "4.3.0"
-      }
-    ],
-    "searchKeys": [
-      "[x]"
-    ]
-  },
-  {
-    "id": 307,
-    "title": "Crimson Throne",
-    "altTitle": "Crimson Throne",
-    "artist": "Dimier\u221aLisb",
-    "charts": [
-      {
-        "id": 933,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.0,
-        "ver": "4.3.0"
-      },
-      {
-        "id": 934,
-        "diff": "prs",
-        "level": "8",
-        "cc": 8.0,
         "ver": "4.3.0"
       },
       {
@@ -10006,31 +10006,63 @@
       }
     ],
     "searchKeys": [
-      "crimson throne"
+      "[x]"
     ]
   },
   {
     "id": 308,
+    "title": "Crimson Throne",
+    "altTitle": "Crimson Throne",
+    "artist": "Dimier\u221aLisb",
+    "charts": [
+      {
+        "id": 936,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "4.3.0"
+      },
+      {
+        "id": 937,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.0,
+        "ver": "4.3.0"
+      },
+      {
+        "id": 938,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.6,
+        "ver": "4.3.0"
+      }
+    ],
+    "searchKeys": [
+      "crimson throne"
+    ]
+  },
+  {
+    "id": 309,
     "title": "CYCLES",
     "altTitle": "CYCLES",
     "artist": "Masayoshi Minoshima feat. \u7dbe\u5009\u76df",
     "charts": [
       {
-        "id": 936,
+        "id": 939,
         "diff": "pst",
         "level": "2",
         "cc": 2.0,
         "ver": "4.3.0"
       },
       {
-        "id": 937,
+        "id": 940,
         "diff": "prs",
         "level": "5",
         "cc": 5.0,
         "ver": "4.3.0"
       },
       {
-        "id": 938,
+        "id": 941,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.8,
@@ -10042,27 +10074,27 @@
     ]
   },
   {
-    "id": 309,
+    "id": 310,
     "title": "Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)",
     "altTitle": "Hiiro Gekka, Kyoushou no Zetsu (nayuta 2017 ver.)",
     "artist": "nayuta x \u9ed2\u9ce5(EastNewSound)",
     "charts": [
       {
-        "id": 939,
+        "id": 942,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.3.0"
       },
       {
-        "id": 940,
+        "id": 943,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "4.3.0"
       },
       {
-        "id": 941,
+        "id": 944,
         "diff": "ftr",
         "level": "10",
         "cc": 10.3,
@@ -10074,27 +10106,27 @@
     ]
   },
   {
-    "id": 310,
+    "id": 311,
     "title": "Let's Rock (Arcaea mix)",
     "altTitle": "Let's Rock (Arcaea mix)",
     "artist": "ikaruga_nex vs FALCHiON",
     "charts": [
       {
-        "id": 942,
+        "id": 945,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "4.3.0"
       },
       {
-        "id": 943,
+        "id": 946,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "4.3.0"
       },
       {
-        "id": 944,
+        "id": 947,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -10106,27 +10138,27 @@
     ]
   },
   {
-    "id": 311,
+    "id": 312,
     "title": "Manic Jeer",
     "altTitle": "Manic Jeer",
     "artist": "\u30eb\u30bc",
     "charts": [
       {
-        "id": 945,
+        "id": 948,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "4.3.0"
       },
       {
-        "id": 946,
+        "id": 949,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.3.0"
       },
       {
-        "id": 947,
+        "id": 950,
         "diff": "ftr",
         "level": "10",
         "cc": 10.6,
@@ -10138,27 +10170,27 @@
     ]
   },
   {
-    "id": 312,
+    "id": 313,
     "title": "MAXRAGE",
     "altTitle": "MAXRAGE",
     "artist": "EBIMAYO",
     "charts": [
       {
-        "id": 948,
+        "id": 951,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.3.0"
       },
       {
-        "id": 949,
+        "id": 952,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "4.3.0"
       },
       {
-        "id": 950,
+        "id": 953,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
@@ -10170,27 +10202,27 @@
     ]
   },
   {
-    "id": 313,
+    "id": 314,
     "title": "TEmPTaTiON",
     "altTitle": "TEmPTaTiON",
     "artist": "\u304b\u306d\u3053\u3061\u306f\u308b",
     "charts": [
       {
-        "id": 951,
+        "id": 954,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "4.3.0"
       },
       {
-        "id": 952,
+        "id": 955,
         "diff": "prs",
         "level": "8",
         "cc": 8.2,
         "ver": "4.3.0"
       },
       {
-        "id": 953,
+        "id": 956,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.9,
@@ -10202,27 +10234,27 @@
     ]
   },
   {
-    "id": 314,
+    "id": 315,
     "title": "PRIMITIVE LIGHTS",
     "altTitle": "PRIMITIVE LIGHTS",
     "artist": "TAG",
     "charts": [
       {
-        "id": 955,
+        "id": 958,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "4.3.2"
       },
       {
-        "id": 956,
+        "id": 959,
         "diff": "prs",
         "level": "8+",
         "cc": 8.8,
         "ver": "4.3.2"
       },
       {
-        "id": 957,
+        "id": 960,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.8,
@@ -10234,27 +10266,27 @@
     ]
   },
   {
-    "id": 315,
+    "id": 316,
     "title": "Cosmo Pop Funclub",
     "altTitle": "Cosmo Pop Funclub",
     "artist": "\u30ca\u30e6\u30bf\u30f3\u661f\u4eba",
     "charts": [
       {
-        "id": 959,
+        "id": 962,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "4.4.0"
       },
       {
-        "id": 960,
+        "id": 963,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "4.4.0"
       },
       {
-        "id": 961,
+        "id": 964,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.8,
@@ -10266,27 +10298,27 @@
     ]
   },
   {
-    "id": 316,
+    "id": 317,
     "title": "Genesis",
     "altTitle": "Genesis (Morrigan feat.Lily)",
     "artist": "Morrigan feat.Lily",
     "charts": [
       {
-        "id": 962,
+        "id": 965,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "4.4.0"
       },
       {
-        "id": 963,
+        "id": 966,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "4.4.0"
       },
       {
-        "id": 964,
+        "id": 967,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -10298,34 +10330,34 @@
     ]
   },
   {
-    "id": 317,
+    "id": 318,
     "title": "IMPACT",
     "altTitle": "IMPACT",
     "artist": "USAO feat. \u5149\u5409\u731b\u4fee",
     "charts": [
       {
-        "id": 965,
+        "id": 968,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.4.0"
       },
       {
-        "id": 966,
+        "id": 969,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.4.0"
       },
       {
-        "id": 967,
+        "id": 970,
         "diff": "ftr",
         "level": "9",
         "cc": 9.6,
         "ver": "4.4.0"
       },
       {
-        "id": 968,
+        "id": 971,
         "diff": "byd",
         "level": "10",
         "cc": 10.4,
@@ -10337,27 +10369,27 @@
     ]
   },
   {
-    "id": 318,
+    "id": 319,
     "title": "Spider's Thread",
     "altTitle": "Spider's Thread",
     "artist": "\u304d\u304f\u304a\u00d7cosMo\uff20\u66b4\u8d70P feat.\u5f71\u7e2b\u82f1",
     "charts": [
       {
-        "id": 969,
+        "id": 972,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.4.0"
       },
       {
-        "id": 970,
+        "id": 973,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.4.0"
       },
       {
-        "id": 971,
+        "id": 974,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.8,
@@ -10369,27 +10401,27 @@
     ]
   },
   {
-    "id": 319,
+    "id": 320,
     "title": "Trrricksters!!",
     "altTitle": "Trrricksters!!",
     "artist": "s-don vs. \u7fe1\u4e43\u30a4\u30b9\u30ab",
     "charts": [
       {
-        "id": 973,
+        "id": 976,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.4.0"
       },
       {
-        "id": 974,
+        "id": 977,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "4.4.0"
       },
       {
-        "id": 975,
+        "id": 978,
         "diff": "ftr",
         "level": "10",
         "cc": 10.1,
@@ -10401,27 +10433,27 @@
     ]
   },
   {
-    "id": 320,
+    "id": 321,
     "title": "GIMMICK",
     "altTitle": "GIMMICK",
     "artist": "Ms.Sill",
     "charts": [
       {
-        "id": 976,
+        "id": 979,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "4.4.4"
       },
       {
-        "id": 977,
+        "id": 980,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "4.4.4"
       },
       {
-        "id": 978,
+        "id": 981,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
@@ -10433,48 +10465,16 @@
     ]
   },
   {
-    "id": 321,
+    "id": 322,
     "title": "Lost Emotion feat. nomico",
     "altTitle": "Lost Emotion feat. nomico",
     "artist": "Masayoshi Minoshima(ALR)",
     "charts": [
       {
-        "id": 979,
+        "id": 982,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
-        "ver": "4.4.4"
-      },
-      {
-        "id": 980,
-        "diff": "prs",
-        "level": "7",
-        "cc": 7.0,
-        "ver": "4.4.4"
-      },
-      {
-        "id": 981,
-        "diff": "ftr",
-        "level": "9",
-        "cc": 9.3,
-        "ver": "4.4.4"
-      }
-    ],
-    "searchKeys": [
-      "lost emotion feat. nomico"
-    ]
-  },
-  {
-    "id": 322,
-    "title": "New York Back Raise",
-    "altTitle": "New York Back Raise",
-    "artist": "saaa + kei_iwata + stuv + \u308f\u304b\u3069\u308a",
-    "charts": [
-      {
-        "id": 982,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.5,
         "ver": "4.4.4"
       },
       {
@@ -10487,33 +10487,33 @@
       {
         "id": 984,
         "diff": "ftr",
-        "level": "9+",
-        "cc": 9.9,
+        "level": "9",
+        "cc": 9.3,
         "ver": "4.4.4"
       }
     ],
     "searchKeys": [
-      "new york back raise"
+      "lost emotion feat. nomico"
     ]
   },
   {
     "id": 323,
-    "title": "The Survivor (Game Edit)",
-    "altTitle": "The Survivor (Game Edit)",
-    "artist": "Taishi",
+    "title": "New York Back Raise",
+    "altTitle": "New York Back Raise",
+    "artist": "saaa + kei_iwata + stuv + \u308f\u304b\u3069\u308a",
     "charts": [
       {
         "id": 985,
         "diff": "pst",
-        "level": "3",
-        "cc": 3.5,
+        "level": "4",
+        "cc": 4.5,
         "ver": "4.4.4"
       },
       {
         "id": 986,
         "diff": "prs",
-        "level": "6",
-        "cc": 6.5,
+        "level": "7",
+        "cc": 7.0,
         "ver": "4.4.4"
       },
       {
@@ -10525,31 +10525,63 @@
       }
     ],
     "searchKeys": [
-      "the survivor (game edit)"
+      "new york back raise"
     ]
   },
   {
     "id": 324,
-    "title": "Galactic Love",
-    "altTitle": "Galactic Love",
-    "artist": "La pri\u00e8re",
+    "title": "The Survivor (Game Edit)",
+    "altTitle": "The Survivor (Game Edit)",
+    "artist": "Taishi",
     "charts": [
       {
         "id": 988,
         "diff": "pst",
         "level": "3",
-        "cc": 3.0,
-        "ver": "4.4.6"
+        "cc": 3.5,
+        "ver": "4.4.4"
       },
       {
         "id": 989,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
-        "ver": "4.4.6"
+        "ver": "4.4.4"
       },
       {
         "id": 990,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "4.4.4"
+      }
+    ],
+    "searchKeys": [
+      "the survivor (game edit)"
+    ]
+  },
+  {
+    "id": 325,
+    "title": "Galactic Love",
+    "altTitle": "Galactic Love",
+    "artist": "La pri\u00e8re",
+    "charts": [
+      {
+        "id": 991,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "4.4.6"
+      },
+      {
+        "id": 992,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "4.4.6"
+      },
+      {
+        "id": 993,
         "diff": "ftr",
         "level": "9",
         "cc": 9.0,
@@ -10561,27 +10593,27 @@
     ]
   },
   {
-    "id": 325,
+    "id": 326,
     "title": "Hybris (The one who shattered)",
     "altTitle": "Hybris (The one who shattered)",
     "artist": "qfeileadh feat.\u306e\u3042",
     "charts": [
       {
-        "id": 991,
+        "id": 994,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.4.6"
       },
       {
-        "id": 992,
+        "id": 995,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.4.6"
       },
       {
-        "id": 993,
+        "id": 996,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -10593,27 +10625,27 @@
     ]
   },
   {
-    "id": 326,
+    "id": 327,
     "title": "Lawless Point",
     "altTitle": "Lawless Point",
     "artist": "La pri\u00e8re",
     "charts": [
       {
-        "id": 994,
+        "id": 997,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "4.4.6"
       },
       {
-        "id": 995,
+        "id": 998,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "4.4.6"
       },
       {
-        "id": 996,
+        "id": 999,
         "diff": "ftr",
         "level": "9",
         "cc": 9.0,
@@ -10625,27 +10657,27 @@
     ]
   },
   {
-    "id": 327,
+    "id": 328,
     "title": "Lost in the Abyss",
     "altTitle": "Lost in the Abyss",
     "artist": "FELT",
     "charts": [
       {
-        "id": 997,
+        "id": 1000,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.4.6"
       },
       {
-        "id": 998,
+        "id": 1001,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "4.4.6"
       },
       {
-        "id": 999,
+        "id": 1002,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -10657,27 +10689,27 @@
     ]
   },
   {
-    "id": 328,
+    "id": 329,
     "title": "To the Milky Way",
     "altTitle": "To the Milky Way",
     "artist": "\u9ed2\u9b54",
     "charts": [
       {
-        "id": 1000,
+        "id": 1003,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "4.4.6"
       },
       {
-        "id": 1001,
+        "id": 1004,
         "diff": "prs",
         "level": "8+",
         "cc": 8.9,
         "ver": "4.4.6"
       },
       {
-        "id": 1002,
+        "id": 1005,
         "diff": "ftr",
         "level": "10",
         "cc": 10.4,
@@ -10689,27 +10721,27 @@
     ]
   },
   {
-    "id": 329,
+    "id": 330,
     "title": "Bullet Waiting for Me (James Landino remix)",
     "altTitle": "Bullet Waiting for Me (James Landino remix)",
     "artist": "Nikki Simmons",
     "charts": [
       {
-        "id": 1003,
+        "id": 1006,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "4.5.0"
       },
       {
-        "id": 1004,
+        "id": 1007,
         "diff": "prs",
         "level": "4",
         "cc": 4.5,
         "ver": "4.5.0"
       },
       {
-        "id": 1005,
+        "id": 1008,
         "diff": "ftr",
         "level": "8",
         "cc": 8.1,
@@ -10721,27 +10753,27 @@
     ]
   },
   {
-    "id": 330,
+    "id": 331,
     "title": "CHAOS",
     "altTitle": "CHAOS",
     "artist": "\u00c6sir",
     "charts": [
       {
-        "id": 1006,
+        "id": 1009,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "4.5.0"
       },
       {
-        "id": 1007,
+        "id": 1010,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "4.5.0"
       },
       {
-        "id": 1008,
+        "id": 1011,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.9,
@@ -10753,48 +10785,16 @@
     ]
   },
   {
-    "id": 331,
+    "id": 332,
     "title": "Devillic Sphere",
     "altTitle": "Devillic Sphere",
     "artist": "3R2",
     "charts": [
       {
-        "id": 1009,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.0,
-        "ver": "4.5.0"
-      },
-      {
-        "id": 1010,
-        "diff": "prs",
-        "level": "7+",
-        "cc": 7.8,
-        "ver": "4.5.0"
-      },
-      {
-        "id": 1011,
-        "diff": "ftr",
-        "level": "9+",
-        "cc": 9.9,
-        "ver": "4.5.0"
-      }
-    ],
-    "searchKeys": [
-      "devillic sphere"
-    ]
-  },
-  {
-    "id": 332,
-    "title": "INTERNET YAMERO",
-    "altTitle": "INTERNET YAMERO",
-    "artist": "Aiobahn feat. KOTOKO",
-    "charts": [
-      {
         "id": 1012,
         "diff": "pst",
         "level": "4",
-        "cc": 4.5,
+        "cc": 4.0,
         "ver": "4.5.0"
       },
       {
@@ -10807,20 +10807,20 @@
       {
         "id": 1014,
         "diff": "ftr",
-        "level": "10",
+        "level": "9+",
         "cc": 9.9,
         "ver": "4.5.0"
       }
     ],
     "searchKeys": [
-      "internet yamero"
+      "devillic sphere"
     ]
   },
   {
     "id": 333,
-    "title": "Lucid Traveler",
-    "altTitle": "Lucid Traveler",
-    "artist": "Akira Complex vs 3R2",
+    "title": "INTERNET YAMERO",
+    "altTitle": "INTERNET YAMERO",
+    "artist": "Aiobahn feat. KOTOKO",
     "charts": [
       {
         "id": 1015,
@@ -10832,12 +10832,44 @@
       {
         "id": 1016,
         "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "4.5.0"
+      },
+      {
+        "id": 1017,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 9.9,
+        "ver": "4.5.0"
+      }
+    ],
+    "searchKeys": [
+      "internet yamero"
+    ]
+  },
+  {
+    "id": 334,
+    "title": "Lucid Traveler",
+    "altTitle": "Lucid Traveler",
+    "artist": "Akira Complex vs 3R2",
+    "charts": [
+      {
+        "id": 1018,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "4.5.0"
+      },
+      {
+        "id": 1019,
+        "diff": "prs",
         "level": "8+",
         "cc": 8.9,
         "ver": "4.5.0"
       },
       {
-        "id": 1017,
+        "id": 1020,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -10849,27 +10881,27 @@
     ]
   },
   {
-    "id": 334,
+    "id": 335,
     "title": "Used to be",
     "altTitle": "Used to be",
     "artist": "KIV\u039b",
     "charts": [
       {
-        "id": 1018,
+        "id": 1021,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "4.5.0"
       },
       {
-        "id": 1019,
+        "id": 1022,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "4.5.0"
       },
       {
-        "id": 1020,
+        "id": 1023,
         "diff": "ftr",
         "level": "9",
         "cc": 9.2,
@@ -10881,27 +10913,27 @@
     ]
   },
   {
-    "id": 335,
+    "id": 336,
     "title": "99 Glooms",
     "altTitle": "99 Glooms",
     "artist": "Sta",
     "charts": [
       {
-        "id": 1021,
+        "id": 1024,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "4.6.0"
       },
       {
-        "id": 1022,
+        "id": 1025,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.6.0"
       },
       {
-        "id": 1023,
+        "id": 1026,
         "diff": "ftr",
         "level": "10",
         "cc": 10.3,
@@ -10913,27 +10945,27 @@
     ]
   },
   {
-    "id": 336,
+    "id": 337,
     "title": "DRG",
     "altTitle": "DRG",
     "artist": "onoken",
     "charts": [
       {
-        "id": 1024,
+        "id": 1027,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.6.0"
       },
       {
-        "id": 1025,
+        "id": 1028,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "4.6.0"
       },
       {
-        "id": 1026,
+        "id": 1029,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
@@ -10945,27 +10977,27 @@
     ]
   },
   {
-    "id": 337,
+    "id": 338,
     "title": "Magnolia",
     "altTitle": "Magnolia",
     "artist": "M2U Vocal by Guriri",
     "charts": [
       {
-        "id": 1027,
+        "id": 1030,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.6.0"
       },
       {
-        "id": 1028,
+        "id": 1031,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.6.0"
       },
       {
-        "id": 1029,
+        "id": 1032,
         "diff": "ftr",
         "level": "10",
         "cc": 10.2,
@@ -10977,27 +11009,27 @@
     ]
   },
   {
-    "id": 338,
+    "id": 339,
     "title": "sy\u016bten",
     "altTitle": "sy\u016bten",
     "artist": "Apo11o\"COLLAPSAR\"program ft. \u5927\u702c\u826f\u3042\u3044",
     "charts": [
       {
-        "id": 1030,
+        "id": 1033,
         "diff": "pst",
         "level": "2",
         "cc": 2.0,
         "ver": "4.6.0"
       },
       {
-        "id": 1031,
+        "id": 1034,
         "diff": "prs",
         "level": "5",
         "cc": 5.0,
         "ver": "4.6.0"
       },
       {
-        "id": 1032,
+        "id": 1035,
         "diff": "ftr",
         "level": "8",
         "cc": 8.5,
@@ -11009,27 +11041,27 @@
     ]
   },
   {
-    "id": 339,
+    "id": 340,
     "title": "Ultimate taste",
     "altTitle": "Ultimate taste",
     "artist": "\u3071\u3089\u3069\u3063\u3068",
     "charts": [
       {
-        "id": 1033,
+        "id": 1036,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.6.0"
       },
       {
-        "id": 1034,
+        "id": 1037,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "4.6.0"
       },
       {
-        "id": 1035,
+        "id": 1038,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
@@ -11041,27 +11073,27 @@
     ]
   },
   {
-    "id": 340,
+    "id": 341,
     "title": "\u035f\u035d\u035e\u2161\u0301\u0315",
     "altTitle": "\u035f\u035d\u035e\u2161\u0301\u0315",
     "artist": "Cytus",
     "charts": [
       {
-        "id": 1036,
+        "id": 1039,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "4.6.0"
       },
       {
-        "id": 1037,
+        "id": 1040,
         "diff": "prs",
         "level": "8+",
         "cc": 8.9,
         "ver": "4.6.0"
       },
       {
-        "id": 1038,
+        "id": 1041,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.8,
@@ -11073,27 +11105,27 @@
     ]
   },
   {
-    "id": 341,
+    "id": 342,
     "title": "Abstruse Dilemma",
     "altTitle": "Abstruse Dilemma",
     "artist": "Ashrount vs. \u6253\u6253\u3060\u3044\u305a",
     "charts": [
       {
-        "id": 1039,
+        "id": 1042,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "4.7.0"
       },
       {
-        "id": 1040,
+        "id": 1043,
         "diff": "prs",
         "level": "8+",
         "cc": 8.9,
         "ver": "4.7.0"
       },
       {
-        "id": 1041,
+        "id": 1044,
         "diff": "ftr",
         "level": "11",
         "cc": 11.3,
@@ -11105,27 +11137,27 @@
     ]
   },
   {
-    "id": 342,
+    "id": 343,
     "title": "Raven's Pride",
     "altTitle": "Raven's Pride",
     "artist": "\u307f\u30fc\u306b feat. \u306f\u3089\u3082\u308a\u3088\u3057\u306a",
     "charts": [
       {
-        "id": 1042,
+        "id": 1045,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "4.7.0"
       },
       {
-        "id": 1043,
+        "id": 1046,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "4.7.0"
       },
       {
-        "id": 1044,
+        "id": 1047,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
@@ -11137,27 +11169,27 @@
     ]
   },
   {
-    "id": 343,
+    "id": 344,
     "title": "RGB",
     "altTitle": "RGB",
     "artist": "MEMODEMO X AQUASINE",
     "charts": [
       {
-        "id": 1045,
+        "id": 1048,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "4.7.0"
       },
       {
-        "id": 1046,
+        "id": 1049,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.7.0"
       },
       {
-        "id": 1047,
+        "id": 1050,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -11169,27 +11201,27 @@
     ]
   },
   {
-    "id": 344,
+    "id": 345,
     "title": "Rise of the World",
     "altTitle": "Rise of the World",
     "artist": "cosMo\uff20\u66b4\u8d70P",
     "charts": [
       {
-        "id": 1048,
+        "id": 1051,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "4.7.0"
       },
       {
-        "id": 1049,
+        "id": 1052,
         "diff": "prs",
         "level": "8",
         "cc": 8.1,
         "ver": "4.7.0"
       },
       {
-        "id": 1050,
+        "id": 1053,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -11201,27 +11233,27 @@
     ]
   },
   {
-    "id": 345,
+    "id": 346,
     "title": "SACRIFICE feat. ayame",
     "altTitle": "SACRIFICE feat. ayame",
     "artist": "Masayoshi Minoshima(ALR)",
     "charts": [
       {
-        "id": 1051,
+        "id": 1054,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.7.0"
       },
       {
-        "id": 1052,
+        "id": 1055,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "4.7.0"
       },
       {
-        "id": 1053,
+        "id": 1056,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -11233,27 +11265,27 @@
     ]
   },
   {
-    "id": 346,
+    "id": 347,
     "title": "UNKNOWN LEVELS",
     "altTitle": "UNKNOWN LEVELS",
     "artist": "Yuta Imai",
     "charts": [
       {
-        "id": 1054,
+        "id": 1057,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "4.7.0"
       },
       {
-        "id": 1055,
+        "id": 1058,
         "diff": "prs",
         "level": "8",
         "cc": 8.1,
         "ver": "4.7.0"
       },
       {
-        "id": 1056,
+        "id": 1059,
         "diff": "ftr",
         "level": "10",
         "cc": 10.6,
@@ -11265,27 +11297,27 @@
     ]
   },
   {
-    "id": 347,
+    "id": 348,
     "title": "WAIT FOR DAWN",
     "altTitle": "WAIT FOR DAWN",
     "artist": "U-ske feat. \u68d7\u3044\u3064\u304d",
     "charts": [
       {
-        "id": 1057,
+        "id": 1060,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "4.7.0"
       },
       {
-        "id": 1058,
+        "id": 1061,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "4.7.0"
       },
       {
-        "id": 1059,
+        "id": 1062,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.7,
@@ -11297,55 +11329,23 @@
     ]
   },
   {
-    "id": 348,
+    "id": 349,
     "title": "Kanjou no Matenrou \uff5eArr.Demetori",
     "altTitle": "Kanjou no Matenrou \uff5eArr.Demetori",
     "artist": "Demetori",
     "charts": [
       {
-        "id": 1060,
+        "id": 1063,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "4.7.2"
       },
       {
-        "id": 1061,
+        "id": 1064,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
-        "ver": "4.7.2"
-      },
-      {
-        "id": 1062,
-        "diff": "ftr",
-        "level": "9+",
-        "cc": 9.8,
-        "ver": "4.7.2"
-      }
-    ],
-    "searchKeys": [
-      "kanjou no matenrou ~ arr.demetori"
-    ]
-  },
-  {
-    "id": 349,
-    "title": "To the Furthest Dream",
-    "altTitle": "To the Furthest Dream",
-    "artist": "ii/night feat. \u7dba\u826f\u96ea",
-    "charts": [
-      {
-        "id": 1063,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.5,
-        "ver": "4.7.2"
-      },
-      {
-        "id": 1064,
-        "diff": "prs",
-        "level": "8",
-        "cc": 8.5,
         "ver": "4.7.2"
       },
       {
@@ -11357,31 +11357,63 @@
       }
     ],
     "searchKeys": [
-      "to the furthest dream"
+      "kanjou no matenrou ~ arr.demetori"
     ]
   },
   {
     "id": 350,
+    "title": "To the Furthest Dream",
+    "altTitle": "To the Furthest Dream",
+    "artist": "ii/night feat. \u7dba\u826f\u96ea",
+    "charts": [
+      {
+        "id": 1066,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "4.7.2"
+      },
+      {
+        "id": 1067,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.5,
+        "ver": "4.7.2"
+      },
+      {
+        "id": 1068,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "4.7.2"
+      }
+    ],
+    "searchKeys": [
+      "to the furthest dream"
+    ]
+  },
+  {
+    "id": 351,
     "title": "Amekagura",
     "altTitle": "Amekagura",
     "artist": "\u8352\u8c37\u30b5\u30c8\u30eb",
     "charts": [
       {
-        "id": 1066,
+        "id": 1069,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "5.0.0"
       },
       {
-        "id": 1067,
+        "id": 1070,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "5.0.0"
       },
       {
-        "id": 1068,
+        "id": 1071,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
@@ -11393,27 +11425,27 @@
     ]
   },
   {
-    "id": 351,
+    "id": 352,
     "title": "Arghena",
     "altTitle": "Arghena",
     "artist": "Feryquitous vs Laur",
     "charts": [
       {
-        "id": 1069,
+        "id": 1072,
         "diff": "pst",
         "level": "7",
         "cc": 7.5,
         "ver": "5.0.0"
       },
       {
-        "id": 1070,
+        "id": 1073,
         "diff": "prs",
         "level": "9",
         "cc": 9.6,
         "ver": "5.0.0"
       },
       {
-        "id": 1071,
+        "id": 1074,
         "diff": "ftr",
         "level": "11",
         "cc": 11.3,
@@ -11425,27 +11457,27 @@
     ]
   },
   {
-    "id": 352,
+    "id": 353,
     "title": "B.B.K.K.B.K.K.",
     "altTitle": "B.B.K.K.B.K.K.",
     "artist": "nora2r",
     "charts": [
       {
-        "id": 1072,
+        "id": 1075,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.0.0"
       },
       {
-        "id": 1073,
+        "id": 1076,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.0.0"
       },
       {
-        "id": 1074,
+        "id": 1077,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -11457,27 +11489,27 @@
     ]
   },
   {
-    "id": 353,
+    "id": 354,
     "title": "Dynitik\u00f3s",
     "altTitle": "Dynitik\u00f3s",
     "artist": "Prower",
     "charts": [
       {
-        "id": 1075,
+        "id": 1078,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "5.0.0"
       },
       {
-        "id": 1076,
+        "id": 1079,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "5.0.0"
       },
       {
-        "id": 1077,
+        "id": 1080,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
@@ -11489,27 +11521,27 @@
     ]
   },
   {
-    "id": 354,
+    "id": 355,
     "title": "Ego Eimi",
     "altTitle": "Ego Eimi",
     "artist": "BlackY feat. Risa Yuzuki",
     "charts": [
       {
-        "id": 1078,
+        "id": 1081,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "5.0.0"
       },
       {
-        "id": 1079,
+        "id": 1082,
         "diff": "prs",
         "level": "8",
         "cc": 8.6,
         "ver": "5.0.0"
       },
       {
-        "id": 1080,
+        "id": 1083,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -11521,27 +11553,27 @@
     ]
   },
   {
-    "id": 355,
+    "id": 356,
     "title": "Logos",
     "altTitle": "Logos",
     "artist": "polysha feat. \u9ad8\u57ce\u307f\u3088",
     "charts": [
       {
-        "id": 1081,
+        "id": 1084,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "5.0.0"
       },
       {
-        "id": 1082,
+        "id": 1085,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.0.0"
       },
       {
-        "id": 1083,
+        "id": 1086,
         "diff": "ftr",
         "level": "10",
         "cc": 10.2,
@@ -11553,27 +11585,27 @@
     ]
   },
   {
-    "id": 356,
+    "id": 357,
     "title": "Primeval Texture",
     "altTitle": "Primeval Texture",
     "artist": "\u304f\u308b\u3076\u3063\u3053\u3061\u3083\u3093",
     "charts": [
       {
-        "id": 1084,
+        "id": 1087,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.0.0"
       },
       {
-        "id": 1085,
+        "id": 1088,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "5.0.0"
       },
       {
-        "id": 1086,
+        "id": 1089,
         "diff": "ftr",
         "level": "9",
         "cc": 9.0,
@@ -11585,42 +11617,10 @@
     ]
   },
   {
-    "id": 357,
+    "id": 358,
     "title": "Remind the Souls (Short Version)",
     "altTitle": "Remind the Souls (Short Version)",
     "artist": "Nhato",
-    "charts": [
-      {
-        "id": 1087,
-        "diff": "pst",
-        "level": "3",
-        "cc": 3.5,
-        "ver": "5.0.0"
-      },
-      {
-        "id": 1088,
-        "diff": "prs",
-        "level": "7",
-        "cc": 7.0,
-        "ver": "5.0.0"
-      },
-      {
-        "id": 1089,
-        "diff": "ftr",
-        "level": "9",
-        "cc": 9.6,
-        "ver": "5.0.0"
-      }
-    ],
-    "searchKeys": [
-      "remind the souls (short version)"
-    ]
-  },
-  {
-    "id": 358,
-    "title": "Technicolour",
-    "altTitle": "Technicolour",
-    "artist": "Maozon",
     "charts": [
       {
         "id": 1090,
@@ -11639,6 +11639,38 @@
       {
         "id": 1092,
         "diff": "ftr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "5.0.0"
+      }
+    ],
+    "searchKeys": [
+      "remind the souls (short version)"
+    ]
+  },
+  {
+    "id": 359,
+    "title": "Technicolour",
+    "altTitle": "Technicolour",
+    "artist": "Maozon",
+    "charts": [
+      {
+        "id": 1093,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "5.0.0"
+      },
+      {
+        "id": 1094,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "5.0.0"
+      },
+      {
+        "id": 1095,
+        "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
         "ver": "5.0.0"
@@ -11649,43 +11681,10 @@
     ]
   },
   {
-    "id": 359,
+    "id": 360,
     "title": "FANTA5Y",
     "altTitle": "FANTA5Y",
     "artist": "Moon Jelly & YUKIYANAGI",
-    "charts": [
-      {
-        "id": 1093,
-        "diff": "pst",
-        "level": "3",
-        "cc": 3.0,
-        "ver": "5.1.0"
-      },
-      {
-        "id": 1094,
-        "diff": "prs",
-        "level": "7",
-        "cc": 7.0,
-        "ver": "5.1.0"
-      },
-      {
-        "id": 1095,
-        "diff": "ftr",
-        "level": "9",
-        "cc": 9.4,
-        "ver": "5.1.0"
-      }
-    ],
-    "searchKeys": [
-      "fanta5y",
-      "fantasy"
-    ]
-  },
-  {
-    "id": 360,
-    "title": "Nameless Passion",
-    "altTitle": "Nameless Passion",
-    "artist": "\u5929\u675f feat.Sennzai",
     "charts": [
       {
         "id": 1096,
@@ -11704,6 +11703,39 @@
       {
         "id": 1098,
         "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "5.1.0"
+      }
+    ],
+    "searchKeys": [
+      "fanta5y",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 361,
+    "title": "Nameless Passion",
+    "altTitle": "Nameless Passion",
+    "artist": "\u5929\u675f feat.Sennzai",
+    "charts": [
+      {
+        "id": 1099,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "5.1.0"
+      },
+      {
+        "id": 1100,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "5.1.0"
+      },
+      {
+        "id": 1101,
+        "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
         "ver": "5.1.0"
@@ -11714,27 +11746,27 @@
     ]
   },
   {
-    "id": 361,
+    "id": 362,
     "title": "TeraVolt",
     "altTitle": "TeraVolt",
     "artist": "Katali",
     "charts": [
       {
-        "id": 1099,
+        "id": 1102,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "5.1.0"
       },
       {
-        "id": 1100,
+        "id": 1103,
         "diff": "prs",
         "level": "8+",
         "cc": 8.9,
         "ver": "5.1.0"
       },
       {
-        "id": 1101,
+        "id": 1104,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.8,
@@ -11746,27 +11778,27 @@
     ]
   },
   {
-    "id": 362,
+    "id": 363,
     "title": "Transient Space",
     "altTitle": "Transient Space",
     "artist": "sleepless, Gardens, aspect",
     "charts": [
       {
-        "id": 1102,
+        "id": 1105,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.1.0"
       },
       {
-        "id": 1103,
+        "id": 1106,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.1.0"
       },
       {
-        "id": 1104,
+        "id": 1107,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
@@ -11778,27 +11810,27 @@
     ]
   },
   {
-    "id": 363,
+    "id": 364,
     "title": "Alone & Lorn",
     "altTitle": "Alone & Lorn",
     "artist": "Ponchi\u266a feat.\u306f\u3041\u3061",
     "charts": [
       {
-        "id": 1105,
+        "id": 1108,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.2.0"
       },
       {
-        "id": 1106,
+        "id": 1109,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.2.0"
       },
       {
-        "id": 1107,
+        "id": 1110,
         "diff": "ftr",
         "level": "9",
         "cc": 9.6,
@@ -11810,27 +11842,27 @@
     ]
   },
   {
-    "id": 364,
+    "id": 365,
     "title": "eden",
     "altTitle": "eden",
     "artist": "\"\u6f06\u9ed2\"\u306e\u5815\u5929\u4f7f\u300aGram\u300b\u2020Versus\u2020\"\u8056\u523b\"\u306e\u71be\u5929\u4f7f\u300aGram\u300b",
     "charts": [
       {
-        "id": 1108,
+        "id": 1111,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.2.0"
       },
       {
-        "id": 1109,
+        "id": 1112,
         "diff": "prs",
         "level": "8",
         "cc": 8.2,
         "ver": "5.2.0"
       },
       {
-        "id": 1110,
+        "id": 1113,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -11842,27 +11874,27 @@
     ]
   },
   {
-    "id": 365,
+    "id": 366,
     "title": "Meta-Mysteria",
     "altTitle": "Meta-Mysteria",
     "artist": "DJ Noriken",
     "charts": [
       {
-        "id": 1111,
+        "id": 1114,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "5.2.0"
       },
       {
-        "id": 1112,
+        "id": 1115,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.2.0"
       },
       {
-        "id": 1113,
+        "id": 1116,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.8,
@@ -11874,27 +11906,27 @@
     ]
   },
   {
-    "id": 366,
+    "id": 367,
     "title": "Ouvert\u00fcre",
     "altTitle": "Ouvert\u00fcre",
     "artist": "USAO & DJ Genki feat. \u30eb\u30fc\u30f3(CV:\u6cb3\u702c\u8309\u5e0c)",
     "charts": [
       {
-        "id": 1114,
+        "id": 1117,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.2.0"
       },
       {
-        "id": 1115,
+        "id": 1118,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "5.2.0"
       },
       {
-        "id": 1116,
+        "id": 1119,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -11906,27 +11938,27 @@
     ]
   },
   {
-    "id": 367,
+    "id": 368,
     "title": "Stratoliner",
     "altTitle": "Stratoliner",
     "artist": "C-Show",
     "charts": [
       {
-        "id": 1117,
+        "id": 1120,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.2.0"
       },
       {
-        "id": 1118,
+        "id": 1121,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.2.0"
       },
       {
-        "id": 1119,
+        "id": 1122,
         "diff": "ftr",
         "level": "9",
         "cc": 9.6,
@@ -11938,42 +11970,10 @@
     ]
   },
   {
-    "id": 368,
+    "id": 369,
     "title": "Wish Upon a Snow",
     "altTitle": "Wish Upon a Snow",
     "artist": "\u6253\u6253\u3060\u3044\u305a",
-    "charts": [
-      {
-        "id": 1120,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.5,
-        "ver": "5.2.0"
-      },
-      {
-        "id": 1121,
-        "diff": "prs",
-        "level": "7",
-        "cc": 7.5,
-        "ver": "5.2.0"
-      },
-      {
-        "id": 1122,
-        "diff": "ftr",
-        "level": "10",
-        "cc": 10.5,
-        "ver": "5.2.0"
-      }
-    ],
-    "searchKeys": [
-      "wish upon a snow"
-    ]
-  },
-  {
-    "id": 369,
-    "title": "XTREME",
-    "altTitle": "XTREME",
-    "artist": "USAO",
     "charts": [
       {
         "id": 1123,
@@ -11985,8 +11985,8 @@
       {
         "id": 1124,
         "diff": "prs",
-        "level": "7+",
-        "cc": 7.8,
+        "level": "7",
+        "cc": 7.5,
         "ver": "5.2.0"
       },
       {
@@ -11998,31 +11998,63 @@
       }
     ],
     "searchKeys": [
-      "xtreme"
+      "wish upon a snow"
     ]
   },
   {
     "id": 370,
+    "title": "XTREME",
+    "altTitle": "XTREME",
+    "artist": "USAO",
+    "charts": [
+      {
+        "id": 1126,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "5.2.0"
+      },
+      {
+        "id": 1127,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "5.2.0"
+      },
+      {
+        "id": 1128,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "5.2.0"
+      }
+    ],
+    "searchKeys": [
+      "xtreme"
+    ]
+  },
+  {
+    "id": 371,
     "title": "felys final remix",
     "altTitle": "felys final remix",
     "artist": "onoken",
     "charts": [
       {
-        "id": 1126,
+        "id": 1129,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.2.2"
       },
       {
-        "id": 1127,
+        "id": 1130,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.2.2"
       },
       {
-        "id": 1128,
+        "id": 1131,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
@@ -12034,48 +12066,16 @@
     ]
   },
   {
-    "id": 371,
+    "id": 372,
     "title": "Kanbu de Tomatte Sugu Tokeru",
     "altTitle": "Kanbu de Tomatte Sugu Tokeru",
     "artist": "ARM\uff0b\u5915\u91ce\u30e8\u30b7\u30df (IOSYS) feat. miko",
     "charts": [
       {
-        "id": 1129,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.0,
-        "ver": "5.2.2"
-      },
-      {
-        "id": 1130,
-        "diff": "prs",
-        "level": "7",
-        "cc": 7.5,
-        "ver": "5.2.2"
-      },
-      {
-        "id": 1131,
-        "diff": "ftr",
-        "level": "10",
-        "cc": 10.1,
-        "ver": "5.2.2"
-      }
-    ],
-    "searchKeys": [
-      "kanbu de tomatte sugu tokeru"
-    ]
-  },
-  {
-    "id": 372,
-    "title": "LIVHT MY W\u0394Y",
-    "altTitle": "LIVHT MY W\u0394Y",
-    "artist": "\u304b\u3081\u308a\u3042 feat. ST\u0394RLIVHT",
-    "charts": [
-      {
         "id": 1132,
         "diff": "pst",
         "level": "4",
-        "cc": 4.5,
+        "cc": 4.0,
         "ver": "5.2.2"
       },
       {
@@ -12088,6 +12088,38 @@
       {
         "id": 1134,
         "diff": "ftr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "5.2.2"
+      }
+    ],
+    "searchKeys": [
+      "kanbu de tomatte sugu tokeru"
+    ]
+  },
+  {
+    "id": 373,
+    "title": "LIVHT MY W\u0394Y",
+    "altTitle": "LIVHT MY W\u0394Y",
+    "artist": "\u304b\u3081\u308a\u3042 feat. ST\u0394RLIVHT",
+    "charts": [
+      {
+        "id": 1135,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "5.2.2"
+      },
+      {
+        "id": 1136,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "5.2.2"
+      },
+      {
+        "id": 1137,
+        "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
         "ver": "5.2.2"
@@ -12098,27 +12130,27 @@
     ]
   },
   {
-    "id": 373,
+    "id": 374,
     "title": "On And On!! feat. Jenga",
     "altTitle": "On And On!! feat. Jenga",
     "artist": "ETIA.",
     "charts": [
       {
-        "id": 1135,
+        "id": 1138,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.2.2"
       },
       {
-        "id": 1136,
+        "id": 1139,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.2.2"
       },
       {
-        "id": 1137,
+        "id": 1140,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
@@ -12130,27 +12162,27 @@
     ]
   },
   {
-    "id": 374,
+    "id": 375,
     "title": "Hotarubi no Yuki",
     "altTitle": "Hotarubi no Yuki",
     "artist": "Endorfin.",
     "charts": [
       {
-        "id": 1138,
+        "id": 1141,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.2.6"
       },
       {
-        "id": 1139,
+        "id": 1142,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.2.6"
       },
       {
-        "id": 1140,
+        "id": 1143,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -12162,27 +12194,27 @@
     ]
   },
   {
-    "id": 375,
+    "id": 376,
     "title": "Luna Rossa",
     "altTitle": "Luna Rossa",
     "artist": "r0y",
     "charts": [
       {
-        "id": 1145,
+        "id": 1148,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.3.0"
       },
       {
-        "id": 1146,
+        "id": 1149,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "5.3.0"
       },
       {
-        "id": 1147,
+        "id": 1150,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -12194,27 +12226,27 @@
     ]
   },
   {
-    "id": 376,
+    "id": 377,
     "title": "The Formula",
     "altTitle": "The Formula",
     "artist": "Junk",
     "charts": [
       {
-        "id": 1150,
+        "id": 1153,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.3.0"
       },
       {
-        "id": 1151,
+        "id": 1154,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "5.3.0"
       },
       {
-        "id": 1152,
+        "id": 1155,
         "diff": "ftr",
         "level": "9",
         "cc": 9.3,
@@ -12226,13 +12258,13 @@
     ]
   },
   {
-    "id": 377,
+    "id": 378,
     "title": "Vicious [ANTi] Heroism",
     "altTitle": "Vicious [ANTi] Heroism",
     "artist": "Kobaryo",
     "charts": [
       {
-        "id": 1153,
+        "id": 1156,
         "diff": "byd",
         "level": "11",
         "cc": 11.2,
@@ -12244,27 +12276,27 @@
     ]
   },
   {
-    "id": 378,
+    "id": 379,
     "title": "Aleph-0",
     "altTitle": "Aleph-0",
     "artist": "LeaF",
     "charts": [
       {
-        "id": 1154,
+        "id": 1157,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "5.4.0"
       },
       {
-        "id": 1155,
+        "id": 1158,
         "diff": "prs",
         "level": "8+",
         "cc": 8.8,
         "ver": "5.4.0"
       },
       {
-        "id": 1156,
+        "id": 1159,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -12276,34 +12308,34 @@
     ]
   },
   {
-    "id": 379,
+    "id": 380,
     "title": "Innocence",
     "altTitle": "Innocence",
     "artist": "Powerless feat. Sennzai",
     "charts": [
       {
-        "id": 1158,
+        "id": 1161,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.4.0"
       },
       {
-        "id": 1159,
+        "id": 1162,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.4.0"
       },
       {
-        "id": 1160,
+        "id": 1163,
         "diff": "ftr",
         "level": "8",
         "cc": 8.5,
         "ver": "5.4.0"
       },
       {
-        "id": 1161,
+        "id": 1164,
         "diff": "etr",
         "level": "9+",
         "cc": 9.7,
@@ -12315,34 +12347,34 @@
     ]
   },
   {
-    "id": 380,
+    "id": 381,
     "title": "IONOSTREAM",
     "altTitle": "IONOSTREAM",
     "artist": "Tatsh",
     "charts": [
       {
-        "id": 1162,
+        "id": 1165,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.4.0"
       },
       {
-        "id": 1163,
+        "id": 1166,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "5.4.0"
       },
       {
-        "id": 1164,
+        "id": 1167,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.7,
         "ver": "5.4.0"
       },
       {
-        "id": 1165,
+        "id": 1168,
         "diff": "etr",
         "level": "9+",
         "cc": 9.7,
@@ -12354,34 +12386,34 @@
     ]
   },
   {
-    "id": 381,
+    "id": 382,
     "title": "Jingle",
     "altTitle": "Jingle",
     "artist": "DJ Noriken",
     "charts": [
       {
-        "id": 1166,
+        "id": 1169,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.4.0"
       },
       {
-        "id": 1167,
+        "id": 1170,
         "diff": "prs",
         "level": "5",
         "cc": 5.5,
         "ver": "5.4.0"
       },
       {
-        "id": 1168,
+        "id": 1171,
         "diff": "ftr",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.4.0"
       },
       {
-        "id": 1169,
+        "id": 1172,
         "diff": "etr",
         "level": "9",
         "cc": 9.5,
@@ -12393,27 +12425,27 @@
     ]
   },
   {
-    "id": 382,
+    "id": 383,
     "title": "KYOREN ROMANCE",
     "altTitle": "KYOREN ROMANCE",
     "artist": "REDALiCE vs DJ Myosuke feat. DELUTAYA",
     "charts": [
       {
-        "id": 1170,
+        "id": 1173,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "5.4.0"
       },
       {
-        "id": 1171,
+        "id": 1174,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.4.0"
       },
       {
-        "id": 1172,
+        "id": 1175,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.7,
@@ -12425,27 +12457,27 @@
     ]
   },
   {
-    "id": 383,
+    "id": 384,
     "title": "Masquerade Legion",
     "altTitle": "Masquerade Legion",
     "artist": "Srav3R & DJ Noriken",
     "charts": [
       {
-        "id": 1173,
+        "id": 1176,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.4.0"
       },
       {
-        "id": 1174,
+        "id": 1177,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.4.0"
       },
       {
-        "id": 1175,
+        "id": 1178,
         "diff": "ftr",
         "level": "10",
         "cc": 10.0,
@@ -12457,27 +12489,27 @@
     ]
   },
   {
-    "id": 384,
+    "id": 385,
     "title": "Qovat",
     "altTitle": "Qovat",
     "artist": "owl\uff0atree",
     "charts": [
       {
-        "id": 1176,
+        "id": 1179,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.4.0"
       },
       {
-        "id": 1177,
+        "id": 1180,
         "diff": "prs",
         "level": "8",
         "cc": 8.2,
         "ver": "5.4.0"
       },
       {
-        "id": 1178,
+        "id": 1181,
         "diff": "ftr",
         "level": "10",
         "cc": 10.4,
@@ -12489,27 +12521,27 @@
     ]
   },
   {
-    "id": 385,
+    "id": 386,
     "title": "Awaken In Ruins",
     "altTitle": "Awaken In Ruins",
     "artist": "Supa7onyz",
     "charts": [
       {
-        "id": 1181,
+        "id": 1184,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.5.0"
       },
       {
-        "id": 1182,
+        "id": 1185,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "5.5.0"
       },
       {
-        "id": 1183,
+        "id": 1186,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -12521,34 +12553,34 @@
     ]
   },
   {
-    "id": 386,
+    "id": 387,
     "title": "HELLOHELL",
     "altTitle": "HELLOHELL",
     "artist": "\u6681Records",
     "charts": [
       {
-        "id": 1184,
+        "id": 1187,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.5.0"
       },
       {
-        "id": 1185,
+        "id": 1188,
         "diff": "prs",
         "level": "5",
         "cc": 5.0,
         "ver": "5.5.0"
       },
       {
-        "id": 1186,
+        "id": 1189,
         "diff": "ftr",
         "level": "7",
         "cc": 7.5,
         "ver": "5.5.0"
       },
       {
-        "id": 1187,
+        "id": 1190,
         "diff": "etr",
         "level": "9",
         "cc": 9.3,
@@ -12560,42 +12592,10 @@
     ]
   },
   {
-    "id": 387,
+    "id": 388,
     "title": "Lethal Voltage",
     "altTitle": "Lethal Voltage",
     "artist": "siqlo",
-    "charts": [
-      {
-        "id": 1188,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.5,
-        "ver": "5.5.0"
-      },
-      {
-        "id": 1189,
-        "diff": "prs",
-        "level": "7+",
-        "cc": 7.8,
-        "ver": "5.5.0"
-      },
-      {
-        "id": 1190,
-        "diff": "ftr",
-        "level": "10",
-        "cc": 10.4,
-        "ver": "5.5.0"
-      }
-    ],
-    "searchKeys": [
-      "lethal voltage"
-    ]
-  },
-  {
-    "id": 388,
-    "title": "MIRINAE",
-    "altTitle": "MIRINAE",
-    "artist": "TAK \u00d7 Zekk",
     "charts": [
       {
         "id": 1191,
@@ -12607,8 +12607,8 @@
       {
         "id": 1192,
         "diff": "prs",
-        "level": "8",
-        "cc": 8.3,
+        "level": "7+",
+        "cc": 7.8,
         "ver": "5.5.0"
       },
       {
@@ -12620,38 +12620,70 @@
       }
     ],
     "searchKeys": [
-      "mirinae"
+      "lethal voltage"
     ]
   },
   {
     "id": 389,
+    "title": "MIRINAE",
+    "altTitle": "MIRINAE",
+    "artist": "TAK \u00d7 Zekk",
+    "charts": [
+      {
+        "id": 1194,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "5.5.0"
+      },
+      {
+        "id": 1195,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "5.5.0"
+      },
+      {
+        "id": 1196,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "5.5.0"
+      }
+    ],
+    "searchKeys": [
+      "mirinae"
+    ]
+  },
+  {
+    "id": 390,
     "title": "MORNINGLOOM",
     "altTitle": "MORNINGLOOM",
     "artist": "saaa",
     "charts": [
       {
-        "id": 1194,
+        "id": 1197,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.5.0"
       },
       {
-        "id": 1195,
+        "id": 1198,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.5.0"
       },
       {
-        "id": 1196,
+        "id": 1199,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.8,
         "ver": "5.5.0"
       },
       {
-        "id": 1197,
+        "id": 1200,
         "diff": "etr",
         "level": "9+",
         "cc": 9.8,
@@ -12663,27 +12695,27 @@
     ]
   },
   {
-    "id": 390,
+    "id": 391,
     "title": "\u3007\u3001",
     "altTitle": "\u3007\u3001",
     "artist": "Kolaa & \u718a\u5b50",
     "charts": [
       {
-        "id": 1198,
+        "id": 1201,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.5.0"
       },
       {
-        "id": 1199,
+        "id": 1202,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.5.0"
       },
       {
-        "id": 1200,
+        "id": 1203,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
@@ -12696,27 +12728,27 @@
     ]
   },
   {
-    "id": 391,
+    "id": 392,
     "title": "ultradiaxon-N3",
     "altTitle": "ultradiaxon-N3",
     "artist": "nitro (lowiro)",
     "charts": [
       {
-        "id": 1201,
+        "id": 1204,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.5.8"
       },
       {
-        "id": 1202,
+        "id": 1205,
         "diff": "prs",
         "level": "8",
         "cc": 8.5,
         "ver": "5.5.8"
       },
       {
-        "id": 1203,
+        "id": 1206,
         "diff": "ftr",
         "level": "10",
         "cc": 10.3,
@@ -12728,27 +12760,27 @@
     ]
   },
   {
-    "id": 392,
+    "id": 393,
     "title": "Chromafill",
     "altTitle": "Chromafill",
     "artist": "\u3066\u3044\u306c",
     "charts": [
       {
-        "id": 1204,
+        "id": 1207,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "5.6.0"
       },
       {
-        "id": 1205,
+        "id": 1208,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.6.0"
       },
       {
-        "id": 1206,
+        "id": 1209,
         "diff": "ftr",
         "level": "10",
         "cc": 10.0,
@@ -12760,34 +12792,34 @@
     ]
   },
   {
-    "id": 393,
+    "id": 394,
     "title": "Distorted Fate",
     "altTitle": "Distorted Fate",
     "artist": "Sakuzyo",
     "charts": [
       {
-        "id": 1207,
+        "id": 1210,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.6.0"
       },
       {
-        "id": 1208,
+        "id": 1211,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.6.0"
       },
       {
-        "id": 1209,
+        "id": 1212,
         "diff": "ftr",
         "level": "9",
         "cc": 9.6,
         "ver": "5.6.0"
       },
       {
-        "id": 1210,
+        "id": 1213,
         "diff": "etr",
         "level": "10+",
         "cc": 10.8,
@@ -12799,34 +12831,34 @@
     ]
   },
   {
-    "id": 394,
+    "id": 395,
     "title": "D\u00e9sive",
     "altTitle": "D\u00e9sive",
     "artist": "MisomyL",
     "charts": [
       {
-        "id": 1211,
+        "id": 1214,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "5.6.0"
       },
       {
-        "id": 1212,
+        "id": 1215,
         "diff": "prs",
         "level": "8",
         "cc": 8.0,
         "ver": "5.6.0"
       },
       {
-        "id": 1213,
+        "id": 1216,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
         "ver": "5.6.0"
       },
       {
-        "id": 1214,
+        "id": 1217,
         "diff": "etr",
         "level": "10+",
         "cc": 10.8,
@@ -12838,27 +12870,27 @@
     ]
   },
   {
-    "id": 395,
+    "id": 396,
     "title": "Floating World",
     "altTitle": "Floating World",
     "artist": "baker feat. botan",
     "charts": [
       {
-        "id": 1215,
+        "id": 1218,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.6.0"
       },
       {
-        "id": 1216,
+        "id": 1219,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.6.0"
       },
       {
-        "id": 1217,
+        "id": 1220,
         "diff": "ftr",
         "level": "9",
         "cc": 9.3,
@@ -12870,27 +12902,27 @@
     ]
   },
   {
-    "id": 396,
+    "id": 397,
     "title": "Leave All Behind",
     "altTitle": "Leave All Behind",
     "artist": "rider",
     "charts": [
       {
-        "id": 1218,
+        "id": 1221,
         "diff": "pst",
         "level": "2",
         "cc": 2.0,
         "ver": "5.6.0"
       },
       {
-        "id": 1219,
+        "id": 1222,
         "diff": "prs",
         "level": "5",
         "cc": 5.5,
         "ver": "5.6.0"
       },
       {
-        "id": 1220,
+        "id": 1223,
         "diff": "ftr",
         "level": "9",
         "cc": 9.2,
@@ -12902,27 +12934,27 @@
     ]
   },
   {
-    "id": 397,
+    "id": 398,
     "title": "Back to Basics",
     "altTitle": "Back to Basics",
     "artist": "m1dy",
     "charts": [
       {
-        "id": 1221,
+        "id": 1224,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "5.7.0"
       },
       {
-        "id": 1222,
+        "id": 1225,
         "diff": "prs",
         "level": "8+",
         "cc": 8.7,
         "ver": "5.7.0"
       },
       {
-        "id": 1223,
+        "id": 1226,
         "diff": "ftr",
         "level": "10",
         "cc": 10.6,
@@ -12934,27 +12966,27 @@
     ]
   },
   {
-    "id": 398,
+    "id": 399,
     "title": "Beautiful Dreamer",
     "altTitle": "Beautiful Dreamer",
     "artist": "M-Project",
     "charts": [
       {
-        "id": 1224,
+        "id": 1227,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "5.7.0"
       },
       {
-        "id": 1225,
+        "id": 1228,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.7.0"
       },
       {
-        "id": 1226,
+        "id": 1229,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
@@ -12966,34 +12998,34 @@
     ]
   },
   {
-    "id": 399,
+    "id": 400,
     "title": "Hidden Rainbows of Epicurus",
     "altTitle": "Hidden Rainbows of Epicurus",
     "artist": "SYNC.ART'S feat.Misato",
     "charts": [
       {
-        "id": 1227,
+        "id": 1230,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.7.0"
       },
       {
-        "id": 1228,
+        "id": 1231,
         "diff": "prs",
         "level": "5",
         "cc": 5.5,
         "ver": "5.7.0"
       },
       {
-        "id": 1229,
+        "id": 1232,
         "diff": "ftr",
         "level": "7",
         "cc": 7.5,
         "ver": "5.7.0"
       },
       {
-        "id": 1230,
+        "id": 1233,
         "diff": "etr",
         "level": "8+",
         "cc": 8.8,
@@ -13005,48 +13037,16 @@
     ]
   },
   {
-    "id": 400,
+    "id": 401,
     "title": "Old School Salvage",
     "altTitle": "Old School Salvage",
     "artist": "DJ SHARPNEL",
     "charts": [
       {
-        "id": 1231,
-        "diff": "pst",
-        "level": "4",
-        "cc": 4.0,
-        "ver": "5.7.0"
-      },
-      {
-        "id": 1232,
-        "diff": "prs",
-        "level": "7+",
-        "cc": 7.8,
-        "ver": "5.7.0"
-      },
-      {
-        "id": 1233,
-        "diff": "ftr",
-        "level": "9+",
-        "cc": 9.8,
-        "ver": "5.7.0"
-      }
-    ],
-    "searchKeys": [
-      "old school salvage"
-    ]
-  },
-  {
-    "id": 401,
-    "title": "Twilight Concerto",
-    "altTitle": "Twilight Concerto",
-    "artist": "Scarlette",
-    "charts": [
-      {
         "id": 1234,
         "diff": "pst",
         "level": "4",
-        "cc": 4.5,
+        "cc": 4.0,
         "ver": "5.7.0"
       },
       {
@@ -13059,12 +13059,44 @@
       {
         "id": 1236,
         "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "5.7.0"
+      }
+    ],
+    "searchKeys": [
+      "old school salvage"
+    ]
+  },
+  {
+    "id": 402,
+    "title": "Twilight Concerto",
+    "altTitle": "Twilight Concerto",
+    "artist": "Scarlette",
+    "charts": [
+      {
+        "id": 1237,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "5.7.0"
+      },
+      {
+        "id": 1238,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "5.7.0"
+      },
+      {
+        "id": 1239,
+        "diff": "ftr",
         "level": "9",
         "cc": 9.5,
         "ver": "5.7.0"
       },
       {
-        "id": 1237,
+        "id": 1240,
         "diff": "etr",
         "level": "10",
         "cc": 10.5,
@@ -13076,34 +13108,34 @@
     ]
   },
   {
-    "id": 402,
+    "id": 403,
     "title": "10pt8ion",
     "altTitle": "10pt8ion",
     "artist": "Lite Show Magic",
     "charts": [
       {
-        "id": 1238,
+        "id": 1241,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "5.8.0"
       },
       {
-        "id": 1239,
+        "id": 1242,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.8.0"
       },
       {
-        "id": 1240,
+        "id": 1243,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
         "ver": "5.8.0"
       },
       {
-        "id": 1241,
+        "id": 1244,
         "diff": "etr",
         "level": "10",
         "cc": 10.5,
@@ -13115,27 +13147,27 @@
     ]
   },
   {
-    "id": 403,
+    "id": 404,
     "title": "Black MInD",
     "altTitle": "Black MInD",
     "artist": "COSIO",
     "charts": [
       {
-        "id": 1242,
+        "id": 1245,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "5.8.0"
       },
       {
-        "id": 1243,
+        "id": 1246,
         "diff": "prs",
         "level": "8",
         "cc": 8.0,
         "ver": "5.8.0"
       },
       {
-        "id": 1244,
+        "id": 1247,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.8,
@@ -13147,27 +13179,27 @@
     ]
   },
   {
-    "id": 404,
+    "id": 405,
     "title": "HYPER VISION",
     "altTitle": "HYPER VISION",
     "artist": "VOLTA",
     "charts": [
       {
-        "id": 1245,
+        "id": 1248,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.8.0"
       },
       {
-        "id": 1246,
+        "id": 1249,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "5.8.0"
       },
       {
-        "id": 1247,
+        "id": 1250,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -13179,27 +13211,27 @@
     ]
   },
   {
-    "id": 405,
+    "id": 406,
     "title": "Sign of \"10.5km\"",
     "altTitle": "Sign of \"10.5km\"",
     "artist": "\u6e21\u90e8\u606d\u4e45",
     "charts": [
       {
-        "id": 1248,
+        "id": 1251,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.8.0"
       },
       {
-        "id": 1249,
+        "id": 1252,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.8.0"
       },
       {
-        "id": 1250,
+        "id": 1253,
         "diff": "ftr",
         "level": "9",
         "cc": 9.2,
@@ -13211,34 +13243,34 @@
     ]
   },
   {
-    "id": 406,
+    "id": 407,
     "title": "STARGATE EXTREME",
     "altTitle": "STARGATE EXTREME",
     "artist": "KARUT",
     "charts": [
       {
-        "id": 1251,
+        "id": 1254,
         "diff": "pst",
         "level": "4",
         "cc": 4.0,
         "ver": "5.8.0"
       },
       {
-        "id": 1252,
+        "id": 1255,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "5.8.0"
       },
       {
-        "id": 1253,
+        "id": 1256,
         "diff": "ftr",
         "level": "9",
         "cc": 9.3,
         "ver": "5.8.0"
       },
       {
-        "id": 1254,
+        "id": 1257,
         "diff": "etr",
         "level": "9+",
         "cc": 9.9,
@@ -13250,34 +13282,34 @@
     ]
   },
   {
-    "id": 407,
+    "id": 408,
     "title": "ALTER EGO",
     "altTitle": "ALTER EGO",
     "artist": "Yuta Imai vs Qlarabelle",
     "charts": [
       {
-        "id": 1255,
+        "id": 1258,
         "diff": "pst",
         "level": "6",
         "cc": 6.5,
         "ver": "5.9.0"
       },
       {
-        "id": 1256,
+        "id": 1259,
         "diff": "prs",
         "level": "9",
         "cc": 9.2,
         "ver": "5.9.0"
       },
       {
-        "id": 1257,
+        "id": 1260,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
         "ver": "5.9.0"
       },
       {
-        "id": 1258,
+        "id": 1261,
         "diff": "etr",
         "level": "11",
         "cc": 11.3,
@@ -13289,27 +13321,27 @@
     ]
   },
   {
-    "id": 408,
+    "id": 409,
     "title": "Ashen 6oundary",
     "altTitle": "Ashen 6oundary",
     "artist": "YUKIYANAGI",
     "charts": [
       {
-        "id": 1259,
+        "id": 1262,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.9.0"
       },
       {
-        "id": 1260,
+        "id": 1263,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.9.0"
       },
       {
-        "id": 1261,
+        "id": 1264,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
@@ -13322,27 +13354,27 @@
     ]
   },
   {
-    "id": 409,
+    "id": 410,
     "title": "Distortion Human",
     "altTitle": "Distortion Human",
     "artist": "DJ Myosuke & KAJI",
     "charts": [
       {
-        "id": 1262,
+        "id": 1265,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.9.0"
       },
       {
-        "id": 1263,
+        "id": 1266,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.9.0"
       },
       {
-        "id": 1264,
+        "id": 1267,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
@@ -13354,34 +13386,34 @@
     ]
   },
   {
-    "id": 410,
+    "id": 411,
     "title": "Hypnotize",
     "altTitle": "Hypnotize",
     "artist": "rejection",
     "charts": [
       {
-        "id": 1265,
+        "id": 1268,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.9.0"
       },
       {
-        "id": 1266,
+        "id": 1269,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.9.0"
       },
       {
-        "id": 1267,
+        "id": 1270,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.9,
         "ver": "5.9.0"
       },
       {
-        "id": 1268,
+        "id": 1271,
         "diff": "etr",
         "level": "9+",
         "cc": 9.9,
@@ -13393,27 +13425,27 @@
     ]
   },
   {
-    "id": 411,
+    "id": 412,
     "title": "In Vain",
     "altTitle": "In Vain",
     "artist": "ryhki",
     "charts": [
       {
-        "id": 1269,
+        "id": 1272,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.9.0"
       },
       {
-        "id": 1270,
+        "id": 1273,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.9.0"
       },
       {
-        "id": 1271,
+        "id": 1274,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
@@ -13425,27 +13457,27 @@
     ]
   },
   {
-    "id": 412,
+    "id": 413,
     "title": "Judgement",
     "altTitle": "Judgement",
     "artist": "Tatsunoshin",
     "charts": [
       {
-        "id": 1272,
+        "id": 1275,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "5.9.0"
       },
       {
-        "id": 1273,
+        "id": 1276,
         "diff": "prs",
         "level": "8",
         "cc": 8.6,
         "ver": "5.9.0"
       },
       {
-        "id": 1274,
+        "id": 1277,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -13457,27 +13489,27 @@
     ]
   },
   {
-    "id": 413,
+    "id": 414,
     "title": "shrink",
     "altTitle": "shrink",
     "artist": "Shohei Tsuchiya(ZUNTATA)",
     "charts": [
       {
-        "id": 1275,
+        "id": 1278,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.9.0"
       },
       {
-        "id": 1276,
+        "id": 1279,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.9.0"
       },
       {
-        "id": 1277,
+        "id": 1280,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
@@ -13489,34 +13521,34 @@
     ]
   },
   {
-    "id": 414,
+    "id": 415,
     "title": "Dual Doom Deathmatch",
     "altTitle": "Dual Doom Deathmatch",
     "artist": "Kobaryo vs HyuN",
     "charts": [
       {
-        "id": 1278,
+        "id": 1281,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.10.0"
       },
       {
-        "id": 1279,
+        "id": 1282,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.10.0"
       },
       {
-        "id": 1280,
+        "id": 1283,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.9,
         "ver": "5.10.0"
       },
       {
-        "id": 1281,
+        "id": 1284,
         "diff": "etr",
         "level": "10",
         "cc": 10.3,
@@ -13528,34 +13560,34 @@
     ]
   },
   {
-    "id": 415,
+    "id": 416,
     "title": "epitaxy",
     "altTitle": "epitaxy",
     "artist": "Camellia",
     "charts": [
       {
-        "id": 1282,
+        "id": 1285,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.10.0"
       },
       {
-        "id": 1283,
+        "id": 1286,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "5.10.0"
       },
       {
-        "id": 1284,
+        "id": 1287,
         "diff": "ftr",
         "level": "8",
         "cc": 8.6,
         "ver": "5.10.0"
       },
       {
-        "id": 1285,
+        "id": 1288,
         "diff": "etr",
         "level": "9",
         "cc": 9.6,
@@ -13567,34 +13599,34 @@
     ]
   },
   {
-    "id": 416,
+    "id": 417,
     "title": "Inverted World",
     "altTitle": "Inverted World",
     "artist": "ARForest",
     "charts": [
       {
-        "id": 1286,
+        "id": 1289,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.10.0"
       },
       {
-        "id": 1287,
+        "id": 1290,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.10.0"
       },
       {
-        "id": 1288,
+        "id": 1291,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
         "ver": "5.10.0"
       },
       {
-        "id": 1289,
+        "id": 1292,
         "diff": "etr",
         "level": "10+",
         "cc": 10.7,
@@ -13606,27 +13638,27 @@
     ]
   },
   {
-    "id": 417,
+    "id": 418,
     "title": "MVURBD",
     "altTitle": "MVURBD",
     "artist": "ETIA.",
     "charts": [
       {
-        "id": 1290,
+        "id": 1293,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.10.0"
       },
       {
-        "id": 1291,
+        "id": 1294,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.10.0"
       },
       {
-        "id": 1292,
+        "id": 1295,
         "diff": "ftr",
         "level": "10",
         "cc": 10.6,
@@ -13638,27 +13670,27 @@
     ]
   },
   {
-    "id": 418,
+    "id": 419,
     "title": "Vulc\u0101nus",
     "altTitle": "Vulc\u0101nus",
     "artist": "Team Grimoire vs Aoi",
     "charts": [
       {
-        "id": 1293,
+        "id": 1296,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "5.10.0"
       },
       {
-        "id": 1294,
+        "id": 1297,
         "diff": "prs",
         "level": "8",
         "cc": 8.5,
         "ver": "5.10.0"
       },
       {
-        "id": 1295,
+        "id": 1298,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.9,
@@ -13670,34 +13702,34 @@
     ]
   },
   {
-    "id": 419,
+    "id": 420,
     "title": "Waltz for Lorelei",
     "altTitle": "Waltz for Lorelei",
     "artist": "Sobrem & \u5ead\u5e2b",
     "charts": [
       {
-        "id": 1296,
+        "id": 1299,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.10.0"
       },
       {
-        "id": 1297,
+        "id": 1300,
         "diff": "prs",
         "level": "5",
         "cc": 5.5,
         "ver": "5.10.0"
       },
       {
-        "id": 1298,
+        "id": 1301,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.8,
         "ver": "5.10.0"
       },
       {
-        "id": 1299,
+        "id": 1302,
         "diff": "etr",
         "level": "9+",
         "cc": 9.8,
@@ -13709,34 +13741,34 @@
     ]
   },
   {
-    "id": 420,
+    "id": 421,
     "title": "Rain of Conflict in a Radiant Abyss",
     "altTitle": "Rain of Conflict in a Radiant Abyss",
     "artist": "ak+q",
     "charts": [
       {
-        "id": 1300,
+        "id": 1303,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "5.10.2"
       },
       {
-        "id": 1301,
+        "id": 1304,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.10.2"
       },
       {
-        "id": 1302,
+        "id": 1305,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
         "ver": "5.10.2"
       },
       {
-        "id": 1303,
+        "id": 1306,
         "diff": "etr",
         "level": "10",
         "cc": 10.5,
@@ -13748,34 +13780,34 @@
     ]
   },
   {
-    "id": 421,
+    "id": 422,
     "title": "FURETE-MITAI",
     "altTitle": "FURETE-MITAI",
     "artist": "\u307f\u304d\u3068P",
     "charts": [
       {
-        "id": 1304,
+        "id": 1307,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.10.4"
       },
       {
-        "id": 1305,
+        "id": 1308,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "5.10.4"
       },
       {
-        "id": 1306,
+        "id": 1309,
         "diff": "ftr",
         "level": "8",
         "cc": 8.4,
         "ver": "5.10.4"
       },
       {
-        "id": 1307,
+        "id": 1310,
         "diff": "etr",
         "level": "9",
         "cc": 9.4,
@@ -13787,34 +13819,34 @@
     ]
   },
   {
-    "id": 422,
+    "id": 423,
     "title": "Gensou no Satellite",
     "altTitle": "Gensou no Satellite",
     "artist": "\u8c5a\u4e59\u5973",
     "charts": [
       {
-        "id": 1308,
+        "id": 1311,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.10.4"
       },
       {
-        "id": 1309,
+        "id": 1312,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "5.10.4"
       },
       {
-        "id": 1310,
+        "id": 1313,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.7,
         "ver": "5.10.4"
       },
       {
-        "id": 1311,
+        "id": 1314,
         "diff": "etr",
         "level": "10",
         "cc": 10.1,
@@ -13826,27 +13858,27 @@
     ]
   },
   {
-    "id": 423,
+    "id": 424,
     "title": "Hailstone",
     "altTitle": "Hailstone",
     "artist": "Kazki Misora",
     "charts": [
       {
-        "id": 1312,
+        "id": 1315,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.10.4"
       },
       {
-        "id": 1313,
+        "id": 1316,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.10.4"
       },
       {
-        "id": 1314,
+        "id": 1317,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
@@ -13858,27 +13890,27 @@
     ]
   },
   {
-    "id": 424,
+    "id": 425,
     "title": "Saint or Sinner",
     "altTitle": "Saint or Sinner",
     "artist": "crayvxn",
     "charts": [
       {
-        "id": 1315,
+        "id": 1318,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.10.4"
       },
       {
-        "id": 1316,
+        "id": 1319,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "5.10.4"
       },
       {
-        "id": 1317,
+        "id": 1320,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.8,
@@ -13890,34 +13922,34 @@
     ]
   },
   {
-    "id": 425,
+    "id": 426,
     "title": "Crimson Quartz",
     "altTitle": "Crimson Quartz",
     "artist": "DiGiTAL WiNG with \u7a7a\u97f3",
     "charts": [
       {
-        "id": 1318,
+        "id": 1321,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "5.10.6"
       },
       {
-        "id": 1319,
+        "id": 1322,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "5.10.6"
       },
       {
-        "id": 1320,
+        "id": 1323,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.8,
         "ver": "5.10.6"
       },
       {
-        "id": 1321,
+        "id": 1324,
         "diff": "etr",
         "level": "9+",
         "cc": 9.8,
@@ -13929,34 +13961,34 @@
     ]
   },
   {
-    "id": 426,
+    "id": 427,
     "title": "Dies irae",
     "altTitle": "Dies irae",
     "artist": "\u304a\u6708\u3055\u307e\u4ea4\u97ff\u66f2",
     "charts": [
       {
-        "id": 1322,
+        "id": 1325,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.10.6"
       },
       {
-        "id": 1323,
+        "id": 1326,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "5.10.6"
       },
       {
-        "id": 1324,
+        "id": 1327,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
         "ver": "5.10.6"
       },
       {
-        "id": 1325,
+        "id": 1328,
         "diff": "etr",
         "level": "10",
         "cc": 10.6,
@@ -13968,34 +14000,34 @@
     ]
   },
   {
-    "id": 427,
+    "id": 428,
     "title": "Prayer",
     "altTitle": "Prayer",
     "artist": "qfeileadh&\u30ec\u30be\u30ca\u30f3\u30b9\u3082\u3048\u3053",
     "charts": [
       {
-        "id": 1326,
+        "id": 1329,
         "diff": "pst",
         "level": "2",
         "cc": 2.5,
         "ver": "5.10.6"
       },
       {
-        "id": 1327,
+        "id": 1330,
         "diff": "prs",
         "level": "5",
         "cc": 5.5,
         "ver": "5.10.6"
       },
       {
-        "id": 1328,
+        "id": 1331,
         "diff": "ftr",
         "level": "8",
         "cc": 8.2,
         "ver": "5.10.6"
       },
       {
-        "id": 1329,
+        "id": 1332,
         "diff": "etr",
         "level": "9",
         "cc": 9.1,
@@ -14007,27 +14039,27 @@
     ]
   },
   {
-    "id": 428,
+    "id": 429,
     "title": "Spirit of the Dauntless",
     "altTitle": "Spirit of the Dauntless",
     "artist": "KO3 & Relect",
     "charts": [
       {
-        "id": 1330,
+        "id": 1333,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "5.10.6"
       },
       {
-        "id": 1331,
+        "id": 1334,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "5.10.6"
       },
       {
-        "id": 1332,
+        "id": 1335,
         "diff": "ftr",
         "level": "10",
         "cc": 10.5,
@@ -14039,34 +14071,34 @@
     ]
   },
   {
-    "id": 429,
+    "id": 430,
     "title": "Third Sun",
     "altTitle": "Third Sun",
     "artist": "Ash Astral",
     "charts": [
       {
-        "id": 1333,
+        "id": 1336,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "5.10.6"
       },
       {
-        "id": 1334,
+        "id": 1337,
         "diff": "prs",
         "level": "7",
         "cc": 7.0,
         "ver": "5.10.6"
       },
       {
-        "id": 1335,
+        "id": 1338,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
         "ver": "5.10.6"
       },
       {
-        "id": 1336,
+        "id": 1339,
         "diff": "etr",
         "level": "10",
         "cc": 10.0,
@@ -14078,27 +14110,27 @@
     ]
   },
   {
-    "id": 430,
+    "id": 431,
     "title": "And Revive The Melody",
     "altTitle": "And Revive The Melody",
     "artist": "\u9ed2\u9b54",
     "charts": [
       {
-        "id": 1337,
+        "id": 1340,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1338,
+        "id": 1341,
         "diff": "prs",
         "level": "8",
         "cc": 8.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1339,
+        "id": 1342,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.9,
@@ -14110,27 +14142,27 @@
     ]
   },
   {
-    "id": 431,
+    "id": 432,
     "title": "Astral Quantization",
     "altTitle": "Astral Quantization",
     "artist": "Dj Grimoire",
     "charts": [
       {
-        "id": 1340,
+        "id": 1343,
         "diff": "pst",
         "level": "5",
         "cc": 5.0,
         "ver": "6.0.0"
       },
       {
-        "id": 1341,
+        "id": 1344,
         "diff": "prs",
         "level": "8",
         "cc": 8.1,
         "ver": "6.0.0"
       },
       {
-        "id": 1342,
+        "id": 1345,
         "diff": "ftr",
         "level": "10",
         "cc": 10.6,
@@ -14142,27 +14174,27 @@
     ]
   },
   {
-    "id": 432,
+    "id": 433,
     "title": "astral.exe",
     "altTitle": "astral.exe",
     "artist": "Synzak & Laxeno57",
     "charts": [
       {
-        "id": 1343,
+        "id": 1346,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "6.0.0"
       },
       {
-        "id": 1344,
+        "id": 1347,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "6.0.0"
       },
       {
-        "id": 1345,
+        "id": 1348,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
@@ -14174,34 +14206,34 @@
     ]
   },
   {
-    "id": 433,
+    "id": 434,
     "title": "Breach of Faith",
     "altTitle": "Breach of Faith",
     "artist": "Supire feat.eili",
     "charts": [
       {
-        "id": 1346,
+        "id": 1349,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1347,
+        "id": 1350,
         "diff": "prs",
         "level": "8",
         "cc": 8.4,
         "ver": "6.0.0"
       },
       {
-        "id": 1348,
+        "id": 1351,
         "diff": "ftr",
         "level": "10",
         "cc": 10.3,
         "ver": "6.0.0"
       },
       {
-        "id": 1349,
+        "id": 1352,
         "diff": "byd",
         "level": "10+",
         "cc": 10.9,
@@ -14213,34 +14245,34 @@
     ]
   },
   {
-    "id": 434,
+    "id": 435,
     "title": "Designant.",
     "altTitle": "Designant.",
     "artist": "Designant",
     "charts": [
       {
-        "id": 1350,
+        "id": 1353,
         "diff": "pst",
         "level": "7",
         "cc": 7.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1351,
+        "id": 1354,
         "diff": "prs",
         "level": "9",
         "cc": 9.6,
         "ver": "6.0.0"
       },
       {
-        "id": 1352,
+        "id": 1355,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.9,
         "ver": "6.0.0"
       },
       {
-        "id": 1353,
+        "id": 1356,
         "diff": "byd",
         "level": "11+",
         "cc": 11.9,
@@ -14252,34 +14284,34 @@
     ]
   },
   {
-    "id": 435,
+    "id": 436,
     "title": "Don't Fight The Music",
     "altTitle": "Don't Fight The Music",
     "artist": "\u9ed2\u9b54",
     "charts": [
       {
-        "id": 1354,
+        "id": 1357,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1355,
+        "id": 1358,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "6.0.0"
       },
       {
-        "id": 1356,
+        "id": 1359,
         "diff": "ftr",
         "level": "9",
         "cc": 9.3,
         "ver": "6.0.0"
       },
       {
-        "id": 1357,
+        "id": 1360,
         "diff": "etr",
         "level": "10+",
         "cc": 10.7,
@@ -14291,34 +14323,34 @@
     ]
   },
   {
-    "id": 436,
+    "id": 437,
     "title": "Lament Rain",
     "altTitle": "Lament Rain",
     "artist": "Ashrount vs. \u6253\u6253\u3060\u3044\u305a",
     "charts": [
       {
-        "id": 1358,
+        "id": 1361,
         "diff": "pst",
         "level": "6",
         "cc": 6.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1359,
+        "id": 1362,
         "diff": "prs",
         "level": "8+",
         "cc": 8.8,
         "ver": "6.0.0"
       },
       {
-        "id": 1360,
+        "id": 1363,
         "diff": "ftr",
         "level": "10",
         "cc": 10.6,
         "ver": "6.0.0"
       },
       {
-        "id": 1361,
+        "id": 1364,
         "diff": "byd",
         "level": "11",
         "cc": 11.4,
@@ -14330,34 +14362,34 @@
     ]
   },
   {
-    "id": 437,
+    "id": 438,
     "title": "LiftOff",
     "altTitle": "LiftOff",
     "artist": "MAYA AKAI",
     "charts": [
       {
-        "id": 1362,
+        "id": 1365,
         "diff": "pst",
         "level": "3",
         "cc": 3.0,
         "ver": "6.0.0"
       },
       {
-        "id": 1363,
+        "id": 1366,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1364,
+        "id": 1367,
         "diff": "ftr",
         "level": "8",
         "cc": 8.2,
         "ver": "6.0.0"
       },
       {
-        "id": 1365,
+        "id": 1368,
         "diff": "etr",
         "level": "9+",
         "cc": 9.8,
@@ -14369,34 +14401,34 @@
     ]
   },
   {
-    "id": 438,
+    "id": 439,
     "title": "Rays of Remnant",
     "altTitle": "Rays of Remnant",
     "artist": "May \u00d7 Felysrator",
     "charts": [
       {
-        "id": 1366,
+        "id": 1369,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1367,
+        "id": 1370,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1368,
+        "id": 1371,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.7,
         "ver": "6.0.0"
       },
       {
-        "id": 1369,
+        "id": 1372,
         "diff": "byd",
         "level": "10",
         "cc": 10.4,
@@ -14408,34 +14440,34 @@
     ]
   },
   {
-    "id": 439,
+    "id": 440,
     "title": "Renegade",
     "altTitle": "Renegade",
     "artist": "sky_delta",
     "charts": [
       {
-        "id": 1370,
+        "id": 1373,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "6.0.0"
       },
       {
-        "id": 1371,
+        "id": 1374,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "6.0.0"
       },
       {
-        "id": 1372,
+        "id": 1375,
         "diff": "ftr",
         "level": "9",
         "cc": 9.6,
         "ver": "6.0.0"
       },
       {
-        "id": 1373,
+        "id": 1376,
         "diff": "byd",
         "level": "10",
         "cc": 10.2,
@@ -14447,48 +14479,16 @@
     ]
   },
   {
-    "id": 440,
+    "id": 441,
     "title": "SUPER AMBULANCE",
     "altTitle": "SUPER AMBULANCE",
     "artist": "AJURIKA",
     "charts": [
       {
-        "id": 1374,
+        "id": 1377,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
-        "ver": "6.0.0"
-      },
-      {
-        "id": 1375,
-        "diff": "prs",
-        "level": "7",
-        "cc": 7.5,
-        "ver": "6.0.0"
-      },
-      {
-        "id": 1376,
-        "diff": "ftr",
-        "level": "10",
-        "cc": 10.3,
-        "ver": "6.0.0"
-      }
-    ],
-    "searchKeys": [
-      "super ambulance"
-    ]
-  },
-  {
-    "id": 441,
-    "title": "Swan Song",
-    "altTitle": "Swan Song",
-    "artist": "void (Mournfinale)",
-    "charts": [
-      {
-        "id": 1377,
-        "diff": "pst",
-        "level": "3",
-        "cc": 3.0,
         "ver": "6.0.0"
       },
       {
@@ -14501,6 +14501,38 @@
       {
         "id": 1379,
         "diff": "ftr",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "6.0.0"
+      }
+    ],
+    "searchKeys": [
+      "super ambulance"
+    ]
+  },
+  {
+    "id": 442,
+    "title": "Swan Song",
+    "altTitle": "Swan Song",
+    "artist": "void (Mournfinale)",
+    "charts": [
+      {
+        "id": 1380,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "6.0.0"
+      },
+      {
+        "id": 1381,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.0.0"
+      },
+      {
+        "id": 1382,
+        "diff": "ftr",
         "level": "9+",
         "cc": 9.9,
         "ver": "6.0.0"
@@ -14511,34 +14543,34 @@
     ]
   },
   {
-    "id": 442,
+    "id": 443,
     "title": "8-EM",
     "altTitle": "8-EM",
     "artist": "Sampling Masters AYA",
     "charts": [
       {
-        "id": 1380,
+        "id": 1383,
         "diff": "pst",
         "level": "4",
         "cc": 4.5,
         "ver": "6.1.0"
       },
       {
-        "id": 1381,
+        "id": 1384,
         "diff": "prs",
         "level": "7+",
         "cc": 7.8,
         "ver": "6.1.0"
       },
       {
-        "id": 1382,
+        "id": 1385,
         "diff": "ftr",
         "level": "9",
         "cc": 9.5,
         "ver": "6.1.0"
       },
       {
-        "id": 1383,
+        "id": 1386,
         "diff": "etr",
         "level": "10",
         "cc": 10.3,
@@ -14550,34 +14582,34 @@
     ]
   },
   {
-    "id": 443,
+    "id": 444,
     "title": "BlazinG AIR",
     "altTitle": "BlazinG AIR",
     "artist": "kanone",
     "charts": [
       {
-        "id": 1384,
+        "id": 1387,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "6.1.0"
       },
       {
-        "id": 1385,
+        "id": 1388,
         "diff": "prs",
         "level": "6",
         "cc": 6.5,
         "ver": "6.1.0"
       },
       {
-        "id": 1386,
+        "id": 1389,
         "diff": "ftr",
         "level": "8+",
         "cc": 8.9,
         "ver": "6.1.0"
       },
       {
-        "id": 1387,
+        "id": 1390,
         "diff": "etr",
         "level": "10",
         "cc": 10.1,
@@ -14589,27 +14621,27 @@
     ]
   },
   {
-    "id": 444,
+    "id": 445,
     "title": "DA'AT -The First Seeker of Souls-",
     "altTitle": "DA'AT -The First Seeker of Souls-",
     "artist": "\u6c34\u91ce\u5065\u6cbb VS \u5927\u56fd\u594f\u97f3",
     "charts": [
       {
-        "id": 1388,
+        "id": 1391,
         "diff": "pst",
         "level": "5",
         "cc": 5.5,
         "ver": "6.1.0"
       },
       {
-        "id": 1389,
+        "id": 1392,
         "diff": "prs",
         "level": "8",
         "cc": 8.4,
         "ver": "6.1.0"
       },
       {
-        "id": 1390,
+        "id": 1393,
         "diff": "ftr",
         "level": "10+",
         "cc": 10.9,
@@ -14621,27 +14653,27 @@
     ]
   },
   {
-    "id": 445,
+    "id": 446,
     "title": "Ignition",
     "altTitle": "Ignition",
     "artist": "\u30d1\u30bd\u30b3\u30f3\u97f3\u697d\u30af\u30e9\u30d6",
     "charts": [
       {
-        "id": 1391,
+        "id": 1394,
         "diff": "pst",
         "level": "3",
         "cc": 3.5,
         "ver": "6.1.0"
       },
       {
-        "id": 1392,
+        "id": 1395,
         "diff": "prs",
         "level": "6",
         "cc": 6.0,
         "ver": "6.1.0"
       },
       {
-        "id": 1393,
+        "id": 1396,
         "diff": "ftr",
         "level": "9+",
         "cc": 9.8,
