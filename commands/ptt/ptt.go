@@ -17,11 +17,19 @@ import (
 
 var cmdNames = []string{"ptt", "rating"}
 
-func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
+type handler struct {
+	store *store.Store
+}
+
+func NewHandler(store *store.Store) *handler {
+	return &handler{store: store}
+}
+
+func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 	ok := false
 	params := ""
 	for _, n := range cmdNames {
-		params, ok = commands.ExtractParamsString(n, e.Message.Content)
+		params, ok = commands.ExtractParamsString(n, e.Message.Content, h.store.Bot.Prefix())
 		if ok {
 			break
 		}
@@ -31,23 +39,23 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 		return false
 	}
 
-	st := store.GetState()
+	st := h.store.Bot.State()
 
 	params, scoreStr, ok := commands.ExtractParamReverse(params, 1)
 	if !ok {
-		sendFormatError(st, e)
+		sendFormatError(st, h.store.Bot.Prefix(), e)
 		return true
 	}
 
 	params, diffStr, ok := commands.ExtractParamReverse(params, 1)
 	if !ok {
-		sendFormatError(st, e)
+		sendFormatError(st, h.store.Bot.Prefix(), e)
 		return true
 	}
 
 	_, songStr, ok := commands.ExtractParamReverse(params, -1)
 	if !ok {
-		sendFormatError(st, e)
+		sendFormatError(st, h.store.Bot.Prefix(), e)
 		return true
 	}
 
@@ -158,6 +166,6 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 	return true
 }
 
-func sendFormatError(st *state.State, e *gateway.MessageCreateEvent) {
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%sptt [song] [diff] [score]`!", store.GetPrefix())))
+func sendFormatError(st *state.State, prefix string, e *gateway.MessageCreateEvent) {
+	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%sptt [song] [diff] [score]`!", prefix)))
 }

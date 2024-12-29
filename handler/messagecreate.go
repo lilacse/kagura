@@ -16,28 +16,32 @@ import (
 	"github.com/lilacse/kagura/store"
 )
 
-type CommandHandler func(ctx context.Context, e *gateway.MessageCreateEvent) bool
+type onMessageCreateHandler struct {
+	store *store.Store
+}
 
-func OnMessageCreate(e *gateway.MessageCreateEvent) {
+type commandHandler func(ctx context.Context, e *gateway.MessageCreateEvent) bool
+
+func (h *onMessageCreateHandler) Handle(e *gateway.MessageCreateEvent) {
 	if !e.Author.Bot {
-		if isCommand(e) {
-			handleCommand(e)
+		if isCommand(e, h.store.Bot.Prefix()) {
+			handleCommand(e, h.store)
 		}
 	}
 }
 
-func isCommand(e *gateway.MessageCreateEvent) bool {
-	return strings.HasPrefix(e.Content, store.GetPrefix())
+func isCommand(e *gateway.MessageCreateEvent, prefix string) bool {
+	return strings.HasPrefix(e.Content, prefix)
 }
 
-func handleCommand(e *gateway.MessageCreateEvent) {
+func handleCommand(e *gateway.MessageCreateEvent, store *store.Store) {
 	traceId := uuid.NewString()
-	ctx := context.WithValue(store.GetContext(), logger.TraceId, traceId)
+	ctx := context.WithValue(store.Bot.Context(), logger.TraceId, traceId)
 
-	handlers := []CommandHandler{
-		song.Handle,
-		ptt.Handle,
-		step.Handle,
+	handlers := []commandHandler{
+		song.NewHandler(store).Handle,
+		ptt.NewHandler(store).Handle,
+		step.NewHandler(store).Handle,
 	}
 
 	defer func() {
@@ -45,7 +49,7 @@ func handleCommand(e *gateway.MessageCreateEvent) {
 		if r != nil {
 			logger.Error(ctx, fmt.Sprintf("error handling command: %s\nstack trace: %s", r, debug.Stack()))
 
-			st := store.GetState()
+			st := store.Bot.State()
 			st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Error(ctx, fmt.Sprintf("%s", r)))
 		}
 	}()

@@ -16,7 +16,9 @@ import (
 
 func main() {
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, os.Kill)
-	store.SetContext(ctx)
+
+	store := store.GetStore()
+	store.Bot.SetContext(ctx)
 	defer stop()
 
 	logger.Info(ctx, "starting up...")
@@ -27,12 +29,13 @@ func main() {
 	}
 
 	s := state.New("Bot " + token)
-	store.SetState(s)
+	store.Bot.SetState(s)
 
 	s.AddIntents(gateway.IntentDirectMessages)
 	s.AddIntents(gateway.IntentGuildMessages)
 
-	s.AddHandler(handler.OnMessageCreate)
+	hfactory := handler.NewHandlerFactory(store)
+	s.AddHandler(hfactory.NewOnMessageCreateHandler().Handle)
 
 	u, err := s.Me()
 	if err != nil {
@@ -40,13 +43,13 @@ func main() {
 	}
 
 	logger.Info(ctx, fmt.Sprintf("bot user is: %s#%s (%v)", u.Username, u.Discriminator, u.ID))
-	store.SetBotId(u.ID)
+	store.Bot.SetBotId(u.ID)
 
 	prefix := os.Getenv("KAGURA_PREFIX")
 	if prefix == "" {
 		prefix = "~"
 	}
-	store.SetPrefix(prefix)
+	store.Bot.SetPrefix(prefix)
 
 	songdata.Init(ctx)
 

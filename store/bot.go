@@ -7,39 +7,41 @@ import (
 	"github.com/diamondburned/arikawa/v3/state"
 )
 
-var botId discord.UserID
-var prefix string
-var ctx context.Context
-var st *state.State
-
-func SetBotId(id discord.UserID) {
-	botId = id
+type bot struct {
+	botId  discord.UserID
+	prefix string
+	ctx    context.Context
+	st     *state.State
 }
 
-func GetBotId() discord.UserID {
-	return botId
+func (b *bot) BotId() discord.UserID {
+	return b.botId
 }
 
-func SetPrefix(p string) {
-	prefix = p
+func (b *bot) SetBotId(id discord.UserID) {
+	b.botId = id
 }
 
-func GetPrefix() string {
-	return prefix
+func (b *bot) Prefix() string {
+	return b.prefix
 }
 
-func SetContext(c context.Context) {
-	ctx = c
+func (b *bot) SetPrefix(p string) {
+	b.prefix = p
 }
 
-func GetContext() context.Context {
-	return ctx
+func (b *bot) Context() context.Context {
+	return b.ctx
 }
 
-func SetState(s *state.State) {
-	st = s
+func (b *bot) SetContext(c context.Context) {
+	b.ctx = c
 }
 
-func GetState() *state.State {
-	return st
+func (b *bot) State() *state.State {
+	return b.st
+}
+
+func (b *bot) SetState(s *state.State) {
+	b.st = s
 }

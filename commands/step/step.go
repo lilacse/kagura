@@ -16,35 +16,43 @@ import (
 	"github.com/lilacse/kagura/store"
 )
 
-func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := commands.ExtractParamsString("step", e.Message.Content)
+type handler struct {
+	store *store.Store
+}
+
+func NewHandler(store *store.Store) *handler {
+	return &handler{store: store}
+}
+
+func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
+	params, ok := commands.ExtractParamsString("step", e.Message.Content, h.store.Bot.Prefix())
 	if !ok {
 		return false
 	}
 
-	st := store.GetState()
+	st := h.store.Bot.State()
 
 	params, stepStr, ok := commands.ExtractParamForward(params, 1)
 	if !ok {
-		sendFormatError(st, e)
+		sendFormatError(st, h.store.Bot.Prefix(), e)
 		return true
 	}
 
 	params, scoreStr, ok := commands.ExtractParamReverse(params, 1)
 	if !ok {
-		sendFormatError(st, e)
+		sendFormatError(st, h.store.Bot.Prefix(), e)
 		return true
 	}
 
 	params, diffStr, ok := commands.ExtractParamReverse(params, 1)
 	if !ok {
-		sendFormatError(st, e)
+		sendFormatError(st, h.store.Bot.Prefix(), e)
 		return true
 	}
 
 	_, songStr, ok := commands.ExtractParamReverse(params, -1)
 	if !ok {
-		sendFormatError(st, e)
+		sendFormatError(st, h.store.Bot.Prefix(), e)
 		return true
 	}
 
@@ -174,6 +182,6 @@ func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 	return true
 }
 
-func sendFormatError(st *state.State, e *gateway.MessageCreateEvent) {
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%sstep [stat] [song] [diff] [score]`!", store.GetPrefix())))
+func sendFormatError(st *state.State, prefix string, e *gateway.MessageCreateEvent) {
+	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%sstep [stat] [song] [diff] [score]`!", prefix)))
 }

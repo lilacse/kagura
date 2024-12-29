@@ -5,12 +5,10 @@ import (
 	"strconv"
 	"strings"
 	"unicode"
-
-	"github.com/lilacse/kagura/store"
 )
 
-func ExtractParamsString(cmd string, content string) (string, bool) {
-	cmd = store.GetPrefix() + cmd
+func ExtractParamsString(cmd string, content string, prefix string) (string, bool) {
+	cmd = prefix + cmd
 	content, isMatch := strings.CutPrefix(content, cmd)
 	if isMatch && len(content) > 0 {
 		isMatch = unicode.IsSpace(rune(content[0]))

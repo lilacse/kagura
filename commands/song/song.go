@@ -13,13 +13,21 @@ import (
 	"github.com/lilacse/kagura/store"
 )
 
-func Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := commands.ExtractParamsString("song", e.Message.Content)
+type handler struct {
+	store *store.Store
+}
+
+func NewHandler(store *store.Store) *handler {
+	return &handler{store: store}
+}
+
+func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
+	params, ok := commands.ExtractParamsString("song", e.Message.Content, h.store.Bot.Prefix())
 	if !ok {
 		return false
 	}
 
-	st := store.GetState()
+	st := h.store.Bot.State()
 
 	if params == "" {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError("No search query provided!"))
