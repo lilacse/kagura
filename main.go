@@ -8,6 +8,7 @@ import (
 
 	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/diamondburned/arikawa/v3/state"
+	"github.com/lilacse/kagura/database"
 	"github.com/lilacse/kagura/dataservices/songdata"
 	"github.com/lilacse/kagura/handler"
 	"github.com/lilacse/kagura/logger"
@@ -34,7 +35,21 @@ func main() {
 	s.AddIntents(gateway.IntentDirectMessages)
 	s.AddIntents(gateway.IntentGuildMessages)
 
-	hfactory := handler.NewHandlerFactory(store)
+	db, err := database.NewDbService(ctx)
+	if err != nil {
+		logger.Fatal(ctx, err.Error())
+	}
+	logger.Info(ctx, "database ready")
+
+	defer func() {
+		logger.Info(ctx, "closing database")
+		err := db.Close()
+		if err != nil {
+			logger.Error(ctx, err.Error())
+		}
+	}()
+
+	hfactory := handler.NewHandlerFactory(store, db)
 	s.AddHandler(hfactory.NewOnMessageCreateHandler().Handle)
 
 	u, err := s.Me()
