@@ -11,6 +11,7 @@ import (
 )
 
 type Song struct {
+	Id         int      `json:"id"`
 	Title      string   `json:"title"`
 	AltTitle   string   `json:"altTitle"`
 	Artist     string   `json:"artist"`
@@ -19,6 +20,7 @@ type Song struct {
 }
 
 type Chart struct {
+	Id    int     `json:"id"`
 	Diff  string  `json:"diff"`
 	Level string  `json:"level"`
 	CC    float64 `json:"cc"`
