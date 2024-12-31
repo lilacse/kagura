@@ -32,6 +32,9 @@ type SongData []Song
 var data SongData
 var titleMap map[string]Song
 var keyMap map[string]Song
+var chartIdMap map[int]Chart
+var songIdMap map[int]Song
+var chartSongMap map[int]int
 
 const datapath = "data/songdata.json"
 
@@ -47,11 +50,19 @@ func Init(ctx context.Context) {
 
 	titleMap = make(map[string]Song)
 	keyMap = make(map[string]Song)
+	chartIdMap = make(map[int]Chart)
+	songIdMap = make(map[int]Song)
+	chartSongMap = make(map[int]int)
 
 	for _, song := range data {
 		titleMap[song.Title] = song
+		songIdMap[song.Id] = song
 		for _, key := range song.SearchKeys {
 			keyMap[key] = song
+		}
+		for _, chart := range song.Charts {
+			chartIdMap[chart.Id] = chart
+			chartSongMap[chart.Id] = song.Id
 		}
 	}
 

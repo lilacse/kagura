@@ -29,6 +29,20 @@ func (repo *ScoresRepo) Insert(ctx context.Context, userId int64, chartId int, s
 	)
 }
 
+func (repo *ScoresRepo) GetById(ctx context.Context, id int64) ([]Score, error) {
+	rows, err := repo.conn.QueryContext(
+		ctx,
+		`select id, user_id, chart_id, score, timestamp from scores where id = ?`,
+		id,
+	)
+
+	if err != nil {
+		return nil, err
+	}
+
+	return scanToScores(rows)
+}
+
 func (repo *ScoresRepo) GetByUser(ctx context.Context, userId int64) ([]Score, error) {
 	rows, err := repo.conn.QueryContext(
 		ctx,

@@ -12,6 +12,7 @@ import (
 	"github.com/lilacse/kagura/commands/save"
 	"github.com/lilacse/kagura/commands/song"
 	"github.com/lilacse/kagura/commands/step"
+	"github.com/lilacse/kagura/commands/unsave"
 	"github.com/lilacse/kagura/database"
 	"github.com/lilacse/kagura/embedbuilder"
 	"github.com/lilacse/kagura/logger"
@@ -46,6 +47,7 @@ func handleCommand(e *gateway.MessageCreateEvent, h *onMessageCreateHandler) {
 		ptt.NewHandler(h.store).Handle,
 		step.NewHandler(h.store).Handle,
 		save.NewHandler(h.store, h.db).Handle,
+		unsave.NewHandler(h.store, h.db).Handle,
 	}
 
 	defer func() {

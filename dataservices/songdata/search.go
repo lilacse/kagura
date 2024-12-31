@@ -24,6 +24,18 @@ func Search(query string, limit int) []Song {
 	return keySearch(strings.ToLower(query), limit)
 }
 
+func GetChartById(id int) (Chart, Song, bool) {
+	chart := chartIdMap[id]
+	if chart.Id == 0 {
+		return Chart{}, Song{}, false
+	}
+
+	songId := chartSongMap[chart.Id]
+	song := songIdMap[songId]
+
+	return chart, song, true
+}
+
 func titleSearch(title string) (Song, bool) {
 	song, ok := titleMap[title]
 	if !ok {
