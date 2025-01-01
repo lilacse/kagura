@@ -136,5 +136,14 @@ func ParseScore(scoreStr string) (int, string, bool) {
 		return -1, fmt.Sprintf("Invalid score `%s`, expecting at least 3 digits!", scoreStr), false
 	}
 
+	// treat scores submitted with 3 digits to 6 digits, we append zeroes to them until it reaches 7 digits
+	if score == 100 {
+		score = 10000000
+	} else {
+		for score < 1000000 {
+			score *= 10
+		}
+	}
+
 	return score, "", true
 }

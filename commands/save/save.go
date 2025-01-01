@@ -108,15 +108,6 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 		return true
 	}
 
-	// treat scores submitted with 3 digits to 6 digits, we append zeroes to them until it reaches 7 digits
-	if score == 100 {
-		score = 10000000
-	} else {
-		for score < 1000000 {
-			score *= 10
-		}
-	}
-
 	var ptt float64
 	if score >= 10000000 {
 		ptt = chart.CC + 2.0
