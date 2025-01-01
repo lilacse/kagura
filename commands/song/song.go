@@ -48,22 +48,8 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 
 	chartEmbeds := []discord.EmbedField{}
 	for _, chart := range song.Charts {
-		diffName := ""
-		switch chart.Diff {
-		case "pst":
-			diffName = "Past (PST)"
-		case "prs":
-			diffName = "Present (PRS)"
-		case "ftr":
-			diffName = "Future (FTR)"
-		case "etr":
-			diffName = "Eternal (ETR)"
-		case "byd":
-			diffName = "Beyond (BYD)"
-		}
-
 		chartEmbeds = append(chartEmbeds, discord.EmbedField{
-			Name:   diffName,
+			Name:   chart.DiffDisplayName(),
 			Value:  fmt.Sprintf("Lv%s (%.1f) (v%s)", chart.Level, chart.CC, chart.Ver),
 			Inline: true,
 		})

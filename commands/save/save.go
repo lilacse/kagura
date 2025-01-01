@@ -71,23 +71,17 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 	song := matchSong[0]
 
 	diffKey := ""
-	diffName := ""
 	switch strings.ToLower(diffStr) {
 	case "pst", "past":
 		diffKey = "pst"
-		diffName = "Past (PST)"
 	case "prs", "present":
 		diffKey = "prs"
-		diffName = "Present (PRS)"
 	case "ftr", "future":
 		diffKey = "ftr"
-		diffName = "Future (FTR)"
 	case "etr", "eternal":
 		diffKey = "etr"
-		diffName = "Eternal (ETR)"
 	case "byd", "beyond":
 		diffKey = "byd"
-		diffName = "Beyond (BYD)"
 	}
 
 	if diffKey == "" {
@@ -210,7 +204,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 			},
 			{
 				Name:  "Chart",
-				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", diffName, chart.Level, chart.CC, chart.Ver),
+				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", chart.DiffDisplayName(), chart.Level, chart.CC, chart.Ver),
 			},
 			{
 				Name:   "Score",

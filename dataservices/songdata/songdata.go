@@ -19,14 +19,6 @@ type Song struct {
 	SearchKeys []string `json:"searchKeys"`
 }
 
-type Chart struct {
-	Id    int     `json:"id"`
-	Diff  string  `json:"diff"`
-	Level string  `json:"level"`
-	CC    float64 `json:"cc"`
-	Ver   string  `json:"ver"`
-}
-
 type SongData []Song
 
 var data SongData

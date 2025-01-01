@@ -76,23 +76,17 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 	song := matchSong[0]
 
 	diffKey := ""
-	diffName := ""
 	switch strings.ToLower(diffStr) {
 	case "pst", "past":
 		diffKey = "pst"
-		diffName = "Past (PST)"
 	case "prs", "present":
 		diffKey = "prs"
-		diffName = "Present (PRS)"
 	case "ftr", "future":
 		diffKey = "ftr"
-		diffName = "Future (FTR)"
 	case "etr", "eternal":
 		diffKey = "etr"
-		diffName = "Eternal (ETR)"
 	case "byd", "beyond":
 		diffKey = "byd"
-		diffName = "Beyond (BYD)"
 	}
 
 	if diffKey == "" {
@@ -100,30 +94,26 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 		return true
 	}
 
-	cc := 0.0
-	level := ""
-	ver := ""
+	chart := songdata.Chart{}
 	for _, c := range song.Charts {
 		if c.Diff == diffKey {
-			cc = c.CC
-			level = c.Level
-			ver = c.Ver
+			chart = c
 			break
 		}
 	}
 
-	if cc == 0.0 {
+	if chart.Id == 0 {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Difficulty %s does not exist for the song %s!", strings.ToUpper(diffKey), song.AltTitle)))
 		return true
 	}
 
 	var ptt float64
 	if score >= 10000000 {
-		ptt = cc + 2.0
+		ptt = chart.CC + 2.0
 	} else if score >= 9800000 && score < 10000000 {
-		ptt = cc + 1.0 + ((float64(score) - 9800000) / 200000)
+		ptt = chart.CC + 1.0 + ((float64(score) - 9800000) / 200000)
 	} else {
-		ptt = cc + (float64(score)-9500000)/300000
+		ptt = chart.CC + (float64(score)-9500000)/300000
 		if ptt < 0.0 {
 			ptt = 0.0
 		}
@@ -141,7 +131,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 			},
 			{
 				Name:  "Chart",
-				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", diffName, level, cc, ver),
+				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", chart.DiffDisplayName(), chart.Level, chart.CC, chart.Ver),
 			},
 			{
 				Name:   "Score",

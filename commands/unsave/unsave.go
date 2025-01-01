@@ -99,20 +99,6 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 		return true
 	}
 
-	diffName := ""
-	switch chart.Diff {
-	case "pst":
-		diffName = "Past (PST)"
-	case "prs":
-		diffName = "Present (PRS)"
-	case "ftr":
-		diffName = "Future (FTR)"
-	case "etr":
-		diffName = "Eternal (ETR)"
-	case "byd":
-		diffName = "Beyond (BYD)"
-	}
-
 	_, err = scoresRepo.Delete(ctx, id)
 	if err != nil {
 		logAndSendError(ctx, st, err, e)
@@ -139,7 +125,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 			},
 			{
 				Name:  "Chart",
-				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", diffName, chart.Level, chart.CC, chart.Ver),
+				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", chart.DiffDisplayName(), chart.Level, chart.CC, chart.Ver),
 			},
 			{
 				Name:   "Score",
