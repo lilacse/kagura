@@ -105,15 +105,13 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 	}
 
 	var formula string
+	ptt := chart.ScoreRating(score)
 
 	if score >= 10000000 {
-		ptt := chart.CC + 2.0
 		formula = fmt.Sprintf("%.1f + 2.0 = **%.4f**", chart.CC, ptt)
 	} else if score >= 9800000 && score < 10000000 {
-		ptt := chart.CC + 1.0 + ((float64(score) - 9800000) / 200000)
 		formula = fmt.Sprintf("%.1f + 1.0 + ((%v - 9800000) / 200000) = **%.4f**", chart.CC, score, ptt)
 	} else {
-		ptt := chart.CC + (float64(score)-9500000)/300000
 		if ptt >= 0.0 {
 			formula = fmt.Sprintf("%.1f + (%v - 9500000) / 300000 = **%.4f**", chart.CC, score, ptt)
 		} else {

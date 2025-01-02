@@ -102,17 +102,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 		return true
 	}
 
-	var ptt float64
-	if score >= 10000000 {
-		ptt = chart.CC + 2.0
-	} else if score >= 9800000 && score < 10000000 {
-		ptt = chart.CC + 1.0 + ((float64(score) - 9800000) / 200000)
-	} else {
-		ptt = chart.CC + (float64(score)-9500000)/300000
-		if ptt < 0.0 {
-			ptt = 0.0
-		}
-	}
+	ptt := chart.ActualScoreRating(score)
 
 	sess, err := h.db.NewSession(ctx)
 	if err != nil {
