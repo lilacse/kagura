@@ -78,15 +78,8 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 		return true
 	}
 
-	chart := songdata.Chart{}
-	for _, c := range song.Charts {
-		if c.Diff == diffKey {
-			chart = c
-			break
-		}
-	}
-
-	if chart.Id == 0 {
+	chart, ok := song.GetChart(diffKey)
+	if !ok {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Difficulty %s does not exist for the song %s!", strings.ToUpper(diffKey), song.AltTitle)))
 		return true
 	}

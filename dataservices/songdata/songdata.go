@@ -10,15 +10,6 @@ import (
 	"github.com/lilacse/kagura/logger"
 )
 
-type Song struct {
-	Id         int      `json:"id"`
-	Title      string   `json:"title"`
-	AltTitle   string   `json:"altTitle"`
-	Artist     string   `json:"artist"`
-	Charts     []Chart  `json:"charts"`
-	SearchKeys []string `json:"searchKeys"`
-}
-
 type SongData []Song
 
 var data SongData
