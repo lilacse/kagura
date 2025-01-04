@@ -94,7 +94,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 		return true
 	}
 
-	ptt := chart.ActualScoreRating(score)
+	ptt := chart.GetActualScoreRating(score)
 
 	progress := (2.45*math.Sqrt(ptt) + 2.5) * (float64(step) / 50)
 	floored := math.Floor(progress*10) / 10
@@ -108,7 +108,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 			},
 			{
 				Name:  "Chart",
-				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", chart.DiffDisplayName(), chart.Level, chart.CC, chart.Ver),
+				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", chart.GetDiffDisplayName(), chart.Level, chart.CC, chart.Ver),
 			},
 			{
 				Name:   "Score",

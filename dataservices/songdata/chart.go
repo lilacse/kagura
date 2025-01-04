@@ -8,7 +8,7 @@ type Chart struct {
 	Ver   string  `json:"ver"`
 }
 
-func (c *Chart) DiffDisplayName() string {
+func (c *Chart) GetDiffDisplayName() string {
 	switch c.Diff {
 	case "pst":
 		return "Past (PST)"
@@ -25,7 +25,7 @@ func (c *Chart) DiffDisplayName() string {
 	}
 }
 
-func (c *Chart) ScoreRating(score int) float64 {
+func (c *Chart) GetScoreRating(score int) float64 {
 	var ptt float64
 	if score >= 10000000 {
 		ptt = c.CC + 2.0
@@ -38,8 +38,8 @@ func (c *Chart) ScoreRating(score int) float64 {
 }
 
 // Similar to ScoreRating, but automatically converts negative rating to 0.0.
-func (c *Chart) ActualScoreRating(score int) float64 {
-	ptt := c.ScoreRating(score)
+func (c *Chart) GetActualScoreRating(score int) float64 {
+	ptt := c.GetScoreRating(score)
 	if ptt < 0.0 {
 		ptt = 0.0
 	}

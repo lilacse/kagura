@@ -89,7 +89,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 		return true
 	}
 
-	ptt := chart.ActualScoreRating(score)
+	ptt := chart.GetActualScoreRating(score)
 
 	sess, err := h.db.NewSession(ctx)
 	if err != nil {
@@ -181,7 +181,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 			},
 			{
 				Name:  "Chart",
-				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", chart.DiffDisplayName(), chart.Level, chart.CC, chart.Ver),
+				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", chart.GetDiffDisplayName(), chart.Level, chart.CC, chart.Ver),
 			},
 			{
 				Name:   "Score",

@@ -92,7 +92,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 	}
 
 	var formula string
-	ptt := chart.ScoreRating(score)
+	ptt := chart.GetScoreRating(score)
 
 	if score >= 10000000 {
 		formula = fmt.Sprintf("%.1f + 2.0 = **%.4f**", chart.CC, ptt)
@@ -115,7 +115,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 			},
 			{
 				Name:  "Chart",
-				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", chart.DiffDisplayName(), chart.Level, chart.CC, chart.Ver),
+				Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", chart.GetDiffDisplayName(), chart.Level, chart.CC, chart.Ver),
 			},
 			{
 				Name:  "Score",
