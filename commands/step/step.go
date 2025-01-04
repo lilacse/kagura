@@ -75,21 +75,8 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 
 	song := matchSong[0]
 
-	diffKey := ""
-	switch strings.ToLower(diffStr) {
-	case "pst", "past":
-		diffKey = "pst"
-	case "prs", "present":
-		diffKey = "prs"
-	case "ftr", "future":
-		diffKey = "ftr"
-	case "etr", "eternal":
-		diffKey = "etr"
-	case "byd", "beyond":
-		diffKey = "byd"
-	}
-
-	if diffKey == "" {
+	diffKey, ok := commands.GetDiffKey(diffStr)
+	if !ok {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid difficulty `%s`!", diffStr)))
 		return true
 	}

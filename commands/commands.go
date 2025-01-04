@@ -147,3 +147,20 @@ func ParseScore(scoreStr string) (int, string, bool) {
 
 	return score, "", true
 }
+
+func GetDiffKey(diffStr string) (string, bool) {
+	switch strings.ToLower(diffStr) {
+	case "pst", "past":
+		return "pst", true
+	case "prs", "present":
+		return "prs", true
+	case "ftr", "future":
+		return "ftr", true
+	case "etr", "eternal":
+		return "etr", true
+	case "byd", "beyond":
+		return "byd", true
+	default:
+		return "", false
+	}
+}
