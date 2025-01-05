@@ -1,4 +1,4 @@
-package song
+package commands
 
 import (
 	"context"
@@ -7,22 +7,32 @@ import (
 
 	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
-	"github.com/lilacse/kagura/commands"
 	"github.com/lilacse/kagura/dataservices/songdata"
 	"github.com/lilacse/kagura/embedbuilder"
 	"github.com/lilacse/kagura/store"
 )
 
-type handler struct {
+type songHandler struct {
+	cmd
 	store *store.Store
 }
 
-func NewHandler(store *store.Store) *handler {
-	return &handler{store: store}
+func NewSongHandler(store *store.Store) *songHandler {
+	return &songHandler{
+		cmd: cmd{
+			cmds: []string{"song"},
+			params: []param{
+				{
+					name: "query",
+				},
+			},
+		},
+		store: store,
+	}
 }
 
-func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := commands.ExtractParamsString("song", e.Message.Content, h.store.Bot.Prefix())
+func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
+	params, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
 	if !ok {
 		return false
 	}
@@ -30,7 +40,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 	st := h.store.Bot.State()
 
 	if params == "" {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError("No search query provided!"))
+		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 

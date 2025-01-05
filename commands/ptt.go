@@ -1,4 +1,4 @@
-package ptt
+package commands
 
 import (
 	"context"
@@ -8,28 +8,41 @@ import (
 
 	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
-	"github.com/diamondburned/arikawa/v3/state"
-	"github.com/lilacse/kagura/commands"
 	"github.com/lilacse/kagura/dataservices/songdata"
 	"github.com/lilacse/kagura/embedbuilder"
 	"github.com/lilacse/kagura/store"
 )
 
-var cmdNames = []string{"ptt", "rating"}
-
-type handler struct {
+type pttHandler struct {
+	cmd
 	store *store.Store
 }
 
-func NewHandler(store *store.Store) *handler {
-	return &handler{store: store}
+func NewPttHandler(store *store.Store) *pttHandler {
+	return &pttHandler{
+		cmd: cmd{
+			cmds: []string{"ptt", "rating"},
+			params: []param{
+				{
+					name: "song",
+				},
+				{
+					name: "diff",
+				},
+				{
+					name: "score",
+				},
+			},
+		},
+		store: store,
+	}
 }
 
-func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
+func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 	ok := false
 	params := ""
-	for _, n := range cmdNames {
-		params, ok = commands.ExtractParamsString(n, e.Message.Content, h.store.Bot.Prefix())
+	for _, n := range h.cmds {
+		params, ok = extractParamsString(n, e.Message.Content, h.store.Bot.Prefix())
 		if ok {
 			break
 		}
@@ -41,25 +54,25 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 
 	st := h.store.Bot.State()
 
-	params, scoreStr, ok := commands.ExtractParamReverse(params, 1)
+	params, scoreStr, ok := extractParamReverse(params, 1)
 	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), e)
+		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	params, diffStr, ok := commands.ExtractParamReverse(params, 1)
+	params, diffStr, ok := extractParamReverse(params, 1)
 	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), e)
+		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	_, songStr, ok := commands.ExtractParamReverse(params, -1)
+	_, songStr, ok := extractParamReverse(params, -1)
 	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), e)
+		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	score, errMsg, ok := commands.ParseScore(scoreStr)
+	score, errMsg, ok := parseScore(scoreStr)
 	if !ok {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(errMsg))
 	}
@@ -72,7 +85,7 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 
 	song := matchSong[0]
 
-	diffKey, ok := commands.GetDiffKey(diffStr)
+	diffKey, ok := getDiffKey(diffStr)
 	if !ok {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid difficulty `%s`!", diffStr)))
 		return true
@@ -123,8 +136,4 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 
 	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(embed))
 	return true
-}
-
-func sendFormatError(st *state.State, prefix string, e *gateway.MessageCreateEvent) {
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%sptt [song] [diff] [score]`!", prefix)))
 }

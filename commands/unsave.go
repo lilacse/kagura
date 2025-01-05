@@ -1,4 +1,4 @@
-package unsave
+package commands
 
 import (
 	"context"
@@ -7,29 +7,35 @@ import (
 
 	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
-	"github.com/diamondburned/arikawa/v3/state"
-	"github.com/lilacse/kagura/commands"
 	"github.com/lilacse/kagura/database"
 	"github.com/lilacse/kagura/dataservices/songdata"
 	"github.com/lilacse/kagura/embedbuilder"
-	"github.com/lilacse/kagura/logger"
 	"github.com/lilacse/kagura/store"
 )
 
-type handler struct {
+type unsaveHandler struct {
+	cmd
 	store *store.Store
 	db    *database.DbService
 }
 
-func NewHandler(store *store.Store, db *database.DbService) *handler {
-	return &handler{
+func NewUnsaveHandler(store *store.Store, db *database.DbService) *unsaveHandler {
+	return &unsaveHandler{
+		cmd: cmd{
+			cmds: []string{"unsave"},
+			params: []param{
+				{
+					name: "score id",
+				},
+			},
+		},
 		store: store,
 		db:    db,
 	}
 }
 
-func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := commands.ExtractParamsString("unsave", e.Message.Content, h.store.Bot.Prefix())
+func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
+	params, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
 	if !ok {
 		return false
 	}
@@ -37,9 +43,9 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 	st := h.store.Bot.State()
 	prefix := h.store.Bot.Prefix()
 
-	_, idStr, ok := commands.ExtractParamReverse(params, -1)
+	_, idStr, ok := extractParamReverse(params, -1)
 	if !ok {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%sunsave [score id]`!", prefix)))
+		sendFormatError(st, prefix, h.cmd, e)
 		return true
 	}
 
@@ -142,9 +148,4 @@ func (h *handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) boo
 
 	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(embed))
 	return true
-}
-
-func logAndSendError(ctx context.Context, st *state.State, err error, e *gateway.MessageCreateEvent) {
-	logger.Error(ctx, fmt.Sprintf("error when handling save command: %s", err.Error()))
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Error(ctx, err.Error()))
 }
