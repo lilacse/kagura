@@ -185,18 +185,3 @@ func logAndSendError(ctx context.Context, st *state.State, err error, e *gateway
 	logger.Error(ctx, fmt.Sprintf("error when handling command: %s", err.Error()))
 	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Error(ctx, err.Error()))
 }
-
-func sendFormatError(st *state.State, prefix string, handler cmd, e *gateway.MessageCreateEvent) {
-	paramList := make([]string, 0, len(handler.params))
-	for _, p := range handler.params {
-		if !p.isOpt {
-			paramList = append(paramList, fmt.Sprintf("[%s]", p.name))
-		} else {
-			paramList = append(paramList, fmt.Sprintf("(%s)", p.name))
-		}
-	}
-
-	format := fmt.Sprintf("%s%s %s", prefix, strings.Join(handler.cmds, "/"), strings.Join(paramList, " "))
-
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%s`!", format)))
-}

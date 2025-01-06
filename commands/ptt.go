@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 	"strconv"
-	"strings"
 
 	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
@@ -79,7 +78,7 @@ func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 
 	matchSong := songdata.Search(songStr, 1)
 	if len(matchSong) == 0 {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("No matching song found for query `%s`!", songStr)))
+		sendSongQueryError(st, songStr, e)
 		return true
 	}
 
@@ -87,13 +86,13 @@ func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 
 	diffKey, ok := getDiffKey(diffStr)
 	if !ok {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid difficulty `%s`!", diffStr)))
+		sendInvalidDiffError(st, diffStr, e)
 		return true
 	}
 
 	chart, ok := song.GetChart(diffKey)
 	if !ok {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Difficulty %s does not exist for the song %s!", strings.ToUpper(diffKey), song.AltTitle)))
+		sendDiffNotExistError(st, diffKey, song.AltTitle, e)
 		return true
 	}
 

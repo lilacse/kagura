@@ -46,7 +46,7 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 
 	matched := songdata.Search(params, 1)
 	if len(matched) == 0 {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError("No matching song found!"))
+		sendSongQueryError(st, params, e)
 		return true
 	}
 
