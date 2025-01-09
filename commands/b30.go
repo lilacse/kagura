@@ -108,7 +108,7 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 	for i, e := range b30Entries[0:scoreCount] {
 		ratingSum += e.rating
 		res.WriteString(fmt.Sprintf(
-			"`%02d` - %s - %s Lv%s (%.1f) - %v - **%.4f**\n",
+			"%v. %s - %s Lv%s (%.1f) - %v - **%.4f**\n",
 			i+1,
 			e.song.AltTitle,
 			e.chart.GetDiffDisplayName(),
