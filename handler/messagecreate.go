@@ -45,6 +45,7 @@ func handleCommand(e *gateway.MessageCreateEvent, h *onMessageCreateHandler) {
 		commands.NewSaveHandler(h.store, h.db).Handle,
 		commands.NewUnsaveHandler(h.store, h.db).Handle,
 		commands.NewB30Handler(h.store, h.db).Handle,
+		commands.NewScoresHandler(h.store, h.db).Handle,
 	}
 
 	defer func() {
