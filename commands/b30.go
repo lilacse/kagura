@@ -99,7 +99,9 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 		scoreCount = 30
 	}
 
+	ratingSum := 0.0
 	for i, e := range b30Entries[0:scoreCount] {
+		ratingSum += e.rating
 		res.WriteString(fmt.Sprintf(
 			"`%02d` - %s - %s Lv%s (%.1f) - %v - **%.4f**\n",
 			i+1,
@@ -111,6 +113,8 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 			e.rating,
 		))
 	}
+
+	res.WriteString(fmt.Sprintf("\nAverage rating: **%.4f**", ratingSum/float64(scoreCount)))
 
 	embed := discord.Embed{
 		Title:       "Highest 30 Play Ratings from Saved Scores",
