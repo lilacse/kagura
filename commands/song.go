@@ -102,7 +102,11 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 				Style: discord.LinkButtonStyle(chartViewLink),
 			},
 		),
-		Reference: e.Reference,
+		Reference: &discord.MessageReference{
+			MessageID: e.ID,
+			ChannelID: e.ChannelID,
+			GuildID:   e.GuildID,
+		},
 	}
 
 	st.SendMessageComplex(e.ChannelID, message)
