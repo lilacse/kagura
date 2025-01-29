@@ -97,6 +97,11 @@ func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 		return true
 	}
 
+	if chart.CC == 0.0 {
+		sendCcUnknownError(st, diffKey, song.AltTitle, e)
+		return true
+	}
+
 	var formula string
 	ptt := chart.GetScoreRating(score)
 

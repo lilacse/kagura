@@ -120,7 +120,7 @@ func (h *scoresHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 		Fields: []discord.EmbedField{
 			{
 				Name:  "Best score",
-				Value: fmt.Sprintf("%v (Play Rating %.4f)\n<t:%v:R>", bestScore.Score, chart.GetActualScoreRating(bestScore.Score), bestScore.Timestamp/1000),
+				Value: fmt.Sprintf("%v (Play Rating %s)\n<t:%v:R>", bestScore.Score, chart.GetScoreRatingString(bestScore.Score), bestScore.Timestamp/1000),
 			},
 			{
 				Name:  "Recent scores",

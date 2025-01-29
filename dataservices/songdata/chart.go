@@ -1,5 +1,7 @@
 package songdata
 
+import "fmt"
+
 type Chart struct {
 	Id    int     `json:"id"`
 	Diff  string  `json:"diff"`
@@ -26,6 +28,10 @@ func (c *Chart) GetDiffDisplayName() string {
 }
 
 func (c *Chart) GetScoreRating(score int) float64 {
+	if c.CC == 0.0 {
+		return 0.0
+	}
+
 	var ptt float64
 	if score >= 10000000 {
 		ptt = c.CC + 2.0
@@ -45,4 +51,20 @@ func (c *Chart) GetActualScoreRating(score int) float64 {
 	}
 
 	return ptt
+}
+
+func (c *Chart) GetScoreRatingString(score int) string {
+	if c.CC != 0.0 {
+		return fmt.Sprintf("%.4f", c.GetActualScoreRating(score))
+	} else {
+		return "?"
+	}
+}
+
+func (c *Chart) GetCCString() string {
+	if c.CC != 0.0 {
+		return fmt.Sprintf("%.1f", c.CC)
+	} else {
+		return "?"
+	}
 }

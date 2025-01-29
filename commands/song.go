@@ -62,7 +62,7 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 	for _, chart := range song.Charts {
 		chartEmbeds = append(chartEmbeds, discord.EmbedField{
 			Name:   chart.GetDiffDisplayName(),
-			Value:  fmt.Sprintf("Lv%s (%.1f) (v%s)", chart.Level, chart.CC, chart.Ver),
+			Value:  fmt.Sprintf("Lv%s (%s) (v%s)", chart.Level, chart.GetCCString(), chart.Ver),
 			Inline: true,
 		})
 	}

@@ -104,6 +104,11 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		return true
 	}
 
+	if chart.CC == 0.0 {
+		sendCcUnknownError(st, diffKey, song.AltTitle, e)
+		return true
+	}
+
 	ptt := chart.GetActualScoreRating(score)
 
 	progress := (2.45*math.Sqrt(ptt) + 2.5) * (float64(step) / 50)

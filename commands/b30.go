@@ -85,6 +85,10 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 			return true
 		}
 
+		if chart.CC == 0.0 {
+			continue
+		}
+
 		b30Entries = append(b30Entries, b30Entry{
 			chart:     chart,
 			song:      song,
@@ -108,12 +112,12 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 	for i, e := range b30Entries[0:scoreCount] {
 		ratingSum += e.rating
 		res.WriteString(fmt.Sprintf(
-			"%v. %s - %s Lv%s (%.1f) - %v - **%.4f**\n",
+			"%v. %s - %s Lv%s (%s) - %v - **%.4f**\n",
 			i+1,
 			e.song.AltTitle,
 			e.chart.GetDiffDisplayName(),
 			e.chart.Level,
-			e.chart.CC,
+			e.chart.GetCCString(),
 			e.score,
 			e.rating,
 		))
