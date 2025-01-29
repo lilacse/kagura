@@ -82,6 +82,7 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 	score, errMsg, ok := parseScore(scoreStr)
 	if !ok {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(errMsg))
+		return true
 	}
 
 	matchSong := songdata.Search(songStr, 1)
