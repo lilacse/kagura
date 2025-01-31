@@ -16,10 +16,10 @@ import (
 type stepHandler struct {
 	cmd
 	store    *store.Store
-	songdata *songdata.SongDataService
+	songdata *songdata.Service
 }
 
-func NewStepHandler(store *store.Store, songdata *songdata.SongDataService) *stepHandler {
+func NewStepHandler(store *store.Store, songdata *songdata.Service) *stepHandler {
 	return &stepHandler{
 		cmd: cmd{
 			cmds: []string{"step"},

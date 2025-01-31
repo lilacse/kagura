@@ -4,10 +4,10 @@ import (
 	"database/sql"
 )
 
-type DbSession struct {
+type Session struct {
 	Conn *sql.Conn
 }
 
-func (sess *DbSession) GetScoresRepo() *ScoresRepo {
+func (sess *Session) GetScoresRepo() *ScoresRepo {
 	return GetScoresRepo(sess.Conn)
 }

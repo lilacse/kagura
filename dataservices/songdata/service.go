@@ -12,7 +12,7 @@ import (
 
 type songData []Song
 
-type SongDataService struct {
+type Service struct {
 	data         songData
 	titleMap     map[string]Song
 	keyMap       map[string]Song
@@ -23,13 +23,13 @@ type SongDataService struct {
 
 const datapath = "data/songdata.json"
 
-func NewSongDataService(ctx context.Context) (*SongDataService, error) {
+func NewService(ctx context.Context) (*Service, error) {
 	data, err := loadData(ctx)
 	if err != nil {
 		return nil, err
 	}
 
-	svc := SongDataService{
+	svc := Service{
 		data: data,
 	}
 
@@ -60,7 +60,7 @@ func loadData(ctx context.Context) (songData, error) {
 	return data, nil
 }
 
-func buildSearchMaps(ctx context.Context, svc *SongDataService) {
+func buildSearchMaps(ctx context.Context, svc *Service) {
 	logger.Info(ctx, "rebuilding search maps")
 	st := time.Now()
 

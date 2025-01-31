@@ -18,11 +18,11 @@ import (
 type saveHandler struct {
 	cmd
 	store    *store.Store
-	db       *database.DbService
-	songdata *songdata.SongDataService
+	db       *database.Service
+	songdata *songdata.Service
 }
 
-func NewSaveHandler(store *store.Store, db *database.DbService, songdata *songdata.SongDataService) *saveHandler {
+func NewSaveHandler(store *store.Store, db *database.Service, songdata *songdata.Service) *saveHandler {
 	return &saveHandler{
 		cmd: cmd{
 			cmds: []string{"save"},

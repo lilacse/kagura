@@ -25,12 +25,12 @@ type param struct {
 
 func extractParamsString(cmd string, content string, prefix string) (string, bool) {
 	cmd = prefix + cmd
-	content, isMatch := strings.CutPrefix(content, cmd)
-	if isMatch && len(content) > 0 {
-		isMatch = unicode.IsSpace(rune(content[0]))
+	content, match := strings.CutPrefix(content, cmd)
+	if match && len(content) > 0 {
+		match = unicode.IsSpace(rune(content[0]))
 	}
 
-	if isMatch {
+	if match {
 		return strings.TrimSpace(content), true
 	} else {
 		return "", false

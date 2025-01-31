@@ -18,7 +18,7 @@ import (
 
 type onMessageCreateHandler struct {
 	store    *store.Store
-	db       *database.DbService
+	db       *database.Service
 	datasvcs *dataservices.Provider
 }
 
@@ -61,8 +61,8 @@ func handleCommand(e *gateway.MessageCreateEvent, h *onMessageCreateHandler) {
 	}()
 
 	for _, handler := range handlers {
-		isHandled := handler(ctx, e)
-		if isHandled {
+		handled := handler(ctx, e)
+		if handled {
 			return
 		}
 	}

@@ -6,21 +6,21 @@ import (
 	"github.com/lilacse/kagura/store"
 )
 
-type handlerFactory struct {
+type factory struct {
 	store    *store.Store
-	db       *database.DbService
+	db       *database.Service
 	datasvcs *dataservices.Provider
 }
 
-func NewHandlerFactory(store *store.Store, db *database.DbService, datasvcs *dataservices.Provider) *handlerFactory {
-	return &handlerFactory{
+func NewFactory(store *store.Store, db *database.Service, datasvcs *dataservices.Provider) *factory {
+	return &factory{
 		store:    store,
 		db:       db,
 		datasvcs: datasvcs,
 	}
 }
 
-func (f *handlerFactory) NewOnMessageCreateHandler() *onMessageCreateHandler {
+func (f *factory) NewOnMessageCreateHandler() *onMessageCreateHandler {
 	return &onMessageCreateHandler{
 		store:    f.store,
 		db:       f.db,

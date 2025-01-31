@@ -35,7 +35,7 @@ func main() {
 	s.AddIntents(gateway.IntentDirectMessages)
 	s.AddIntents(gateway.IntentGuildMessages)
 
-	db, err := database.NewDbService(ctx)
+	db, err := database.NewService(ctx)
 	if err != nil {
 		logger.Fatal(ctx, err.Error())
 	}
@@ -55,7 +55,7 @@ func main() {
 	}
 	logger.Info(ctx, "dataservices ready")
 
-	hfactory := handler.NewHandlerFactory(store, db, datasvcs)
+	hfactory := handler.NewFactory(store, db, datasvcs)
 	s.AddHandler(hfactory.NewOnMessageCreateHandler().Handle)
 
 	u, err := s.Me()

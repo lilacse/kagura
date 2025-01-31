@@ -15,10 +15,10 @@ import (
 type pttHandler struct {
 	cmd
 	store    *store.Store
-	songdata *songdata.SongDataService
+	songdata *songdata.Service
 }
 
-func NewPttHandler(store *store.Store, songdata *songdata.SongDataService) *pttHandler {
+func NewPttHandler(store *store.Store, songdata *songdata.Service) *pttHandler {
 	return &pttHandler{
 		cmd: cmd{
 			cmds: []string{"ptt", "rating"},

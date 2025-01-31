@@ -16,11 +16,11 @@ import (
 type unsaveHandler struct {
 	cmd
 	store    *store.Store
-	db       *database.DbService
-	songdata *songdata.SongDataService
+	db       *database.Service
+	songdata *songdata.Service
 }
 
-func NewUnsaveHandler(store *store.Store, db *database.DbService, songdata *songdata.SongDataService) *unsaveHandler {
+func NewUnsaveHandler(store *store.Store, db *database.Service, songdata *songdata.Service) *unsaveHandler {
 	return &unsaveHandler{
 		cmd: cmd{
 			cmds: []string{"unsave"},

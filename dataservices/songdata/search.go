@@ -12,7 +12,7 @@ type KeyMatchResult struct {
 	Score int
 }
 
-func (svc *SongDataService) Search(query string, limit int) []Song {
+func (svc *Service) Search(query string, limit int) []Song {
 	res := make([]Song, 0, limit)
 
 	fullMatch, ok := svc.titleSearch(query)
@@ -24,7 +24,7 @@ func (svc *SongDataService) Search(query string, limit int) []Song {
 	return svc.keySearch(strings.ToLower(query), limit)
 }
 
-func (svc *SongDataService) GetChartById(id int) (Chart, Song, bool) {
+func (svc *Service) GetChartById(id int) (Chart, Song, bool) {
 	chart := svc.chartIdMap[id]
 	if chart.Id == 0 {
 		return Chart{}, Song{}, false
@@ -36,7 +36,7 @@ func (svc *SongDataService) GetChartById(id int) (Chart, Song, bool) {
 	return chart, song, true
 }
 
-func (svc *SongDataService) titleSearch(title string) (Song, bool) {
+func (svc *Service) titleSearch(title string) (Song, bool) {
 	song, ok := svc.titleMap[title]
 	if !ok {
 		return Song{}, false
@@ -45,33 +45,33 @@ func (svc *SongDataService) titleSearch(title string) (Song, bool) {
 	return song, true
 }
 
-func (svc *SongDataService) keySearch(key string, limit int) []Song {
+func (svc *Service) keySearch(key string, limit int) []Song {
 	matchRes := make([]KeyMatchResult, 0, len(svc.keyMap))
 
 	for _, song := range svc.data {
 		for _, searchKey := range song.SearchKeys {
 			currRes := KeyMatchResult{Key: searchKey, Song: svc.keyMap[searchKey]}
 
-			isAtStart := true
+			atStart := true
 			isNewWord := true
 			wordCount := 0
 			lastMatchScore := 0
 			searchPos := 0
-			var isCont bool
+			var cont bool
 
 			for _, k := range key {
-				isCont = false
+				cont = false
 
 				for _, s := range searchKey[searchPos:] {
 					var score int
 
 					isSeperator := s == ' ' || !(s >= 'A' && s <= 'Z' || s >= 'a' && s <= 'z' || s >= '0' && s <= '9')
-					isMatch := k == s || (unicode.IsSpace(k) && isSeperator)
+					match := k == s || (unicode.IsSpace(k) && isSeperator)
 
-					if isMatch {
-						isCont = true
+					if match {
+						cont = true
 
-						if isAtStart {
+						if atStart {
 							score = 30
 						} else if lastMatchScore > 0 {
 							score = lastMatchScore + 1
@@ -85,25 +85,25 @@ func (svc *SongDataService) keySearch(key string, limit int) []Song {
 					}
 
 					if isSeperator {
-						if !isAtStart {
+						if !atStart {
 							isNewWord = true
 							wordCount += 1
 						}
 					} else {
 						isNewWord = false
-						isAtStart = false
+						atStart = false
 					}
 
 					currRes.Score += score
 					lastMatchScore = score
 					searchPos += 1
 
-					if isMatch {
+					if match {
 						break
 					}
 				}
 
-				if !isCont {
+				if !cont {
 					currRes.Score = 0
 					break
 				}

@@ -11,11 +11,11 @@ import (
 	_ "github.com/ncruces/go-sqlite3/embed"
 )
 
-type DbService struct {
+type Service struct {
 	db *sql.DB
 }
 
-func NewDbService(ctx context.Context) (*DbService, error) {
+func NewService(ctx context.Context) (*Service, error) {
 	dbPath := os.Getenv("KAGURA_DBPATH")
 	if dbPath == "" {
 		logger.Info(ctx, "environment variable KAGURA_DBPATH is not set, using default path kagura.db")
@@ -34,7 +34,7 @@ func NewDbService(ctx context.Context) (*DbService, error) {
 		return nil, err
 	}
 
-	return &DbService{db: db}, nil
+	return &Service{db: db}, nil
 }
 
 func setupDb(db *sql.DB) error {
@@ -65,16 +65,16 @@ func setupDb(db *sql.DB) error {
 	return nil
 }
 
-func (svc *DbService) NewSession(ctx context.Context) (*DbSession, error) {
+func (svc *Service) NewSession(ctx context.Context) (*Session, error) {
 	conn, err := svc.db.Conn(ctx)
 	if err != nil {
 		return nil, fmt.Errorf("failed to get connection to database: %v", err)
 	}
 
-	return &DbSession{Conn: conn}, nil
+	return &Session{Conn: conn}, nil
 }
 
-func (svc *DbService) Close() error {
+func (svc *Service) Close() error {
 	err := svc.db.Close()
 	if err != nil {
 		return fmt.Errorf("failed to close database: %v", err)

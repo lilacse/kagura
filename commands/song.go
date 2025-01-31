@@ -17,10 +17,10 @@ import (
 type songHandler struct {
 	cmd
 	store    *store.Store
-	songdata *songdata.SongDataService
+	songdata *songdata.Service
 }
 
-func NewSongHandler(store *store.Store, songdata *songdata.SongDataService) *songHandler {
+func NewSongHandler(store *store.Store, songdata *songdata.Service) *songHandler {
 	return &songHandler{
 		cmd: cmd{
 			cmds: []string{"song"},

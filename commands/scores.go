@@ -18,11 +18,11 @@ import (
 type scoresHandler struct {
 	cmd
 	store    *store.Store
-	db       *database.DbService
-	songdata *songdata.SongDataService
+	db       *database.Service
+	songdata *songdata.Service
 }
 
-func NewScoresHandler(store *store.Store, db *database.DbService, songdata *songdata.SongDataService) *scoresHandler {
+func NewScoresHandler(store *store.Store, db *database.Service, songdata *songdata.Service) *scoresHandler {
 	return &scoresHandler{
 		cmd: cmd{
 			cmds: []string{"scores"},

@@ -7,11 +7,11 @@ import (
 )
 
 type Provider struct {
-	songdatasvc *songdata.SongDataService
+	songdatasvc *songdata.Service
 }
 
 func NewProvider(ctx context.Context) (*Provider, error) {
-	songdatasvc, err := songdata.NewSongDataService(ctx)
+	songdatasvc, err := songdata.NewService(ctx)
 	if err != nil {
 		return nil, err
 	}
@@ -21,6 +21,6 @@ func NewProvider(ctx context.Context) (*Provider, error) {
 	}, nil
 }
 
-func (p *Provider) SongData() *songdata.SongDataService {
+func (p *Provider) SongData() *songdata.Service {
 	return p.songdatasvc
 }
