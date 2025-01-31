@@ -146,7 +146,7 @@ func extractParamReverse(param string, wordCount int) (string, string, bool) {
 
 func parseScore(scoreStr string) (int, string, bool) {
 	score, err := strconv.Atoi(scoreStr)
-	if err != nil || score > 10009999 {
+	if err != nil || score > 10009999 || score < 0 {
 		return -1, fmt.Sprintf("Invalid score `%s`!", scoreStr), false
 	} else if score < 100 {
 		return -1, fmt.Sprintf("Invalid score `%s`, expecting at least 3 digits!", scoreStr), false
