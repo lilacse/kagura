@@ -56,8 +56,17 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 
 	song := matched[0]
 	charts := song.Charts
+
+	diffIndex := map[string]int{
+		"pst": 1,
+		"prs": 2,
+		"ftr": 3,
+		"etr": 4,
+		"byd": 5,
+	}
+
 	slices.SortFunc(charts, func(a, b songdata.Chart) int {
-		return int((a.CC - b.CC) * 10)
+		return diffIndex[a.Diff] - diffIndex[b.Diff]
 	})
 
 	chartEmbeds := []discord.EmbedField{}
