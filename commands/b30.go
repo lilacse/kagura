@@ -18,8 +18,9 @@ import (
 
 type b30Handler struct {
 	cmd
-	store *store.Store
-	db    *database.DbService
+	store    *store.Store
+	db       *database.DbService
+	songdata *songdata.SongDataService
 }
 
 type b30Entry struct {
@@ -30,14 +31,15 @@ type b30Entry struct {
 	timestamp int64
 }
 
-func NewB30Handler(store *store.Store, db *database.DbService) *b30Handler {
+func NewB30Handler(store *store.Store, db *database.DbService, songdata *songdata.SongDataService) *b30Handler {
 	return &b30Handler{
 		cmd: cmd{
 			cmds:   []string{"b30"},
 			params: []param{},
 		},
-		store: store,
-		db:    db,
+		store:    store,
+		db:       db,
+		songdata: songdata,
 	}
 }
 
@@ -79,7 +81,7 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 	b30Entries := make([]b30Entry, 0, len(chartBestMap))
 
 	for s := range maps.Values(chartBestMap) {
-		chart, song, ok := songdata.GetChartById(s.ChartId)
+		chart, song, ok := h.songdata.GetChartById(s.ChartId)
 		if !ok {
 			logAndSendError(ctx, st, fmt.Errorf("chart id %v is not found in songdata", s.ChartId), e)
 			return true

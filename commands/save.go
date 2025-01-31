@@ -17,11 +17,12 @@ import (
 
 type saveHandler struct {
 	cmd
-	store *store.Store
-	db    *database.DbService
+	store    *store.Store
+	db       *database.DbService
+	songdata *songdata.SongDataService
 }
 
-func NewSaveHandler(store *store.Store, db *database.DbService) *saveHandler {
+func NewSaveHandler(store *store.Store, db *database.DbService, songdata *songdata.SongDataService) *saveHandler {
 	return &saveHandler{
 		cmd: cmd{
 			cmds: []string{"save"},
@@ -37,8 +38,9 @@ func NewSaveHandler(store *store.Store, db *database.DbService) *saveHandler {
 				},
 			},
 		},
-		store: store,
-		db:    db,
+		store:    store,
+		db:       db,
+		songdata: songdata,
 	}
 }
 
@@ -74,7 +76,7 @@ func (h *saveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		return true
 	}
 
-	matchSong := songdata.Search(songStr, 1)
+	matchSong := h.songdata.Search(songStr, 1)
 	if len(matchSong) == 0 {
 		sendSongQueryError(st, songStr, e)
 		return true

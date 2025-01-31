@@ -10,14 +10,16 @@ import (
 	"github.com/google/uuid"
 	"github.com/lilacse/kagura/commands"
 	"github.com/lilacse/kagura/database"
+	"github.com/lilacse/kagura/dataservices"
 	"github.com/lilacse/kagura/embedbuilder"
 	"github.com/lilacse/kagura/logger"
 	"github.com/lilacse/kagura/store"
 )
 
 type onMessageCreateHandler struct {
-	store *store.Store
-	db    *database.DbService
+	store    *store.Store
+	db       *database.DbService
+	datasvcs *dataservices.Provider
 }
 
 type commandHandler func(ctx context.Context, e *gateway.MessageCreateEvent) bool
@@ -39,13 +41,13 @@ func handleCommand(e *gateway.MessageCreateEvent, h *onMessageCreateHandler) {
 	ctx := context.WithValue(h.store.Bot.Context(), logger.TraceId, traceId)
 
 	handlers := []commandHandler{
-		commands.NewSongHandler(h.store).Handle,
-		commands.NewPttHandler(h.store).Handle,
-		commands.NewStepHandler(h.store).Handle,
-		commands.NewSaveHandler(h.store, h.db).Handle,
-		commands.NewUnsaveHandler(h.store, h.db).Handle,
-		commands.NewB30Handler(h.store, h.db).Handle,
-		commands.NewScoresHandler(h.store, h.db).Handle,
+		commands.NewSongHandler(h.store, h.datasvcs.SongData()).Handle,
+		commands.NewPttHandler(h.store, h.datasvcs.SongData()).Handle,
+		commands.NewStepHandler(h.store, h.datasvcs.SongData()).Handle,
+		commands.NewSaveHandler(h.store, h.db, h.datasvcs.SongData()).Handle,
+		commands.NewUnsaveHandler(h.store, h.db, h.datasvcs.SongData()).Handle,
+		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).Handle,
+		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).Handle,
 	}
 
 	defer func() {

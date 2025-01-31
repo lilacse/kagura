@@ -16,10 +16,11 @@ import (
 
 type songHandler struct {
 	cmd
-	store *store.Store
+	store    *store.Store
+	songdata *songdata.SongDataService
 }
 
-func NewSongHandler(store *store.Store) *songHandler {
+func NewSongHandler(store *store.Store, songdata *songdata.SongDataService) *songHandler {
 	return &songHandler{
 		cmd: cmd{
 			cmds: []string{"song"},
@@ -29,7 +30,8 @@ func NewSongHandler(store *store.Store) *songHandler {
 				},
 			},
 		},
-		store: store,
+		store:    store,
+		songdata: songdata,
 	}
 }
 
@@ -46,7 +48,7 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		return true
 	}
 
-	matched := songdata.Search(params, 1)
+	matched := h.songdata.Search(params, 1)
 	if len(matched) == 0 {
 		sendSongQueryError(st, params, e)
 		return true

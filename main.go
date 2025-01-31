@@ -9,7 +9,7 @@ import (
 	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/diamondburned/arikawa/v3/state"
 	"github.com/lilacse/kagura/database"
-	"github.com/lilacse/kagura/dataservices/songdata"
+	"github.com/lilacse/kagura/dataservices"
 	"github.com/lilacse/kagura/handler"
 	"github.com/lilacse/kagura/logger"
 	"github.com/lilacse/kagura/store"
@@ -49,7 +49,13 @@ func main() {
 		}
 	}()
 
-	hfactory := handler.NewHandlerFactory(store, db)
+	datasvcs, err := dataservices.NewProvider(ctx)
+	if err != nil {
+		logger.Fatal(ctx, err.Error())
+	}
+	logger.Info(ctx, "dataservices ready")
+
+	hfactory := handler.NewHandlerFactory(store, db, datasvcs)
 	s.AddHandler(hfactory.NewOnMessageCreateHandler().Handle)
 
 	u, err := s.Me()
@@ -65,8 +71,6 @@ func main() {
 		prefix = "~"
 	}
 	store.Bot.SetPrefix(prefix)
-
-	songdata.Init(ctx)
 
 	logger.Info(ctx, "starting connection to Discord. bot should be ready!")
 	err = s.Connect(ctx)

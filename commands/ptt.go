@@ -14,10 +14,11 @@ import (
 
 type pttHandler struct {
 	cmd
-	store *store.Store
+	store    *store.Store
+	songdata *songdata.SongDataService
 }
 
-func NewPttHandler(store *store.Store) *pttHandler {
+func NewPttHandler(store *store.Store, songdata *songdata.SongDataService) *pttHandler {
 	return &pttHandler{
 		cmd: cmd{
 			cmds: []string{"ptt", "rating"},
@@ -33,7 +34,8 @@ func NewPttHandler(store *store.Store) *pttHandler {
 				},
 			},
 		},
-		store: store,
+		store:    store,
+		songdata: songdata,
 	}
 }
 
@@ -77,7 +79,7 @@ func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 		return true
 	}
 
-	matchSong := songdata.Search(songStr, 1)
+	matchSong := h.songdata.Search(songStr, 1)
 	if len(matchSong) == 0 {
 		sendSongQueryError(st, songStr, e)
 		return true

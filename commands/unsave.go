@@ -15,11 +15,12 @@ import (
 
 type unsaveHandler struct {
 	cmd
-	store *store.Store
-	db    *database.DbService
+	store    *store.Store
+	db       *database.DbService
+	songdata *songdata.SongDataService
 }
 
-func NewUnsaveHandler(store *store.Store, db *database.DbService) *unsaveHandler {
+func NewUnsaveHandler(store *store.Store, db *database.DbService, songdata *songdata.SongDataService) *unsaveHandler {
 	return &unsaveHandler{
 		cmd: cmd{
 			cmds: []string{"unsave"},
@@ -29,8 +30,9 @@ func NewUnsaveHandler(store *store.Store, db *database.DbService) *unsaveHandler
 				},
 			},
 		},
-		store: store,
-		db:    db,
+		store:    store,
+		db:       db,
+		songdata: songdata,
 	}
 }
 
@@ -99,7 +101,7 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 	}
 
 	currRec := currRecs[0]
-	chart, song, ok := songdata.GetChartById(currRec.ChartId)
+	chart, song, ok := h.songdata.GetChartById(currRec.ChartId)
 	if !ok {
 		logAndSendError(ctx, st, fmt.Errorf("chart id %v is not found in songdata", currRec.ChartId), e)
 		return true

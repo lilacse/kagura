@@ -12,32 +12,32 @@ type KeyMatchResult struct {
 	Score int
 }
 
-func Search(query string, limit int) []Song {
+func (svc *SongDataService) Search(query string, limit int) []Song {
 	res := make([]Song, 0, limit)
 
-	fullMatch, ok := titleSearch(query)
+	fullMatch, ok := svc.titleSearch(query)
 	if ok {
 		res = append(res, fullMatch)
 		return res
 	}
 
-	return keySearch(strings.ToLower(query), limit)
+	return svc.keySearch(strings.ToLower(query), limit)
 }
 
-func GetChartById(id int) (Chart, Song, bool) {
-	chart := chartIdMap[id]
+func (svc *SongDataService) GetChartById(id int) (Chart, Song, bool) {
+	chart := svc.chartIdMap[id]
 	if chart.Id == 0 {
 		return Chart{}, Song{}, false
 	}
 
-	songId := chartSongMap[chart.Id]
-	song := songIdMap[songId]
+	songId := svc.chartSongMap[chart.Id]
+	song := svc.songIdMap[songId]
 
 	return chart, song, true
 }
 
-func titleSearch(title string) (Song, bool) {
-	song, ok := titleMap[title]
+func (svc *SongDataService) titleSearch(title string) (Song, bool) {
+	song, ok := svc.titleMap[title]
 	if !ok {
 		return Song{}, false
 	}
@@ -45,12 +45,12 @@ func titleSearch(title string) (Song, bool) {
 	return song, true
 }
 
-func keySearch(key string, limit int) []Song {
-	matchRes := make([]KeyMatchResult, 0, len(keyMap))
+func (svc *SongDataService) keySearch(key string, limit int) []Song {
+	matchRes := make([]KeyMatchResult, 0, len(svc.keyMap))
 
-	for _, song := range data {
+	for _, song := range svc.data {
 		for _, searchKey := range song.SearchKeys {
-			currRes := KeyMatchResult{Key: searchKey, Song: keyMap[searchKey]}
+			currRes := KeyMatchResult{Key: searchKey, Song: svc.keyMap[searchKey]}
 
 			isAtStart := true
 			isNewWord := true

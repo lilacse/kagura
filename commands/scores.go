@@ -17,11 +17,12 @@ import (
 
 type scoresHandler struct {
 	cmd
-	store *store.Store
-	db    *database.DbService
+	store    *store.Store
+	db       *database.DbService
+	songdata *songdata.SongDataService
 }
 
-func NewScoresHandler(store *store.Store, db *database.DbService) *scoresHandler {
+func NewScoresHandler(store *store.Store, db *database.DbService, songdata *songdata.SongDataService) *scoresHandler {
 	return &scoresHandler{
 		cmd: cmd{
 			cmds: []string{"scores"},
@@ -34,8 +35,9 @@ func NewScoresHandler(store *store.Store, db *database.DbService) *scoresHandler
 				},
 			},
 		},
-		store: store,
-		db:    db,
+		store:    store,
+		db:       db,
+		songdata: songdata,
 	}
 }
 
@@ -59,7 +61,7 @@ func (h *scoresHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 		return true
 	}
 
-	matchSong := songdata.Search(songStr, 1)
+	matchSong := h.songdata.Search(songStr, 1)
 	if len(matchSong) == 0 {
 		sendSongQueryError(st, songStr, e)
 		return true

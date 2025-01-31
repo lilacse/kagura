@@ -15,10 +15,11 @@ import (
 
 type stepHandler struct {
 	cmd
-	store *store.Store
+	store    *store.Store
+	songdata *songdata.SongDataService
 }
 
-func NewStepHandler(store *store.Store) *stepHandler {
+func NewStepHandler(store *store.Store, songdata *songdata.SongDataService) *stepHandler {
 	return &stepHandler{
 		cmd: cmd{
 			cmds: []string{"step"},
@@ -37,7 +38,8 @@ func NewStepHandler(store *store.Store) *stepHandler {
 				},
 			},
 		},
-		store: store,
+		store:    store,
+		songdata: songdata,
 	}
 }
 
@@ -85,7 +87,7 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		return true
 	}
 
-	matchSong := songdata.Search(songStr, 1)
+	matchSong := h.songdata.Search(songStr, 1)
 	if len(matchSong) == 0 {
 		sendSongQueryError(st, songStr, e)
 		return true
