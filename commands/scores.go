@@ -114,7 +114,7 @@ func (h *scoresHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 	recents := strings.Builder{}
 
 	for i, s := range scores {
-		recents.WriteString(fmt.Sprintf("%v. %v (<t:%v:R>)\n", i+1, s.Score, s.Timestamp/1000))
+		recents.WriteString(fmt.Sprintf("%v. %v (<t:%v:R>)\n  -# Score ID: %v\n", i+1, s.Score, s.Timestamp/1000, s.Id))
 	}
 
 	embed := discord.Embed{
