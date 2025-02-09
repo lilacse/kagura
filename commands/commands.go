@@ -19,8 +19,8 @@ type cmd struct {
 }
 
 type param struct {
-	name  string
-	isOpt bool
+	name     string
+	optional bool
 }
 
 func extractParamsString(cmd string, content string, prefix string) (string, bool) {

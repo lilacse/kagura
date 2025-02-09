@@ -12,7 +12,7 @@ import (
 func sendFormatError(st *state.State, prefix string, handler cmd, e *gateway.MessageCreateEvent) {
 	paramList := make([]string, 0, len(handler.params))
 	for _, p := range handler.params {
-		if !p.isOpt {
+		if !p.optional {
 			paramList = append(paramList, fmt.Sprintf("[%s]", p.name))
 		} else {
 			paramList = append(paramList, fmt.Sprintf("(%s)", p.name))
