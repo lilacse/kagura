@@ -2,6 +2,7 @@ package songdata
 
 import (
 	"slices"
+	"strconv"
 	"strings"
 	"unicode"
 )
@@ -117,6 +118,33 @@ func (svc *Service) keySearch(key string, limit int) []Song {
 		diff := b.Score - a.Score
 		if diff != 0 {
 			return diff
+		}
+
+		// if both songs share the same title, prioritise the one earlier added to the game
+		if a.Song.Title == b.Song.Title {
+			verA := strings.Split(a.Song.GetSongVer(), ".")
+			verB := strings.Split(b.Song.GetSongVer(), ".")
+
+			majorA, _ := strconv.Atoi(verA[0])
+			majorB, _ := strconv.Atoi(verB[0])
+			majorDiff := majorA - majorB
+			if majorDiff != 0 {
+				return majorDiff
+			}
+
+			minorA, _ := strconv.Atoi(verA[1])
+			minorB, _ := strconv.Atoi(verB[1])
+			minorDiff := minorA - minorB
+			if minorDiff != 0 {
+				return minorDiff
+			}
+
+			patchA, _ := strconv.Atoi(verA[2])
+			patchB, _ := strconv.Atoi(verB[2])
+			patchDiff := patchA - patchB
+			if patchDiff != 0 {
+				return patchDiff
+			}
 		}
 
 		return strings.Compare(a.Key, b.Key)
