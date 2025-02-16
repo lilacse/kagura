@@ -1501,7 +1501,7 @@
   {
     "id": 45,
     "title": "Genesis",
-    "altTitle": "Genesis",
+    "altTitle": "Genesis (Iris)",
     "artist": "Iris",
     "charts": [
       {
@@ -1527,7 +1527,7 @@
       }
     ],
     "searchKeys": [
-      "genesis"
+      "genesis (iris)"
     ]
   },
   {
@@ -2251,7 +2251,7 @@
   {
     "id": 68,
     "title": "Quon",
-    "altTitle": "Quon",
+    "altTitle": "Quon (Feryquitous)",
     "artist": "Feryquitous",
     "charts": [
       {
@@ -2277,7 +2277,7 @@
       }
     ],
     "searchKeys": [
-      "quon"
+      "quon (feryquitous)"
     ]
   },
   {
