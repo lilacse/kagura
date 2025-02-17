@@ -9,6 +9,7 @@ type Song struct {
 	Artist     string   `json:"artist"`
 	Charts     []Chart  `json:"charts"`
 	SearchKeys []string `json:"searchKeys"`
+	Url        string   `json:"url"`
 }
 
 func (s *Song) GetChart(diffKey string) (Chart, bool) {

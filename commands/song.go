@@ -112,6 +112,10 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 				Label: "Find Chart View on YouTube",
 				Style: discord.LinkButtonStyle(chartViewLink),
 			},
+			&discord.ButtonComponent{
+				Label: "Fandom page",
+				Style: discord.LinkButtonStyle(song.Url),
+			},
 		),
 		Reference: &discord.MessageReference{
 			MessageID: e.ID,
