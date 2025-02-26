@@ -15282,5 +15282,45 @@
       "yomibito_shirazu"
     ],
     "url": "https://arcaea.fandom.com/wiki/yomibito_shirazu"
+  },
+  {
+    "id": 451,
+    "title": "Aether Crest: Astral",
+    "altTitle": "Aether Crest: Astral",
+    "artist": "void (Mournfinale) \u00d7 \u6c34\u91ce\u5065\u6cbb",
+    "charts": [
+      {
+        "id": 1412,
+        "diff": "pst",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "6.2.6"
+      },
+      {
+        "id": 1413,
+        "diff": "prs",
+        "level": "8+",
+        "cc": 8.9,
+        "ver": "6.2.6"
+      },
+      {
+        "id": 1414,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.6,
+        "ver": "6.2.6"
+      },
+      {
+        "id": 1415,
+        "diff": "etr",
+        "level": "11",
+        "cc": 11.5,
+        "ver": "6.2.6"
+      }
+    ],
+    "searchKeys": [
+      "aether crest: astral"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/Aether_Crest:_Astral"
   }
 ]
