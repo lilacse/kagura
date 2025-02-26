@@ -11,12 +11,13 @@ every song data entry must contain the following keys:
 - artist
 - charts
 - searchKeys
+- url
 
 additional validation for values: 
 - id must be an integer
-- title, altTitle and artist must be strings
+- title, altTitle, artist and url must be strings
 - altTitle must be of the format '{title} ({artist})' if it is different from title.
-- altTitle must only be different from title if a song with the same title already exists with a smaller id. 
+- altTitle must only be different from title if multiple songs are sharing the same title. 
 - searchKeys must contain no unicode escape sequences. 
 
 every chart entry must contain the following keys:
@@ -48,6 +49,8 @@ skipping ids is not allowed. charts and songs should be kept in songdata.json ev
 """
 
 import json
+import requests
+import time
 
 f = open("songdata.json", "r")
 s = f.read()
@@ -71,6 +74,7 @@ expected_song_keys = [
     "artist",
     "charts",
     "searchKeys",
+    "url",
 ]
 
 expected_song_key_types = {
@@ -80,6 +84,7 @@ expected_song_key_types = {
     "artist": str,
     "charts": list,
     "searchKeys": list,
+    "url": str,
 }
 
 expected_chart_keys = [
@@ -133,6 +138,8 @@ is_data_valid = True
 
 
 # validate song/chart entry keys, key types and values, and prepare them for id sequence validation
+
+print("validating song/chart entry keys, key types, values")
 
 for song in data:
     missing_song_keys = []
@@ -267,6 +274,8 @@ if not is_data_valid:
 
 # validate song and chart ids
 
+print("validating song and chart ids")
+
 chart_list.sort(
     key=lambda c: (
         c["ver_tuple"],
@@ -317,6 +326,8 @@ if not is_data_valid:
 
 # validate title and altTitle
 
+print("validating title and altTitle")
+
 title_count_dict = {}
 
 for s in song_list:
@@ -350,5 +361,27 @@ for s in song_list:
 if not is_data_valid:
     print(f"errors found in songdata.json:\n\n{"\n\n".join(errs)}")
     exit(1)
+
+# validate urls
+
+print("validating urls (this might take a while)")
+
+url_validate_count = 0
+for s in song_list:
+    url = s["url"]
+    r = requests.head(url)
+
+    url_validate_count += 1
+    if url_validate_count % 10 == 0 or url_validate_count == len(song_list):
+        print(f"validated {url_validate_count} of {len(song_list)}")
+
+    if r.status_code >= 400:
+        is_data_valid = False
+        errs.append(
+            f"request to url '{url}' does not return a proper status code ({r.status_code})"
+        )
+        continue
+
+    time.sleep(1)
 
 print(f"songdata.json ok")
