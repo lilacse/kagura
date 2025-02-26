@@ -317,22 +317,27 @@ if not is_data_valid:
 
 # validate title and altTitle
 
-title_set = set()
+title_count_dict = {}
+
+for s in song_list:
+    title = s["title"]
+    if title not in title_count_dict:
+        title_count_dict[title] = 1
+    else:
+        title_count_dict[title] += 1
 
 for s in song_list:
     title = s["title"]
     altTitle = s["altTitle"]
     artist = s["artist"]
 
-    if title not in title_set:
+    if title_count_dict[title] == 1:
         if altTitle != title:
             is_data_valid = False
             errs.append(
                 f"altTitle is expected to be the same as title for song '{title}':\n{json.dumps(s)}"
             )
             continue
-
-        title_set.add(title)
     else:
         suggested_altTitle = f"{title} ({artist})"
         if altTitle != suggested_altTitle:
