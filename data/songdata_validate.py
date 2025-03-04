@@ -30,7 +30,7 @@ every chart entry must contain the following keys:
 additional validation for values: 
 - id must be an integer
 - diff must be either "pst", "prs", "ftr", "etr", "byd"
-- level must be either "1", "2", "3", "4", "5", "6", "7", "7+", "8", "8+", "9", "9+", "10", "10+", "11", "11+", "12"
+- level must be either "1", "2", "3", "4", "5", "6", "7", "7+", "8", "8+", "9", "9+", "10", "10+", "11", "11+", "12", "?"
 - cc must be a floating value
 - ver must be a semver compatible string
 
@@ -129,6 +129,7 @@ expected_levels = [
     "11",
     "11+",
     "12",
+    "?",
 ]
 
 song_dict = {}
