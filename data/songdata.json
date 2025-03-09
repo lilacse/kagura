@@ -15322,5 +15322,278 @@
       "aether crest: astral"
     ],
     "url": "https://arcaea.fandom.com/wiki/Aether_Crest:_Astral"
+  },
+  {
+    "id": 452,
+    "title": "Death By Glamour",
+    "altTitle": "Death By Glamour",
+    "artist": "Toby Fox",
+    "charts": [
+      {
+        "id": 1416,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1417,
+        "diff": "prs",
+        "level": "5",
+        "cc": 5.0,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1418,
+        "diff": "ftr",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1419,
+        "diff": "etr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "6.3.0"
+      }
+    ],
+    "searchKeys": [
+      "death by glamour"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/Death_By_Glamour"
+  },
+  {
+    "id": 453,
+    "title": "Heartache",
+    "altTitle": "Heartache",
+    "artist": "Toby Fox",
+    "charts": [
+      {
+        "id": 1420,
+        "diff": "pst",
+        "level": "1",
+        "cc": 1.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1421,
+        "diff": "prs",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1422,
+        "diff": "ftr",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1423,
+        "diff": "etr",
+        "level": "8+",
+        "cc": 8.7,
+        "ver": "6.3.0"
+      }
+    ],
+    "searchKeys": [
+      "heartache"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/Heartache"
+  },
+  {
+    "id": 454,
+    "title": "Last Goodbye",
+    "altTitle": "Last Goodbye",
+    "artist": "Toby Fox",
+    "charts": [
+      {
+        "id": 1424,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1425,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1426,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.2,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1427,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.3.0"
+      }
+    ],
+    "searchKeys": [
+      "last goodbye"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/Last_Goodbye"
+  },
+  {
+    "id": 455,
+    "title": "MEGALOVANIA",
+    "altTitle": "MEGALOVANIA",
+    "artist": "Toby Fox",
+    "charts": [
+      {
+        "id": 1428,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1429,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1430,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1431,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "6.3.0"
+      }
+    ],
+    "searchKeys": [
+      "megalovania"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/MEGALOVANIA"
+  },
+  {
+    "id": 456,
+    "title": "MEGALOVANIA (Camellia Remix)",
+    "altTitle": "MEGALOVANIA (Camellia Remix)",
+    "artist": "Camellia",
+    "charts": [
+      {
+        "id": 1432,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1433,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.4,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1434,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1435,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "6.3.0"
+      }
+    ],
+    "searchKeys": [
+      "megalovania (camellia remix)"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/MEGALOVANIA_(Camellia_Remix)"
+  },
+  {
+    "id": 457,
+    "title": "Placebo\u2665Battler",
+    "altTitle": "Placebo\u2665Battler",
+    "artist": "OSTER project",
+    "charts": [
+      {
+        "id": 1436,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1437,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1438,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "6.3.0"
+      }
+    ],
+    "searchKeys": [
+      "placebo battler"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/Placebo\u2665Battler"
+  },
+  {
+    "id": 458,
+    "title": "Your Best Nightmare",
+    "altTitle": "Your Best Nightmare",
+    "artist": "Toby Fox",
+    "charts": [
+      {
+        "id": 1439,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1440,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1441,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.9,
+        "ver": "6.3.0"
+      },
+      {
+        "id": 1442,
+        "diff": "byd",
+        "level": "10",
+        "cc": 10.2,
+        "ver": "6.3.0"
+      }
+    ],
+    "searchKeys": [
+      "your best nightmare"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/Your_Best_Nightmare"
   }
 ]
