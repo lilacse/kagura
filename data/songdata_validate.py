@@ -1,10 +1,10 @@
 """
-validates if songdata.json is in an expected format with the expected id sequences. 
+validates if songdata.json is in an expected format with the expected id sequences.
 values that can be validated will be checked as well (e.g. altTitle, chart diff, searchKeys)
 
 the file should contain no non-ascii characters. for non-ascii characters, unicode escape sequences must be used.
 
-every song data entry must contain the following keys: 
+every song data entry must contain the following keys:
 - id
 - title
 - altTitle
@@ -13,34 +13,34 @@ every song data entry must contain the following keys:
 - searchKeys
 - url
 
-additional validation for values: 
+additional validation for values:
 - id must be an integer
 - title, altTitle, artist and url must be strings
 - altTitle must be of the format '{title} ({artist})' if it is different from title.
-- altTitle must only be different from title if multiple songs are sharing the same title. 
-- searchKeys must contain no unicode escape sequences. 
+- altTitle must only be different from title if multiple songs are sharing the same title.
+- searchKeys must contain no unicode escape sequences.
 
 every chart entry must contain the following keys:
-- id 
+- id
 - diff
 - level
 - cc
 - ver
 
-additional validation for values: 
+additional validation for values:
 - id must be an integer
 - diff must be either "pst", "prs", "ftr", "etr", "byd"
 - level must be either "1", "2", "3", "4", "5", "6", "7", "7+", "8", "8+", "9", "9+", "10", "10+", "11", "11+", "12", "?"
 - cc must be a floating value
 - ver must be a semver compatible string
 
-song id is expected to be sorted ascendingly by the following sorting criteria: 
+song id is expected to be sorted ascendingly by the following sorting criteria:
 - version in which the song is first added
 - title (converted to lowercase)
 - artist (converted to lowercase)
 
-chart id is expected to be sorted ascendingly by the following sorting criteria: 
-- version in which the chart is added 
+chart id is expected to be sorted ascendingly by the following sorting criteria:
+- version in which the chart is added
 - the song's title (converted to lowercase)
 - the song's artist (converted to lowercase)
 - the chart's diff (PST -> PRS -> FTR -> ETR -> BYD)
@@ -49,8 +49,6 @@ skipping ids is not allowed. charts and songs should be kept in songdata.json ev
 """
 
 import json
-import requests
-import time
 
 f = open("songdata.json", "r")
 s = f.read()
@@ -362,27 +360,5 @@ for s in song_list:
 if not is_data_valid:
     print(f"errors found in songdata.json:\n\n{"\n\n".join(errs)}")
     exit(1)
-
-# validate urls
-
-print("validating urls (this might take a while)")
-
-url_validate_count = 0
-for s in song_list:
-    url = s["url"]
-    r = requests.head(url)
-
-    url_validate_count += 1
-    if url_validate_count % 10 == 0 or url_validate_count == len(song_list):
-        print(f"validated {url_validate_count} of {len(song_list)}")
-
-    if r.status_code >= 400:
-        is_data_valid = False
-        errs.append(
-            f"request to url '{url}' does not return a proper status code ({r.status_code})"
-        )
-        continue
-
-    time.sleep(1)
 
 print(f"songdata.json ok")
