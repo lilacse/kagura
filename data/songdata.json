@@ -15595,5 +15595,118 @@
       "your best nightmare"
     ],
     "url": "https://arcaea.fandom.com/wiki/Your_Best_Nightmare"
+  },
+  {
+    "id": 459,
+    "title": "Black Mirror on the Wall",
+    "altTitle": "Black Mirror on the Wall",
+    "artist": "\u6681Records",
+    "charts": [
+      {
+        "id": 1443,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.3.2"
+      },
+      {
+        "id": 1444,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.3.2"
+      },
+      {
+        "id": 1445,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.6,
+        "ver": "6.3.2"
+      },
+      {
+        "id": 1446,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.3.2"
+      }
+    ],
+    "searchKeys": [
+      "black mirror on the wall"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/Black_Mirror_on_the_Wall"
+  },
+  {
+    "id": 460,
+    "title": "Shinchoku Doudesuka?",
+    "altTitle": "Shinchoku Doudesuka?",
+    "artist": "sumijun feat. \u306a\u306a\u3072\u3089",
+    "charts": [
+      {
+        "id": 1447,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.3.2"
+      },
+      {
+        "id": 1448,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.3.2"
+      },
+      {
+        "id": 1449,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "6.3.2"
+      },
+      {
+        "id": 1450,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.3.2"
+      }
+    ],
+    "searchKeys": [
+      "shinchoku doudesuka?"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/Shinchoku_Doudesuka%3F"
+  },
+  {
+    "id": 461,
+    "title": "TRPNO",
+    "altTitle": "TRPNO",
+    "artist": "Nauts",
+    "charts": [
+      {
+        "id": 1451,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.3.2"
+      },
+      {
+        "id": 1452,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.3.2"
+      },
+      {
+        "id": 1453,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.0,
+        "ver": "6.3.2"
+      }
+    ],
+    "searchKeys": [
+      "trpno"
+    ],
+    "url": "https://arcaea.fandom.com/wiki/TRPNO"
   }
 ]
