@@ -6,7 +6,6 @@ import (
 	"net/url"
 	"slices"
 
-	"github.com/diamondburned/arikawa/v3/api"
 	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/lilacse/kagura/dataservices/songdata"
@@ -69,62 +68,59 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		return diffIndex[a.Diff] - diffIndex[b.Diff]
 	})
 
-	chartEmbeds := []discord.EmbedField{}
+	ytQuery := url.QueryEscape(fmt.Sprintf("Arcaea %s Chart View", song.Title))
+	chartViewLink := fmt.Sprintf("https://www.youtube.com/results?search_query=%s", ytQuery)
+
+	linksText := fmt.Sprintf("[Find Chart View on YouTube](%s)", chartViewLink)
+
+	if song.Urls["fandom"] != "" {
+		linksText = fmt.Sprintf("%s\u2002▪\u2002[Fandom](%s)", linksText, song.Urls["fandom"])
+	}
+
+	if song.Urls["mcd.blue"] != "" {
+		linksText = fmt.Sprintf("%s\u2002▪\u2002[Arcaea中文维基](%s)", linksText, song.Urls["mcd.blue"])
+	}
+
+	embedFields := []discord.EmbedField{
+		{
+			Name:  "Title",
+			Value: song.Title,
+		},
+		{
+			Name:  "Artist",
+			Value: song.Artist,
+		},
+		{
+			Name: "",
+		},
+		{
+			Name:  "Charts",
+			Value: "",
+		},
+	}
+
 	for _, chart := range song.Charts {
-		chartEmbeds = append(chartEmbeds, discord.EmbedField{
+		embedFields = append(embedFields, discord.EmbedField{
 			Name:   chart.GetDiffDisplayName(),
 			Value:  fmt.Sprintf("Lv%s (%s) (v%s)", chart.Level, chart.GetCCString(), chart.Ver),
 			Inline: true,
 		})
 	}
 
+	embedFields = append(embedFields, discord.EmbedField{
+		Name: "",
+	})
+
+	embedFields = append(embedFields, discord.EmbedField{
+		Name:  "",
+		Value: linksText,
+	})
+
 	songEmbed := discord.Embed{
-		Fields: []discord.EmbedField{
-			{
-				Name:  "Title",
-				Value: song.Title,
-			},
-			{
-				Name:  "Artist",
-				Value: song.Artist,
-			},
-			{
-				Name: "",
-			},
-			{
-				Name:  "Charts",
-				Value: "",
-			},
-		},
+		Fields: embedFields,
 	}
 
-	songEmbed.Fields = append(songEmbed.Fields, chartEmbeds...)
-
-	ytQuery := url.QueryEscape(fmt.Sprintf("Arcaea %s Chart View", song.Title))
-	chartViewLink := fmt.Sprintf("https://www.youtube.com/results?search_query=%s", ytQuery)
-
-	message := api.SendMessageData{
-		Embeds: []discord.Embed{
-			embedbuilder.Info(songEmbed),
-		},
-		Components: discord.Components(
-			&discord.ButtonComponent{
-				Label: "Find Chart View on YouTube",
-				Style: discord.LinkButtonStyle(chartViewLink),
-			},
-			&discord.ButtonComponent{
-				Label: "Fandom page",
-				Style: discord.LinkButtonStyle(song.Url),
-			},
-		),
-		Reference: &discord.MessageReference{
-			MessageID: e.ID,
-			ChannelID: e.ChannelID,
-			GuildID:   e.GuildID,
-		},
-	}
-
-	st.SendMessageComplex(e.ChannelID, message)
+	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(songEmbed))
 
 	return true
 }

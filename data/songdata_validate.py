@@ -11,14 +11,15 @@ every song data entry must contain the following keys:
 - artist
 - charts
 - searchKeys
-- url
+- urls
 
 additional validation for values:
 - id must be an integer
-- title, altTitle, artist and url must be strings
+- title, altTitle and artist must be strings
 - altTitle must be of the format '{title} ({artist})' if it is different from title.
 - altTitle must only be different from title if multiple songs are sharing the same title.
 - searchKeys must contain no unicode escape sequences.
+- urls must be a dict of str -> str
 
 every chart entry must contain the following keys:
 - id
@@ -72,7 +73,7 @@ expected_song_keys = [
     "artist",
     "charts",
     "searchKeys",
-    "url",
+    "urls",
 ]
 
 expected_song_key_types = {
@@ -82,7 +83,7 @@ expected_song_key_types = {
     "artist": str,
     "charts": list,
     "searchKeys": list,
-    "url": str,
+    "urls": dict,
 }
 
 expected_chart_keys = [
@@ -174,6 +175,18 @@ for song in data:
                 f"unicode sequence ({k}) found in searchKeys in song entry:\n {json.dumps(song)}"
             )
         continue
+
+    for k, v in song["urls"].items():
+        if type(k) != str:
+            is_data_valid = False
+            errs.append(
+                f"url key ({k}) is not a string in song entry:\n {json.dumps(song)}"
+            )
+        if type(v) != str:
+            is_data_valid = False
+            errs.append(
+                f"url ({v}) is not a string in song entry:\n {json.dumps(song)}"
+            )
 
     is_charts_valid = True
     song_ver_tuple = (999, 999, 999)

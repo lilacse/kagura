@@ -3,13 +3,13 @@ package songdata
 import "math"
 
 type Song struct {
-	Id         int      `json:"id"`
-	Title      string   `json:"title"`
-	AltTitle   string   `json:"altTitle"`
-	Artist     string   `json:"artist"`
-	Charts     []Chart  `json:"charts"`
-	SearchKeys []string `json:"searchKeys"`
-	Url        string   `json:"url"`
+	Id         int               `json:"id"`
+	Title      string            `json:"title"`
+	AltTitle   string            `json:"altTitle"`
+	Artist     string            `json:"artist"`
+	Charts     []Chart           `json:"charts"`
+	SearchKeys []string          `json:"searchKeys"`
+	Urls       map[string]string `json:"urls"`
 }
 
 func (s *Song) GetChart(diffKey string) (Chart, bool) {

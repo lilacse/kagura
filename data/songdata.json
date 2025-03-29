@@ -30,7 +30,10 @@
     "searchKeys": [
       "babaroque"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Babaroque"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Babaroque",
+      "mcd.blue": "https://arcwiki.mcd.blue/Babaroque"
+    }
   },
   {
     "id": 2,
@@ -63,7 +66,10 @@
     "searchKeys": [
       "cry of viyella"
     ],
-    "url": "https://arcaea.fandom.com/wiki/cry_of_viyella"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/cry_of_viyella",
+      "mcd.blue": "https://arcwiki.mcd.blue/cry_of_viyella"
+    }
   },
   {
     "id": 3,
@@ -96,7 +102,10 @@
     "searchKeys": [
       "essence of twilight"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Essence_of_Twilight"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Essence_of_Twilight",
+      "mcd.blue": "https://arcwiki.mcd.blue/Essence_of_Twilight"
+    }
   },
   {
     "id": 4,
@@ -136,7 +145,10 @@
     "searchKeys": [
       "fairytale"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Fairytale"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Fairytale",
+      "mcd.blue": "https://arcwiki.mcd.blue/Fairytale"
+    }
   },
   {
     "id": 5,
@@ -176,7 +188,10 @@
     "searchKeys": [
       "goodtek (arcaea edit)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/GOODTEK_(Arcaea_Edit)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/GOODTEK_(Arcaea_Edit)",
+      "mcd.blue": "https://arcwiki.mcd.blue/GOODTEK_(Arcaea_Edit)"
+    }
   },
   {
     "id": 6,
@@ -209,7 +224,10 @@
     "searchKeys": [
       "i've heard it said"
     ],
-    "url": "https://arcaea.fandom.com/wiki/I've_heard_it_said"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/I've_heard_it_said",
+      "mcd.blue": "https://arcwiki.mcd.blue/I've_heard_it_said"
+    }
   },
   {
     "id": 7,
@@ -249,7 +267,10 @@
     "searchKeys": [
       "lost civilization"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lost_Civilization"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lost_Civilization",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lost_Civilization"
+    }
   },
   {
     "id": 8,
@@ -282,7 +303,10 @@
     "searchKeys": [
       "lucifer"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lucifer"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lucifer",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lucifer"
+    }
   },
   {
     "id": 9,
@@ -322,7 +346,10 @@
     "searchKeys": [
       "lumia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lumia"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lumia",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lumia"
+    }
   },
   {
     "id": 10,
@@ -355,7 +382,10 @@
     "searchKeys": [
       "memoryfactory.lzh"
     ],
-    "url": "https://arcaea.fandom.com/wiki/memoryfactory.lzh"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/memoryfactory.lzh",
+      "mcd.blue": "https://arcwiki.mcd.blue/memoryfactory.lzh"
+    }
   },
   {
     "id": 11,
@@ -388,7 +418,10 @@
     "searchKeys": [
       "pragmatism"
     ],
-    "url": "https://arcaea.fandom.com/wiki/PRAGMATISM"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/PRAGMATISM",
+      "mcd.blue": "https://arcwiki.mcd.blue/PRAGMATISM"
+    }
   },
   {
     "id": 12,
@@ -428,7 +461,10 @@
     "searchKeys": [
       "qualia -ideaesthesia-"
     ],
-    "url": "https://arcaea.fandom.com/wiki/qualia_-ideaesthesia-"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/qualia_-ideaesthesia-",
+      "mcd.blue": "https://arcwiki.mcd.blue/qualia_-ideaesthesia-"
+    }
   },
   {
     "id": 13,
@@ -461,7 +497,10 @@
     "searchKeys": [
       "relentless"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Relentless"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Relentless",
+      "mcd.blue": "https://arcwiki.mcd.blue/Relentless"
+    }
   },
   {
     "id": 14,
@@ -494,7 +533,10 @@
     "searchKeys": [
       "rise"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Rise"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Rise",
+      "mcd.blue": "https://arcwiki.mcd.blue/Rise"
+    }
   },
   {
     "id": 15,
@@ -534,7 +576,10 @@
     "searchKeys": [
       "sayonara hatsukoi"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Sayonara_Hatsukoi"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Sayonara_Hatsukoi",
+      "mcd.blue": "https://arcwiki.mcd.blue/Sayonara_Hatsukoi"
+    }
   },
   {
     "id": 16,
@@ -574,7 +619,10 @@
     "searchKeys": [
       "shades of light in a transcendent realm"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Shades_of_Light_in_a_Transcendent_Realm"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Shades_of_Light_in_a_Transcendent_Realm",
+      "mcd.blue": "https://arcwiki.mcd.blue/Shades_of_Light_in_a_Transcendent_Realm"
+    }
   },
   {
     "id": 17,
@@ -607,7 +655,10 @@
     "searchKeys": [
       "sheriruth"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Sheriruth"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Sheriruth",
+      "mcd.blue": "https://arcwiki.mcd.blue/Sheriruth"
+    }
   },
   {
     "id": 18,
@@ -640,7 +691,10 @@
     "searchKeys": [
       "snow white"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Snow_White"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Snow_White",
+      "mcd.blue": "https://arcwiki.mcd.blue/Snow_White"
+    }
   },
   {
     "id": 19,
@@ -680,7 +734,10 @@
     "searchKeys": [
       "vexaria"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Vexaria"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Vexaria",
+      "mcd.blue": "https://arcwiki.mcd.blue/Vexaria"
+    }
   },
   {
     "id": 20,
@@ -713,7 +770,10 @@
     "searchKeys": [
       "dandelion"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dandelion"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dandelion",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dandelion"
+    }
   },
   {
     "id": 21,
@@ -753,7 +813,10 @@
     "searchKeys": [
       "dement ~after legend~"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dement_~after_legend~"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dement_~after_legend~",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dement_~after_legend~"
+    }
   },
   {
     "id": 22,
@@ -786,7 +849,10 @@
     "searchKeys": [
       "anokumene"
     ],
-    "url": "https://arcaea.fandom.com/wiki/An\u00f6kumene"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/An\u00f6kumene",
+      "mcd.blue": "https://arcwiki.mcd.blue/An\u00f6kumene"
+    }
   },
   {
     "id": 23,
@@ -826,7 +892,10 @@
     "searchKeys": [
       "infinity heaven"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Infinity_Heaven"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Infinity_Heaven",
+      "mcd.blue": "https://arcwiki.mcd.blue/Infinity_Heaven"
+    }
   },
   {
     "id": 24,
@@ -859,7 +928,10 @@
     "searchKeys": [
       "brand new world"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Brand_new_world"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Brand_new_world",
+      "mcd.blue": "https://arcwiki.mcd.blue/Brand_new_world"
+    }
   },
   {
     "id": 25,
@@ -892,7 +964,10 @@
     "searchKeys": [
       "flashback"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Flashback"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Flashback",
+      "mcd.blue": "https://arcwiki.mcd.blue/Flashback"
+    }
   },
   {
     "id": 26,
@@ -925,7 +1000,10 @@
     "searchKeys": [
       "flyburg and endroll"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Flyburg_and_Endroll"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Flyburg_and_Endroll",
+      "mcd.blue": "https://arcwiki.mcd.blue/Flyburg_and_Endroll"
+    }
   },
   {
     "id": 27,
@@ -958,7 +1036,10 @@
     "searchKeys": [
       "nirv luce"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Nirv_lucE"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Nirv_lucE",
+      "mcd.blue": "https://arcwiki.mcd.blue/Nirv_lucE"
+    }
   },
   {
     "id": 28,
@@ -991,7 +1072,10 @@
     "searchKeys": [
       "paradise"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Paradise"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Paradise",
+      "mcd.blue": "https://arcwiki.mcd.blue/Paradise"
+    }
   },
   {
     "id": 29,
@@ -1031,7 +1115,10 @@
     "searchKeys": [
       "party vinyl"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Party_Vinyl"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Party_Vinyl",
+      "mcd.blue": "https://arcwiki.mcd.blue/Party_Vinyl"
+    }
   },
   {
     "id": 30,
@@ -1064,7 +1151,10 @@
     "searchKeys": [
       "chronostasis"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Chronostasis"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Chronostasis",
+      "mcd.blue": "https://arcwiki.mcd.blue/Chronostasis"
+    }
   },
   {
     "id": 31,
@@ -1097,7 +1187,10 @@
     "searchKeys": [
       "crosssoul"
     ],
-    "url": "https://arcaea.fandom.com/wiki/CROSS\u2020SOUL"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/CROSS\u2020SOUL",
+      "mcd.blue": "https://arcwiki.mcd.blue/CROSS\u2020SOUL"
+    }
   },
   {
     "id": 32,
@@ -1130,7 +1223,10 @@
     "searchKeys": [
       "dataerr0r"
     ],
-    "url": "https://arcaea.fandom.com/wiki/DataErr0r"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/DataErr0r",
+      "mcd.blue": "https://arcwiki.mcd.blue/DataErr0r"
+    }
   },
   {
     "id": 33,
@@ -1170,7 +1266,10 @@
     "searchKeys": [
       "kanagawa cyber culvert"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Kanagawa_Cyber_Culvert"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Kanagawa_Cyber_Culvert",
+      "mcd.blue": "https://arcwiki.mcd.blue/Kanagawa_Cyber_Culvert"
+    }
   },
   {
     "id": 34,
@@ -1203,7 +1302,10 @@
     "searchKeys": [
       "your voice so... feat. such"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Your_voice_so..._feat._Such"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Your_voice_so..._feat._Such",
+      "mcd.blue": "https://arcwiki.mcd.blue/Your_voice_so..._feat._Such"
+    }
   },
   {
     "id": 35,
@@ -1243,7 +1345,10 @@
     "searchKeys": [
       "clotho and the stargazer"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Clotho_and_the_stargazer"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Clotho_and_the_stargazer",
+      "mcd.blue": "https://arcwiki.mcd.blue/Clotho_and_the_stargazer"
+    }
   },
   {
     "id": 36,
@@ -1276,7 +1381,10 @@
     "searchKeys": [
       "evoltex (poppi'n mix)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Evoltex_(poppi'n_mix)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Evoltex_(poppi'n_mix)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Evoltex_(poppi'n_mix)"
+    }
   },
   {
     "id": 37,
@@ -1309,7 +1417,10 @@
     "searchKeys": [
       "moonlight of sand castle"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Moonlight_of_Sand_Castle"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Moonlight_of_Sand_Castle",
+      "mcd.blue": "https://arcwiki.mcd.blue/Moonlight_of_Sand_Castle"
+    }
   },
   {
     "id": 38,
@@ -1342,7 +1453,10 @@
     "searchKeys": [
       "oracle"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Oracle"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Oracle",
+      "mcd.blue": "https://arcwiki.mcd.blue/Oracle"
+    }
   },
   {
     "id": 39,
@@ -1375,7 +1489,10 @@
     "searchKeys": [
       "reconstruction"
     ],
-    "url": "https://arcaea.fandom.com/wiki/REconstruction"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/REconstruction",
+      "mcd.blue": "https://arcwiki.mcd.blue/REconstruction"
+    }
   },
   {
     "id": 40,
@@ -1408,7 +1525,10 @@
     "searchKeys": [
       "aterlbus"
     ],
-    "url": "https://arcaea.fandom.com/wiki/\u03b1terl\u03b2us"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u03b1terl\u03b2us",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u03b1terl\u03b2us"
+    }
   },
   {
     "id": 41,
@@ -1441,7 +1561,10 @@
     "searchKeys": [
       "ignotus"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ignotus"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ignotus",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ignotus"
+    }
   },
   {
     "id": 42,
@@ -1474,7 +1597,10 @@
     "searchKeys": [
       "impure bird"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Impure_Bird"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Impure_Bird",
+      "mcd.blue": "https://arcwiki.mcd.blue/Impure_Bird"
+    }
   },
   {
     "id": 43,
@@ -1507,7 +1633,10 @@
     "searchKeys": [
       "auxesia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Auxesia"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Auxesia",
+      "mcd.blue": "https://arcwiki.mcd.blue/Auxesia"
+    }
   },
   {
     "id": 44,
@@ -1540,7 +1669,10 @@
     "searchKeys": [
       "blossoms"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Blossoms"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Blossoms",
+      "mcd.blue": "https://arcwiki.mcd.blue/Blossoms"
+    }
   },
   {
     "id": 45,
@@ -1573,7 +1705,10 @@
     "searchKeys": [
       "genesis (iris)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Genesis_(Iris)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Genesis_(Iris)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Genesis_(Iris)"
+    }
   },
   {
     "id": 46,
@@ -1606,7 +1741,10 @@
     "searchKeys": [
       "harutopia ~utopia of spring~"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Harutopia_~Utopia_of_Spring~"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Harutopia_~Utopia_of_Spring~",
+      "mcd.blue": "https://arcwiki.mcd.blue/Harutopia_~Utopia_of_Spring~"
+    }
   },
   {
     "id": 47,
@@ -1639,7 +1777,10 @@
     "searchKeys": [
       "lethaeus"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lethaeus"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lethaeus",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lethaeus"
+    }
   },
   {
     "id": 48,
@@ -1679,7 +1820,10 @@
     "searchKeys": [
       "moonheart"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Moonheart"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Moonheart",
+      "mcd.blue": "https://arcwiki.mcd.blue/Moonheart"
+    }
   },
   {
     "id": 49,
@@ -1712,7 +1856,10 @@
     "searchKeys": [
       "romance wars"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Romance_Wars"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Romance_Wars",
+      "mcd.blue": "https://arcwiki.mcd.blue/Romance_Wars"
+    }
   },
   {
     "id": 50,
@@ -1745,7 +1892,10 @@
     "searchKeys": [
       "modelista"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Modelista"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Modelista",
+      "mcd.blue": "https://arcwiki.mcd.blue/Modelista"
+    }
   },
   {
     "id": 51,
@@ -1778,7 +1928,10 @@
     "searchKeys": [
       "rabbit in the black room"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Rabbit_In_The_Black_Room"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Rabbit_In_The_Black_Room",
+      "mcd.blue": "https://arcwiki.mcd.blue/Rabbit_In_The_Black_Room"
+    }
   },
   {
     "id": 52,
@@ -1811,7 +1964,10 @@
     "searchKeys": [
       "axium crisis"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Axium_Crisis"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Axium_Crisis",
+      "mcd.blue": "https://arcwiki.mcd.blue/Axium_Crisis"
+    }
   },
   {
     "id": 53,
@@ -1844,7 +2000,10 @@
     "searchKeys": [
       "conflict"
     ],
-    "url": "https://arcaea.fandom.com/wiki/conflict"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/conflict",
+      "mcd.blue": "https://arcwiki.mcd.blue/conflict"
+    }
   },
   {
     "id": 54,
@@ -1877,7 +2036,10 @@
     "searchKeys": [
       "dreamin' attraction!!"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dreamin'_Attraction!!"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dreamin'_Attraction!!",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dreamin'_Attraction!!"
+    }
   },
   {
     "id": 55,
@@ -1910,7 +2072,10 @@
     "searchKeys": [
       "grievous lady"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Grievous_Lady"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Grievous_Lady",
+      "mcd.blue": "https://arcwiki.mcd.blue/Grievous_Lady"
+    }
   },
   {
     "id": 56,
@@ -1943,7 +2108,10 @@
     "searchKeys": [
       "iconoclast"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Iconoclast"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Iconoclast",
+      "mcd.blue": "https://arcwiki.mcd.blue/Iconoclast"
+    }
   },
   {
     "id": 57,
@@ -1976,7 +2144,10 @@
     "searchKeys": [
       "one last drive"
     ],
-    "url": "https://arcaea.fandom.com/wiki/One_Last_Drive"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/One_Last_Drive",
+      "mcd.blue": "https://arcwiki.mcd.blue/One_Last_Drive"
+    }
   },
   {
     "id": 58,
@@ -2009,7 +2180,10 @@
     "searchKeys": [
       "red and blue"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Red_and_Blue"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Red_and_Blue",
+      "mcd.blue": "https://arcwiki.mcd.blue/Red_and_Blue"
+    }
   },
   {
     "id": 59,
@@ -2042,7 +2216,10 @@
     "searchKeys": [
       "soundwitch"
     ],
-    "url": "https://arcaea.fandom.com/wiki/SOUNDWiTCH"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/SOUNDWiTCH",
+      "mcd.blue": "https://arcwiki.mcd.blue/SOUNDWiTCH"
+    }
   },
   {
     "id": 60,
@@ -2082,7 +2259,10 @@
     "searchKeys": [
       "trappola bewitching"
     ],
-    "url": "https://arcaea.fandom.com/wiki/trappola_bewitching"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/trappola_bewitching",
+      "mcd.blue": "https://arcwiki.mcd.blue/trappola_bewitching"
+    }
   },
   {
     "id": 61,
@@ -2115,7 +2295,10 @@
     "searchKeys": [
       "surrender"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Surrender"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Surrender",
+      "mcd.blue": "https://arcwiki.mcd.blue/Surrender"
+    }
   },
   {
     "id": 62,
@@ -2148,7 +2331,10 @@
     "searchKeys": [
       "yosakura fubuki"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Yosakura_Fubuki"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Yosakura_Fubuki",
+      "mcd.blue": "https://arcwiki.mcd.blue/Yosakura_Fubuki"
+    }
   },
   {
     "id": 63,
@@ -2181,7 +2367,10 @@
     "searchKeys": [
       "reinvent"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Reinvent"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Reinvent",
+      "mcd.blue": "https://arcwiki.mcd.blue/Reinvent"
+    }
   },
   {
     "id": 64,
@@ -2214,7 +2403,10 @@
     "searchKeys": [
       "syro"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Syro"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Syro",
+      "mcd.blue": "https://arcwiki.mcd.blue/Syro"
+    }
   },
   {
     "id": 65,
@@ -2247,7 +2439,10 @@
     "searchKeys": [
       "cyanine"
     ],
-    "url": "https://arcaea.fandom.com/wiki/cyanine"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/cyanine",
+      "mcd.blue": "https://arcwiki.mcd.blue/cyanine"
+    }
   },
   {
     "id": 66,
@@ -2280,7 +2475,10 @@
     "searchKeys": [
       "dream goes on"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dream_goes_on"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dream_goes_on",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dream_goes_on"
+    }
   },
   {
     "id": 67,
@@ -2313,7 +2511,10 @@
     "searchKeys": [
       "journey"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Journey"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Journey",
+      "mcd.blue": "https://arcwiki.mcd.blue/Journey"
+    }
   },
   {
     "id": 68,
@@ -2346,7 +2547,10 @@
     "searchKeys": [
       "quon (feryquitous)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Quon_(Feryquitous)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Quon_(Feryquitous)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Quon_(Feryquitous)"
+    }
   },
   {
     "id": 69,
@@ -2379,7 +2583,10 @@
     "searchKeys": [
       "specta"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Specta"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Specta",
+      "mcd.blue": "https://arcwiki.mcd.blue/Specta"
+    }
   },
   {
     "id": 70,
@@ -2412,7 +2619,10 @@
     "searchKeys": [
       "metallic punisher"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Metallic_Punisher"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Metallic_Punisher",
+      "mcd.blue": "https://arcwiki.mcd.blue/Metallic_Punisher"
+    }
   },
   {
     "id": 71,
@@ -2445,7 +2655,10 @@
     "searchKeys": [
       "blaster"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Blaster"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Blaster",
+      "mcd.blue": "https://arcwiki.mcd.blue/Blaster"
+    }
   },
   {
     "id": 72,
@@ -2478,7 +2691,10 @@
     "searchKeys": [
       "memory forest"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Memory_Forest"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Memory_Forest",
+      "mcd.blue": "https://arcwiki.mcd.blue/Memory_Forest"
+    }
   },
   {
     "id": 73,
@@ -2518,7 +2734,10 @@
     "searchKeys": [
       "next to you"
     ],
-    "url": "https://arcaea.fandom.com/wiki/next_to_you"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/next_to_you",
+      "mcd.blue": "https://arcwiki.mcd.blue/next_to_you"
+    }
   },
   {
     "id": 74,
@@ -2551,7 +2770,10 @@
     "searchKeys": [
       "silent rush"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Silent_Rush"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Silent_Rush",
+      "mcd.blue": "https://arcwiki.mcd.blue/Silent_Rush"
+    }
   },
   {
     "id": 75,
@@ -2584,7 +2806,10 @@
     "searchKeys": [
       "singularity"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Singularity"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Singularity",
+      "mcd.blue": "https://arcwiki.mcd.blue/Singularity"
+    }
   },
   {
     "id": 76,
@@ -2617,7 +2842,10 @@
     "searchKeys": [
       "strongholds"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Strongholds"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Strongholds",
+      "mcd.blue": "https://arcwiki.mcd.blue/Strongholds"
+    }
   },
   {
     "id": 77,
@@ -2650,7 +2878,10 @@
     "searchKeys": [
       "carmine:scythe"
     ],
-    "url": "https://arcaea.fandom.com/wiki/carmine:scythe"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/carmine:scythe",
+      "mcd.blue": "https://arcwiki.mcd.blue/carmine:scythe"
+    }
   },
   {
     "id": 78,
@@ -2684,7 +2915,10 @@
       "yuaroina",
       "guardina"
     ],
-    "url": "https://arcaea.fandom.com/wiki/\u03b3uar\u03b4ina"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u03b3uar\u03b4ina",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u03b3uar\u03b4ina"
+    }
   },
   {
     "id": 79,
@@ -2717,7 +2951,10 @@
     "searchKeys": [
       "be there"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Be_There"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Be_There",
+      "mcd.blue": "https://arcwiki.mcd.blue/Be_There"
+    }
   },
   {
     "id": 80,
@@ -2757,7 +2994,10 @@
     "searchKeys": [
       "cybernecia catharsis"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Cybernecia_Catharsis"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Cybernecia_Catharsis",
+      "mcd.blue": "https://arcwiki.mcd.blue/Cybernecia_Catharsis"
+    }
   },
   {
     "id": 81,
@@ -2790,7 +3030,10 @@
     "searchKeys": [
       "call my name feat. yukacco"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Call_My_Name_feat._Yukacco"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Call_My_Name_feat._Yukacco",
+      "mcd.blue": "https://arcwiki.mcd.blue/Call_My_Name_feat._Yukacco"
+    }
   },
   {
     "id": 82,
@@ -2830,7 +3073,10 @@
     "searchKeys": [
       "inkar-usi"
     ],
-    "url": "https://arcaea.fandom.com/wiki/inkar-usi"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/inkar-usi",
+      "mcd.blue": "https://arcwiki.mcd.blue/inkar-usi"
+    }
   },
   {
     "id": 83,
@@ -2870,7 +3116,10 @@
     "searchKeys": [
       "bookmaker (2d version)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Bookmaker_(2D_Version)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Bookmaker_(2D_Version)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Bookmaker_(2D_Version)"
+    }
   },
   {
     "id": 84,
@@ -2903,7 +3152,10 @@
     "searchKeys": [
       "ether strike"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ether_Strike"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ether_Strike",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ether_Strike"
+    }
   },
   {
     "id": 85,
@@ -2936,7 +3188,10 @@
     "searchKeys": [
       "fracture ray"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Fracture_Ray"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Fracture_Ray",
+      "mcd.blue": "https://arcwiki.mcd.blue/Fracture_Ray"
+    }
   },
   {
     "id": 86,
@@ -2969,7 +3224,10 @@
     "searchKeys": [
       "halcyon"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Halcyon"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Halcyon",
+      "mcd.blue": "https://arcwiki.mcd.blue/Halcyon"
+    }
   },
   {
     "id": 87,
@@ -3002,7 +3260,10 @@
     "searchKeys": [
       "illegal paradise"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Illegal_Paradise"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Illegal_Paradise",
+      "mcd.blue": "https://arcwiki.mcd.blue/Illegal_Paradise"
+    }
   },
   {
     "id": 88,
@@ -3035,7 +3296,10 @@
     "searchKeys": [
       "maze no.9"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Maze_No.9"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Maze_No.9",
+      "mcd.blue": "https://arcwiki.mcd.blue/Maze_No.9"
+    }
   },
   {
     "id": 89,
@@ -3068,7 +3332,10 @@
     "searchKeys": [
       "sulfur"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Sulfur"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Sulfur",
+      "mcd.blue": "https://arcwiki.mcd.blue/Sulfur"
+    }
   },
   {
     "id": 90,
@@ -3108,7 +3375,10 @@
     "searchKeys": [
       "suomi"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Suomi"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Suomi",
+      "mcd.blue": "https://arcwiki.mcd.blue/Suomi"
+    }
   },
   {
     "id": 91,
@@ -3141,7 +3411,10 @@
     "searchKeys": [
       "the message"
     ],
-    "url": "https://arcaea.fandom.com/wiki/The_Message"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/The_Message",
+      "mcd.blue": "https://arcwiki.mcd.blue/The_Message"
+    }
   },
   {
     "id": 92,
@@ -3174,7 +3447,10 @@
     "searchKeys": [
       "dropdead"
     ],
-    "url": "https://arcaea.fandom.com/wiki/dropdead"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/dropdead",
+      "mcd.blue": "https://arcwiki.mcd.blue/dropdead"
+    }
   },
   {
     "id": 93,
@@ -3207,7 +3483,10 @@
     "searchKeys": [
       "fallensquare"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Fallensquare"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Fallensquare",
+      "mcd.blue": "https://arcwiki.mcd.blue/Fallensquare"
+    }
   },
   {
     "id": 94,
@@ -3240,7 +3519,10 @@
     "searchKeys": [
       "nhelv"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Nhelv"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Nhelv",
+      "mcd.blue": "https://arcwiki.mcd.blue/Nhelv"
+    }
   },
   {
     "id": 95,
@@ -3273,7 +3555,10 @@
     "searchKeys": [
       "lunarorbit -believe in the espebranch road-"
     ],
-    "url": "https://arcaea.fandom.com/wiki/LunarOrbit_-believe_in_the_Espebranch_road-"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/LunarOrbit_-believe_in_the_Espebranch_road-",
+      "mcd.blue": "https://arcwiki.mcd.blue/LunarOrbit_-believe_in_the_Espebranch_road-"
+    }
   },
   {
     "id": 96,
@@ -3306,7 +3591,10 @@
     "searchKeys": [
       "alexandrite"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Alexandrite"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Alexandrite",
+      "mcd.blue": "https://arcwiki.mcd.blue/Alexandrite"
+    }
   },
   {
     "id": 97,
@@ -3346,7 +3634,10 @@
     "searchKeys": [
       "purgatorium"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Purgatorium"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Purgatorium",
+      "mcd.blue": "https://arcwiki.mcd.blue/Purgatorium"
+    }
   },
   {
     "id": 98,
@@ -3379,7 +3670,10 @@
     "searchKeys": [
       "hall of mirrors"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Hall_of_Mirrors"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Hall_of_Mirrors",
+      "mcd.blue": "https://arcwiki.mcd.blue/Hall_of_Mirrors"
+    }
   },
   {
     "id": 99,
@@ -3412,7 +3706,10 @@
     "searchKeys": [
       "hikari"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Hikari_(Song)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Hikari_(Song)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Hikari"
+    }
   },
   {
     "id": 100,
@@ -3445,7 +3742,10 @@
     "searchKeys": [
       "linear accelerator"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Linear_Accelerator"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Linear_Accelerator",
+      "mcd.blue": "https://arcwiki.mcd.blue/Linear_Accelerator"
+    }
   },
   {
     "id": 101,
@@ -3478,7 +3778,10 @@
     "searchKeys": [
       "stager (all stage clear)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/STAGER_(ALL_STAGE_CLEAR)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/STAGER_(ALL_STAGE_CLEAR)",
+      "mcd.blue": "https://arcwiki.mcd.blue/STAGER_(ALL_STAGE_CLEAR)"
+    }
   },
   {
     "id": 102,
@@ -3511,7 +3814,10 @@
     "searchKeys": [
       "tiferet"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Tiferet"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Tiferet",
+      "mcd.blue": "https://arcwiki.mcd.blue/Tiferet"
+    }
   },
   {
     "id": 103,
@@ -3544,7 +3850,10 @@
     "searchKeys": [
       "astral tale"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Astral_tale"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Astral_tale",
+      "mcd.blue": "https://arcwiki.mcd.blue/Astral_tale"
+    }
   },
   {
     "id": 104,
@@ -3577,7 +3886,10 @@
     "searchKeys": [
       "rugie"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Rugie"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Rugie",
+      "mcd.blue": "https://arcwiki.mcd.blue/Rugie"
+    }
   },
   {
     "id": 105,
@@ -3610,7 +3922,10 @@
     "searchKeys": [
       "phantasia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Phantasia"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Phantasia",
+      "mcd.blue": "https://arcwiki.mcd.blue/Phantasia"
+    }
   },
   {
     "id": 106,
@@ -3643,7 +3958,10 @@
     "searchKeys": [
       "empire of winter"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Empire_of_Winter"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Empire_of_Winter",
+      "mcd.blue": "https://arcwiki.mcd.blue/Empire_of_Winter"
+    }
   },
   {
     "id": 107,
@@ -3676,7 +3994,10 @@
     "searchKeys": [
       "dx choseinou full metal shojo"
     ],
-    "url": "https://arcaea.fandom.com/wiki/DX_Choseinou_Full_Metal_Shojo"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/DX_Choseinou_Full_Metal_Shojo",
+      "mcd.blue": "https://arcwiki.mcd.blue/DX_Choseinou_Full_Metal_Shojo"
+    }
   },
   {
     "id": 108,
@@ -3716,7 +4037,10 @@
     "searchKeys": [
       "merlin"
     ],
-    "url": "https://arcaea.fandom.com/wiki/MERLIN"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MERLIN",
+      "mcd.blue": "https://arcwiki.mcd.blue/MERLIN"
+    }
   },
   {
     "id": 109,
@@ -3756,7 +4080,10 @@
     "searchKeys": [
       "omakeno stroke"
     ],
-    "url": "https://arcaea.fandom.com/wiki/OMAKENO_Stroke"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/OMAKENO_Stroke",
+      "mcd.blue": "https://arcwiki.mcd.blue/OMAKENO_Stroke"
+    }
   },
   {
     "id": 110,
@@ -3789,7 +4116,10 @@
     "searchKeys": [
       "ouroboros -twin stroke of the end-"
     ],
-    "url": "https://arcaea.fandom.com/wiki/ouroboros_-twin_stroke_of_the_end-"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/ouroboros_-twin_stroke_of_the_end-",
+      "mcd.blue": "https://arcwiki.mcd.blue/ouroboros_-twin_stroke_of_the_end-"
+    }
   },
   {
     "id": 111,
@@ -3822,7 +4152,10 @@
     "searchKeys": [
       "scarlet lance"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Scarlet_Lance"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Scarlet_Lance",
+      "mcd.blue": "https://arcwiki.mcd.blue/Scarlet_Lance"
+    }
   },
   {
     "id": 112,
@@ -3862,7 +4195,10 @@
     "searchKeys": [
       "libertas"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Libertas"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Libertas",
+      "mcd.blue": "https://arcwiki.mcd.blue/Libertas"
+    }
   },
   {
     "id": 113,
@@ -3895,7 +4231,10 @@
     "searchKeys": [
       "solitary dream"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Solitary_Dream"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Solitary_Dream",
+      "mcd.blue": "https://arcwiki.mcd.blue/Solitary_Dream"
+    }
   },
   {
     "id": 114,
@@ -3935,7 +4274,10 @@
     "searchKeys": [
       "antithese"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Antithese"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Antithese",
+      "mcd.blue": "https://arcwiki.mcd.blue/Antithese"
+    }
   },
   {
     "id": 115,
@@ -3968,7 +4310,10 @@
     "searchKeys": [
       "black territory"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Black_Territory"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Black_Territory",
+      "mcd.blue": "https://arcwiki.mcd.blue/Black_Territory"
+    }
   },
   {
     "id": 116,
@@ -4001,7 +4346,10 @@
     "searchKeys": [
       "corruption"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Corruption"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Corruption",
+      "mcd.blue": "https://arcwiki.mcd.blue/Corruption"
+    }
   },
   {
     "id": 117,
@@ -4034,7 +4382,10 @@
     "searchKeys": [
       "cyaegha"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Cyaegha"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Cyaegha",
+      "mcd.blue": "https://arcwiki.mcd.blue/Cyaegha"
+    }
   },
   {
     "id": 118,
@@ -4067,7 +4418,10 @@
     "searchKeys": [
       "grimheart"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Grimheart"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Grimheart",
+      "mcd.blue": "https://arcwiki.mcd.blue/Grimheart"
+    }
   },
   {
     "id": 119,
@@ -4100,7 +4454,10 @@
     "searchKeys": [
       "revixy"
     ],
-    "url": "https://arcaea.fandom.com/wiki/ReviXy"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/ReviXy",
+      "mcd.blue": "https://arcwiki.mcd.blue/ReviXy"
+    }
   },
   {
     "id": 120,
@@ -4133,7 +4490,10 @@
     "searchKeys": [
       "vicious heroism"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Vicious_Heroism"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Vicious_Heroism",
+      "mcd.blue": "https://arcwiki.mcd.blue/Vicious_Heroism"
+    }
   },
   {
     "id": 121,
@@ -4166,7 +4526,10 @@
     "searchKeys": [
       "dot to dot feat. shully"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dot_to_Dot_feat._shully"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dot_to_Dot_feat._shully",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dot_to_Dot_feat._shully"
+    }
   },
   {
     "id": 122,
@@ -4199,7 +4562,10 @@
     "searchKeys": [
       "supernova"
     ],
-    "url": "https://arcaea.fandom.com/wiki/SUPERNOVA"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/SUPERNOVA",
+      "mcd.blue": "https://arcwiki.mcd.blue/SUPERNOVA"
+    }
   },
   {
     "id": 123,
@@ -4232,7 +4598,10 @@
     "searchKeys": [
       "vector"
     ],
-    "url": "https://arcaea.fandom.com/wiki/VECTO\u042f"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/VECTO\u042f",
+      "mcd.blue": "https://arcwiki.mcd.blue/VECTO\u042f"
+    }
   },
   {
     "id": 124,
@@ -4265,7 +4634,10 @@
     "searchKeys": [
       "garakuta doll play"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Garakuta_Doll_Play"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Garakuta_Doll_Play",
+      "mcd.blue": "https://arcwiki.mcd.blue/Garakuta_Doll_Play"
+    }
   },
   {
     "id": 125,
@@ -4298,7 +4670,10 @@
     "searchKeys": [
       "ikazuchi"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ikazuchi"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ikazuchi",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ikazuchi"
+    }
   },
   {
     "id": 126,
@@ -4331,7 +4706,10 @@
     "searchKeys": [
       "world vanquisher"
     ],
-    "url": "https://arcaea.fandom.com/wiki/World_Vanquisher"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/World_Vanquisher",
+      "mcd.blue": "https://arcwiki.mcd.blue/World_Vanquisher"
+    }
   },
   {
     "id": 127,
@@ -4364,7 +4742,10 @@
     "searchKeys": [
       "dreadnought"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dreadnought"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dreadnought",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dreadnought"
+    }
   },
   {
     "id": 128,
@@ -4404,7 +4785,10 @@
     "searchKeys": [
       "heavensdoor"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Heavensdoor"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Heavensdoor",
+      "mcd.blue": "https://arcwiki.mcd.blue/Heavensdoor"
+    }
   },
   {
     "id": 129,
@@ -4437,7 +4821,10 @@
     "searchKeys": [
       "particle arts"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Particle_Arts"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Particle_Arts",
+      "mcd.blue": "https://arcwiki.mcd.blue/Particle_Arts"
+    }
   },
   {
     "id": 130,
@@ -4470,7 +4857,10 @@
     "searchKeys": [
       "ringed genesis"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ringed_Genesis"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ringed_Genesis",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ringed_Genesis"
+    }
   },
   {
     "id": 131,
@@ -4503,7 +4893,10 @@
     "searchKeys": [
       "vindication"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Vindication"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Vindication",
+      "mcd.blue": "https://arcwiki.mcd.blue/Vindication"
+    }
   },
   {
     "id": 132,
@@ -4536,7 +4929,10 @@
     "searchKeys": [
       "a wandering melody of love"
     ],
-    "url": "https://arcaea.fandom.com/wiki/A_Wandering_Melody_of_Love"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/A_Wandering_Melody_of_Love",
+      "mcd.blue": "https://arcwiki.mcd.blue/A_Wandering_Melody_of_Love"
+    }
   },
   {
     "id": 133,
@@ -4569,7 +4965,10 @@
     "searchKeys": [
       "ai[ue]oon"
     ],
-    "url": "https://arcaea.fandom.com/wiki/AI_UE_OON"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/AI_UE_OON",
+      "mcd.blue": "https://arcwiki.mcd.blue/AI\uff3bUE\uff3dOON"
+    }
   },
   {
     "id": 134,
@@ -4602,7 +5001,10 @@
     "searchKeys": [
       "chelsea"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Chelsea"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Chelsea",
+      "mcd.blue": "https://arcwiki.mcd.blue/Chelsea"
+    }
   },
   {
     "id": 135,
@@ -4635,7 +5037,10 @@
     "searchKeys": [
       "tie me down gently"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Tie_me_down_gently"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Tie_me_down_gently",
+      "mcd.blue": "https://arcwiki.mcd.blue/Tie_me_down_gently"
+    }
   },
   {
     "id": 136,
@@ -4668,7 +5073,10 @@
     "searchKeys": [
       "valhalla:0"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Valhalla:0"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Valhalla:0",
+      "mcd.blue": "https://arcwiki.mcd.blue/Valhalla:0"
+    }
   },
   {
     "id": 137,
@@ -4701,7 +5109,10 @@
     "searchKeys": [
       "mirzam"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Mirzam"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Mirzam",
+      "mcd.blue": "https://arcwiki.mcd.blue/Mirzam"
+    }
   },
   {
     "id": 138,
@@ -4734,7 +5145,10 @@
     "searchKeys": [
       "diode"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Diode"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Diode",
+      "mcd.blue": "https://arcwiki.mcd.blue/Diode"
+    }
   },
   {
     "id": 139,
@@ -4775,7 +5189,10 @@
       "freef4ll",
       "freefall"
     ],
-    "url": "https://arcaea.fandom.com/wiki/FREEF4LL"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/FREEF4LL",
+      "mcd.blue": "https://arcwiki.mcd.blue/FREEF4LL"
+    }
   },
   {
     "id": 140,
@@ -4808,7 +5225,10 @@
     "searchKeys": [
       "glory: road"
     ],
-    "url": "https://arcaea.fandom.com/wiki/GLORY\uff1aROAD"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/GLORY\uff1aROAD",
+      "mcd.blue": "https://arcwiki.mcd.blue/GLORY\uff1aROAD"
+    }
   },
   {
     "id": 141,
@@ -4841,7 +5261,10 @@
     "searchKeys": [
       "heavenly caress"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Heavenly_caress"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Heavenly_caress",
+      "mcd.blue": "https://arcwiki.mcd.blue/Heavenly_caress"
+    }
   },
   {
     "id": 142,
@@ -4874,7 +5297,10 @@
     "searchKeys": [
       "monochrome princess"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Monochrome_Princess"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Monochrome_Princess",
+      "mcd.blue": "https://arcwiki.mcd.blue/Monochrome_Princess"
+    }
   },
   {
     "id": 143,
@@ -4907,7 +5333,10 @@
     "searchKeys": [
       "filament"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Filament"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Filament",
+      "mcd.blue": "https://arcwiki.mcd.blue/Filament"
+    }
   },
   {
     "id": 144,
@@ -4940,7 +5369,10 @@
     "searchKeys": [
       "senkyou"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Senkyou"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Senkyou",
+      "mcd.blue": "https://arcwiki.mcd.blue/Senkyou"
+    }
   },
   {
     "id": 145,
@@ -4973,7 +5405,10 @@
     "searchKeys": [
       "avant raze"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Avant_Raze"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Avant_Raze",
+      "mcd.blue": "https://arcwiki.mcd.blue/Avant_Raze"
+    }
   },
   {
     "id": 146,
@@ -5006,7 +5441,10 @@
     "searchKeys": [
       "battle no.1"
     ],
-    "url": "https://arcaea.fandom.com/wiki/BATTLE_NO.1"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/BATTLE_NO.1",
+      "mcd.blue": "https://arcwiki.mcd.blue/BATTLE_NO.1"
+    }
   },
   {
     "id": 147,
@@ -5046,7 +5484,10 @@
     "searchKeys": [
       "einherjar joker"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Einherjar_Joker"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Einherjar_Joker",
+      "mcd.blue": "https://arcwiki.mcd.blue/Einherjar_Joker"
+    }
   },
   {
     "id": 148,
@@ -5079,7 +5520,10 @@
     "searchKeys": [
       "izana"
     ],
-    "url": "https://arcaea.fandom.com/wiki/IZANA"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/IZANA",
+      "mcd.blue": "https://arcwiki.mcd.blue/IZANA"
+    }
   },
   {
     "id": 149,
@@ -5119,7 +5563,10 @@
     "searchKeys": [
       "la'qryma of the wasteland"
     ],
-    "url": "https://arcaea.fandom.com/wiki/La'qryma_of_the_Wasteland"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/La'qryma_of_the_Wasteland",
+      "mcd.blue": "https://arcwiki.mcd.blue/La'qryma_of_the_Wasteland"
+    }
   },
   {
     "id": 150,
@@ -5152,7 +5599,10 @@
     "searchKeys": [
       "saikyo stronger"
     ],
-    "url": "https://arcaea.fandom.com/wiki/SAIKYO_STRONGER"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/SAIKYO_STRONGER",
+      "mcd.blue": "https://arcwiki.mcd.blue/SAIKYO_STRONGER"
+    }
   },
   {
     "id": 151,
@@ -5185,7 +5635,10 @@
     "searchKeys": [
       "world.execute(me);"
     ],
-    "url": "https://arcaea.fandom.com/wiki/world.execute(me);"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/world.execute(me);",
+      "mcd.blue": "https://arcwiki.mcd.blue/world.execute(me);"
+    }
   },
   {
     "id": 152,
@@ -5218,7 +5671,10 @@
     "searchKeys": [
       "blrink"
     ],
-    "url": "https://arcaea.fandom.com/wiki/BLRINK"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/BLRINK",
+      "mcd.blue": "https://arcwiki.mcd.blue/BLRINK"
+    }
   },
   {
     "id": 153,
@@ -5251,7 +5707,10 @@
     "searchKeys": [
       "amygdata"
     ],
-    "url": "https://arcaea.fandom.com/wiki/amygdata"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/amygdata",
+      "mcd.blue": "https://arcwiki.mcd.blue/amygdata"
+    }
   },
   {
     "id": 154,
@@ -5284,7 +5743,10 @@
     "searchKeys": [
       "corps-sans-organes"
     ],
-    "url": "https://arcaea.fandom.com/wiki/corps-sans-organes"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/corps-sans-organes",
+      "mcd.blue": "https://arcwiki.mcd.blue/corps-sans-organes"
+    }
   },
   {
     "id": 155,
@@ -5324,7 +5786,10 @@
     "searchKeys": [
       "oblivia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Oblivia"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Oblivia",
+      "mcd.blue": "https://arcwiki.mcd.blue/Oblivia"
+    }
   },
   {
     "id": 156,
@@ -5357,7 +5822,10 @@
     "searchKeys": [
       "#1f1e33"
     ],
-    "url": "https://arcaea.fandom.com/wiki/#1f1e33"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/#1f1e33",
+      "mcd.blue": "https://arcwiki.mcd.blue/#1f1e33"
+    }
   },
   {
     "id": 157,
@@ -5391,7 +5859,10 @@
       "1fv",
       "ifv"
     ],
-    "url": "https://arcaea.fandom.com/wiki/1F\u221a"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/1F\u221a",
+      "mcd.blue": "https://arcwiki.mcd.blue/1F\u221a"
+    }
   },
   {
     "id": 158,
@@ -5424,7 +5895,10 @@
     "searchKeys": [
       "altale"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Altale"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Altale",
+      "mcd.blue": "https://arcwiki.mcd.blue/Altale"
+    }
   },
   {
     "id": 159,
@@ -5457,7 +5931,10 @@
     "searchKeys": [
       "antagonism"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Antagonism"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Antagonism",
+      "mcd.blue": "https://arcwiki.mcd.blue/Antagonism"
+    }
   },
   {
     "id": 160,
@@ -5490,7 +5967,10 @@
     "searchKeys": [
       "arcahv"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Arcahv"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Arcahv",
+      "mcd.blue": "https://arcwiki.mcd.blue/Arcahv"
+    }
   },
   {
     "id": 161,
@@ -5523,7 +6003,10 @@
     "searchKeys": [
       "black lotus"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Black_Lotus"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Black_Lotus",
+      "mcd.blue": "https://arcwiki.mcd.blue/Black_Lotus"
+    }
   },
   {
     "id": 162,
@@ -5556,7 +6039,10 @@
     "searchKeys": [
       "dantalion"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dantalion"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dantalion",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dantalion"
+    }
   },
   {
     "id": 163,
@@ -5589,7 +6075,10 @@
     "searchKeys": [
       "equilibrium"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Equilibrium"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Equilibrium",
+      "mcd.blue": "https://arcwiki.mcd.blue/Equilibrium"
+    }
   },
   {
     "id": 164,
@@ -5622,7 +6111,10 @@
     "searchKeys": [
       "gekka (short version)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Gekka_(Short_Version)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Gekka_(Short_Version)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Gekka_(Short_Version)"
+    }
   },
   {
     "id": 165,
@@ -5655,7 +6147,10 @@
     "searchKeys": [
       "give me a nightmare"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Give_Me_a_Nightmare"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Give_Me_a_Nightmare",
+      "mcd.blue": "https://arcwiki.mcd.blue/Give_Me_a_Nightmare"
+    }
   },
   {
     "id": 166,
@@ -5688,7 +6183,10 @@
     "searchKeys": [
       "lost desire"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lost_Desire"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lost_Desire",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lost_Desire"
+    }
   },
   {
     "id": 167,
@@ -5728,7 +6226,10 @@
     "searchKeys": [
       "tempestissimo"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Tempestissimo"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Tempestissimo",
+      "mcd.blue": "https://arcwiki.mcd.blue/Tempestissimo"
+    }
   },
   {
     "id": 168,
@@ -5761,7 +6262,10 @@
     "searchKeys": [
       "vivid theory"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Vivid_Theory"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Vivid_Theory",
+      "mcd.blue": "https://arcwiki.mcd.blue/Vivid_Theory"
+    }
   },
   {
     "id": 169,
@@ -5794,7 +6298,10 @@
     "searchKeys": [
       "faint light (arcaea edit)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Faint_Light_(Arcaea_Edit)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Faint_Light_(Arcaea_Edit)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Faint_Light_(Arcaea_Edit)"
+    }
   },
   {
     "id": 170,
@@ -5827,7 +6334,10 @@
     "searchKeys": [
       "feels so right feat. renko"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Feels_So_Right_feat._Renko"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Feels_So_Right_feat._Renko",
+      "mcd.blue": "https://arcwiki.mcd.blue/Feels_So_Right_feat._Renko"
+    }
   },
   {
     "id": 171,
@@ -5860,7 +6370,10 @@
     "searchKeys": [
       "scarlet cage"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Scarlet_Cage"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Scarlet_Cage",
+      "mcd.blue": "https://arcwiki.mcd.blue/Scarlet_Cage"
+    }
   },
   {
     "id": 172,
@@ -5900,7 +6413,10 @@
     "searchKeys": [
       "teriqma"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Teriqma"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Teriqma",
+      "mcd.blue": "https://arcwiki.mcd.blue/Teriqma"
+    }
   },
   {
     "id": 173,
@@ -5933,7 +6449,10 @@
     "searchKeys": [
       "mahoroba"
     ],
-    "url": "https://arcaea.fandom.com/wiki/MAHOROBA"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MAHOROBA",
+      "mcd.blue": "https://arcwiki.mcd.blue/MAHOROBA"
+    }
   },
   {
     "id": 174,
@@ -5966,7 +6485,10 @@
     "searchKeys": [
       "badtek"
     ],
-    "url": "https://arcaea.fandom.com/wiki/BADTEK"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/BADTEK",
+      "mcd.blue": "https://arcwiki.mcd.blue/BADTEK"
+    }
   },
   {
     "id": 175,
@@ -5999,7 +6521,10 @@
     "searchKeys": [
       "malicious mischance"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Malicious_Mischance"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Malicious_Mischance",
+      "mcd.blue": "https://arcwiki.mcd.blue/Malicious_Mischance"
+    }
   },
   {
     "id": 176,
@@ -6032,7 +6557,10 @@
     "searchKeys": [
       "buchigire berserker"
     ],
-    "url": "https://arcaea.fandom.com/wiki/BUCHiGiRE_Berserker"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/BUCHiGiRE_Berserker",
+      "mcd.blue": "https://arcwiki.mcd.blue/BUCHiGiRE_Berserker"
+    }
   },
   {
     "id": 177,
@@ -6065,7 +6593,10 @@
     "searchKeys": [
       "got hive of ra"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Got_hive_of_Ra"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Got_hive_of_Ra",
+      "mcd.blue": "https://arcwiki.mcd.blue/Got_hive_of_Ra"
+    }
   },
   {
     "id": 178,
@@ -6098,7 +6629,10 @@
     "searchKeys": [
       "crossover"
     ],
-    "url": "https://arcaea.fandom.com/wiki/CROSS\u2020OVER"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/CROSS\u2020OVER",
+      "mcd.blue": "https://arcwiki.mcd.blue/CROSS\u2020OVER"
+    }
   },
   {
     "id": 179,
@@ -6131,7 +6665,10 @@
     "searchKeys": [
       "galaxy friends"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Galaxy_Friends"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Galaxy_Friends",
+      "mcd.blue": "https://arcwiki.mcd.blue/Galaxy_Friends"
+    }
   },
   {
     "id": 180,
@@ -6164,7 +6701,10 @@
     "searchKeys": [
       "lapis"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lapis"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lapis",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lapis"
+    }
   },
   {
     "id": 181,
@@ -6197,7 +6737,10 @@
     "searchKeys": [
       "xeraphinite"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Xeraphinite"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Xeraphinite",
+      "mcd.blue": "https://arcwiki.mcd.blue/Xeraphinite"
+    }
   },
   {
     "id": 182,
@@ -6230,7 +6773,10 @@
     "searchKeys": [
       "xanatos"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Xanatos"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Xanatos",
+      "mcd.blue": "https://arcwiki.mcd.blue/Xanatos"
+    }
   },
   {
     "id": 183,
@@ -6263,7 +6809,10 @@
     "searchKeys": [
       "alice a la mode"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Alice_\u00e0_la_mode"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Alice_\u00e0_la_mode",
+      "mcd.blue": "https://arcwiki.mcd.blue/Alice_\u00e0_la_mode"
+    }
   },
   {
     "id": 184,
@@ -6296,7 +6845,10 @@
     "searchKeys": [
       "alice's suitcase"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Alice's_Suitcase"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Alice's_Suitcase",
+      "mcd.blue": "https://arcwiki.mcd.blue/Alice's_Suitcase"
+    }
   },
   {
     "id": 185,
@@ -6329,7 +6881,10 @@
     "searchKeys": [
       "eccentric tale"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Eccentric_Tale"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Eccentric_Tale",
+      "mcd.blue": "https://arcwiki.mcd.blue/Eccentric_Tale"
+    }
   },
   {
     "id": 186,
@@ -6362,7 +6917,10 @@
     "searchKeys": [
       "felis"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Felis"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Felis",
+      "mcd.blue": "https://arcwiki.mcd.blue/Felis"
+    }
   },
   {
     "id": 187,
@@ -6395,7 +6953,10 @@
     "searchKeys": [
       "jump"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Jump"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Jump",
+      "mcd.blue": "https://arcwiki.mcd.blue/Jump"
+    }
   },
   {
     "id": 188,
@@ -6435,7 +6996,10 @@
     "searchKeys": [
       "purple verse"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Purple_Verse"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Purple_Verse",
+      "mcd.blue": "https://arcwiki.mcd.blue/Purple_Verse"
+    }
   },
   {
     "id": 189,
@@ -6468,7 +7032,10 @@
     "searchKeys": [
       "beside you"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Beside_You"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Beside_You",
+      "mcd.blue": "https://arcwiki.mcd.blue/Beside_You"
+    }
   },
   {
     "id": 190,
@@ -6501,7 +7068,10 @@
     "searchKeys": [
       "heart jackin'"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Heart_Jackin'"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Heart_Jackin'",
+      "mcd.blue": "https://arcwiki.mcd.blue/Heart_Jackin'"
+    }
   },
   {
     "id": 191,
@@ -6534,7 +7104,10 @@
     "searchKeys": [
       "to: alice liddell"
     ],
-    "url": "https://arcaea.fandom.com/wiki/To:_Alice_Liddell"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/To:_Alice_Liddell",
+      "mcd.blue": "https://arcwiki.mcd.blue/To:_Alice_Liddell"
+    }
   },
   {
     "id": 192,
@@ -6567,7 +7140,10 @@
     "searchKeys": [
       "dazzle hop"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dazzle_hop"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dazzle_hop",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dazzle_hop"
+    }
   },
   {
     "id": 193,
@@ -6600,7 +7176,10 @@
     "searchKeys": [
       "lazy addiction"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lazy_Addiction"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lazy_Addiction",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lazy_Addiction"
+    }
   },
   {
     "id": 194,
@@ -6633,7 +7212,10 @@
     "searchKeys": [
       "viyella's tears"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Viyella's_Tears"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Viyella's_Tears",
+      "mcd.blue": "https://arcwiki.mcd.blue/Viyella's_Tears"
+    }
   },
   {
     "id": 195,
@@ -6666,7 +7248,10 @@
     "searchKeys": [
       "w4"
     ],
-    "url": "https://arcaea.fandom.com/wiki/\u03c94"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u03c94",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u03c94"
+    }
   },
   {
     "id": 196,
@@ -6699,7 +7284,10 @@
     "searchKeys": [
       "7thsense"
     ],
-    "url": "https://arcaea.fandom.com/wiki/7thSense"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/7thSense",
+      "mcd.blue": "https://arcwiki.mcd.blue/7thSense"
+    }
   },
   {
     "id": 197,
@@ -6732,7 +7320,10 @@
     "searchKeys": [
       "amazing mightyyyy!!!!"
     ],
-    "url": "https://arcaea.fandom.com/wiki/AMAZING_MIGHTYYYY!!!!"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/AMAZING_MIGHTYYYY!!!!",
+      "mcd.blue": "https://arcwiki.mcd.blue/AMAZING_MIGHTYYYY!!!!"
+    }
   },
   {
     "id": 198,
@@ -6765,7 +7356,10 @@
     "searchKeys": [
       "april showers"
     ],
-    "url": "https://arcaea.fandom.com/wiki/April_showers"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/April_showers",
+      "mcd.blue": "https://arcwiki.mcd.blue/April_showers"
+    }
   },
   {
     "id": 199,
@@ -6798,7 +7392,10 @@
     "searchKeys": [
       "oshama scramble!"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Oshama_Scramble!"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Oshama_Scramble!",
+      "mcd.blue": "https://arcwiki.mcd.blue/Oshama_Scramble!"
+    }
   },
   {
     "id": 200,
@@ -6831,7 +7428,10 @@
     "searchKeys": [
       "attraqtia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/AttraqtiA"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/AttraqtiA",
+      "mcd.blue": "https://arcwiki.mcd.blue/AttraqtiA"
+    }
   },
   {
     "id": 201,
@@ -6864,7 +7464,10 @@
     "searchKeys": [
       "climax"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Climax"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Climax",
+      "mcd.blue": "https://arcwiki.mcd.blue/Climax"
+    }
   },
   {
     "id": 202,
@@ -6897,7 +7500,10 @@
     "searchKeys": [
       "glow"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Glow"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Glow",
+      "mcd.blue": "https://arcwiki.mcd.blue/Glow"
+    }
   },
   {
     "id": 203,
@@ -6930,7 +7536,10 @@
     "searchKeys": [
       "last celebration"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Last_Celebration"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Last_Celebration",
+      "mcd.blue": "https://arcwiki.mcd.blue/Last_Celebration"
+    }
   },
   {
     "id": 204,
@@ -6963,7 +7572,10 @@
     "searchKeys": [
       "misdeed -la bonte de dieu et l'origine du mal-"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Misdeed_-la_bont\u00e9_de_Dieu_et_l'origine_du_mal-"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Misdeed_-la_bont\u00e9_de_Dieu_et_l'origine_du_mal-",
+      "mcd.blue": "https://arcwiki.mcd.blue/Misdeed_-la_bont\u00e9_de_Dieu_et_l'origine_du_mal-"
+    }
   },
   {
     "id": 205,
@@ -6996,7 +7608,10 @@
     "searchKeys": [
       "bamboo"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Bamboo"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Bamboo",
+      "mcd.blue": "https://arcwiki.mcd.blue/Bamboo"
+    }
   },
   {
     "id": 206,
@@ -7029,7 +7644,10 @@
     "searchKeys": [
       "enchanted love"
     ],
-    "url": "https://arcaea.fandom.com/wiki/enchanted_love"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/enchanted_love",
+      "mcd.blue": "https://arcwiki.mcd.blue/enchanted_love"
+    }
   },
   {
     "id": 207,
@@ -7062,7 +7680,10 @@
     "searchKeys": [
       "gimme da blood"
     ],
-    "url": "https://arcaea.fandom.com/wiki/GIMME_DA_BLOOD"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/GIMME_DA_BLOOD",
+      "mcd.blue": "https://arcwiki.mcd.blue/GIMME_DA_BLOOD"
+    }
   },
   {
     "id": 208,
@@ -7095,7 +7716,10 @@
     "searchKeys": [
       "can i friend you on bassbook? lol"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Can_I_Friend_You_on_Bassbook%3F_Lol"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Can_I_Friend_You_on_Bassbook%3F_Lol",
+      "mcd.blue": "https://arcwiki.mcd.blue/Can_I_Friend_You_on_Bassbook%3F_Lol"
+    }
   },
   {
     "id": 209,
@@ -7128,7 +7752,10 @@
     "searchKeys": [
       "life is piano"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Life_is_PIANO"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Life_is_PIANO",
+      "mcd.blue": "https://arcwiki.mcd.blue/Life_is_PIANO"
+    }
   },
   {
     "id": 210,
@@ -7161,7 +7788,10 @@
     "searchKeys": [
       "aegleseeker"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Aegleseeker"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Aegleseeker",
+      "mcd.blue": "https://arcwiki.mcd.blue/Aegleseeker"
+    }
   },
   {
     "id": 211,
@@ -7194,7 +7824,10 @@
     "searchKeys": [
       "coastal highway"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Coastal_Highway"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Coastal_Highway",
+      "mcd.blue": "https://arcwiki.mcd.blue/Coastal_Highway"
+    }
   },
   {
     "id": 212,
@@ -7227,7 +7860,10 @@
     "searchKeys": [
       "crystal gravity"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Crystal_Gravity"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Crystal_Gravity",
+      "mcd.blue": "https://arcwiki.mcd.blue/Crystal_Gravity"
+    }
   },
   {
     "id": 213,
@@ -7260,7 +7896,10 @@
     "searchKeys": [
       "far away light"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Far_Away_Light"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Far_Away_Light",
+      "mcd.blue": "https://arcwiki.mcd.blue/Far_Away_Light"
+    }
   },
   {
     "id": 214,
@@ -7293,7 +7932,10 @@
     "searchKeys": [
       "loschen"
     ],
-    "url": "https://arcaea.fandom.com/wiki/L\u00f6schen"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/L\u00f6schen",
+      "mcd.blue": "https://arcwiki.mcd.blue/L\u00f6schen"
+    }
   },
   {
     "id": 215,
@@ -7326,7 +7968,10 @@
     "searchKeys": [
       "overwhelm"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Overwhelm"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Overwhelm",
+      "mcd.blue": "https://arcwiki.mcd.blue/Overwhelm"
+    }
   },
   {
     "id": 216,
@@ -7359,7 +8004,10 @@
     "searchKeys": [
       "paper witch"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Paper_Witch"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Paper_Witch",
+      "mcd.blue": "https://arcwiki.mcd.blue/Paper_Witch"
+    }
   },
   {
     "id": 217,
@@ -7392,7 +8040,10 @@
     "searchKeys": [
       "vandalism"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Vandalism"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Vandalism",
+      "mcd.blue": "https://arcwiki.mcd.blue/Vandalism"
+    }
   },
   {
     "id": 218,
@@ -7426,7 +8077,10 @@
       "oaysseia",
       "odysseia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/\u039f\u0394\u03a5\u03a3\u03a3\u0395\u0399\u0391"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u039f\u0394\u03a5\u03a3\u03a3\u0395\u0399\u0391",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u039f\u0394\u03a5\u03a3\u03a3\u0395\u0399\u0391"
+    }
   },
   {
     "id": 219,
@@ -7459,7 +8113,10 @@
     "searchKeys": [
       "turbocharger"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Turbocharger"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Turbocharger",
+      "mcd.blue": "https://arcwiki.mcd.blue/Turbocharger"
+    }
   },
   {
     "id": 220,
@@ -7492,7 +8149,10 @@
     "searchKeys": [
       "rekka resonance"
     ],
-    "url": "https://arcaea.fandom.com/wiki/REKKA_RESONANCE"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/REKKA_RESONANCE",
+      "mcd.blue": "https://arcwiki.mcd.blue/REKKA_RESONANCE"
+    }
   },
   {
     "id": 221,
@@ -7525,7 +8185,10 @@
     "searchKeys": [
       "the ultimacy"
     ],
-    "url": "https://arcaea.fandom.com/wiki/THE_ULTIMACY"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/THE_ULTIMACY",
+      "mcd.blue": "https://arcwiki.mcd.blue/THE_ULTIMACY"
+    }
   },
   {
     "id": 222,
@@ -7558,7 +8221,10 @@
     "searchKeys": [
       "alterale"
     ],
-    "url": "https://arcaea.fandom.com/wiki/AlterAle"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/AlterAle",
+      "mcd.blue": "https://arcwiki.mcd.blue/AlterAle"
+    }
   },
   {
     "id": 223,
@@ -7591,7 +8257,10 @@
     "searchKeys": [
       "divine light of myriad"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Divine_Light_of_Myriad"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Divine_Light_of_Myriad",
+      "mcd.blue": "https://arcwiki.mcd.blue/Divine_Light_of_Myriad"
+    }
   },
   {
     "id": 224,
@@ -7624,7 +8293,10 @@
     "searchKeys": [
       "false embellishment"
     ],
-    "url": "https://arcaea.fandom.com/wiki/False_Embellishment"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/False_Embellishment",
+      "mcd.blue": "https://arcwiki.mcd.blue/False_Embellishment"
+    }
   },
   {
     "id": 225,
@@ -7657,7 +8329,10 @@
     "searchKeys": [
       "hivemind"
     ],
-    "url": "https://arcaea.fandom.com/wiki/HIVEMIND"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/HIVEMIND",
+      "mcd.blue": "https://arcwiki.mcd.blue/HIVEMIND"
+    }
   },
   {
     "id": 226,
@@ -7690,7 +8365,10 @@
     "searchKeys": [
       "seclusion"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Seclusion"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Seclusion",
+      "mcd.blue": "https://arcwiki.mcd.blue/Seclusion"
+    }
   },
   {
     "id": 227,
@@ -7723,7 +8401,10 @@
     "searchKeys": [
       "small cloud sugar candy"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Small_Cloud_Sugar_Candy"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Small_Cloud_Sugar_Candy",
+      "mcd.blue": "https://arcwiki.mcd.blue/Small_Cloud_Sugar_Candy"
+    }
   },
   {
     "id": 228,
@@ -7756,7 +8437,10 @@
     "searchKeys": [
       "genocider"
     ],
-    "url": "https://arcaea.fandom.com/wiki/GENOCIDER"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/GENOCIDER",
+      "mcd.blue": "https://arcwiki.mcd.blue/GENOCIDER"
+    }
   },
   {
     "id": 229,
@@ -7789,7 +8473,10 @@
     "searchKeys": [
       "let you dive! (nitro rmx)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Let_you_DIVE!_(nitro_rmx)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Let_you_DIVE!_(nitro_rmx)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Let_you_DIVE!_(nitro_rmx)"
+    }
   },
   {
     "id": 230,
@@ -7822,7 +8509,10 @@
     "searchKeys": [
       "mazy metroplex"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Mazy_Metroplex"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Mazy_Metroplex",
+      "mcd.blue": "https://arcwiki.mcd.blue/Mazy_Metroplex"
+    }
   },
   {
     "id": 231,
@@ -7862,7 +8552,10 @@
     "searchKeys": [
       "quon (dj noriken)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Quon_(DJ_Noriken)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Quon_(DJ_Noriken)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Quon_(DJ_Noriken)"
+    }
   },
   {
     "id": 232,
@@ -7895,7 +8588,10 @@
     "searchKeys": [
       "sheriruth (laur remix)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Sheriruth_(Laur_Remix)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Sheriruth_(Laur_Remix)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Sheriruth_(Laur_Remix)"
+    }
   },
   {
     "id": 233,
@@ -7928,7 +8624,10 @@
     "searchKeys": [
       "with u"
     ],
-    "url": "https://arcaea.fandom.com/wiki/with_U"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/with_U",
+      "mcd.blue": "https://arcwiki.mcd.blue/with_U"
+    }
   },
   {
     "id": 234,
@@ -7961,7 +8660,10 @@
     "searchKeys": [
       "blue comet"
     ],
-    "url": "https://arcaea.fandom.com/wiki/blue_comet"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/blue_comet",
+      "mcd.blue": "https://arcwiki.mcd.blue/blue_comet"
+    }
   },
   {
     "id": 235,
@@ -7994,7 +8696,10 @@
     "searchKeys": [
       "evening in scarlet"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Evening_in_Scarlet"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Evening_in_Scarlet",
+      "mcd.blue": "https://arcwiki.mcd.blue/Evening_in_Scarlet"
+    }
   },
   {
     "id": 236,
@@ -8027,7 +8732,10 @@
     "searchKeys": [
       "energy synergy matrix"
     ],
-    "url": "https://arcaea.fandom.com/wiki/ENERGY_SYNERGY_MATRIX"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/ENERGY_SYNERGY_MATRIX",
+      "mcd.blue": "https://arcwiki.mcd.blue/ENERGY_SYNERGY_MATRIX"
+    }
   },
   {
     "id": 237,
@@ -8060,7 +8768,10 @@
     "searchKeys": [
       "g e n g a o z o"
     ],
-    "url": "https://arcaea.fandom.com/wiki/G_e_n_g_a_o_z_o"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/G_e_n_g_a_o_z_o",
+      "mcd.blue": "https://arcwiki.mcd.blue/G_e_n_g_a_o_z_o"
+    }
   },
   {
     "id": 238,
@@ -8093,7 +8804,10 @@
     "searchKeys": [
       "goldenslaughterer"
     ],
-    "url": "https://arcaea.fandom.com/wiki/goldenslaughterer"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/goldenslaughterer",
+      "mcd.blue": "https://arcwiki.mcd.blue/goldenslaughterer"
+    }
   },
   {
     "id": 239,
@@ -8133,7 +8847,10 @@
     "searchKeys": [
       "lastendconductor"
     ],
-    "url": "https://arcaea.fandom.com/wiki/lastendconductor"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/lastendconductor",
+      "mcd.blue": "https://arcwiki.mcd.blue/lastendconductor"
+    }
   },
   {
     "id": 240,
@@ -8166,7 +8883,10 @@
     "searchKeys": [
       "redolent shape"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Redolent_Shape"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Redolent_Shape",
+      "mcd.blue": "https://arcwiki.mcd.blue/Redolent_Shape"
+    }
   },
   {
     "id": 241,
@@ -8199,7 +8919,10 @@
     "searchKeys": [
       "ascent"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ascent"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ascent",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ascent"
+    }
   },
   {
     "id": 242,
@@ -8232,7 +8955,10 @@
     "searchKeys": [
       "cosmica"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Cosmica"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Cosmica",
+      "mcd.blue": "https://arcwiki.mcd.blue/Cosmica"
+    }
   },
   {
     "id": 243,
@@ -8265,7 +8991,10 @@
     "searchKeys": [
       "live fast die young"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Live_Fast_Die_Young"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Live_Fast_Die_Young",
+      "mcd.blue": "https://arcwiki.mcd.blue/Live_Fast_Die_Young"
+    }
   },
   {
     "id": 244,
@@ -8298,7 +9027,10 @@
     "searchKeys": [
       "summer fireworks of love"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Summer_Fireworks_of_Love"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Summer_Fireworks_of_Love",
+      "mcd.blue": "https://arcwiki.mcd.blue/Summer_Fireworks_of_Love"
+    }
   },
   {
     "id": 245,
@@ -8331,7 +9063,10 @@
     "searchKeys": [
       "blocked library"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Blocked_Library"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Blocked_Library",
+      "mcd.blue": "https://arcwiki.mcd.blue/Blocked_Library"
+    }
   },
   {
     "id": 246,
@@ -8364,7 +9099,10 @@
     "searchKeys": [
       "blue rose"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Blue_Rose"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Blue_Rose",
+      "mcd.blue": "https://arcwiki.mcd.blue/Blue_Rose"
+    }
   },
   {
     "id": 247,
@@ -8397,7 +9135,10 @@
     "searchKeys": [
       "first snow"
     ],
-    "url": "https://arcaea.fandom.com/wiki/First_Snow"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/First_Snow",
+      "mcd.blue": "https://arcwiki.mcd.blue/First_Snow"
+    }
   },
   {
     "id": 248,
@@ -8430,7 +9171,10 @@
     "searchKeys": [
       "lightning screw"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lightning_Screw"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lightning_Screw",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lightning_Screw"
+    }
   },
   {
     "id": 249,
@@ -8463,7 +9207,10 @@
     "searchKeys": [
       "neo kosmo"
     ],
-    "url": "https://arcaea.fandom.com/wiki/n\u03ad\u03bf_\u03ba\u03ccsmo"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/n\u03ad\u03bf_\u03ba\u03ccsmo",
+      "mcd.blue": "https://arcwiki.mcd.blue/n\u03ad\u03bf_\u03ba\u03ccsmo"
+    }
   },
   {
     "id": 250,
@@ -8482,7 +9229,10 @@
     "searchKeys": [
       "pragmatism -resurrection-"
     ],
-    "url": "https://arcaea.fandom.com/wiki/PRAGMATISM_-RESURRECTION-"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/PRAGMATISM_-RESURRECTION-",
+      "mcd.blue": "https://arcwiki.mcd.blue/PRAGMATISM_-RESURRECTION-"
+    }
   },
   {
     "id": 251,
@@ -8515,7 +9265,10 @@
     "searchKeys": [
       "final step!"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Final_Step!"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Final_Step!",
+      "mcd.blue": "https://arcwiki.mcd.blue/Final_Step!"
+    }
   },
   {
     "id": 252,
@@ -8548,7 +9301,10 @@
     "searchKeys": [
       "haze of autumn"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Haze_of_Autumn"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Haze_of_Autumn",
+      "mcd.blue": "https://arcwiki.mcd.blue/Haze_of_Autumn"
+    }
   },
   {
     "id": 253,
@@ -8581,7 +9337,10 @@
     "searchKeys": [
       "lights of muse"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lights_of_Muse"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lights_of_Muse",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lights_of_Muse"
+    }
   },
   {
     "id": 254,
@@ -8614,7 +9373,10 @@
     "searchKeys": [
       "medusa"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Medusa"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Medusa",
+      "mcd.blue": "https://arcwiki.mcd.blue/Medusa"
+    }
   },
   {
     "id": 255,
@@ -8647,7 +9409,10 @@
     "searchKeys": [
       "init()"
     ],
-    "url": "https://arcaea.fandom.com/wiki/init()"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/init()",
+      "mcd.blue": "https://arcwiki.mcd.blue/init()"
+    }
   },
   {
     "id": 256,
@@ -8680,7 +9445,10 @@
     "searchKeys": [
       "internet overdose"
     ],
-    "url": "https://arcaea.fandom.com/wiki/INTERNET_OVERDOSE"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/INTERNET_OVERDOSE",
+      "mcd.blue": "https://arcwiki.mcd.blue/INTERNET_OVERDOSE"
+    }
   },
   {
     "id": 257,
@@ -8713,7 +9481,10 @@
     "searchKeys": [
       "kissing lucifer"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Kissing_Lucifer"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Kissing_Lucifer",
+      "mcd.blue": "https://arcwiki.mcd.blue/Kissing_Lucifer"
+    }
   },
   {
     "id": 258,
@@ -8746,7 +9517,10 @@
     "searchKeys": [
       "macrocosmic modulation"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Macrocosmic_Modulation"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Macrocosmic_Modulation",
+      "mcd.blue": "https://arcwiki.mcd.blue/Macrocosmic_Modulation"
+    }
   },
   {
     "id": 259,
@@ -8779,7 +9553,10 @@
     "searchKeys": [
       "neo wings"
     ],
-    "url": "https://arcaea.fandom.com/wiki/NEO_WINGS"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/NEO_WINGS",
+      "mcd.blue": "https://arcwiki.mcd.blue/NEO_WINGS"
+    }
   },
   {
     "id": 260,
@@ -8812,7 +9589,10 @@
     "searchKeys": [
       "nulctrl"
     ],
-    "url": "https://arcaea.fandom.com/wiki/NULCTRL"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/NULCTRL",
+      "mcd.blue": "https://arcwiki.mcd.blue/NULCTRL"
+    }
   },
   {
     "id": 261,
@@ -8845,7 +9625,10 @@
     "searchKeys": [
       "sakura fubuki"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Sakura_Fubuki"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Sakura_Fubuki",
+      "mcd.blue": "https://arcwiki.mcd.blue/Sakura_Fubuki"
+    }
   },
   {
     "id": 262,
@@ -8878,7 +9661,10 @@
     "searchKeys": [
       "avril -flicka i krans-"
     ],
-    "url": "https://arcaea.fandom.com/wiki/\u00c4vril_-Flicka_i_krans-"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u00c4vril_-Flicka_i_krans-",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u00c4vril_-Flicka_i_krans-"
+    }
   },
   {
     "id": 263,
@@ -8897,7 +9683,10 @@
     "searchKeys": [
       "ignotus afterburn"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ignotus_Afterburn"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ignotus_Afterburn",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ignotus_Afterburn"
+    }
   },
   {
     "id": 264,
@@ -8916,7 +9705,10 @@
     "searchKeys": [
       "overdead."
     ],
-    "url": "https://arcaea.fandom.com/wiki/overdead."
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/overdead.",
+      "mcd.blue": "https://arcwiki.mcd.blue/overdead."
+    }
   },
   {
     "id": 265,
@@ -8935,7 +9727,10 @@
     "searchKeys": [
       "red and blue and green"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Red_and_Blue_and_Green"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Red_and_Blue_and_Green",
+      "mcd.blue": "https://arcwiki.mcd.blue/Red_and_Blue_and_Green"
+    }
   },
   {
     "id": 266,
@@ -8954,7 +9749,10 @@
     "searchKeys": [
       "singularity vvvip"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Singularity_VVVIP"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Singularity_VVVIP",
+      "mcd.blue": "https://arcwiki.mcd.blue/Singularity_VVVIP"
+    }
   },
   {
     "id": 267,
@@ -8987,7 +9785,10 @@
     "searchKeys": [
       "aurgelmir"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Aurgelmir"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Aurgelmir",
+      "mcd.blue": "https://arcwiki.mcd.blue/Aurgelmir"
+    }
   },
   {
     "id": 268,
@@ -9020,7 +9821,10 @@
     "searchKeys": [
       "ddd"
     ],
-    "url": "https://arcaea.fandom.com/wiki/DDD"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/DDD",
+      "mcd.blue": "https://arcwiki.mcd.blue/DDD"
+    }
   },
   {
     "id": 269,
@@ -9053,7 +9857,10 @@
     "searchKeys": [
       "head bonk ache"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Head_BONK_ache"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Head_BONK_ache",
+      "mcd.blue": "https://arcwiki.mcd.blue/Head_BONK_ache"
+    }
   },
   {
     "id": 270,
@@ -9086,7 +9893,10 @@
     "searchKeys": [
       "dancin' on a cat's paw"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dancin'_on_a_Cat's_Paw"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dancin'_on_a_Cat's_Paw",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dancin'_on_a_Cat's_Paw"
+    }
   },
   {
     "id": 271,
@@ -9119,7 +9929,10 @@
     "searchKeys": [
       "pico-pico-translation!"
     ],
-    "url": "https://arcaea.fandom.com/wiki/PICO-Pico-Translation!"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/PICO-Pico-Translation!",
+      "mcd.blue": "https://arcwiki.mcd.blue/PICO-Pico-Translation!"
+    }
   },
   {
     "id": 272,
@@ -9152,7 +9965,10 @@
     "searchKeys": [
       "prism"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Prism"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Prism",
+      "mcd.blue": "https://arcwiki.mcd.blue/Prism"
+    }
   },
   {
     "id": 273,
@@ -9185,7 +10001,10 @@
     "searchKeys": [
       "protoflicker"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Protoflicker"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Protoflicker",
+      "mcd.blue": "https://arcwiki.mcd.blue/Protoflicker"
+    }
   },
   {
     "id": 274,
@@ -9218,7 +10037,10 @@
     "searchKeys": [
       "stasis"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Stasis"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Stasis",
+      "mcd.blue": "https://arcwiki.mcd.blue/Stasis"
+    }
   },
   {
     "id": 275,
@@ -9251,7 +10073,10 @@
     "searchKeys": [
       "san skia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/san_skia"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/san_skia",
+      "mcd.blue": "https://arcwiki.mcd.blue/san_skia"
+    }
   },
   {
     "id": 276,
@@ -9284,7 +10109,10 @@
     "searchKeys": [
       "u"
     ],
-    "url": "https://arcaea.fandom.com/wiki/\u03bc"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u03bc",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u03bc"
+    }
   },
   {
     "id": 277,
@@ -9317,7 +10145,10 @@
     "searchKeys": [
       "altair (feat. *spila*)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Altair_(feat._*spiLa*)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Altair_(feat._*spiLa*)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Altair_(feat._*spiLa*)"
+    }
   },
   {
     "id": 278,
@@ -9357,7 +10188,10 @@
     "searchKeys": [
       "arcana eden"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Arcana_Eden"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Arcana_Eden",
+      "mcd.blue": "https://arcwiki.mcd.blue/Arcana_Eden"
+    }
   },
   {
     "id": 279,
@@ -9390,7 +10224,10 @@
     "searchKeys": [
       "defection"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Defection"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Defection",
+      "mcd.blue": "https://arcwiki.mcd.blue/Defection"
+    }
   },
   {
     "id": 280,
@@ -9430,7 +10267,10 @@
     "searchKeys": [
       "infinite strife,"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Infinite_Strife,"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Infinite_Strife,",
+      "mcd.blue": "https://arcwiki.mcd.blue/Infinite_Strife,"
+    }
   },
   {
     "id": 281,
@@ -9470,7 +10310,10 @@
     "searchKeys": [
       "pentiment"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Pentiment"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Pentiment",
+      "mcd.blue": "https://arcwiki.mcd.blue/Pentiment"
+    }
   },
   {
     "id": 282,
@@ -9503,7 +10346,10 @@
     "searchKeys": [
       "pupa"
     ],
-    "url": "https://arcaea.fandom.com/wiki/PUPA"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/PUPA",
+      "mcd.blue": "https://arcwiki.mcd.blue/PUPA"
+    }
   },
   {
     "id": 283,
@@ -9536,7 +10382,10 @@
     "searchKeys": [
       "redraw the colorless world"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Redraw_the_Colorless_World"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Redraw_the_Colorless_World",
+      "mcd.blue": "https://arcwiki.mcd.blue/Redraw_the_Colorless_World"
+    }
   },
   {
     "id": 284,
@@ -9576,7 +10425,10 @@
     "searchKeys": [
       "testify"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Testify"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Testify",
+      "mcd.blue": "https://arcwiki.mcd.blue/Testify"
+    }
   },
   {
     "id": 285,
@@ -9609,7 +10461,10 @@
     "searchKeys": [
       "trap crow"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Trap_Crow"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Trap_Crow",
+      "mcd.blue": "https://arcwiki.mcd.blue/Trap_Crow"
+    }
   },
   {
     "id": 286,
@@ -9649,7 +10504,10 @@
     "searchKeys": [
       "world ender"
     ],
-    "url": "https://arcaea.fandom.com/wiki/World_Ender"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/World_Ender",
+      "mcd.blue": "https://arcwiki.mcd.blue/World_Ender"
+    }
   },
   {
     "id": 287,
@@ -9682,7 +10540,10 @@
     "searchKeys": [
       "callima karma"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Callima_Karma"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Callima_Karma",
+      "mcd.blue": "https://arcwiki.mcd.blue/Callima_Karma"
+    }
   },
   {
     "id": 288,
@@ -9715,7 +10576,10 @@
     "searchKeys": [
       "last"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Last"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Last",
+      "mcd.blue": "https://arcwiki.mcd.blue/Last"
+    }
   },
   {
     "id": 289,
@@ -9734,7 +10598,10 @@
     "searchKeys": [
       "last | eternity"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Last"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Last",
+      "mcd.blue": "https://arcwiki.mcd.blue/Last"
+    }
   },
   {
     "id": 290,
@@ -9753,7 +10620,10 @@
     "searchKeys": [
       "last | moment"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Last"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Last",
+      "mcd.blue": "https://arcwiki.mcd.blue/Last"
+    }
   },
   {
     "id": 291,
@@ -9786,7 +10656,10 @@
     "searchKeys": [
       "loveless dress"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Loveless_Dress"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Loveless_Dress",
+      "mcd.blue": "https://arcwiki.mcd.blue/Loveless_Dress"
+    }
   },
   {
     "id": 292,
@@ -9819,7 +10692,10 @@
     "searchKeys": [
       "ai drew"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ai_Drew"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ai_Drew",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ai_Drew"
+    }
   },
   {
     "id": 293,
@@ -9852,7 +10728,10 @@
     "searchKeys": [
       "fluffy flash"
     ],
-    "url": "https://arcaea.fandom.com/wiki/FLUFFY_FLASH"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/FLUFFY_FLASH",
+      "mcd.blue": "https://arcwiki.mcd.blue/FLUFFY_FLASH"
+    }
   },
   {
     "id": 294,
@@ -9885,7 +10764,10 @@
     "searchKeys": [
       "good bye, merry-go-round."
     ],
-    "url": "https://arcaea.fandom.com/wiki/Good_bye,_Merry-Go-Round."
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Good_bye,_Merry-Go-Round.",
+      "mcd.blue": "https://arcwiki.mcd.blue/Good_bye,_Merry-Go-Round."
+    }
   },
   {
     "id": 295,
@@ -9918,7 +10800,10 @@
     "searchKeys": [
       "heart"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Heart"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Heart",
+      "mcd.blue": "https://arcwiki.mcd.blue/Heart"
+    }
   },
   {
     "id": 296,
@@ -9951,7 +10836,10 @@
     "searchKeys": [
       "lamia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/LAMIA"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/LAMIA",
+      "mcd.blue": "https://arcwiki.mcd.blue/LAMIA"
+    }
   },
   {
     "id": 297,
@@ -9984,7 +10872,10 @@
     "searchKeys": [
       "cocoro*cosmetic"
     ],
-    "url": "https://arcaea.fandom.com/wiki/cocoro*cosmetic"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/cocoro*cosmetic",
+      "mcd.blue": "https://arcwiki.mcd.blue/cocoro*cosmetic"
+    }
   },
   {
     "id": 298,
@@ -10017,7 +10908,10 @@
     "searchKeys": [
       "free myself"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Free_Myself"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Free_Myself",
+      "mcd.blue": "https://arcwiki.mcd.blue/Free_Myself"
+    }
   },
   {
     "id": 299,
@@ -10050,7 +10944,10 @@
     "searchKeys": [
       "capella"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Capella"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Capella",
+      "mcd.blue": "https://arcwiki.mcd.blue/Capella"
+    }
   },
   {
     "id": 300,
@@ -10083,7 +10980,10 @@
     "searchKeys": [
       "dialnote"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dialnote"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dialnote",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dialnote"
+    }
   },
   {
     "id": 301,
@@ -10116,7 +11016,10 @@
     "searchKeys": [
       "astra walkthrough"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Astra_walkthrough"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Astra_walkthrough",
+      "mcd.blue": "https://arcwiki.mcd.blue/Astra_walkthrough"
+    }
   },
   {
     "id": 302,
@@ -10149,7 +11052,10 @@
     "searchKeys": [
       "chronicle"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Chronicle"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Chronicle",
+      "mcd.blue": "https://arcwiki.mcd.blue/Chronicle"
+    }
   },
   {
     "id": 303,
@@ -10182,7 +11088,10 @@
     "searchKeys": [
       "mantis (arcaea ultra-bloodrush vip)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/MANTIS_(Arcaea_Ultra-Bloodrush_VIP)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MANTIS_(Arcaea_Ultra-Bloodrush_VIP)",
+      "mcd.blue": "https://arcwiki.mcd.blue/MANTIS_(Arcaea_Ultra-Bloodrush_VIP)"
+    }
   },
   {
     "id": 304,
@@ -10215,7 +11124,10 @@
     "searchKeys": [
       "null apophenia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/NULL_APOPHENIA"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/NULL_APOPHENIA",
+      "mcd.blue": "https://arcwiki.mcd.blue/NULL_APOPHENIA"
+    }
   },
   {
     "id": 305,
@@ -10248,7 +11160,10 @@
     "searchKeys": [
       "tsuki ni murakumo, hana ni kaze"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Tsuki_ni_Murakumo,_Hana_ni_Kaze"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Tsuki_ni_Murakumo,_Hana_ni_Kaze",
+      "mcd.blue": "https://arcwiki.mcd.blue/Tsuki_ni_Murakumo,_Hana_ni_Kaze"
+    }
   },
   {
     "id": 306,
@@ -10281,7 +11196,10 @@
     "searchKeys": [
       "world fragments iii(radio edit)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/World_Fragments_III(radio_edit)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/World_Fragments_III(radio_edit)",
+      "mcd.blue": "https://arcwiki.mcd.blue/World_Fragments_III(radio_edit)"
+    }
   },
   {
     "id": 307,
@@ -10314,7 +11232,10 @@
     "searchKeys": [
       "[x]"
     ],
-    "url": "https://arcaea.fandom.com/wiki/(X)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/(X)",
+      "mcd.blue": "https://arcwiki.mcd.blue/\uff3bX\uff3d"
+    }
   },
   {
     "id": 308,
@@ -10347,7 +11268,10 @@
     "searchKeys": [
       "crimson throne"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Crimson_Throne"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Crimson_Throne",
+      "mcd.blue": "https://arcwiki.mcd.blue/Crimson_Throne"
+    }
   },
   {
     "id": 309,
@@ -10380,7 +11304,10 @@
     "searchKeys": [
       "cycles"
     ],
-    "url": "https://arcaea.fandom.com/wiki/CYCLES"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/CYCLES",
+      "mcd.blue": "https://arcwiki.mcd.blue/CYCLES"
+    }
   },
   {
     "id": 310,
@@ -10413,7 +11340,10 @@
     "searchKeys": [
       "hiiro gekka, kyoushou no zetsu (nayuta 2017 ver.)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Hiiro_Gekka,_Kyoushou_no_Zetsu_(nayuta_2017_ver.)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Hiiro_Gekka,_Kyoushou_no_Zetsu_(nayuta_2017_ver.)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Hiiro_Gekka,_Kyoushou_no_Zetsu_(nayuta_2017_ver.)"
+    }
   },
   {
     "id": 311,
@@ -10446,7 +11376,10 @@
     "searchKeys": [
       "let's rock (arcaea mix)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Let's_Rock_(Arcaea_mix)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Let's_Rock_(Arcaea_mix)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Let's_Rock_(Arcaea_mix)"
+    }
   },
   {
     "id": 312,
@@ -10479,7 +11412,10 @@
     "searchKeys": [
       "manic jeer"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Manic_Jeer"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Manic_Jeer",
+      "mcd.blue": "https://arcwiki.mcd.blue/Manic_Jeer"
+    }
   },
   {
     "id": 313,
@@ -10512,7 +11448,10 @@
     "searchKeys": [
       "maxrage"
     ],
-    "url": "https://arcaea.fandom.com/wiki/MAXRAGE"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MAXRAGE",
+      "mcd.blue": "https://arcwiki.mcd.blue/MAXRAGE"
+    }
   },
   {
     "id": 314,
@@ -10545,7 +11484,10 @@
     "searchKeys": [
       "temptation"
     ],
-    "url": "https://arcaea.fandom.com/wiki/TEmPTaTiON"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/TEmPTaTiON",
+      "mcd.blue": "https://arcwiki.mcd.blue/TEmPTaTiON"
+    }
   },
   {
     "id": 315,
@@ -10578,7 +11520,10 @@
     "searchKeys": [
       "primitive lights"
     ],
-    "url": "https://arcaea.fandom.com/wiki/PRIMITIVE_LIGHTS"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/PRIMITIVE_LIGHTS",
+      "mcd.blue": "https://arcwiki.mcd.blue/PRIMITIVE_LIGHTS"
+    }
   },
   {
     "id": 316,
@@ -10611,7 +11556,10 @@
     "searchKeys": [
       "cosmo pop funclub"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Cosmo_Pop_Funclub"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Cosmo_Pop_Funclub",
+      "mcd.blue": "https://arcwiki.mcd.blue/Cosmo_Pop_Funclub"
+    }
   },
   {
     "id": 317,
@@ -10644,7 +11592,10 @@
     "searchKeys": [
       "genesis (morrigan feat.lily)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Genesis_(Morrigan)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Genesis_(Morrigan)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Genesis_(Morrigan)"
+    }
   },
   {
     "id": 318,
@@ -10684,7 +11635,10 @@
     "searchKeys": [
       "impact"
     ],
-    "url": "https://arcaea.fandom.com/wiki/IMPACT"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/IMPACT",
+      "mcd.blue": "https://arcwiki.mcd.blue/IMPACT"
+    }
   },
   {
     "id": 319,
@@ -10717,7 +11671,10 @@
     "searchKeys": [
       "spider's thread"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Spider's_Thread"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Spider's_Thread",
+      "mcd.blue": "https://arcwiki.mcd.blue/Spider's_Thread"
+    }
   },
   {
     "id": 320,
@@ -10750,7 +11707,10 @@
     "searchKeys": [
       "trrricksters!!"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Trrricksters!!"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Trrricksters!!",
+      "mcd.blue": "https://arcwiki.mcd.blue/Trrricksters!!"
+    }
   },
   {
     "id": 321,
@@ -10783,7 +11743,10 @@
     "searchKeys": [
       "gimmick"
     ],
-    "url": "https://arcaea.fandom.com/wiki/GIMMICK"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/GIMMICK",
+      "mcd.blue": "https://arcwiki.mcd.blue/GIMMICK"
+    }
   },
   {
     "id": 322,
@@ -10816,7 +11779,10 @@
     "searchKeys": [
       "lost emotion feat. nomico"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lost_Emotion_feat._nomico"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lost_Emotion_feat._nomico",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lost_Emotion_feat._nomico"
+    }
   },
   {
     "id": 323,
@@ -10849,7 +11815,10 @@
     "searchKeys": [
       "new york back raise"
     ],
-    "url": "https://arcaea.fandom.com/wiki/New_York_Back_Raise"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/New_York_Back_Raise",
+      "mcd.blue": "https://arcwiki.mcd.blue/New_York_Back_Raise"
+    }
   },
   {
     "id": 324,
@@ -10882,7 +11851,10 @@
     "searchKeys": [
       "the survivor (game edit)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/The_Survivor_(Game_Edit)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/The_Survivor_(Game_Edit)",
+      "mcd.blue": "https://arcwiki.mcd.blue/The_Survivor_(Game_Edit)"
+    }
   },
   {
     "id": 325,
@@ -10915,7 +11887,10 @@
     "searchKeys": [
       "galactic love"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Galactic_Love"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Galactic_Love",
+      "mcd.blue": "https://arcwiki.mcd.blue/Galactic_Love"
+    }
   },
   {
     "id": 326,
@@ -10948,7 +11923,10 @@
     "searchKeys": [
       "hybris (the one who shattered)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Hybris_(The_one_who_shattered)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Hybris_(The_one_who_shattered)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Hybris_(The_one_who_shattered)"
+    }
   },
   {
     "id": 327,
@@ -10981,7 +11959,10 @@
     "searchKeys": [
       "lawless point"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lawless_Point"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lawless_Point",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lawless_Point"
+    }
   },
   {
     "id": 328,
@@ -11014,7 +11995,10 @@
     "searchKeys": [
       "lost in the abyss"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lost_in_the_Abyss"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lost_in_the_Abyss",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lost_in_the_Abyss"
+    }
   },
   {
     "id": 329,
@@ -11047,7 +12031,10 @@
     "searchKeys": [
       "to the milky way"
     ],
-    "url": "https://arcaea.fandom.com/wiki/To_the_Milky_Way"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/To_the_Milky_Way",
+      "mcd.blue": "https://arcwiki.mcd.blue/To_the_Milky_Way"
+    }
   },
   {
     "id": 330,
@@ -11080,7 +12067,10 @@
     "searchKeys": [
       "bullet waiting for me (james landino remix)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Bullet_Waiting_for_Me_(James_Landino_remix)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Bullet_Waiting_for_Me_(James_Landino_remix)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Bullet_Waiting_for_Me_(James_Landino_remix)"
+    }
   },
   {
     "id": 331,
@@ -11113,7 +12103,10 @@
     "searchKeys": [
       "chaos"
     ],
-    "url": "https://arcaea.fandom.com/wiki/CHAOS"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/CHAOS",
+      "mcd.blue": "https://arcwiki.mcd.blue/CHAOS"
+    }
   },
   {
     "id": 332,
@@ -11146,7 +12139,10 @@
     "searchKeys": [
       "devillic sphere"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Devillic_Sphere"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Devillic_Sphere",
+      "mcd.blue": "https://arcwiki.mcd.blue/Devillic_Sphere"
+    }
   },
   {
     "id": 333,
@@ -11179,7 +12175,10 @@
     "searchKeys": [
       "internet yamero"
     ],
-    "url": "https://arcaea.fandom.com/wiki/INTERNET_YAMERO"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/INTERNET_YAMERO",
+      "mcd.blue": "https://arcwiki.mcd.blue/INTERNET_YAMERO"
+    }
   },
   {
     "id": 334,
@@ -11212,7 +12211,10 @@
     "searchKeys": [
       "lucid traveler"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lucid_Traveler"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lucid_Traveler",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lucid_Traveler"
+    }
   },
   {
     "id": 335,
@@ -11245,7 +12247,10 @@
     "searchKeys": [
       "used to be"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Used_to_be"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Used_to_be",
+      "mcd.blue": "https://arcwiki.mcd.blue/Used_to_be"
+    }
   },
   {
     "id": 336,
@@ -11278,7 +12283,10 @@
     "searchKeys": [
       "99 glooms"
     ],
-    "url": "https://arcaea.fandom.com/wiki/99_Glooms"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/99_Glooms",
+      "mcd.blue": "https://arcwiki.mcd.blue/99_Glooms"
+    }
   },
   {
     "id": 337,
@@ -11311,7 +12319,10 @@
     "searchKeys": [
       "drg"
     ],
-    "url": "https://arcaea.fandom.com/wiki/DRG"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/DRG",
+      "mcd.blue": "https://arcwiki.mcd.blue/DRG"
+    }
   },
   {
     "id": 338,
@@ -11344,7 +12355,10 @@
     "searchKeys": [
       "magnolia"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Magnolia"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Magnolia",
+      "mcd.blue": "https://arcwiki.mcd.blue/Magnolia"
+    }
   },
   {
     "id": 339,
@@ -11377,7 +12391,10 @@
     "searchKeys": [
       "syuten"
     ],
-    "url": "https://arcaea.fandom.com/wiki/sy\u016bten"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/sy\u016bten",
+      "mcd.blue": "https://arcwiki.mcd.blue/sy\u016bten"
+    }
   },
   {
     "id": 340,
@@ -11410,7 +12427,10 @@
     "searchKeys": [
       "ultimate taste"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ultimate_taste"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ultimate_taste",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ultimate_taste"
+    }
   },
   {
     "id": 341,
@@ -11443,7 +12463,10 @@
     "searchKeys": [
       "ii"
     ],
-    "url": "https://arcaea.fandom.com/wiki/\u035f\u035d\u035e\u2161\u0301\u0315"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u035f\u035d\u035e\u2161\u0301\u0315",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u035f\u035d\u035e\u2161\u0301\u0315"
+    }
   },
   {
     "id": 342,
@@ -11476,7 +12499,10 @@
     "searchKeys": [
       "abstruse dilemma"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Abstruse_Dilemma"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Abstruse_Dilemma",
+      "mcd.blue": "https://arcwiki.mcd.blue/Abstruse_Dilemma"
+    }
   },
   {
     "id": 343,
@@ -11509,7 +12535,10 @@
     "searchKeys": [
       "raven's pride"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Raven's_Pride"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Raven's_Pride",
+      "mcd.blue": "https://arcwiki.mcd.blue/Raven's_Pride"
+    }
   },
   {
     "id": 344,
@@ -11542,7 +12571,10 @@
     "searchKeys": [
       "rgb"
     ],
-    "url": "https://arcaea.fandom.com/wiki/RGB"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/RGB",
+      "mcd.blue": "https://arcwiki.mcd.blue/RGB"
+    }
   },
   {
     "id": 345,
@@ -11575,7 +12607,10 @@
     "searchKeys": [
       "rise of the world"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Rise_of_the_World"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Rise_of_the_World",
+      "mcd.blue": "https://arcwiki.mcd.blue/Rise_of_the_World"
+    }
   },
   {
     "id": 346,
@@ -11608,7 +12643,10 @@
     "searchKeys": [
       "sacrifice feat. ayame"
     ],
-    "url": "https://arcaea.fandom.com/wiki/SACRIFICE_feat._ayame"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/SACRIFICE_feat._ayame",
+      "mcd.blue": "https://arcwiki.mcd.blue/SACRIFICE_feat._ayame"
+    }
   },
   {
     "id": 347,
@@ -11641,7 +12679,10 @@
     "searchKeys": [
       "unknown levels"
     ],
-    "url": "https://arcaea.fandom.com/wiki/UNKNOWN_LEVELS"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/UNKNOWN_LEVELS",
+      "mcd.blue": "https://arcwiki.mcd.blue/UNKNOWN_LEVELS"
+    }
   },
   {
     "id": 348,
@@ -11674,7 +12715,10 @@
     "searchKeys": [
       "wait for dawn"
     ],
-    "url": "https://arcaea.fandom.com/wiki/WAIT_FOR_DAWN"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/WAIT_FOR_DAWN",
+      "mcd.blue": "https://arcwiki.mcd.blue/WAIT_FOR_DAWN"
+    }
   },
   {
     "id": 349,
@@ -11707,7 +12751,10 @@
     "searchKeys": [
       "kanjou no matenrou ~ arr.demetori"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Kanjou_no_Matenrou_\uff5eArr.Demetori"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Kanjou_no_Matenrou_\uff5eArr.Demetori",
+      "mcd.blue": "https://arcwiki.mcd.blue/Kanjou_no_Matenrou_\uff5eArr.Demetori"
+    }
   },
   {
     "id": 350,
@@ -11740,7 +12787,10 @@
     "searchKeys": [
       "to the furthest dream"
     ],
-    "url": "https://arcaea.fandom.com/wiki/To_the_Furthest_Dream"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/To_the_Furthest_Dream",
+      "mcd.blue": "https://arcwiki.mcd.blue/To_the_Furthest_Dream"
+    }
   },
   {
     "id": 351,
@@ -11773,7 +12823,10 @@
     "searchKeys": [
       "amekagura"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Amekagura"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Amekagura",
+      "mcd.blue": "https://arcwiki.mcd.blue/Amekagura"
+    }
   },
   {
     "id": 352,
@@ -11806,7 +12859,10 @@
     "searchKeys": [
       "arghena"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Arghena"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Arghena",
+      "mcd.blue": "https://arcwiki.mcd.blue/Arghena"
+    }
   },
   {
     "id": 353,
@@ -11839,7 +12895,10 @@
     "searchKeys": [
       "b.b.k.k.b.k.k."
     ],
-    "url": "https://arcaea.fandom.com/wiki/B.B.K.K.B.K.K."
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/B.B.K.K.B.K.K.",
+      "mcd.blue": "https://arcwiki.mcd.blue/B.B.K.K.B.K.K."
+    }
   },
   {
     "id": 354,
@@ -11872,7 +12931,10 @@
     "searchKeys": [
       "dynitikos"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dynitik\u00f3s"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dynitik\u00f3s",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dynitik\u00f3s"
+    }
   },
   {
     "id": 355,
@@ -11905,7 +12967,10 @@
     "searchKeys": [
       "ego eimi"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ego_Eimi"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ego_Eimi",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ego_Eimi"
+    }
   },
   {
     "id": 356,
@@ -11938,7 +13003,10 @@
     "searchKeys": [
       "logos"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Logos"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Logos",
+      "mcd.blue": "https://arcwiki.mcd.blue/Logos"
+    }
   },
   {
     "id": 357,
@@ -11971,7 +13039,10 @@
     "searchKeys": [
       "primeval texture"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Primeval_Texture"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Primeval_Texture",
+      "mcd.blue": "https://arcwiki.mcd.blue/Primeval_Texture"
+    }
   },
   {
     "id": 358,
@@ -12004,7 +13075,10 @@
     "searchKeys": [
       "remind the souls (short version)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Remind_the_Souls_(Short_Version)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Remind_the_Souls_(Short_Version)",
+      "mcd.blue": "https://arcwiki.mcd.blue/Remind_the_Souls_(Short_Version)"
+    }
   },
   {
     "id": 359,
@@ -12037,7 +13111,10 @@
     "searchKeys": [
       "technicolour"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Technicolour"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Technicolour",
+      "mcd.blue": "https://arcwiki.mcd.blue/Technicolour"
+    }
   },
   {
     "id": 360,
@@ -12071,7 +13148,10 @@
       "fanta5y",
       "fantasy"
     ],
-    "url": "https://arcaea.fandom.com/wiki/FANTA5Y"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/FANTA5Y",
+      "mcd.blue": "https://arcwiki.mcd.blue/FANTA5Y"
+    }
   },
   {
     "id": 361,
@@ -12104,7 +13184,10 @@
     "searchKeys": [
       "nameless passion"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Nameless_Passion"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Nameless_Passion",
+      "mcd.blue": "https://arcwiki.mcd.blue/Nameless_Passion"
+    }
   },
   {
     "id": 362,
@@ -12137,7 +13220,10 @@
     "searchKeys": [
       "teravolt"
     ],
-    "url": "https://arcaea.fandom.com/wiki/TeraVolt"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/TeraVolt",
+      "mcd.blue": "https://arcwiki.mcd.blue/TeraVolt"
+    }
   },
   {
     "id": 363,
@@ -12170,7 +13256,10 @@
     "searchKeys": [
       "transient space"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Transient_Space"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Transient_Space",
+      "mcd.blue": "https://arcwiki.mcd.blue/Transient_Space"
+    }
   },
   {
     "id": 364,
@@ -12203,7 +13292,10 @@
     "searchKeys": [
       "alone & lorn"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Alone_&_Lorn"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Alone_&_Lorn",
+      "mcd.blue": "https://arcwiki.mcd.blue/Alone_&_Lorn"
+    }
   },
   {
     "id": 365,
@@ -12236,7 +13328,10 @@
     "searchKeys": [
       "eden"
     ],
-    "url": "https://arcaea.fandom.com/wiki/eden"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/eden",
+      "mcd.blue": "https://arcwiki.mcd.blue/eden"
+    }
   },
   {
     "id": 366,
@@ -12269,7 +13364,10 @@
     "searchKeys": [
       "meta-mysteria"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Meta-Mysteria"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Meta-Mysteria",
+      "mcd.blue": "https://arcwiki.mcd.blue/Meta-Mysteria"
+    }
   },
   {
     "id": 367,
@@ -12302,7 +13400,10 @@
     "searchKeys": [
       "ouverture"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ouvert\u00fcre"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ouvert\u00fcre",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ouvert\u00fcre"
+    }
   },
   {
     "id": 368,
@@ -12335,7 +13436,10 @@
     "searchKeys": [
       "stratoliner"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Stratoliner"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Stratoliner",
+      "mcd.blue": "https://arcwiki.mcd.blue/Stratoliner"
+    }
   },
   {
     "id": 369,
@@ -12368,7 +13472,10 @@
     "searchKeys": [
       "wish upon a snow"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Wish_Upon_a_Snow"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Wish_Upon_a_Snow",
+      "mcd.blue": "https://arcwiki.mcd.blue/Wish_Upon_a_Snow"
+    }
   },
   {
     "id": 370,
@@ -12401,7 +13508,10 @@
     "searchKeys": [
       "xtreme"
     ],
-    "url": "https://arcaea.fandom.com/wiki/XTREME"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/XTREME",
+      "mcd.blue": "https://arcwiki.mcd.blue/XTREME"
+    }
   },
   {
     "id": 371,
@@ -12434,7 +13544,10 @@
     "searchKeys": [
       "felys final remix"
     ],
-    "url": "https://arcaea.fandom.com/wiki/felys_final_remix"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/felys_final_remix",
+      "mcd.blue": "https://arcwiki.mcd.blue/felys_final_remix"
+    }
   },
   {
     "id": 372,
@@ -12467,7 +13580,10 @@
     "searchKeys": [
       "kanbu de tomatte sugu tokeru"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Kanbu_de_Tomatte_Sugu_Tokeru"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Kanbu_de_Tomatte_Sugu_Tokeru",
+      "mcd.blue": "https://arcwiki.mcd.blue/Kanbu_de_Tomatte_Sugu_Tokeru"
+    }
   },
   {
     "id": 373,
@@ -12500,7 +13616,10 @@
     "searchKeys": [
       "livht my way"
     ],
-    "url": "https://arcaea.fandom.com/wiki/LIVHT_MY_W\u0394Y"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/LIVHT_MY_W\u0394Y",
+      "mcd.blue": "https://arcwiki.mcd.blue/LIVHT_MY_W\u0394Y"
+    }
   },
   {
     "id": 374,
@@ -12533,7 +13652,10 @@
     "searchKeys": [
       "on and on!! feat. jenga"
     ],
-    "url": "https://arcaea.fandom.com/wiki/On_And_On!!_feat._Jenga"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/On_And_On!!_feat._Jenga",
+      "mcd.blue": "https://arcwiki.mcd.blue/On_And_On!!_feat._Jenga"
+    }
   },
   {
     "id": 375,
@@ -12566,7 +13688,10 @@
     "searchKeys": [
       "hotarubi no yuki"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Hotarubi_no_Yuki"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Hotarubi_no_Yuki",
+      "mcd.blue": "https://arcwiki.mcd.blue/Hotarubi_no_Yuki"
+    }
   },
   {
     "id": 376,
@@ -12599,7 +13724,10 @@
     "searchKeys": [
       "luna rossa"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Luna_Rossa"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Luna_Rossa",
+      "mcd.blue": "https://arcwiki.mcd.blue/Luna_Rossa"
+    }
   },
   {
     "id": 377,
@@ -12632,7 +13760,10 @@
     "searchKeys": [
       "the formula"
     ],
-    "url": "https://arcaea.fandom.com/wiki/The_Formula"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/The_Formula",
+      "mcd.blue": "https://arcwiki.mcd.blue/The_Formula"
+    }
   },
   {
     "id": 378,
@@ -12651,7 +13782,10 @@
     "searchKeys": [
       "vicious [anti] heroism"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Vicious_Heroism"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Vicious_Heroism",
+      "mcd.blue": "https://arcwiki.mcd.blue/Vicious_Heroism"
+    }
   },
   {
     "id": 379,
@@ -12684,7 +13818,10 @@
     "searchKeys": [
       "aleph-0"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Aleph-0"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Aleph-0",
+      "mcd.blue": "https://arcwiki.mcd.blue/Aleph-0"
+    }
   },
   {
     "id": 380,
@@ -12724,7 +13861,10 @@
     "searchKeys": [
       "innocence"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Innocence"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Innocence",
+      "mcd.blue": "https://arcwiki.mcd.blue/Innocence"
+    }
   },
   {
     "id": 381,
@@ -12764,7 +13904,10 @@
     "searchKeys": [
       "ionostream"
     ],
-    "url": "https://arcaea.fandom.com/wiki/IONOSTREAM"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/IONOSTREAM",
+      "mcd.blue": "https://arcwiki.mcd.blue/IONOSTREAM"
+    }
   },
   {
     "id": 382,
@@ -12804,7 +13947,10 @@
     "searchKeys": [
       "jingle"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Jingle"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Jingle",
+      "mcd.blue": "https://arcwiki.mcd.blue/Jingle"
+    }
   },
   {
     "id": 383,
@@ -12837,7 +13983,10 @@
     "searchKeys": [
       "kyoren romance"
     ],
-    "url": "https://arcaea.fandom.com/wiki/KYOREN_ROMANCE"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/KYOREN_ROMANCE",
+      "mcd.blue": "https://arcwiki.mcd.blue/KYOREN_ROMANCE"
+    }
   },
   {
     "id": 384,
@@ -12870,7 +14019,10 @@
     "searchKeys": [
       "masquerade legion"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Masquerade_Legion"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Masquerade_Legion",
+      "mcd.blue": "https://arcwiki.mcd.blue/Masquerade_Legion"
+    }
   },
   {
     "id": 385,
@@ -12903,7 +14055,10 @@
     "searchKeys": [
       "qovat"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Qovat"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Qovat",
+      "mcd.blue": "https://arcwiki.mcd.blue/Qovat"
+    }
   },
   {
     "id": 386,
@@ -12936,7 +14091,10 @@
     "searchKeys": [
       "awaken in ruins"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Awaken_In_Ruins"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Awaken_In_Ruins",
+      "mcd.blue": "https://arcwiki.mcd.blue/Awaken_In_Ruins"
+    }
   },
   {
     "id": 387,
@@ -12976,7 +14134,10 @@
     "searchKeys": [
       "hellohell"
     ],
-    "url": "https://arcaea.fandom.com/wiki/HELLOHELL"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/HELLOHELL",
+      "mcd.blue": "https://arcwiki.mcd.blue/HELLOHELL"
+    }
   },
   {
     "id": 388,
@@ -13009,7 +14170,10 @@
     "searchKeys": [
       "lethal voltage"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lethal_Voltage"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lethal_Voltage",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lethal_Voltage"
+    }
   },
   {
     "id": 389,
@@ -13042,7 +14206,10 @@
     "searchKeys": [
       "mirinae"
     ],
-    "url": "https://arcaea.fandom.com/wiki/MIRINAE"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MIRINAE",
+      "mcd.blue": "https://arcwiki.mcd.blue/MIRINAE"
+    }
   },
   {
     "id": 390,
@@ -13082,7 +14249,10 @@
     "searchKeys": [
       "morningloom"
     ],
-    "url": "https://arcaea.fandom.com/wiki/MORNINGLOOM"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MORNINGLOOM",
+      "mcd.blue": "https://arcwiki.mcd.blue/MORNINGLOOM"
+    }
   },
   {
     "id": 391,
@@ -13116,7 +14286,10 @@
       "q",
       "o"
     ],
-    "url": "https://arcaea.fandom.com/wiki/\u3007\u3001"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u3007\u3001",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u3007\u3001"
+    }
   },
   {
     "id": 392,
@@ -13149,7 +14322,10 @@
     "searchKeys": [
       "ultradiaxon-n3"
     ],
-    "url": "https://arcaea.fandom.com/wiki/ultradiaxon-N3"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/ultradiaxon-N3",
+      "mcd.blue": "https://arcwiki.mcd.blue/ultradiaxon-N3"
+    }
   },
   {
     "id": 393,
@@ -13182,7 +14358,10 @@
     "searchKeys": [
       "chromafill"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Chromafill"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Chromafill",
+      "mcd.blue": "https://arcwiki.mcd.blue/Chromafill"
+    }
   },
   {
     "id": 394,
@@ -13222,7 +14401,10 @@
     "searchKeys": [
       "distorted fate"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Distorted_Fate"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Distorted_Fate",
+      "mcd.blue": "https://arcwiki.mcd.blue/Distorted_Fate"
+    }
   },
   {
     "id": 395,
@@ -13262,7 +14444,10 @@
     "searchKeys": [
       "desive"
     ],
-    "url": "https://arcaea.fandom.com/wiki/D\u00e9sive"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/D\u00e9sive",
+      "mcd.blue": "https://arcwiki.mcd.blue/D\u00e9sive"
+    }
   },
   {
     "id": 396,
@@ -13295,7 +14480,10 @@
     "searchKeys": [
       "floating world"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Floating_World"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Floating_World",
+      "mcd.blue": "https://arcwiki.mcd.blue/Floating_World"
+    }
   },
   {
     "id": 397,
@@ -13328,7 +14516,10 @@
     "searchKeys": [
       "leave all behind"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Leave_All_Behind"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Leave_All_Behind",
+      "mcd.blue": "https://arcwiki.mcd.blue/Leave_All_Behind"
+    }
   },
   {
     "id": 398,
@@ -13361,7 +14552,10 @@
     "searchKeys": [
       "back to basics"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Back_to_Basics"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Back_to_Basics",
+      "mcd.blue": "https://arcwiki.mcd.blue/Back_to_Basics"
+    }
   },
   {
     "id": 399,
@@ -13394,7 +14588,10 @@
     "searchKeys": [
       "beautiful dreamer"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Beautiful_Dreamer"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Beautiful_Dreamer",
+      "mcd.blue": "https://arcwiki.mcd.blue/Beautiful_Dreamer"
+    }
   },
   {
     "id": 400,
@@ -13434,7 +14631,10 @@
     "searchKeys": [
       "hidden rainbows of epicurus"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Hidden_Rainbows_of_Epicurus"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Hidden_Rainbows_of_Epicurus",
+      "mcd.blue": "https://arcwiki.mcd.blue/Hidden_Rainbows_of_Epicurus"
+    }
   },
   {
     "id": 401,
@@ -13467,7 +14667,10 @@
     "searchKeys": [
       "old school salvage"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Old_School_Salvage"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Old_School_Salvage",
+      "mcd.blue": "https://arcwiki.mcd.blue/Old_School_Salvage"
+    }
   },
   {
     "id": 402,
@@ -13507,7 +14710,10 @@
     "searchKeys": [
       "twilight concerto"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Twilight_Concerto"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Twilight_Concerto",
+      "mcd.blue": "https://arcwiki.mcd.blue/Twilight_Concerto"
+    }
   },
   {
     "id": 403,
@@ -13547,7 +14753,10 @@
     "searchKeys": [
       "10pt8ion"
     ],
-    "url": "https://arcaea.fandom.com/wiki/10pt8ion"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/10pt8ion",
+      "mcd.blue": "https://arcwiki.mcd.blue/10pt8ion"
+    }
   },
   {
     "id": 404,
@@ -13580,7 +14789,10 @@
     "searchKeys": [
       "black mind"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Black_MInD"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Black_MInD",
+      "mcd.blue": "https://arcwiki.mcd.blue/Black_MInD"
+    }
   },
   {
     "id": 405,
@@ -13613,7 +14825,10 @@
     "searchKeys": [
       "hyper vision"
     ],
-    "url": "https://arcaea.fandom.com/wiki/HYPER_VISION"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/HYPER_VISION",
+      "mcd.blue": "https://arcwiki.mcd.blue/HYPER_VISION"
+    }
   },
   {
     "id": 406,
@@ -13646,7 +14861,10 @@
     "searchKeys": [
       "sign of \"10.5km\""
     ],
-    "url": "https://arcaea.fandom.com/wiki/Sign_of_\"10.5km\""
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Sign_of_\"10.5km\"",
+      "mcd.blue": "https://arcwiki.mcd.blue/Sign_of_\"10.5km\""
+    }
   },
   {
     "id": 407,
@@ -13686,7 +14904,10 @@
     "searchKeys": [
       "stargate extreme"
     ],
-    "url": "https://arcaea.fandom.com/wiki/STARGATE_EXTREME"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/STARGATE_EXTREME",
+      "mcd.blue": "https://arcwiki.mcd.blue/STARGATE_EXTREME"
+    }
   },
   {
     "id": 408,
@@ -13726,7 +14947,10 @@
     "searchKeys": [
       "alter ego"
     ],
-    "url": "https://arcaea.fandom.com/wiki/ALTER_EGO"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/ALTER_EGO",
+      "mcd.blue": "https://arcwiki.mcd.blue/ALTER_EGO"
+    }
   },
   {
     "id": 409,
@@ -13760,7 +14984,10 @@
       "ashen 6oundary",
       "ashen boundary"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ashen_6oundary"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ashen_6oundary",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ashen_6oundary"
+    }
   },
   {
     "id": 410,
@@ -13793,7 +15020,10 @@
     "searchKeys": [
       "distortion human"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Distortion_Human"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Distortion_Human",
+      "mcd.blue": "https://arcwiki.mcd.blue/Distortion_Human"
+    }
   },
   {
     "id": 411,
@@ -13833,7 +15063,10 @@
     "searchKeys": [
       "hypnotize"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Hypnotize"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Hypnotize",
+      "mcd.blue": "https://arcwiki.mcd.blue/Hypnotize"
+    }
   },
   {
     "id": 412,
@@ -13866,7 +15099,10 @@
     "searchKeys": [
       "in vain"
     ],
-    "url": "https://arcaea.fandom.com/wiki/In_Vain"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/In_Vain",
+      "mcd.blue": "https://arcwiki.mcd.blue/In_Vain"
+    }
   },
   {
     "id": 413,
@@ -13899,7 +15135,10 @@
     "searchKeys": [
       "judgement"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Judgement"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Judgement",
+      "mcd.blue": "https://arcwiki.mcd.blue/Judgement"
+    }
   },
   {
     "id": 414,
@@ -13932,7 +15171,10 @@
     "searchKeys": [
       "shrink"
     ],
-    "url": "https://arcaea.fandom.com/wiki/shrink"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/shrink",
+      "mcd.blue": "https://arcwiki.mcd.blue/shrink"
+    }
   },
   {
     "id": 415,
@@ -13972,7 +15214,10 @@
     "searchKeys": [
       "dual doom deathmatch"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dual_Doom_Deathmatch"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dual_Doom_Deathmatch",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dual_Doom_Deathmatch"
+    }
   },
   {
     "id": 416,
@@ -14012,7 +15257,10 @@
     "searchKeys": [
       "epitaxy"
     ],
-    "url": "https://arcaea.fandom.com/wiki/epitaxy"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/epitaxy",
+      "mcd.blue": "https://arcwiki.mcd.blue/epitaxy"
+    }
   },
   {
     "id": 417,
@@ -14052,7 +15300,10 @@
     "searchKeys": [
       "inverted world"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Inverted_World"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Inverted_World",
+      "mcd.blue": "https://arcwiki.mcd.blue/Inverted_World"
+    }
   },
   {
     "id": 418,
@@ -14085,7 +15336,10 @@
     "searchKeys": [
       "mvurbd"
     ],
-    "url": "https://arcaea.fandom.com/wiki/MVURBD"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MVURBD",
+      "mcd.blue": "https://arcwiki.mcd.blue/MVURBD"
+    }
   },
   {
     "id": 419,
@@ -14118,7 +15372,10 @@
     "searchKeys": [
       "vulcanus"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Vulc\u0101nus"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Vulc\u0101nus",
+      "mcd.blue": "https://arcwiki.mcd.blue/Vulc\u0101nus"
+    }
   },
   {
     "id": 420,
@@ -14158,7 +15415,10 @@
     "searchKeys": [
       "waltz for lorelei"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Waltz_for_Lorelei"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Waltz_for_Lorelei",
+      "mcd.blue": "https://arcwiki.mcd.blue/Waltz_for_Lorelei"
+    }
   },
   {
     "id": 421,
@@ -14198,7 +15458,10 @@
     "searchKeys": [
       "rain of conflict in a radiant abyss"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Rain_of_Conflict_in_a_Radiant_Abyss"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Rain_of_Conflict_in_a_Radiant_Abyss",
+      "mcd.blue": "https://arcwiki.mcd.blue/Rain_of_Conflict_in_a_Radiant_Abyss"
+    }
   },
   {
     "id": 422,
@@ -14238,7 +15501,10 @@
     "searchKeys": [
       "furete-mitai"
     ],
-    "url": "https://arcaea.fandom.com/wiki/FURETE-MITAI"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/FURETE-MITAI",
+      "mcd.blue": "https://arcwiki.mcd.blue/FURETE-MITAI"
+    }
   },
   {
     "id": 423,
@@ -14278,7 +15544,10 @@
     "searchKeys": [
       "gensou no satellite"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Gensou_no_Satellite"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Gensou_no_Satellite",
+      "mcd.blue": "https://arcwiki.mcd.blue/Gensou_no_Satellite"
+    }
   },
   {
     "id": 424,
@@ -14311,7 +15580,10 @@
     "searchKeys": [
       "hailstone"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Hailstone"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Hailstone",
+      "mcd.blue": "https://arcwiki.mcd.blue/Hailstone"
+    }
   },
   {
     "id": 425,
@@ -14344,7 +15616,10 @@
     "searchKeys": [
       "saint or sinner"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Saint_or_Sinner"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Saint_or_Sinner",
+      "mcd.blue": "https://arcwiki.mcd.blue/Saint_or_Sinner"
+    }
   },
   {
     "id": 426,
@@ -14384,7 +15659,10 @@
     "searchKeys": [
       "crimson quartz"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Crimson_Quartz"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Crimson_Quartz",
+      "mcd.blue": "https://arcwiki.mcd.blue/Crimson_Quartz"
+    }
   },
   {
     "id": 427,
@@ -14424,7 +15702,10 @@
     "searchKeys": [
       "dies irae"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Dies_irae"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dies_irae",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dies_irae"
+    }
   },
   {
     "id": 428,
@@ -14464,7 +15745,10 @@
     "searchKeys": [
       "prayer"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Prayer"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Prayer",
+      "mcd.blue": "https://arcwiki.mcd.blue/Prayer"
+    }
   },
   {
     "id": 429,
@@ -14497,7 +15781,10 @@
     "searchKeys": [
       "spirit of the dauntless"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Spirit_of_the_Dauntless"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Spirit_of_the_Dauntless",
+      "mcd.blue": "https://arcwiki.mcd.blue/Spirit_of_the_Dauntless"
+    }
   },
   {
     "id": 430,
@@ -14537,7 +15824,10 @@
     "searchKeys": [
       "third sun"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Third_Sun"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Third_Sun",
+      "mcd.blue": "https://arcwiki.mcd.blue/Third_Sun"
+    }
   },
   {
     "id": 431,
@@ -14570,7 +15860,10 @@
     "searchKeys": [
       "and revive the melody"
     ],
-    "url": "https://arcaea.fandom.com/wiki/And_Revive_The_Melody"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/And_Revive_The_Melody",
+      "mcd.blue": "https://arcwiki.mcd.blue/And_Revive_The_Melody"
+    }
   },
   {
     "id": 432,
@@ -14603,7 +15896,10 @@
     "searchKeys": [
       "astral quantization"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Astral_Quantization"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Astral_Quantization",
+      "mcd.blue": "https://arcwiki.mcd.blue/Astral_Quantization"
+    }
   },
   {
     "id": 433,
@@ -14636,7 +15932,10 @@
     "searchKeys": [
       "astral.exe"
     ],
-    "url": "https://arcaea.fandom.com/wiki/astral.exe"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/astral.exe",
+      "mcd.blue": "https://arcwiki.mcd.blue/astral.exe"
+    }
   },
   {
     "id": 434,
@@ -14676,7 +15975,10 @@
     "searchKeys": [
       "breach of faith"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Breach_of_Faith"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Breach_of_Faith",
+      "mcd.blue": "https://arcwiki.mcd.blue/Breach_of_Faith"
+    }
   },
   {
     "id": 435,
@@ -14716,7 +16018,10 @@
     "searchKeys": [
       "designant."
     ],
-    "url": "https://arcaea.fandom.com/wiki/Designant."
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Designant.",
+      "mcd.blue": "https://arcwiki.mcd.blue/Designant."
+    }
   },
   {
     "id": 436,
@@ -14756,7 +16061,10 @@
     "searchKeys": [
       "don't fight the music"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Don't_Fight_The_Music"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Don't_Fight_The_Music",
+      "mcd.blue": "https://arcwiki.mcd.blue/Don't_Fight_The_Music"
+    }
   },
   {
     "id": 437,
@@ -14796,7 +16104,10 @@
     "searchKeys": [
       "lament rain"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Lament_Rain"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lament_Rain",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lament_Rain"
+    }
   },
   {
     "id": 438,
@@ -14836,7 +16147,10 @@
     "searchKeys": [
       "liftoff"
     ],
-    "url": "https://arcaea.fandom.com/wiki/LiftOff"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/LiftOff",
+      "mcd.blue": "https://arcwiki.mcd.blue/LiftOff"
+    }
   },
   {
     "id": 439,
@@ -14876,7 +16190,10 @@
     "searchKeys": [
       "rays of remnant"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Rays_of_Remnant"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Rays_of_Remnant",
+      "mcd.blue": "https://arcwiki.mcd.blue/Rays_of_Remnant"
+    }
   },
   {
     "id": 440,
@@ -14916,7 +16233,10 @@
     "searchKeys": [
       "renegade"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Renegade"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Renegade",
+      "mcd.blue": "https://arcwiki.mcd.blue/Renegade"
+    }
   },
   {
     "id": 441,
@@ -14949,7 +16269,10 @@
     "searchKeys": [
       "super ambulance"
     ],
-    "url": "https://arcaea.fandom.com/wiki/SUPER_AMBULANCE"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/SUPER_AMBULANCE",
+      "mcd.blue": "https://arcwiki.mcd.blue/SUPER_AMBULANCE"
+    }
   },
   {
     "id": 442,
@@ -14982,7 +16305,10 @@
     "searchKeys": [
       "swan song"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Swan_Song"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Swan_Song",
+      "mcd.blue": "https://arcwiki.mcd.blue/Swan_Song"
+    }
   },
   {
     "id": 443,
@@ -15022,7 +16348,10 @@
     "searchKeys": [
       "8-em"
     ],
-    "url": "https://arcaea.fandom.com/wiki/8-EM"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/8-EM",
+      "mcd.blue": "https://arcwiki.mcd.blue/8-EM"
+    }
   },
   {
     "id": 444,
@@ -15062,7 +16391,10 @@
     "searchKeys": [
       "blazing air"
     ],
-    "url": "https://arcaea.fandom.com/wiki/BlazinG_AIR"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/BlazinG_AIR",
+      "mcd.blue": "https://arcwiki.mcd.blue/BlazinG_AIR"
+    }
   },
   {
     "id": 445,
@@ -15095,7 +16427,10 @@
     "searchKeys": [
       "da'at -the first seeker of souls-"
     ],
-    "url": "https://arcaea.fandom.com/wiki/DA'AT_-The_First_Seeker_of_Souls-"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/DA'AT_-The_First_Seeker_of_Souls-",
+      "mcd.blue": "https://arcwiki.mcd.blue/DA'AT_-The_First_Seeker_of_Souls-"
+    }
   },
   {
     "id": 446,
@@ -15128,7 +16463,10 @@
     "searchKeys": [
       "ignition"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Ignition"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ignition",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ignition"
+    }
   },
   {
     "id": 447,
@@ -15168,7 +16506,10 @@
     "searchKeys": [
       "break! break! break!"
     ],
-    "url": "https://arcaea.fandom.com/wiki/BREaK!_BREaK!_BREaK!"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/BREaK!_BREaK!_BREaK!",
+      "mcd.blue": "https://arcwiki.mcd.blue/BREaK!_BREaK!_BREaK!"
+    }
   },
   {
     "id": 448,
@@ -15208,7 +16549,10 @@
     "searchKeys": [
       "straight into the lights"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Straight_into_the_lights"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Straight_into_the_lights",
+      "mcd.blue": "https://arcwiki.mcd.blue/Straight_into_the_lights"
+    }
   },
   {
     "id": 449,
@@ -15248,7 +16592,10 @@
     "searchKeys": [
       "virtus"
     ],
-    "url": "https://arcaea.fandom.com/wiki/ViRTUS"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/ViRTUS",
+      "mcd.blue": "https://arcwiki.mcd.blue/ViRTUS"
+    }
   },
   {
     "id": 450,
@@ -15281,7 +16628,10 @@
     "searchKeys": [
       "yomibito_shirazu"
     ],
-    "url": "https://arcaea.fandom.com/wiki/yomibito_shirazu"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/yomibito_shirazu",
+      "mcd.blue": "https://arcwiki.mcd.blue/yomibito_shirazu"
+    }
   },
   {
     "id": 451,
@@ -15321,7 +16671,10 @@
     "searchKeys": [
       "aether crest: astral"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Aether_Crest:_Astral"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Aether_Crest:_Astral",
+      "mcd.blue": "https://arcwiki.mcd.blue/Aether_Crest:_Astral"
+    }
   },
   {
     "id": 452,
@@ -15361,7 +16714,10 @@
     "searchKeys": [
       "death by glamour"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Death_By_Glamour"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Death_By_Glamour",
+      "mcd.blue": "https://arcwiki.mcd.blue/Death_By_Glamour"
+    }
   },
   {
     "id": 453,
@@ -15401,7 +16757,10 @@
     "searchKeys": [
       "heartache"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Heartache"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Heartache",
+      "mcd.blue": "https://arcwiki.mcd.blue/Heartache"
+    }
   },
   {
     "id": 454,
@@ -15441,7 +16800,10 @@
     "searchKeys": [
       "last goodbye"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Last_Goodbye"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Last_Goodbye",
+      "mcd.blue": "https://arcwiki.mcd.blue/Last_Goodbye"
+    }
   },
   {
     "id": 455,
@@ -15481,7 +16843,10 @@
     "searchKeys": [
       "megalovania"
     ],
-    "url": "https://arcaea.fandom.com/wiki/MEGALOVANIA"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MEGALOVANIA",
+      "mcd.blue": "https://arcwiki.mcd.blue/MEGALOVANIA"
+    }
   },
   {
     "id": 456,
@@ -15521,7 +16886,10 @@
     "searchKeys": [
       "megalovania (camellia remix)"
     ],
-    "url": "https://arcaea.fandom.com/wiki/MEGALOVANIA_(Camellia_Remix)"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MEGALOVANIA_(Camellia_Remix)",
+      "mcd.blue": "https://arcwiki.mcd.blue/MEGALOVANIA_(Camellia_Remix)"
+    }
   },
   {
     "id": 457,
@@ -15554,7 +16922,10 @@
     "searchKeys": [
       "placebo battler"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Placebo\u2665Battler"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Placebo\u2665Battler",
+      "mcd.blue": "https://arcwiki.mcd.blue/Placebo\u2665Battler"
+    }
   },
   {
     "id": 458,
@@ -15594,7 +16965,10 @@
     "searchKeys": [
       "your best nightmare"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Your_Best_Nightmare"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Your_Best_Nightmare",
+      "mcd.blue": "https://arcwiki.mcd.blue/Your_Best_Nightmare"
+    }
   },
   {
     "id": 459,
@@ -15634,7 +17008,10 @@
     "searchKeys": [
       "black mirror on the wall"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Black_Mirror_on_the_Wall"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Black_Mirror_on_the_Wall",
+      "mcd.blue": "https://arcwiki.mcd.blue/Black_Mirror_on_the_Wall"
+    }
   },
   {
     "id": 460,
@@ -15674,7 +17051,10 @@
     "searchKeys": [
       "shinchoku doudesuka?"
     ],
-    "url": "https://arcaea.fandom.com/wiki/Shinchoku_Doudesuka%3F"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Shinchoku_Doudesuka%3F",
+      "mcd.blue": "https://arcwiki.mcd.blue/Shinchoku_Doudesuka%3F"
+    }
   },
   {
     "id": 461,
@@ -15707,6 +17087,9 @@
     "searchKeys": [
       "trpno"
     ],
-    "url": "https://arcaea.fandom.com/wiki/TRPNO"
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/TRPNO",
+      "mcd.blue": "https://arcwiki.mcd.blue/TRPNO"
+    }
   }
 ]
