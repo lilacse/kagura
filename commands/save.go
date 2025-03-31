@@ -178,9 +178,6 @@ func (h *saveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		Title: "Score saved",
 		Fields: []discord.EmbedField{
 			{
-				Name: "",
-			},
-			{
 				Name:  "Song",
 				Value: fmt.Sprintf("%s - %s", song.Title, song.Artist),
 			},

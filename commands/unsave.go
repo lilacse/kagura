@@ -125,9 +125,6 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 		Title: "Score deleted",
 		Fields: []discord.EmbedField{
 			{
-				Name: "",
-			},
-			{
 				Name:  "Song",
 				Value: fmt.Sprintf("%s - %s", song.Title, song.Artist),
 			},
