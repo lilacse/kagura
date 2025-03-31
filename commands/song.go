@@ -71,14 +71,14 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 	ytQuery := url.QueryEscape(fmt.Sprintf("Arcaea %s Chart View", song.Title))
 	chartViewLink := fmt.Sprintf("https://www.youtube.com/results?search_query=%s", ytQuery)
 
-	linksText := fmt.Sprintf("[Find Chart View on YouTube](%s)", chartViewLink)
+	linksText := fmt.Sprintf("\u2002▹\u2002[Find Chart View on YouTube](%s)", chartViewLink)
 
 	if song.Urls["fandom"] != "" {
-		linksText = fmt.Sprintf("%s\u2002▪\u2002[Fandom](%s)", linksText, song.Urls["fandom"])
+		linksText = fmt.Sprintf("%s\n▹\u2002[Fandom](%s)", linksText, song.Urls["fandom"])
 	}
 
 	if song.Urls["mcd.blue"] != "" {
-		linksText = fmt.Sprintf("%s\u2002▪\u2002[Arcaea中文维基](%s)", linksText, song.Urls["mcd.blue"])
+		linksText = fmt.Sprintf("%s\n▹\u2002[Arcaea中文维基](%s)", linksText, song.Urls["mcd.blue"])
 	}
 
 	embedFields := []discord.EmbedField{
@@ -91,11 +91,8 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 			Value: song.Artist,
 		},
 		{
-			Name: "",
-		},
-		{
-			Name:  "Charts",
-			Value: "",
+			Name:  "",
+			Value: "**Charts**",
 		},
 	}
 
@@ -106,10 +103,6 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 			Inline: true,
 		})
 	}
-
-	embedFields = append(embedFields, discord.EmbedField{
-		Name: "",
-	})
 
 	embedFields = append(embedFields, discord.EmbedField{
 		Name:  "",
