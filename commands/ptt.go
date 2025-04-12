@@ -21,7 +21,7 @@ type pttHandler struct {
 func NewPttHandler(store *store.Store, songdata *songdata.Service) *pttHandler {
 	return &pttHandler{
 		cmd: cmd{
-			cmds: []string{"ptt", "rating"},
+			cmds: []string{"ptt", "rt"},
 			params: [][]param{
 				{
 					{
