@@ -145,6 +145,15 @@ func extractParamReverse(param string, wordCount int) (string, string, bool) {
 	return param[0:startIdx], param[startIdx:endIdx], true
 }
 
+func parseStep(s string) (int, bool) {
+	step, err := strconv.Atoi(s)
+	if err != nil || step > 1000 || step < 0 {
+		return -1, false
+	}
+
+	return step, true
+}
+
 func parseShortScore(s string) (int, string, bool) {
 	score, err := strconv.Atoi(s)
 	if err != nil || score > 10009999 || score < 0 {
@@ -176,6 +185,15 @@ func parseFullScore(s string) (int, string, bool) {
 	return score, "", true
 }
 
+func parseCc(s string) (float64, bool) {
+	cc, err := strconv.ParseFloat(s, 64)
+	if err != nil || cc < 0 || cc > 15 {
+		return -1, false
+	}
+
+	return cc, true
+}
+
 func parseUserId(s string) (discord.UserID, bool) {
 	if strings.HasPrefix(s, "<@") && strings.HasSuffix(s, ">") {
 		s, _ = strings.CutPrefix(s, "<@")
@@ -193,6 +211,15 @@ func parseUserId(s string) (discord.UserID, bool) {
 	}
 
 	return userId, true
+}
+
+func parseScoreId(s string) (int64, bool) {
+	id, err := strconv.ParseInt(s, 10, 64)
+	if err != nil || id <= 0 {
+		return -1, false
+	}
+
+	return id, true
 }
 
 func parseDiffKey(diffStr string) (string, bool) {

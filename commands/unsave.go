@@ -51,8 +51,8 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 		return true
 	}
 
-	id, err := strconv.ParseInt(idStr, 10, 64)
-	if err != nil {
+	id, ok := parseScoreId(idStr)
+	if !ok {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid score ID `%s`!", idStr)))
 		return true
 	}

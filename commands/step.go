@@ -75,8 +75,8 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		return true
 	}
 
-	step, err := strconv.Atoi(stepStr)
-	if err != nil {
+	step, ok := parseStep(stepStr)
+	if !ok {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid step `%s`!", stepStr)))
 		return true
 	}
