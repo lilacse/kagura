@@ -69,7 +69,7 @@ func (h *scoresHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 
 	song := matchSong[0]
 
-	diffKey, ok := getDiffKey(diffStr)
+	diffKey, ok := parseDiffKey(diffStr)
 	if !ok {
 		sendInvalidDiffError(st, diffStr, e)
 		return true

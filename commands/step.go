@@ -81,7 +81,7 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		return true
 	}
 
-	score, errMsg, ok := parseScore(scoreStr)
+	score, errMsg, ok := parseShortScore(scoreStr)
 	if !ok {
 		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(errMsg))
 		return true
@@ -95,7 +95,7 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 
 	song := matchSong[0]
 
-	diffKey, ok := getDiffKey(diffStr)
+	diffKey, ok := parseDiffKey(diffStr)
 	if !ok {
 		sendInvalidDiffError(st, diffStr, e)
 		return true

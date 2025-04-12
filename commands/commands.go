@@ -7,6 +7,7 @@ import (
 	"strings"
 	"unicode"
 
+	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/diamondburned/arikawa/v3/state"
 	"github.com/lilacse/kagura/embedbuilder"
@@ -144,12 +145,12 @@ func extractParamReverse(param string, wordCount int) (string, string, bool) {
 	return param[0:startIdx], param[startIdx:endIdx], true
 }
 
-func parseScore(scoreStr string) (int, string, bool) {
-	score, err := strconv.Atoi(scoreStr)
+func parseShortScore(s string) (int, string, bool) {
+	score, err := strconv.Atoi(s)
 	if err != nil || score > 10009999 || score < 0 {
-		return -1, fmt.Sprintf("Invalid score `%s`!", scoreStr), false
+		return -1, fmt.Sprintf("Invalid score `%s`!", s), false
 	} else if score < 100 {
-		return -1, fmt.Sprintf("Invalid score `%s`, expecting at least 3 digits!", scoreStr), false
+		return -1, fmt.Sprintf("Invalid score `%s`, expecting at least 3 digits!", s), false
 	}
 
 	// treat scores submitted with 3 digits to 6 digits, we append zeroes to them until it reaches 7 digits
@@ -164,7 +165,37 @@ func parseScore(scoreStr string) (int, string, bool) {
 	return score, "", true
 }
 
-func getDiffKey(diffStr string) (string, bool) {
+func parseFullScore(s string) (int, string, bool) {
+	score, err := strconv.Atoi(s)
+	if err != nil || score > 10009999 {
+		return -1, fmt.Sprintf("Invalid full score `%s`!", s), false
+	} else if score < 1000000 {
+		return -1, fmt.Sprintf("Invalid full score `%s`, expecting at least 7 digits!", s), false
+	}
+
+	return score, "", true
+}
+
+func parseUserId(s string) (discord.UserID, bool) {
+	if strings.HasPrefix(s, "<@") && strings.HasSuffix(s, ">") {
+		s, _ = strings.CutPrefix(s, "<@")
+		s, _ = strings.CutSuffix(s, ">")
+	}
+
+	id, err := strconv.ParseInt(s, 10, 64)
+	if err != nil {
+		return 0, false
+	}
+
+	userId := discord.UserID(id)
+	if !userId.IsValid() {
+		return 0, false
+	}
+
+	return userId, true
+}
+
+func parseDiffKey(diffStr string) (string, bool) {
 	switch strings.ToLower(diffStr) {
 	case "pst", "past":
 		return "pst", true
