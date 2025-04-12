@@ -23,18 +23,20 @@ func NewStepHandler(store *store.Store, songdata *songdata.Service) *stepHandler
 	return &stepHandler{
 		cmd: cmd{
 			cmds: []string{"step"},
-			params: []param{
+			params: [][]param{
 				{
-					name: "stat",
-				},
-				{
-					name: "song",
-				},
-				{
-					name: "diff",
-				},
-				{
-					name: "score",
+					{
+						name: "stat",
+					},
+					{
+						name: "song",
+					},
+					{
+						name: "diff",
+					},
+					{
+						name: "score",
+					},
 				},
 			},
 		},
@@ -57,19 +59,19 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		return true
 	}
 
-	params, scoreStr, ok := extractParamReverse(params, 1)
+	params, scoreStr, ok := extractParamBackwards(params, 1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	params, diffStr, ok := extractParamReverse(params, 1)
+	params, diffStr, ok := extractParamBackwards(params, 1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	_, songStr, ok := extractParamReverse(params, -1)
+	_, songStr, ok := extractParamBackwards(params, -1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true

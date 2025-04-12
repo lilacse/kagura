@@ -22,15 +22,17 @@ func NewPttHandler(store *store.Store, songdata *songdata.Service) *pttHandler {
 	return &pttHandler{
 		cmd: cmd{
 			cmds: []string{"ptt", "rating"},
-			params: []param{
+			params: [][]param{
 				{
-					name: "song",
-				},
-				{
-					name: "diff",
-				},
-				{
-					name: "score",
+					{
+						name: "song",
+					},
+					{
+						name: "diff",
+					},
+					{
+						name: "score",
+					},
 				},
 			},
 		},
@@ -55,19 +57,19 @@ func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 
 	st := h.store.Bot.State()
 
-	params, scoreStr, ok := extractParamReverse(params, 1)
+	params, scoreStr, ok := extractParamBackwards(params, 1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	params, diffStr, ok := extractParamReverse(params, 1)
+	params, diffStr, ok := extractParamBackwards(params, 1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	_, songStr, ok := extractParamReverse(params, -1)
+	_, songStr, ok := extractParamBackwards(params, -1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true

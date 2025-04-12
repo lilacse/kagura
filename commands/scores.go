@@ -26,12 +26,14 @@ func NewScoresHandler(store *store.Store, db *database.Service, songdata *songda
 	return &scoresHandler{
 		cmd: cmd{
 			cmds: []string{"scores"},
-			params: []param{
+			params: [][]param{
 				{
-					name: "song",
-				},
-				{
-					name: "diff",
+					{
+						name: "song",
+					},
+					{
+						name: "diff",
+					},
 				},
 			},
 		},
@@ -49,13 +51,13 @@ func (h *scoresHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 
 	st := h.store.Bot.State()
 
-	params, diffStr, ok := extractParamReverse(params, 1)
+	params, diffStr, ok := extractParamBackwards(params, 1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	_, songStr, ok := extractParamReverse(params, -1)
+	_, songStr, ok := extractParamBackwards(params, -1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true

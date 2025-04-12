@@ -26,15 +26,17 @@ func NewSaveHandler(store *store.Store, db *database.Service, songdata *songdata
 	return &saveHandler{
 		cmd: cmd{
 			cmds: []string{"save"},
-			params: []param{
+			params: [][]param{
 				{
-					name: "song",
-				},
-				{
-					name: "diff",
-				},
-				{
-					name: "score",
+					{
+						name: "song",
+					},
+					{
+						name: "diff",
+					},
+					{
+						name: "score",
+					},
 				},
 			},
 		},
@@ -52,19 +54,19 @@ func (h *saveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 
 	st := h.store.Bot.State()
 
-	params, scoreStr, ok := extractParamReverse(params, 1)
+	params, scoreStr, ok := extractParamBackwards(params, 1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	params, diffStr, ok := extractParamReverse(params, 1)
+	params, diffStr, ok := extractParamBackwards(params, 1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true
 	}
 
-	_, songStr, ok := extractParamReverse(params, -1)
+	_, songStr, ok := extractParamBackwards(params, -1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
 		return true

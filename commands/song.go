@@ -23,9 +23,11 @@ func NewSongHandler(store *store.Store, songdata *songdata.Service) *songHandler
 	return &songHandler{
 		cmd: cmd{
 			cmds: []string{"song"},
-			params: []param{
+			params: [][]param{
 				{
-					name: "query",
+					{
+						name: "query",
+					},
 				},
 			},
 		},

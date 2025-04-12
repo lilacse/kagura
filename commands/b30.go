@@ -35,7 +35,7 @@ func NewB30Handler(store *store.Store, db *database.Service, songdata *songdata.
 	return &b30Handler{
 		cmd: cmd{
 			cmds:   []string{"b30"},
-			params: []param{},
+			params: [][]param{},
 		},
 		store:    store,
 		db:       db,

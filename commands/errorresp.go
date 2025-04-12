@@ -10,18 +10,31 @@ import (
 )
 
 func sendFormatError(st *state.State, prefix string, handler cmd, e *gateway.MessageCreateEvent) {
-	paramList := make([]string, 0, len(handler.params))
-	for _, p := range handler.params {
-		if !p.optional {
-			paramList = append(paramList, fmt.Sprintf("[%s]", p.name))
-		} else {
-			paramList = append(paramList, fmt.Sprintf("(%s)", p.name))
+	formatList := make([]string, 0)
+
+	for _, f := range handler.params {
+		paramList := make([]string, 0, len(handler.params))
+		for _, p := range f {
+			if !p.optional {
+				paramList = append(paramList, fmt.Sprintf("[%s]", p.name))
+			} else {
+				paramList = append(paramList, fmt.Sprintf("(%s)", p.name))
+			}
 		}
+
+		format := fmt.Sprintf("%s%s %s", prefix, strings.Join(handler.cmds, "/"), strings.Join(paramList, " "))
+		formatList = append(formatList, format)
 	}
 
-	format := fmt.Sprintf("%s%s %s", prefix, strings.Join(handler.cmds, "/"), strings.Join(paramList, " "))
-
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%s`!", format)))
+	if len(formatList) == 1 {
+		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%s`!", formatList[0])))
+	} else {
+		formatListStr := ""
+		for _, f := range formatList {
+			formatListStr += fmt.Sprintf("- `%s`\n", f)
+		}
+		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting one of these formats!\n%s", formatListStr)))
+	}
 }
 
 func sendSongQueryError(st *state.State, query string, e *gateway.MessageCreateEvent) {

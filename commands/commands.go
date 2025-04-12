@@ -16,13 +16,20 @@ import (
 
 type cmd struct {
 	cmds   []string
-	params []param
+	params [][]param
 }
 
 type param struct {
 	name     string
 	optional bool
 }
+
+type direction int
+
+const (
+	forward   direction = 0
+	backwards direction = 1
+)
 
 func extractParamsString(cmd string, content string, prefix string) (string, bool) {
 	cmd = prefix + cmd
@@ -38,7 +45,7 @@ func extractParamsString(cmd string, content string, prefix string) (string, boo
 	}
 }
 
-func extractParamForward(param string, wordCount int) (string, string, bool) {
+func extractParamForward(param string, count int) (string, string, bool) {
 	l := len(param)
 	i := 0
 
@@ -64,19 +71,19 @@ func extractParamForward(param string, wordCount int) (string, string, bool) {
 	for i < l {
 		r := rune(param[i])
 		if unicode.IsSpace(r) {
-			wordCount--
+			count--
 		}
-		if wordCount == 0 {
+		if count == 0 {
 			break
 		}
 		i++
 	}
 
 	if i == l {
-		wordCount--
+		count--
 	}
 
-	if wordCount > 0 {
+	if count > 0 {
 		return "", "", false
 	}
 
@@ -85,7 +92,7 @@ func extractParamForward(param string, wordCount int) (string, string, bool) {
 	return param[endIdx:l], param[startIdx:endIdx], true
 }
 
-func extractParamReverse(param string, wordCount int) (string, string, bool) {
+func extractParamBackwards(param string, count int) (string, string, bool) {
 	i := len(param) - 1
 	s := 0
 
@@ -124,25 +131,123 @@ func extractParamReverse(param string, wordCount int) (string, string, bool) {
 	for i >= s {
 		r := rune(param[i])
 		if unicode.IsSpace(r) {
-			wordCount--
+			count--
 		}
-		if wordCount == 0 {
+		if count == 0 {
 			break
 		}
 		i--
 	}
 
 	if i < s {
-		wordCount--
+		count--
 	}
 
-	if wordCount > 0 {
+	if count > 0 {
 		return "", "", false
 	}
 
 	startIdx := i + 1
 
 	return param[0:startIdx], param[startIdx:endIdx], true
+}
+
+func extractParam(d direction, s string, count int) (string, string, bool) {
+	if d == forward {
+		return extractParamForward(s, count)
+	} else if d == backwards {
+		return extractParamBackwards(s, count)
+	}
+
+	return "", s, false
+}
+
+func extractStep(d direction, s string) (int, string, bool) {
+	p, rem, ok := extractParam(d, s, 1)
+	if ok {
+		step, ok := parseStep(p)
+		if ok {
+			return step, rem, true
+		}
+	}
+
+	return -1, s, false
+}
+
+func extractShortScore(d direction, s string) (int, string, string, bool) {
+	p, rem, ok := extractParam(d, s, 1)
+	if ok {
+		score, err, ok := parseShortScore(p)
+		if ok {
+			return score, rem, "", true
+		} else {
+			return -1, s, err, false
+		}
+	}
+
+	return -1, s, "", false
+}
+
+func extractFullScore(d direction, s string) (int, string, string, bool) {
+	p, rem, ok := extractParam(d, s, 1)
+	if ok {
+		score, err, ok := parseFullScore(p)
+		if ok {
+			return score, rem, "", true
+		} else {
+			return -1, s, err, false
+		}
+	}
+
+	return -1, s, "", false
+}
+
+func extractCc(d direction, s string) (float64, string, bool) {
+	p, rem, ok := extractParam(d, s, 1)
+	if ok {
+		cc, ok := parseCc(p)
+		if ok {
+			return cc, rem, true
+		}
+	}
+
+	return -1, s, false
+}
+
+func extractUserId(d direction, s string) (discord.UserID, string, bool) {
+	p, rem, ok := extractParam(d, s, 1)
+	if ok {
+		userId, ok := parseUserId(p)
+		if ok {
+			return userId, rem, true
+		}
+	}
+
+	return 0, s, false
+}
+
+func extractScoreId(d direction, s string) (int64, string, bool) {
+	p, rem, ok := extractParam(d, s, 1)
+	if ok {
+		scoreId, ok := parseScoreId(p)
+		if ok {
+			return scoreId, rem, true
+		}
+	}
+
+	return 0, s, false
+}
+
+func extractDiffKey(d direction, s string) (string, string, bool) {
+	p, rem, ok := extractParam(d, s, 1)
+	if ok {
+		diff, ok := parseDiffKey(p)
+		if ok {
+			return diff, rem, true
+		}
+	}
+
+	return "", s, false
 }
 
 func parseStep(s string) (int, bool) {

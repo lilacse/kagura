@@ -24,9 +24,11 @@ func NewUnsaveHandler(store *store.Store, db *database.Service, songdata *songda
 	return &unsaveHandler{
 		cmd: cmd{
 			cmds: []string{"unsave"},
-			params: []param{
+			params: [][]param{
 				{
-					name: "score id",
+					{
+						name: "score id",
+					},
 				},
 			},
 		},
@@ -45,7 +47,7 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 	st := h.store.Bot.State()
 	prefix := h.store.Bot.Prefix()
 
-	_, idStr, ok := extractParamReverse(params, -1)
+	_, idStr, ok := extractParamBackwards(params, -1)
 	if !ok {
 		sendFormatError(st, prefix, h.cmd, e)
 		return true
