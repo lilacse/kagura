@@ -132,6 +132,7 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 		Description: res.String(),
 	}
 
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(embed))
+	sendReply(st, embedbuilder.Info(embed), e)
+
 	return true
 }

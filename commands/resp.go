@@ -4,10 +4,29 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/diamondburned/arikawa/v3/api"
+	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/diamondburned/arikawa/v3/state"
+	"github.com/diamondburned/arikawa/v3/utils/json/option"
 	"github.com/lilacse/kagura/embedbuilder"
 )
+
+func sendReply(st *state.State, em discord.Embed, e *gateway.MessageCreateEvent) {
+	d := api.SendMessageData{
+		Embeds: []discord.Embed{
+			em,
+		},
+		Reference: &discord.MessageReference{
+			MessageID: e.ID,
+		},
+		AllowedMentions: &api.AllowedMentions{
+			RepliedUser: option.False,
+		},
+	}
+
+	st.SendMessageComplex(e.ChannelID, d)
+}
 
 func sendFormatError(st *state.State, prefix string, handler cmd, e *gateway.MessageCreateEvent) {
 	formatList := make([]string, 0)

@@ -115,7 +115,7 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		Fields: embedFields,
 	}
 
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(songEmbed))
+	sendReply(st, embedbuilder.Info(songEmbed), e)
 
 	return true
 }

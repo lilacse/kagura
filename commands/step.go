@@ -156,6 +156,7 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		},
 	}
 
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(embed))
+	sendReply(st, embedbuilder.Info(embed), e)
+
 	return true
 }

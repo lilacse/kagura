@@ -133,6 +133,7 @@ func (h *scoresHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 		},
 	}
 
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Info(embed))
+	sendReply(st, embedbuilder.Info(embed), e)
+
 	return true
 }
