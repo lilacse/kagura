@@ -97,7 +97,7 @@ func (h *scoresHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 	}
 
 	if len(scores) == 0 {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError("You don't have any scores saved for this chart!"))
+		sendReply(st, embedbuilder.UserError("You don't have any scores saved for this chart!"), e)
 		return true
 	}
 

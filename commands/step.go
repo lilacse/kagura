@@ -79,13 +79,13 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 
 	step, ok := parseStep(stepStr)
 	if !ok {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid step `%s`!", stepStr)))
+		sendReply(st, embedbuilder.UserError(fmt.Sprintf("Invalid step `%s`!", stepStr)), e)
 		return true
 	}
 
 	score, errMsg, ok := parseShortScore(scoreStr)
 	if !ok {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(errMsg))
+		sendReply(st, embedbuilder.UserError(errMsg), e)
 		return true
 	}
 

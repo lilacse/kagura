@@ -46,28 +46,28 @@ func sendFormatError(st *state.State, prefix string, handler cmd, e *gateway.Mes
 	}
 
 	if len(formatList) == 1 {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%s`!", formatList[0])))
+		sendReply(st, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting `%s`!", formatList[0])), e)
 	} else {
 		formatListStr := ""
 		for _, f := range formatList {
 			formatListStr += fmt.Sprintf("- `%s`\n", f)
 		}
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting one of these formats!\n%s", formatListStr)))
+		sendReply(st, embedbuilder.UserError(fmt.Sprintf("Invalid input, expecting one of these formats!\n%s", formatListStr)), e)
 	}
 }
 
 func sendSongQueryError(st *state.State, query string, e *gateway.MessageCreateEvent) {
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("No matching song found for query `%s`!", query)))
+	sendReply(st, embedbuilder.UserError(fmt.Sprintf("No matching song found for query `%s`!", query)), e)
 }
 
 func sendInvalidDiffError(st *state.State, diffStr string, e *gateway.MessageCreateEvent) {
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid difficulty `%s`!", diffStr)))
+	sendReply(st, embedbuilder.UserError(fmt.Sprintf("Invalid difficulty `%s`!", diffStr)), e)
 }
 
 func sendDiffNotExistError(st *state.State, diffKey string, songAltTitle string, e *gateway.MessageCreateEvent) {
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Difficulty %s does not exist for the song %s!", strings.ToUpper(diffKey), songAltTitle)))
+	sendReply(st, embedbuilder.UserError(fmt.Sprintf("Difficulty %s does not exist for the song %s!", strings.ToUpper(diffKey), songAltTitle)), e)
 }
 
 func sendCcUnknownError(st *state.State, diffKey string, songAltTitle string, e *gateway.MessageCreateEvent) {
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Chart constant is unknown for the difficulty %s for the song %s!", strings.ToUpper(diffKey), songAltTitle)))
+	sendReply(st, embedbuilder.UserError(fmt.Sprintf("Chart constant is unknown for the difficulty %s for the song %s!", strings.ToUpper(diffKey), songAltTitle)), e)
 }

@@ -65,7 +65,7 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 	}
 
 	if len(scores) == 0 {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError("You don't have any scores saved!"))
+		sendReply(st, embedbuilder.UserError("You don't have any scores saved!"), e)
 		return true
 	}
 

@@ -74,7 +74,7 @@ func (h *saveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 
 	score, errMsg, ok := parseFullScore(scoreStr)
 	if !ok {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(errMsg))
+		sendReply(st, embedbuilder.UserError(errMsg), e)
 		return true
 	}
 

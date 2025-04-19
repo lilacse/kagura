@@ -241,5 +241,5 @@ func parseDiffKey(diffStr string) (string, bool) {
 
 func logAndSendError(ctx context.Context, st *state.State, err error, e *gateway.MessageCreateEvent) {
 	logger.Error(ctx, fmt.Sprintf("error when handling command: %s", err.Error()))
-	st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Error(ctx, err.Error()))
+	sendReply(st, embedbuilder.Error(ctx, err.Error()), e)
 }

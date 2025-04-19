@@ -6,7 +6,10 @@ import (
 	"runtime/debug"
 	"strings"
 
+	"github.com/diamondburned/arikawa/v3/api"
+	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
+	"github.com/diamondburned/arikawa/v3/utils/json/option"
 	"github.com/google/uuid"
 	"github.com/lilacse/kagura/commands"
 	"github.com/lilacse/kagura/database"
@@ -56,7 +59,20 @@ func handleCommand(e *gateway.MessageCreateEvent, h *onMessageCreateHandler) {
 			logger.Error(ctx, fmt.Sprintf("error handling command: %s\nstack trace: %s", r, debug.Stack()))
 
 			st := h.store.Bot.State()
-			st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.Error(ctx, fmt.Sprintf("%s", r)))
+
+			d := api.SendMessageData{
+				Embeds: []discord.Embed{
+					embedbuilder.Error(ctx, fmt.Sprintf("%s", r)),
+				},
+				Reference: &discord.MessageReference{
+					MessageID: e.ID,
+				},
+				AllowedMentions: &api.AllowedMentions{
+					RepliedUser: option.False,
+				},
+			}
+
+			st.SendMessageComplex(e.ChannelID, d)
 		}
 	}()
 

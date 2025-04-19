@@ -55,7 +55,7 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 
 	id, ok := parseScoreId(idStr)
 	if !ok {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("Invalid score ID `%s`!", idStr)))
+		sendReply(st, embedbuilder.UserError(fmt.Sprintf("Invalid score ID `%s`!", idStr)), e)
 		return true
 	}
 
@@ -98,7 +98,7 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 	}
 
 	if len(currRecs) == 0 || currRecs[0].UserId != int64(e.Author.ID) {
-		st.SendEmbedReply(e.ChannelID, e.ID, embedbuilder.UserError(fmt.Sprintf("You don't have a score with ID `%s`!", idStr)))
+		sendReply(st, embedbuilder.UserError(fmt.Sprintf("You don't have a score with ID `%s`!", idStr)), e)
 		return true
 	}
 
