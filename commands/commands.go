@@ -24,13 +24,6 @@ type param struct {
 	optional bool
 }
 
-type direction int
-
-const (
-	forward   direction = 0
-	backwards direction = 1
-)
-
 func extractParamsString(cmd string, content string, prefix string) (string, bool) {
 	cmd = prefix + cmd
 	content, match := strings.CutPrefix(content, cmd)
@@ -150,104 +143,6 @@ func extractParamBackwards(param string, count int) (string, string, bool) {
 	startIdx := i + 1
 
 	return param[0:startIdx], param[startIdx:endIdx], true
-}
-
-func extractParam(d direction, s string, count int) (string, string, bool) {
-	if d == forward {
-		return extractParamForward(s, count)
-	} else if d == backwards {
-		return extractParamBackwards(s, count)
-	}
-
-	return s, "", false
-}
-
-func extractStep(d direction, s string) (string, int, bool) {
-	rem, p, ok := extractParam(d, s, 1)
-	if ok {
-		step, ok := parseStep(p)
-		if ok {
-			return rem, step, true
-		}
-	}
-
-	return s, -1, false
-}
-
-func extractShortScore(d direction, s string) (string, int, string, bool) {
-	rem, p, ok := extractParam(d, s, 1)
-	if ok {
-		score, err, ok := parseShortScore(p)
-		if ok {
-			return rem, score, "", true
-		} else {
-			return s, -1, err, false
-		}
-	}
-
-	return s, -1, "", false
-}
-
-func extractFullScore(d direction, s string) (string, int, string, bool) {
-	rem, p, ok := extractParam(d, s, 1)
-	if ok {
-		score, err, ok := parseFullScore(p)
-		if ok {
-			return rem, score, "", true
-		} else {
-			return s, -1, err, false
-		}
-	}
-
-	return s, -1, "", false
-}
-
-func extractCc(d direction, s string) (string, float64, bool) {
-	rem, p, ok := extractParam(d, s, 1)
-	if ok {
-		cc, ok := parseCc(p)
-		if ok {
-			return rem, cc, true
-		}
-	}
-
-	return s, -1, false
-}
-
-func extractUserId(d direction, s string) (string, discord.UserID, bool) {
-	rem, p, ok := extractParam(d, s, 1)
-	if ok {
-		userId, ok := parseUserId(p)
-		if ok {
-			return rem, userId, true
-		}
-	}
-
-	return s, 0, false
-}
-
-func extractScoreId(d direction, s string) (string, int64, bool) {
-	rem, p, ok := extractParam(d, s, 1)
-	if ok {
-		scoreId, ok := parseScoreId(p)
-		if ok {
-			return rem, scoreId, true
-		}
-	}
-
-	return s, 0, false
-}
-
-func extractDiffKey(d direction, s string) (string, string, bool) {
-	rem, p, ok := extractParam(d, s, 1)
-	if ok {
-		diff, ok := parseDiffKey(p)
-		if ok {
-			return rem, diff, true
-		}
-	}
-
-	return s, "", false
 }
 
 func parseStep(s string) (int, bool) {
