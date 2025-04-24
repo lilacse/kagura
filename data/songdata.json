@@ -686,6 +686,13 @@
         "level": "8",
         "cc": 8.4,
         "ver": "1.0.5"
+      },
+      {
+        "id": 1461,
+        "diff": "byd",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.4.0"
       }
     ],
     "searchKeys": [
@@ -844,6 +851,13 @@
         "level": "9",
         "cc": 9.2,
         "ver": "1.0.10"
+      },
+      {
+        "id": 1455,
+        "diff": "byd",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.4.0"
       }
     ],
     "searchKeys": [
@@ -3514,6 +3528,13 @@
         "level": "9+",
         "cc": 9.9,
         "ver": "1.7.2"
+      },
+      {
+        "id": 1460,
+        "diff": "byd",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "6.4.0"
       }
     ],
     "searchKeys": [
@@ -5890,6 +5911,13 @@
         "level": "9+",
         "cc": 9.8,
         "ver": "3.0.0"
+      }, 
+      {
+        "id": 1454,
+        "diff": "byd",
+        "level": "10",
+        "cc": 10.0,
+        "ver": "6.4.0"
       }
     ],
     "searchKeys": [
@@ -8727,6 +8755,13 @@
         "level": "9",
         "cc": 9.6,
         "ver": "3.8.4"
+      },
+      {
+        "id": 1459,
+        "diff": "byd",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "6.4.0"
       }
     ],
     "searchKeys": [
@@ -17090,6 +17125,79 @@
     "urls": {
       "fandom": "https://arcaea.fandom.com/wiki/TRPNO",
       "mcd.blue": "https://arcwiki.mcd.blue/TRPNO"
+    }
+  },
+  {
+    "id": 462,
+    "title": "Dull Blade",
+    "altTitle": "Dull Blade",
+    "artist": "stuv",
+    "charts": [
+      {
+        "id": 1456,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.4.0"
+      },
+      {
+        "id": 1457,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.0,
+        "ver": "6.4.0"
+      },
+      {
+        "id": 1458,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "6.4.0"
+      }
+    ],
+    "searchKeys": [
+      "dull blade"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dull_Blade",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dull_Blade"
+    }
+  },
+  {
+    "id": 463,
+    "title": "\u03c4 (tau)",
+    "altTitle": "\u03c4 (tau)",
+    "artist": "Wooden",
+    "charts": [
+      {
+        "id": 1462,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.4.0"
+      },
+      {
+        "id": 1463,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.4.0"
+      },
+      {
+        "id": 1464,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.4.0"
+      }
+    ],
+    "searchKeys": [
+      "t tau", 
+      "tau"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u03a4_(tau)",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u03a4_(tau)"
     }
   }
 ]
