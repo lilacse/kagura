@@ -187,7 +187,7 @@ func parseFullScore(s string) (int, string, bool) {
 
 func parseCc(s string) (float64, bool) {
 	cc, err := strconv.ParseFloat(s, 64)
-	if err != nil || cc < 0 || cc > 15 {
+	if err != nil || cc < 0 || cc > 15 || float64(int(cc*10))/10.0 != cc {
 		return -1, false
 	}
 

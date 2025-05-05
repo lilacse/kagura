@@ -34,6 +34,14 @@ func NewPttHandler(store *store.Store, songdata *songdata.Service) *pttHandler {
 						name: "score",
 					},
 				},
+				{
+					{
+						name: "cc",
+					},
+					{
+						name: "score",
+					},
+				},
 			},
 		},
 		store:    store,
@@ -63,6 +71,24 @@ func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 		return true
 	}
 
+	score, errMsg, ok := parseShortScore(scoreStr)
+	if !ok {
+		sendReply(st, embedbuilder.UserError(errMsg), e)
+		return true
+	}
+
+	_, ccStr, ok := extractParamBackwards(params, -1)
+	if !ok {
+		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
+		return true
+	}
+
+	cc, isCc := parseCc(ccStr)
+	if isCc {
+		handleCcQuery(h, e, score, cc)
+		return true
+	}
+
 	params, diffStr, ok := extractParamBackwards(params, 1)
 	if !ok {
 		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
@@ -75,16 +101,45 @@ func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 		return true
 	}
 
-	score, errMsg, ok := parseShortScore(scoreStr)
-	if !ok {
-		sendReply(st, embedbuilder.UserError(errMsg), e)
-		return true
+	handleChartQuery(h, e, score, songStr, diffStr)
+	return true
+}
+
+func handleCcQuery(h *pttHandler, e *gateway.MessageCreateEvent, score int, cc float64) {
+	st := h.store.Bot.State()
+
+	ptt := getPttFromCc(score, cc)
+	formula := getPttFormula(score, cc, ptt)
+
+	embed := discord.Embed{
+		Fields: []discord.EmbedField{
+			{
+				Name:   "Score",
+				Value:  strconv.Itoa(score),
+				Inline: true,
+			},
+			{
+				Name:   "Chart Constant",
+				Value:  fmt.Sprintf("%.1f", cc),
+				Inline: true,
+			},
+			{
+				Name:  "Play Rating",
+				Value: formula,
+			},
+		},
 	}
+
+	sendReply(st, embedbuilder.Info(embed), e)
+}
+
+func handleChartQuery(h *pttHandler, e *gateway.MessageCreateEvent, score int, songStr string, diffStr string) {
+	st := h.store.Bot.State()
 
 	matchSong := h.songdata.Search(songStr, 1)
 	if len(matchSong) == 0 {
 		sendSongQueryError(st, songStr, e)
-		return true
+		return
 	}
 
 	song := matchSong[0]
@@ -92,35 +147,22 @@ func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 	diffKey, ok := parseDiffKey(diffStr)
 	if !ok {
 		sendInvalidDiffError(st, diffStr, e)
-		return true
+		return
 	}
 
 	chart, ok := song.GetChart(diffKey)
 	if !ok {
 		sendDiffNotExistError(st, diffKey, song.AltTitle, e)
-		return true
+		return
 	}
 
 	if chart.CC == 0.0 {
 		sendCcUnknownError(st, diffKey, song.AltTitle, e)
-		return true
+		return
 	}
 
-	var formula string
 	ptt := chart.GetScoreRating(score)
-
-	if score >= 10000000 {
-		formula = fmt.Sprintf("%.1f + 2.0 = **%.4f**", chart.CC, ptt)
-	} else if score >= 9800000 && score < 10000000 {
-		formula = fmt.Sprintf("%.1f + 1.0 + ((%v - 9800000) / 200000) = **%.4f**", chart.CC, score, ptt)
-	} else {
-		if ptt >= 0.0 {
-			formula = fmt.Sprintf("%.1f + (%v - 9500000) / 300000 = **%.4f**", chart.CC, score, ptt)
-		} else {
-			formula = fmt.Sprintf("%.1f + (%v - 9500000) / 300000 = %.4f (considered as **0.0**)", chart.CC, score, ptt)
-		}
-
-	}
+	formula := getPttFormula(score, chart.CC, ptt)
 
 	embed := discord.Embed{
 		Fields: []discord.EmbedField{
@@ -144,6 +186,28 @@ func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 	}
 
 	sendReply(st, embedbuilder.Info(embed), e)
+}
 
-	return true
+func getPttFromCc(score int, cc float64) float64 {
+	if score >= 10000000 {
+		return cc + 2.0
+	} else if score >= 9800000 && score < 10000000 {
+		return cc + 1.0 + ((float64(score) - 9800000) / 200000)
+	} else {
+		return cc + (float64(score)-9500000)/300000
+	}
+}
+
+func getPttFormula(score int, cc float64, ptt float64) string {
+	if score >= 10000000 {
+		return fmt.Sprintf("%.1f + 2.0 = **%.4f**", cc, ptt)
+	} else if score >= 9800000 && score < 10000000 {
+		return fmt.Sprintf("%.1f + 1.0 + ((%v - 9800000) / 200000) = **%.4f**", cc, score, ptt)
+	} else {
+		if ptt >= 0.0 {
+			return fmt.Sprintf("%.1f + (%v - 9500000) / 300000 = **%.4f**", cc, score, ptt)
+		} else {
+			return fmt.Sprintf("%.1f + (%v - 9500000) / 300000 = %.4f (considered as **0.0**)", cc, score, ptt)
+		}
+	}
 }
