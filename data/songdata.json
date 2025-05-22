@@ -17201,5 +17201,335 @@
       "fandom": "https://arcaea.fandom.com/wiki/\u03a4_(tau)",
       "mcd.blue": "https://arcwiki.mcd.blue/\u03a4_(tau)"
     }
+  },
+  {
+    "id": 464,
+    "title": "Don't Die",
+    "altTitle": "Don't Die",
+    "artist": "Paul Bazooka",
+    "charts": [
+      {
+        "id": 1465,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1466,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1467,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1468,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.5.0"
+      }
+    ],
+    "searchKeys": [
+      "don't die"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Don't_Die",
+      "mcd.blue": "https://arcwiki.mcd.blue/Don't_Die"
+    }
+  },
+  {
+    "id": 465,
+    "title": "End of The Moonlight",
+    "altTitle": "End of The Moonlight",
+    "artist": "Forte Escape",
+    "charts": [
+      {
+        "id": 1469,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1470,
+        "diff": "prs",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1471,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.5.0"
+      }
+    ],
+    "searchKeys": [
+      "end of the moonlight"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/End_of_The_Moonlight",
+      "mcd.blue": "https://arcwiki.mcd.blue/End_of_The_Moonlight"
+    }
+  },
+  {
+    "id": 466,
+    "title": "Ladymade Star",
+    "altTitle": "Ladymade Star",
+    "artist": "ESTi",
+    "charts": [
+      {
+        "id": 1472,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1473,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1474,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.4,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1475,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.2,
+        "ver": "6.5.0"
+      }
+    ],
+    "searchKeys": [
+      "ladymade star"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ladymade_Star",
+      "mcd.blue": "https://arcwiki.mcd.blue/Ladymade_Star"
+    }
+  },
+  {
+    "id": 467,
+    "title": "Nightmare",
+    "altTitle": "Nightmare",
+    "artist": "M2U",
+    "charts": [
+      {
+        "id": 1476,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1477,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.8,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1478,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1479,
+        "diff": "ftr",
+        "level": "10+",
+        "cc": 10.8,
+        "ver": "6.5.0"
+      }
+    ],
+    "searchKeys": [
+      "nightmare"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Nightmare",
+      "mcd.blue": "https://arcwiki.mcd.blue/Nightmare"
+    }
+  },
+  {
+    "id": 468,
+    "title": "OBLIVION",
+    "altTitle": "OBLIVION",
+    "artist": "ESTi",
+    "charts": [
+      {
+        "id": 1480,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1481,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1482,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1483,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.5.0"
+      }
+    ],
+    "searchKeys": [
+      "oblivion"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/OBLIVION",
+      "mcd.blue": "https://arcwiki.mcd.blue/OBLIVION"
+    }
+  },
+  {
+    "id": 469,
+    "title": "Tic! Tac! Toe!",
+    "altTitle": "Tic! Tac! Toe!",
+    "artist": "TAK x Corbin",
+    "charts": [
+      {
+        "id": 1484,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1485,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1486,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1487,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.5.0"
+      }
+    ],
+    "searchKeys": [
+      "tic! tac! toe!"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Tic!_Tac!_Toe!",
+      "mcd.blue": "https://arcwiki.mcd.blue/Tic!_Tac!_Toe!"
+    }
+  },
+  {
+    "id": 470,
+    "title": "U.A.D",
+    "altTitle": "U.A.D",
+    "artist": "HAYAKO",
+    "charts": [
+      {
+        "id": 1488,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1489,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1490,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.7,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1491,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.5.0"
+      }
+    ],
+    "searchKeys": [
+      "u.a.d"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/U.A.D",
+      "mcd.blue": "https://arcwiki.mcd.blue/U.A.D"
+    }
+  },
+  {
+    "id": 471,
+    "title": "Won't Back Down",
+    "altTitle": "Won't Back Down",
+    "artist": "Pure 100% / KASA",
+    "charts": [
+      {
+        "id": 1492,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1493,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.5.0"
+      },
+      {
+        "id": 1494,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.5.0"
+      }
+    ],
+    "searchKeys": [
+      "won't back down"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Won't_Back_Down",
+      "mcd.blue": "https://arcwiki.mcd.blue/Won't_Back_Down"
+    }
   }
 ]
