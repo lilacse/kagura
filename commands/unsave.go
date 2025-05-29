@@ -128,7 +128,7 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 		Fields: []discord.EmbedField{
 			{
 				Name:  "Song",
-				Value: fmt.Sprintf("%s - %s", song.Title, song.Artist),
+				Value: fmt.Sprintf("%s - %s", song.EscapedTitle(), song.EscapedArtist()),
 			},
 			{
 				Name:  "Chart",

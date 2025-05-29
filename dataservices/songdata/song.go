@@ -1,6 +1,9 @@
 package songdata
 
-import "math"
+import (
+	"math"
+	"strings"
+)
 
 type Song struct {
 	Id         int               `json:"id"`
@@ -34,4 +37,24 @@ func (s *Song) GetSongVer() string {
 	}
 
 	return oldest.Ver
+}
+
+func (s *Song) EscapedTitle() string {
+	return unformatString(s.Title)
+}
+
+func (s *Song) EscapedAltTitle() string {
+	return unformatString(s.AltTitle)
+}
+
+func (s *Song) EscapedArtist() string {
+	return unformatString(s.Artist)
+}
+
+func unformatString(t string) string {
+	t = strings.ReplaceAll(t, "_", "\\_")
+	t = strings.ReplaceAll(t, "*", "\\*")
+	t = strings.ReplaceAll(t, "~", "\\~")
+	t = strings.ReplaceAll(t, "#", "\\#")
+	return t
 }

@@ -168,7 +168,7 @@ func handleChartQuery(h *pttHandler, e *gateway.MessageCreateEvent, score int, s
 		Fields: []discord.EmbedField{
 			{
 				Name:  "Song",
-				Value: fmt.Sprintf("%s - %s", song.Title, song.Artist),
+				Value: fmt.Sprintf("%s - %s", song.EscapedTitle(), song.EscapedArtist()),
 			},
 			{
 				Name:  "Chart",

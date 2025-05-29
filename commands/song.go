@@ -86,11 +86,11 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 	embedFields := []discord.EmbedField{
 		{
 			Name:  "Title",
-			Value: song.Title,
+			Value: song.EscapedTitle(),
 		},
 		{
 			Name:  "Artist",
-			Value: song.Artist,
+			Value: song.EscapedArtist(),
 		},
 		{
 			Name:  "",

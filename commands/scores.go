@@ -79,7 +79,7 @@ func (h *scoresHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 
 	chart, ok := song.GetChart(diffKey)
 	if !ok {
-		sendDiffNotExistError(st, diffKey, song.AltTitle, e)
+		sendDiffNotExistError(st, diffKey, song.EscapedAltTitle(), e)
 		return true
 	}
 
@@ -120,7 +120,7 @@ func (h *scoresHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 	}
 
 	embed := discord.Embed{
-		Title: fmt.Sprintf("Saved Scores for %s - %s Lv%s", song.AltTitle, chart.GetDiffDisplayName(), chart.Level),
+		Title: fmt.Sprintf("Saved Scores for %s - %s Lv%s", song.EscapedAltTitle(), chart.GetDiffDisplayName(), chart.Level),
 		Fields: []discord.EmbedField{
 			{
 				Name:  "Best score",

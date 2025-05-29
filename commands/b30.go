@@ -116,7 +116,7 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 		res.WriteString(fmt.Sprintf(
 			"%v. %s - %s Lv%s (%s) - %v - **%.4f**\n",
 			i+1,
-			e.song.AltTitle,
+			e.song.EscapedAltTitle(),
 			e.chart.GetDiffDisplayName(),
 			e.chart.Level,
 			e.chart.GetCCString(),

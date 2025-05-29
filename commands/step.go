@@ -105,12 +105,12 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 
 	chart, ok := song.GetChart(diffKey)
 	if !ok {
-		sendDiffNotExistError(st, diffKey, song.AltTitle, e)
+		sendDiffNotExistError(st, diffKey, song.EscapedAltTitle(), e)
 		return true
 	}
 
 	if chart.CC == 0.0 {
-		sendCcUnknownError(st, diffKey, song.AltTitle, e)
+		sendCcUnknownError(st, diffKey, song.EscapedAltTitle(), e)
 		return true
 	}
 
@@ -124,7 +124,7 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		Fields: []discord.EmbedField{
 			{
 				Name:  "Song",
-				Value: fmt.Sprintf("%s - %s", song.Title, song.Artist),
+				Value: fmt.Sprintf("%s - %s", song.EscapedTitle(), song.EscapedArtist()),
 			},
 			{
 				Name:  "Chart",
