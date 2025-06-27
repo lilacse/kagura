@@ -17531,5 +17531,328 @@
       "fandom": "https://arcaea.fandom.com/wiki/Won't_Back_Down",
       "mcd.blue": "https://arcwiki.mcd.blue/Won't_Back_Down"
     }
+  }, 
+  {
+    "id": 472,
+    "title": "BlythE",
+    "altTitle": "BlythE",
+    "artist": "M2U",
+    "charts": [
+      {
+        "id": 1495,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "6.6.0"
+      }, 
+      {
+        "id": 1496,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.6.0"
+      }, 
+      {
+        "id": 1497,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "6.6.0"
+      }, 
+      {
+        "id": 1498,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "6.6.0"
+      }
+    ],
+    "searchKeys": [
+      "blythe"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/BlythE",
+      "mcd.blue": "https://arcwiki.mcd.blue/BlythE"
+    }
+  },
+  {
+    "id": 473,
+    "title": "I want You",
+    "altTitle": "I want You",
+    "artist": "Lin-G",
+    "charts": [
+      {
+        "id": 1499,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1500,
+        "diff": "prs",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1501,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1502,
+        "diff": "etr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "6.6.0"
+      }
+    ],
+    "searchKeys": [
+      "i want you"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/I_want_You",
+      "mcd.blue": "https://arcwiki.mcd.blue/I_want_You"
+    }
+  },
+  {
+    "id": 474,
+    "title": "Liar",
+    "altTitle": "Liar",
+    "artist": "zts",
+    "charts": [
+      {
+        "id": 1503,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1504,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1505,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.0,
+        "ver": "6.6.0"
+      }
+    ],
+    "searchKeys": [
+      "liar"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Liar",
+      "mcd.blue": "https://arcwiki.mcd.blue/Liar"
+    }
+  },
+  {
+    "id": 475,
+    "title": "Miles",
+    "altTitle": "Miles",
+    "artist": "Electronic Boutique",
+    "charts": [
+      {
+        "id": 1506,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1507,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1508,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.2,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1509,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.6.0"
+      }
+    ],
+    "searchKeys": [
+      "miles"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Miles",
+      "mcd.blue": "https://arcwiki.mcd.blue/Miles"
+    }
+  },
+  {
+    "id": 476,
+    "title": "SATISFACTION",
+    "altTitle": "SATISFACTION",
+    "artist": "P*Light & DJ Noriken feat. KMNZ",
+    "charts": [
+      {
+        "id": 1510,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1511,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1512,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1513,
+        "diff": "etr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.6.0"
+      }
+    ],
+    "searchKeys": [
+      "satisfaction"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/SATISFACTION",
+      "mcd.blue": "https://arcwiki.mcd.blue/SATISFACTION"
+    }
+  },
+  {
+    "id": 477,
+    "title": "Someday",
+    "altTitle": "Someday",
+    "artist": "NieN",
+    "charts": [
+      {
+        "id": 1514,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1515,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1516,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.6.0"
+      }
+    ],
+    "searchKeys": [
+      "someday"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Someday",
+      "mcd.blue": "https://arcwiki.mcd.blue/Someday"
+    }
+  },
+  {
+    "id": 478,
+    "title": "Syriana",
+    "altTitle": "Syriana",
+    "artist": "BEXTER",
+    "charts": [
+      {
+        "id": 1517,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1518,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1519,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.6.0"
+      }
+    ],
+    "searchKeys": [
+      "syriana"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Syriana",
+      "mcd.blue": "https://arcwiki.mcd.blue/Syriana"
+    }
+  },
+  {
+    "id": 479,
+    "title": "We're All Gonna Die",
+    "altTitle": "We're All Gonna Die",
+    "artist": "Paul Bazooka",
+    "charts": [
+      {
+        "id": 1520,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1521,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.0,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1522,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.6.0"
+      },
+      {
+        "id": 1523,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "6.6.0"
+      }
+    ],
+    "searchKeys": [
+      "we're all gonna die"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/We%27re_All_Gonna_Die",
+      "mcd.blue": "https://arcwiki.mcd.blue/We%27re_All_Gonna_Die"
+    }
   }
 ]
