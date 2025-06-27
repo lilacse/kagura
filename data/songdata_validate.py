@@ -189,6 +189,7 @@ for song in data:
             )
 
     is_charts_valid = True
+    appeared_diffs = []
     song_ver_tuple = (999, 999, 999)
 
     for c in song["charts"]:
@@ -230,6 +231,16 @@ for song in data:
                 f"unexpected diff ({c["diff"]}) found in chart entry for song '{song["title"]}':\n{json.dumps(c)}"
             )
             continue
+
+        if c["diff"] in appeared_diffs:
+            is_charts_valid = False
+            is_data_valid = False
+            errs.append(
+                f"duplicated diff ({c["diff"]}) found in chart entry for song '{song["title"]}':\n{json.dumps(c)}"
+            )
+            continue
+
+        appeared_diffs.append(c["diff"])
 
         if c["level"] not in expected_levels:
             is_charts_valid = False
