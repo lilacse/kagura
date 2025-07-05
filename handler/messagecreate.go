@@ -6,15 +6,11 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/diamondburned/arikawa/v3/api"
-	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
-	"github.com/diamondburned/arikawa/v3/utils/json/option"
 	"github.com/google/uuid"
 	"github.com/lilacse/kagura/commands"
 	"github.com/lilacse/kagura/database"
 	"github.com/lilacse/kagura/dataservices"
-	"github.com/lilacse/kagura/embedbuilder"
 	"github.com/lilacse/kagura/logger"
 	"github.com/lilacse/kagura/store"
 )
@@ -50,29 +46,14 @@ func handleCommand(e *gateway.MessageCreateEvent, h *onMessageCreateHandler) {
 		commands.NewSaveHandler(h.store, h.db, h.datasvcs.SongData()).Handle,
 		commands.NewUnsaveHandler(h.store, h.db, h.datasvcs.SongData()).Handle,
 		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).Handle,
-		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).Handle,
+		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).HandleTextCommand,
 	}
 
 	defer func() {
 		r := recover()
 		if r != nil {
 			logger.Error(ctx, fmt.Sprintf("error handling command: %s\nstack trace: %s", r, debug.Stack()))
-
-			st := h.store.Bot.State()
-
-			d := api.SendMessageData{
-				Embeds: []discord.Embed{
-					embedbuilder.Error(ctx, fmt.Sprintf("%s", r)),
-				},
-				Reference: &discord.MessageReference{
-					MessageID: e.ID,
-				},
-				AllowedMentions: &api.AllowedMentions{
-					RepliedUser: option.False,
-				},
-			}
-
-			st.SendMessageComplex(e.ChannelID, d)
+			sendHandleError(ctx, r, h.store.Bot.State(), e.ID, e.ChannelID)
 		}
 	}()
 

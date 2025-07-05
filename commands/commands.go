@@ -240,6 +240,11 @@ func parseDiffKey(diffStr string) (string, bool) {
 }
 
 func logAndSendError(ctx context.Context, st *state.State, err error, e *gateway.MessageCreateEvent) {
-	logger.Error(ctx, fmt.Sprintf("error when handling command: %s", err.Error()))
+	logger.Error(ctx, fmt.Sprintf("error when handling text command: %s", err.Error()))
 	sendReply(st, embedbuilder.Error(ctx, err.Error()), e)
+}
+
+func logAndSendInteractionError(ctx context.Context, st *state.State, err error, e *gateway.InteractionCreateEvent) {
+	logger.Error(ctx, fmt.Sprintf("error when handling interaction: %s", err.Error()))
+	sendInteractionReply(st, embedbuilder.Error(ctx, err.Error()), e)
 }

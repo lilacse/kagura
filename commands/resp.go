@@ -13,19 +13,28 @@ import (
 )
 
 func sendReply(st *state.State, em discord.Embed, e *gateway.MessageCreateEvent) {
+	sendReplyWithComponents(st, em, []discord.ContainerComponent{}, e.ChannelID, e.ID)
+}
+
+func sendInteractionReply(st *state.State, em discord.Embed, e *gateway.InteractionCreateEvent) {
+	sendReplyWithComponents(st, em, []discord.ContainerComponent{}, e.ChannelID, e.Message.ID)
+}
+
+func sendReplyWithComponents(st *state.State, em discord.Embed, cc []discord.ContainerComponent, channelId discord.ChannelID, replyId discord.MessageID) {
 	d := api.SendMessageData{
 		Embeds: []discord.Embed{
 			em,
 		},
+		Components: cc,
 		Reference: &discord.MessageReference{
-			MessageID: e.ID,
+			MessageID: replyId,
 		},
 		AllowedMentions: &api.AllowedMentions{
 			RepliedUser: option.False,
 		},
 	}
 
-	st.SendMessageComplex(e.ChannelID, d)
+	st.SendMessageComplex(channelId, d)
 }
 
 func sendFormatError(st *state.State, prefix string, handler cmd, e *gateway.MessageCreateEvent) {

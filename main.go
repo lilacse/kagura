@@ -57,6 +57,7 @@ func main() {
 
 	hfactory := handler.NewFactory(store, db, datasvcs)
 	s.AddHandler(hfactory.NewOnMessageCreateHandler().Handle)
+	s.AddHandler(hfactory.NewOnInteractionCreateHandler().Handle)
 
 	u, err := s.Me()
 	if err != nil {
