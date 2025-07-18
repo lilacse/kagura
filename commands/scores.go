@@ -90,17 +90,6 @@ func (h *scoresHandler) HandleTextCommand(ctx context.Context, e *gateway.Messag
 	}
 
 	scoresRepo := sess.GetScoresRepo()
-	bestScore, err := scoresRepo.GetBestScoreByUserAndChart(ctx, int64(e.Author.ID), chart.Id)
-	if err != nil {
-		logAndSendError(ctx, st, err, e)
-		return true
-	}
-
-	recentScores, err := scoresRepo.GetByUserAndChartWithOffset(ctx, int64(e.Author.ID), chart.Id, 0, 5)
-	if err != nil {
-		logAndSendError(ctx, st, err, e)
-		return true
-	}
 
 	count, err := scoresRepo.GetScoreCountByUserAndChart(ctx, int64(e.Author.ID), chart.Id)
 	if err != nil {
@@ -110,6 +99,18 @@ func (h *scoresHandler) HandleTextCommand(ctx context.Context, e *gateway.Messag
 
 	if count == 0 {
 		sendReply(st, embedbuilder.UserError("You don't have any scores saved for this chart!"), e)
+		return true
+	}
+
+	bestScore, err := scoresRepo.GetBestScoreByUserAndChart(ctx, int64(e.Author.ID), chart.Id)
+	if err != nil {
+		logAndSendError(ctx, st, err, e)
+		return true
+	}
+
+	recentScores, err := scoresRepo.GetByUserAndChartWithOffset(ctx, int64(e.Author.ID), chart.Id, 0, 5)
+	if err != nil {
+		logAndSendError(ctx, st, err, e)
 		return true
 	}
 
