@@ -17854,5 +17854,256 @@
       "fandom": "https://arcaea.fandom.com/wiki/We%27re_All_Gonna_Die",
       "mcd.blue": "https://arcwiki.mcd.blue/We%27re_All_Gonna_Die"
     }
+  },
+  {
+    "id": 480,
+    "title": "Dematerialized",
+    "altTitle": "Dematerialized",
+    "artist": "In Love With A Ghost",
+    "charts": [
+      {
+        "id": 1524,
+        "diff": "pst",
+        "level": "1",
+        "cc": 1.5,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1525,
+        "diff": "prs",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1526,
+        "diff": "ftr",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1527,
+        "diff": "etr",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "6.7.0"
+      }
+    ],
+    "searchKeys": [
+      "dematerialized"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dematerialized",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dematerialized"
+    }
+  },
+  {
+    "id": 481,
+    "title": "Dual Dependency",
+    "altTitle": "Dual Dependency",
+    "artist": "seatrus",
+    "charts": [
+      {
+        "id": 1528,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1529,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1530,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1531,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "6.7.0"
+      }
+    ],
+    "searchKeys": [
+      "dual dependency"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Dual_Dependency",
+      "mcd.blue": "https://arcwiki.mcd.blue/Dual_Dependency"
+    }
+  },
+  {
+    "id": 482,
+    "title": "Extradimensional Cosmic Phenomenon",
+    "altTitle": "Extradimensional Cosmic Phenomenon",
+    "artist": "TAKIO feat. \u3064\u3050",
+    "charts": [
+      {
+        "id": 1532,
+        "diff": "pst",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1533,
+        "diff": "prs",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1534,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.6,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1535,
+        "diff": "etr",
+        "level": "11",
+        "cc": 11.3,
+        "ver": "6.7.0"
+      }
+    ],
+    "searchKeys": [
+      "extradimensional cosmic phenomenon"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Extradimensional_Cosmic_Phenomenon",
+      "mcd.blue": "https://arcwiki.mcd.blue/Extradimensional_Cosmic_Phenomenon"
+    }
+  },
+  {
+    "id": 483,
+    "title": "Lilly",
+    "altTitle": "Lilly",
+    "artist": "Juggernaut.",
+    "charts": [
+      {
+        "id": 1536,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.0,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1537,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.4,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1538,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1539,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.8,
+        "ver": "6.7.0"
+      }
+    ],
+    "searchKeys": [
+      "lilly"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lilly",
+      "mcd.blue": "https://arcwiki.mcd.blue/Lilly"
+    }
+  },
+  {
+    "id": 484,
+    "title": "Scarlet Lunar Empress",
+    "altTitle": "Scarlet Lunar Empress",
+    "artist": "technoplanet feat. \u5915\u6708\u30c6\u30a3\u30a2",
+    "charts": [
+      {
+        "id": 1540,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1541,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1542,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.7.0"
+      }
+    ],
+    "searchKeys": [
+      "scarlet lunar empress"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Scarlet_Lunar_Empress",
+      "mcd.blue": "https://arcwiki.mcd.blue/Scarlet_Lunar_Empress"
+    }
+  },
+  {
+    "id": 485,
+    "title": "See the Lights!",
+    "altTitle": "See the Lights!",
+    "artist": "polysha feat. \u3057\u308d\u3055\u304d\u3042\u3084",
+    "charts": [
+      {
+        "id": 1543,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1544,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1545,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.6,
+        "ver": "6.7.0"
+      },
+      {
+        "id": 1546,
+        "diff": "etr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "6.7.0"
+      }
+    ],
+    "searchKeys": [
+      "see the lights!"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/See_the_Lights!",
+      "mcd.blue": "https://arcwiki.mcd.blue/See_the_Lights!"
+    }
   }
 ]
