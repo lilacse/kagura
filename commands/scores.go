@@ -114,31 +114,8 @@ func (h *scoresHandler) HandleTextCommand(ctx context.Context, e *gateway.Messag
 		return true
 	}
 
-	embed := createScoresEmbed(song, chart, bestScore, recentScores, 1)
-
-	pageIdx := 1
-	pageStart := 1
-	pageOpts := []discord.SelectOption{}
-
-	for pageStart <= count {
-		pageOpts = append(pageOpts, discord.SelectOption{
-			Label: fmt.Sprintf("Page %d (%d-%d)", pageIdx, pageStart, pageStart+4),
-			Value: fmt.Sprintf("%v,%v,%v", e.Author.ID, chart.Id, (pageIdx-1)*5),
-		})
-
-		pageIdx += 1
-		pageStart += 5
-	}
-
-	components := []discord.ContainerComponent{
-		&discord.ActionRowComponent{
-			&discord.StringSelectComponent{
-				CustomID:    "ScorePageSelect",
-				Options:     pageOpts,
-				Placeholder: "Select page...",
-			},
-		},
-	}
+	embed := createScoresEmbed(song, chart, bestScore, recentScores, 0)
+	components := createPageButtons(int64(e.Author.ID), chart.Id, count, 0)
 
 	sendReplyWithComponents(st, embedbuilder.Info(embed), components, e.ChannelID, e.ID)
 
@@ -148,12 +125,14 @@ func (h *scoresHandler) HandleTextCommand(ctx context.Context, e *gateway.Messag
 func (h *scoresHandler) HandleScorePageSelect(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
 	st := h.store.Bot.State()
 
-	val := e.Data.(*discord.StringSelectInteraction).Values[0]
+	val := e.Data.(*discord.ButtonInteraction).CustomID
 
-	params := strings.Split(val, ",")
+	params := strings.Split(string(val), ",")
 	userId, _ := strconv.ParseInt(params[0], 10, 64)
 	chartId, _ := strconv.Atoi(params[1])
 	offset, _ := strconv.Atoi(params[2])
+
+	pageIdx := offset / 5
 
 	chart, song, _ := h.songdata.GetChartById(chartId)
 
@@ -164,6 +143,13 @@ func (h *scoresHandler) HandleScorePageSelect(ctx context.Context, e *gateway.In
 	}
 
 	scoresRepo := sess.GetScoresRepo()
+
+	count, err := scoresRepo.GetScoreCountByUserAndChart(ctx, userId, chart.Id)
+	if err != nil {
+		logAndSendInteractionError(ctx, st, err, e)
+		return true
+	}
+
 	bestScore, err := scoresRepo.GetBestScoreByUserAndChart(ctx, userId, chartId)
 	if err != nil {
 		logAndSendInteractionError(ctx, st, err, e)
@@ -177,11 +163,13 @@ func (h *scoresHandler) HandleScorePageSelect(ctx context.Context, e *gateway.In
 	}
 
 	embed := createScoresEmbed(song, chart, bestScore, recentScores, offset)
+	components := createPageButtons(userId, chart.Id, count, pageIdx)
 
 	resp := api.InteractionResponse{
 		Type: api.UpdateMessage,
 		Data: &api.InteractionResponseData{
-			Embeds: &[]discord.Embed{embedbuilder.Info(embed)},
+			Embeds:     &[]discord.Embed{embedbuilder.Info(embed)},
+			Components: (*discord.ContainerComponents)(&components),
 		},
 	}
 
@@ -194,7 +182,7 @@ func createScoresEmbed(song songdata.Song, chart songdata.Chart, best database.S
 	recentsBuilder := strings.Builder{}
 
 	for i, s := range recents {
-		recentsBuilder.WriteString(fmt.Sprintf("%v. %v (<t:%v:R>)\n  -# Score ID: %v\n", idx+i, s.Score, s.Timestamp/1000, s.Id))
+		recentsBuilder.WriteString(fmt.Sprintf("%v. %v (<t:%v:R>)\n  -# Score ID: %v\n", idx+i+1, s.Score, s.Timestamp/1000, s.Id))
 	}
 
 	embed := discord.Embed{
@@ -212,4 +200,24 @@ func createScoresEmbed(song songdata.Song, chart songdata.Chart, best database.S
 	}
 
 	return embed
+}
+
+func createPageButtons(userId int64, chartId int, count int, pageIdx int) []discord.ContainerComponent {
+	prevOffset := (pageIdx - 1) * 5
+	nextOffset := (pageIdx + 1) * 5
+
+	return []discord.ContainerComponent{
+		&discord.ActionRowComponent{
+			&discord.ButtonComponent{
+				CustomID: discord.ComponentID(fmt.Sprintf("%v,%v,%v", userId, chartId, prevOffset)),
+				Label:    "<",
+				Disabled: prevOffset < 0,
+			},
+			&discord.ButtonComponent{
+				CustomID: discord.ComponentID(fmt.Sprintf("%v,%v,%v", userId, chartId, nextOffset)),
+				Label:    ">",
+				Disabled: nextOffset >= count,
+			},
+		},
+	}
 }

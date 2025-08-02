@@ -32,8 +32,8 @@ func (h *onInteractionCreateHandler) Handle(e *gateway.InteractionCreateEvent) {
 		}
 
 		switch e.Data.(type) {
-		case *discord.StringSelectInteraction:
-			params := strings.Split(e.Data.(*discord.StringSelectInteraction).Values[0], ",")
+		case *discord.ButtonInteraction:
+			params := strings.Split(string(e.Data.(*discord.ButtonInteraction).CustomID), ",")
 			if params[0] == e.SenderID().String() {
 				handleInteraction(e, h)
 			}
