@@ -43,20 +43,6 @@ func (repo *ScoresRepo) GetById(ctx context.Context, id int64) ([]Score, error) 
 	return scanToScores(rows)
 }
 
-func (repo *ScoresRepo) GetByUser(ctx context.Context, userId int64) ([]Score, error) {
-	rows, err := repo.conn.QueryContext(
-		ctx,
-		`select id, user_id, chart_id, score, timestamp from scores where user_id = ?`,
-		userId,
-	)
-
-	if err != nil {
-		return nil, err
-	}
-
-	return scanToScores(rows)
-}
-
 func (repo *ScoresRepo) GetByUserAndChart(ctx context.Context, userId int64, chartId int) ([]Score, error) {
 	rows, err := repo.conn.QueryContext(
 		ctx,
@@ -116,6 +102,41 @@ func (repo *ScoresRepo) GetBestScoreByUserAndChart(ctx context.Context, userId i
 
 	res, err := scanToScores(row)
 	return res[0], err
+}
+
+func (repo *ScoresRepo) GetBestScoresByUser(ctx context.Context, userId int64) ([]Score, error) {
+	rows, err := repo.conn.QueryContext(
+		ctx,
+		`select
+			id,
+			user_id,
+			chart_id,
+			score,
+			timestamp
+		from
+			(
+			select
+				row_number() over (partition by chart_id order by score desc) score_order,
+				id,
+				user_id,
+				chart_id,
+				score,
+				timestamp
+			from
+				scores
+			where
+				user_id = ?
+		)
+		where
+			score_order = 1`,
+		userId,
+	)
+
+	if err != nil {
+		return nil, err
+	}
+
+	return scanToScores(rows)
 }
 
 func (repo *ScoresRepo) Delete(ctx context.Context, id int64) (sql.Result, error) {

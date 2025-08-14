@@ -58,7 +58,7 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 	}
 
 	scoresRepo := sess.GetScoresRepo()
-	scores, err := scoresRepo.GetByUser(ctx, int64(e.Author.ID))
+	scores, err := scoresRepo.GetBestScoresByUser(ctx, int64(e.Author.ID))
 	if err != nil {
 		logAndSendError(ctx, st, err, e)
 		return true
