@@ -47,6 +47,7 @@ func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreate
 
 	handlers := []interactionHandler{
 		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).HandleScorePageSelect,
+		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).HandleB30PageSelect,
 	}
 
 	defer func() {

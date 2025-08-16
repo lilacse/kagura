@@ -1,13 +1,12 @@
 package commands
 
 import (
-	"cmp"
 	"context"
 	"fmt"
-	"maps"
-	"slices"
+	"strconv"
 	"strings"
 
+	"github.com/diamondburned/arikawa/v3/api"
 	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/lilacse/kagura/database"
@@ -21,14 +20,6 @@ type b30Handler struct {
 	store    *store.Store
 	db       *database.Service
 	songdata *songdata.Service
-}
-
-type b30Entry struct {
-	chart     songdata.Chart
-	song      songdata.Song
-	score     int
-	rating    float64
-	timestamp int64
 }
 
 func NewB30Handler(store *store.Store, db *database.Service, songdata *songdata.Service) *b30Handler {
@@ -58,81 +49,149 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 	}
 
 	scoresRepo := sess.GetScoresRepo()
-	scores, err := scoresRepo.GetBestScoresByUser(ctx, int64(e.Author.ID))
+
+	count, err := scoresRepo.GetUserPlayedChartCount(ctx, int64(e.Author.ID))
 	if err != nil {
 		logAndSendError(ctx, st, err, e)
 		return true
 	}
 
-	if len(scores) == 0 {
+	if count == 0 {
 		sendReply(st, embedbuilder.UserError("You don't have any scores saved!"), e)
 		return true
 	}
 
-	chartBestMap := make(map[int]database.Score)
-
-	for _, s := range scores {
-		currBest := chartBestMap[s.ChartId]
-		if s.Score > currBest.Score {
-			chartBestMap[s.ChartId] = s
-		}
+	avgRt, avgScore, err := scoresRepo.GetBestScoreRatingsAverage(ctx, int64(e.Author.ID), 30)
+	if err != nil {
+		logAndSendError(ctx, st, err, e)
+		return true
 	}
 
-	b30Entries := make([]b30Entry, 0, len(chartBestMap))
-
-	for s := range maps.Values(chartBestMap) {
-		chart, song, ok := h.songdata.GetChartById(s.ChartId)
-		if !ok {
-			logAndSendError(ctx, st, fmt.Errorf("chart id %v is not found in songdata", s.ChartId), e)
-			return true
-		}
-
-		if chart.CC == 0.0 {
-			continue
-		}
-
-		b30Entries = append(b30Entries, b30Entry{
-			chart:     chart,
-			song:      song,
-			score:     s.Score,
-			rating:    chart.GetActualScoreRating(s.Score),
-			timestamp: s.Timestamp,
-		})
+	entries, err := scoresRepo.GetBestScoresByUserWithOffset(ctx, int64(e.Author.ID), 0, 5)
+	if err != nil {
+		logAndSendError(ctx, st, err, e)
+		return true
 	}
 
-	slices.SortFunc(b30Entries, func(a, b b30Entry) int {
-		return cmp.Compare(b.rating, a.rating)
-	})
+	embed := createB30Embed(h, avgRt, avgScore, entries, 0)
+	components := createB30PageButtons(int64(e.Author.ID), count, 0)
 
-	res := strings.Builder{}
-	scoreCount := len(b30Entries)
-	if scoreCount > 30 {
-		scoreCount = 30
+	sendReplyWithComponents(st, embedbuilder.Info(embed), components, e.ChannelID, e.ID)
+
+	return true
+}
+
+func (h *b30Handler) HandleB30PageSelect(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	st := h.store.Bot.State()
+
+	val := e.Data.(*discord.ButtonInteraction).CustomID
+
+	params := strings.Split(string(val), ",")
+	receiver := params[1]
+	if receiver != "b30" {
+		return false
 	}
 
-	ratingSum := 0.0
-	for i, e := range b30Entries[0:scoreCount] {
-		ratingSum += e.rating
-		res.WriteString(fmt.Sprintf(
-			"%v. %s - %s Lv%s (%s) - %v - **%.4f**\n",
-			i+1,
-			e.song.EscapedAltTitle(),
-			e.chart.GetDiffDisplayName(),
-			e.chart.Level,
-			e.chart.GetCCString(),
-			e.score,
-			e.rating,
+	userId, _ := strconv.ParseInt(params[0], 10, 64)
+	offset, _ := strconv.Atoi(params[2])
+
+	pageIdx := offset / 5
+
+	sess, err := h.db.NewSession(ctx)
+	if err != nil {
+		logAndSendInteractionError(ctx, st, err, e)
+		return true
+	}
+
+	scoresRepo := sess.GetScoresRepo()
+
+	count, err := scoresRepo.GetUserPlayedChartCount(ctx, userId)
+	if err != nil {
+		logAndSendInteractionError(ctx, st, err, e)
+		return true
+	}
+
+	avgRt, avgScore, err := scoresRepo.GetBestScoreRatingsAverage(ctx, userId, 30)
+	if err != nil {
+		logAndSendInteractionError(ctx, st, err, e)
+		return true
+	}
+
+	entries, err := scoresRepo.GetBestScoresByUserWithOffset(ctx, userId, offset, 5)
+	if err != nil {
+		logAndSendInteractionError(ctx, st, err, e)
+		return true
+	}
+
+	embed := createB30Embed(h, avgRt, avgScore, entries, offset)
+	components := createB30PageButtons(userId, count, pageIdx)
+
+	resp := api.InteractionResponse{
+		Type: api.UpdateMessage,
+		Data: &api.InteractionResponseData{
+			Embeds:     &[]discord.Embed{embedbuilder.Info(embed)},
+			Components: (*discord.ContainerComponents)(&components),
+		},
+	}
+
+	st.RespondInteraction(e.ID, e.Token, resp)
+
+	return true
+}
+
+func createB30Embed(h *b30Handler, avgRt float64, avgScore float64, entries []database.ScoreRecordRating, idx int) discord.Embed {
+	entriesBuilder := strings.Builder{}
+
+	for i, s := range entries {
+		chart, song, _ := h.songdata.GetChartById(s.ChartId)
+
+		entriesBuilder.WriteString(fmt.Sprintf(
+			"%v. %v ▸ %v Lv%v (%.1f)\n  %v - **%.4f** (<t:%v:R>)\n  -# Score ID: %v\n",
+			idx+i+1,
+			song.AltTitle,
+			chart.GetDiffDisplayName(),
+			chart.Level,
+			chart.CC,
+			s.Score,
+			s.Rating,
+			s.Timestamp/1000,
+			s.Id,
 		))
 	}
 
-	res.WriteString(fmt.Sprintf("\nAverage rating: **%.4f**", ratingSum/float64(scoreCount)))
-
 	embed := discord.Embed{
-		Title:       "Highest 30 Play Ratings from Saved Scores",
-		Description: res.String(),
+		Title: "Highest Play Ratings from Saved Scores",
+		Fields: []discord.EmbedField{
+			{
+				Name:  "Best-30 Stats",
+				Value: fmt.Sprintf("**Average rating: %.4f**\nAverage score: %.2f", avgRt, avgScore),
+			},
+			{
+				Name:  "Top Play Ratings",
+				Value: entriesBuilder.String(),
+			},
+		},
 	}
 
-	sendReply(st, embedbuilder.Info(embed), e)
+	return embed
+}
 
-	return true
+func createB30PageButtons(userId int64, count int, pageIdx int) []discord.ContainerComponent {
+	prevOffset := (pageIdx - 1) * 5
+	nextOffset := (pageIdx + 1) * 5
+
+	return []discord.ContainerComponent{
+		&discord.ActionRowComponent{
+			&discord.ButtonComponent{
+				CustomID: discord.ComponentID(fmt.Sprintf("%v,b30,%v", userId, prevOffset)),
+				Label:    "<",
+				Disabled: prevOffset < 0,
+			},
+			&discord.ButtonComponent{
+				CustomID: discord.ComponentID(fmt.Sprintf("%v,b30,%v", userId, nextOffset)),
+				Label:    ">",
+				Disabled: nextOffset >= count,
+			},
+		},
+	}
 }

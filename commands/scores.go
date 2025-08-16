@@ -115,7 +115,7 @@ func (h *scoresHandler) HandleTextCommand(ctx context.Context, e *gateway.Messag
 	}
 
 	embed := createScoresEmbed(song, chart, bestScore, recentScores, 0)
-	components := createPageButtons(int64(e.Author.ID), chart.Id, count, 0)
+	components := createScoresPageButtons(int64(e.Author.ID), chart.Id, count, 0)
 
 	sendReplyWithComponents(st, embedbuilder.Info(embed), components, e.ChannelID, e.ID)
 
@@ -128,9 +128,14 @@ func (h *scoresHandler) HandleScorePageSelect(ctx context.Context, e *gateway.In
 	val := e.Data.(*discord.ButtonInteraction).CustomID
 
 	params := strings.Split(string(val), ",")
+	receiver := params[1]
+	if receiver != "scores" {
+		return false
+	}
+
 	userId, _ := strconv.ParseInt(params[0], 10, 64)
-	chartId, _ := strconv.Atoi(params[1])
-	offset, _ := strconv.Atoi(params[2])
+	chartId, _ := strconv.Atoi(params[2])
+	offset, _ := strconv.Atoi(params[3])
 
 	pageIdx := offset / 5
 
@@ -163,7 +168,7 @@ func (h *scoresHandler) HandleScorePageSelect(ctx context.Context, e *gateway.In
 	}
 
 	embed := createScoresEmbed(song, chart, bestScore, recentScores, offset)
-	components := createPageButtons(userId, chart.Id, count, pageIdx)
+	components := createScoresPageButtons(userId, chart.Id, count, pageIdx)
 
 	resp := api.InteractionResponse{
 		Type: api.UpdateMessage,
@@ -178,7 +183,7 @@ func (h *scoresHandler) HandleScorePageSelect(ctx context.Context, e *gateway.In
 	return true
 }
 
-func createScoresEmbed(song songdata.Song, chart songdata.Chart, best database.Score, recents []database.Score, idx int) discord.Embed {
+func createScoresEmbed(song songdata.Song, chart songdata.Chart, best database.ScoreRecord, recents []database.ScoreRecord, idx int) discord.Embed {
 	recentsBuilder := strings.Builder{}
 
 	for i, s := range recents {
@@ -202,19 +207,19 @@ func createScoresEmbed(song songdata.Song, chart songdata.Chart, best database.S
 	return embed
 }
 
-func createPageButtons(userId int64, chartId int, count int, pageIdx int) []discord.ContainerComponent {
+func createScoresPageButtons(userId int64, chartId int, count int, pageIdx int) []discord.ContainerComponent {
 	prevOffset := (pageIdx - 1) * 5
 	nextOffset := (pageIdx + 1) * 5
 
 	return []discord.ContainerComponent{
 		&discord.ActionRowComponent{
 			&discord.ButtonComponent{
-				CustomID: discord.ComponentID(fmt.Sprintf("%v,%v,%v", userId, chartId, prevOffset)),
+				CustomID: discord.ComponentID(fmt.Sprintf("%v,scores,%v,%v", userId, chartId, prevOffset)),
 				Label:    "<",
 				Disabled: prevOffset < 0,
 			},
 			&discord.ButtonComponent{
-				CustomID: discord.ComponentID(fmt.Sprintf("%v,%v,%v", userId, chartId, nextOffset)),
+				CustomID: discord.ComponentID(fmt.Sprintf("%v,scores,%v,%v", userId, chartId, nextOffset)),
 				Label:    ">",
 				Disabled: nextOffset >= count,
 			},

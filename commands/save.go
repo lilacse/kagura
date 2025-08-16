@@ -147,7 +147,7 @@ func (h *saveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 			}
 		}
 
-		slices.SortFunc(userScores, func(a, b database.Score) int {
+		slices.SortFunc(userScores, func(a, b database.ScoreRecord) int {
 			return int(a.Timestamp - b.Timestamp)
 		})
 
