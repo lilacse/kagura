@@ -50,6 +50,11 @@ func setupDb(db *sql.DB) error {
 			user_id, 
 			chart_id
 		)`,
+		`create table if not exists charts (
+			id integer primary key,
+			cc real
+		)`,
+		`delete from charts`,
 		`PRAGMA journal_mode=WAL`,
 		`PRAGMA synchronous=NORMAL`,
 	}

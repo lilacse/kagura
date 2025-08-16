@@ -38,6 +38,10 @@ func NewService(ctx context.Context) (*Service, error) {
 	return &svc, nil
 }
 
+func (svc *Service) GetData() []Song {
+	return svc.data
+}
+
 func loadData(ctx context.Context) (songData, error) {
 	logger.Info(ctx, "reloading song data")
 	st := time.Now()

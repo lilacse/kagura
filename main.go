@@ -55,6 +55,19 @@ func main() {
 	}
 	logger.Info(ctx, "dataservices ready")
 
+	logger.Info(ctx, "inserting chart cc to db")
+	initSess, err := db.NewSession(ctx)
+	if err != nil {
+		logger.Fatal(ctx, "failed to initialise init session with error "+err.Error())
+	}
+
+	chartsRepo := initSess.GetChartsRepo()
+	err = chartsRepo.InsertCharts(ctx, datasvcs.SongData().GetData())
+	if err != nil {
+		logger.Fatal(ctx, "failed to insert chart cc to db with error "+err.Error())
+	}
+	logger.Info(ctx, "completed inserting chart cc to db")
+
 	hfactory := handler.NewFactory(store, db, datasvcs)
 	s.AddHandler(hfactory.NewOnMessageCreateHandler().Handle)
 	s.AddHandler(hfactory.NewOnInteractionCreateHandler().Handle)

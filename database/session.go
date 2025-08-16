@@ -11,3 +11,7 @@ type Session struct {
 func (sess *Session) GetScoresRepo() *ScoresRepo {
 	return GetScoresRepo(sess.Conn)
 }
+
+func (sess *Session) GetChartsRepo() *ChartsRepo {
+	return GetChartsRepo(sess.Conn)
+}
