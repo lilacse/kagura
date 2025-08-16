@@ -191,7 +191,7 @@ func createScoresEmbed(song songdata.Song, chart songdata.Chart, best database.S
 	}
 
 	embed := discord.Embed{
-		Title: fmt.Sprintf("Saved Scores for %s - %s Lv%s", song.EscapedAltTitle(), chart.GetDiffDisplayName(), chart.Level),
+		Title: fmt.Sprintf("Saved Scores for %s ▸ %s Lv%s", song.EscapedAltTitle(), chart.GetDiffDisplayName(), chart.Level),
 		Fields: []discord.EmbedField{
 			{
 				Name:  "Best score",
