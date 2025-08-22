@@ -1235,7 +1235,8 @@
       }
     ],
     "searchKeys": [
-      "dataerr0r"
+      "dataerr0r",
+      "dataerror"
     ],
     "urls": {
       "fandom": "https://arcaea.fandom.com/wiki/DataErr0r",
