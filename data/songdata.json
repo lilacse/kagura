@@ -18107,5 +18107,256 @@
       "fandom": "https://arcaea.fandom.com/wiki/See_the_Lights!",
       "mcd.blue": "https://arcwiki.mcd.blue/See_the_Lights!"
     }
+  },
+  {
+    "id": 486,
+    "title": "AlterGate",
+    "altTitle": "AlterGate",
+    "artist": "MisoilePunch\u266a ~\u30bf\u30b1\u30ce\u30b3\u6dfb\u3048~",
+    "charts": [
+      {
+        "id": 1547,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1548,
+        "diff": "prs",
+        "level": "8+",
+        "cc": 8.7,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1549,
+        "diff": "ftr",
+        "level": "10+",
+        "cc": 10.7,
+        "ver": "6.8.0"
+      }
+    ],
+    "searchKeys": [
+      "altergate"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/AlterGate",
+      "mcd.blue": "https://arcwiki.mcd.blue/AlterGate"
+    }
+  },
+  {
+    "id": 487,
+    "title": "CHAOSBLAST",
+    "altTitle": "CHAOSBLAST",
+    "artist": "QURELESS + \u67da\u5b50\u82b1",
+    "charts": [
+      {
+        "id": 1550,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1551,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1552,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1553,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "6.8.0"
+      }
+    ],
+    "searchKeys": [
+      "chaosblast"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/CHAOSBLAST",
+      "mcd.blue": "https://arcwiki.mcd.blue/CHAOSBLAST"
+    }
+  },
+  {
+    "id": 488,
+    "title": "disintegration",
+    "altTitle": "disintegration",
+    "artist": "\u3072\u3085\u301c\u3076",
+    "charts": [
+      {
+        "id": 1554,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1555,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1556,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1557,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.8.0"
+      }
+    ],
+    "searchKeys": [
+      "disintegration"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Disintegration",
+      "mcd.blue": "https://arcwiki.mcd.blue/Disintegration"
+    }
+  },
+  {
+    "id": 489,
+    "title": "Factorder",
+    "altTitle": "Factorder",
+    "artist": "\u702c\u540d feat. \u68a8\u96db",
+    "charts": [
+      {
+        "id": 1558,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1559,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1560,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.6,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1561,
+        "diff": "etr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "6.8.0"
+      }
+    ],
+    "searchKeys": [
+      "factorder"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Factorder",
+      "mcd.blue": "https://arcwiki.mcd.blue/Factorder"
+    }
+  },
+  {
+    "id": 490,
+    "title": "Incomplete the one",
+    "altTitle": "Incomplete the one",
+    "artist": "Halv feat.Kuroa*",
+    "charts": [
+      {
+        "id": 1562,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1563,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1564,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1565,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.8.0"
+      }
+    ],
+    "searchKeys": [
+      "incomplete the one"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Incomplete_the_one",
+      "mcd.blue": "https://arcwiki.mcd.blue/Incomplete_the_one"
+    }
+  },
+  {
+    "id": 491,
+    "title": "Welcome, Queen of Fiction.",
+    "altTitle": "Welcome, Queen of Fiction.",
+    "artist": "\u6253\u6253\u3060\u3044\u305a",
+    "charts": [
+      {
+        "id": 1566,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.0,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1567,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.5,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1568,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.8.0"
+      },
+      {
+        "id": 1569,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "6.8.0"
+      }
+    ],
+    "searchKeys": [
+      "welcome, queen of fiction."
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Welcome,_Queen_of_Fiction.",
+      "mcd.blue": "https://arcwiki.mcd.blue/Welcome,_Queen_of_Fiction."
+    }
   }
 ]
