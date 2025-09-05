@@ -18359,5 +18359,41 @@
       "fandom": "https://arcaea.fandom.com/wiki/Welcome,_Queen_of_Fiction.",
       "mcd.blue": "https://arcwiki.mcd.blue/Welcome,_Queen_of_Fiction."
     }
+  },
+  {
+    "id": 492,
+    "title": "Archeron",
+    "altTitle": "Archeron",
+    "artist": "KARUT",
+    "charts": [
+      {
+        "id": 1570,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.8.2"
+      },
+      {
+        "id": 1571,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.8.2"
+      },
+      {
+        "id": 1572,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.8.2"
+      }
+    ],
+    "searchKeys": [
+      "archeron"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Acheron",
+      "mcd.blue": "https://arcwiki.mcd.blue/Acheron"
+    }
   }
 ]
