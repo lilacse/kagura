@@ -18395,5 +18395,292 @@
       "fandom": "https://arcaea.fandom.com/wiki/Acheron",
       "mcd.blue": "https://arcwiki.mcd.blue/Acheron"
     }
+  },
+  {
+    "id": 493,
+    "title": "Eternity Break",
+    "altTitle": "Eternity Break",
+    "artist": "Puru",
+    "charts": [
+      {
+        "id": 1573,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.8.4"
+      },
+      {
+        "id": 1574,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.8.4"
+      },
+      {
+        "id": 1575,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "6.8.4"
+      },
+      {
+        "id": 1576,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "6.8.4"
+      }
+    ],
+    "searchKeys": [
+      "eternity break"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Eternity_Break",
+      "mcd.blue": "https://arcwiki.mcd.blue/Eternity_Break"
+    }
+  },
+  {
+    "id": 494,
+    "title": "ANDORXOR",
+    "altTitle": "ANDORXOR",
+    "artist": "Sobrem",
+    "charts": [
+      {
+        "id": 1577,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1578,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1579,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1580,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.8,
+        "ver": "6.9.0"
+      }
+    ],
+    "searchKeys": [
+      "andorxor"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/ANDORXOR",
+      "mcd.blue": "https://arcwiki.mcd.blue/ANDORXOR"
+    }
+  },
+  {
+    "id": 495,
+    "title": "No Way Back",
+    "altTitle": "No Way Back",
+    "artist": "Nhato",
+    "charts": [
+      {
+        "id": 1581,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1582,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1583,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.9,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1584,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "6.9.0"
+      }
+    ],
+    "searchKeys": [
+      "no way back"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/No_Way_Back",
+      "mcd.blue": "https://arcwiki.mcd.blue/No_Way_Back"
+    }
+  },
+  {
+    "id": 496,
+    "title": "ROST PAGE GENE",
+    "altTitle": "ROST PAGE GENE",
+    "artist": "MYUKKE.",
+    "charts": [
+      {
+        "id": 1585,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.0,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1586,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.2,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1587,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "6.9.0"
+      }
+    ],
+    "searchKeys": [
+      "rost page gene"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/ROST_PAGE_GENE",
+      "mcd.blue": "https://arcwiki.mcd.blue/ROST_PAGE_GENE"
+    }
+  },
+  {
+    "id": 497,
+    "title": "Undying Macula",
+    "altTitle": "Undying Macula",
+    "artist": "Ashrount",
+    "charts": [
+      {
+        "id": 1588,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1589,
+        "diff": "prs",
+        "level": "8+",
+        "cc": 8.7,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1590,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1591,
+        "diff": "etr",
+        "level": "11",
+        "cc": 11.0,
+        "ver": "6.9.0"
+      }
+    ],
+    "searchKeys": [
+      "undying macula"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Undying_Macula",
+      "mcd.blue": "https://arcwiki.mcd.blue/Undying_Macula"
+    }
+  },
+  {
+    "id": 498,
+    "title": "Vainspire",
+    "altTitle": "Vainspire",
+    "artist": "satella",
+    "charts": [
+      {
+        "id": 1592,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1593,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1594,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.4,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1595,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.9.0"
+      }
+    ],
+    "searchKeys": [
+      "vainspire"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Vainspire",
+      "mcd.blue": "https://arcwiki.mcd.blue/Vainspire"
+    }
+  },
+  {
+    "id": 499,
+    "title": "Viola Illyria",
+    "altTitle": "Viola Illyria",
+    "artist": "Kolaa",
+    "charts": [
+      {
+        "id": 1596,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1597,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.9.0"
+      },
+      {
+        "id": 1598,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.9.0"
+      }
+    ],
+    "searchKeys": [
+      "viola illyria"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Viola_Illyria",
+      "mcd.blue": "https://arcwiki.mcd.blue/Viola_Illyria"
+    }
   }
 ]
