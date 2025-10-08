@@ -99,7 +99,7 @@ func (h *randomHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 	}
 
 	if len(chartList) == 0 {
-		sendReply(st, embedbuilder.UserError(fmt.Sprintf("There are no %s charts with the difficulty %s!", getFullDiffName(level), level)), e)
+		sendReply(st, embedbuilder.UserError(fmt.Sprintf("There are no Lv%s charts with the difficulty %s!", level, getFullDiffName(diff))), e)
 		return true
 	}
 
