@@ -3,6 +3,7 @@ package commands
 import (
 	"context"
 	"fmt"
+	"slices"
 	"strconv"
 	"strings"
 	"unicode"
@@ -236,6 +237,54 @@ func parseDiffKey(diffStr string) (string, bool) {
 		return "byd", true
 	default:
 		return "", false
+	}
+}
+
+func parseLevel(levelStr string) (string, bool) {
+	levelStr = strings.ToLower(levelStr)
+	levelStr = strings.TrimPrefix(levelStr, "lv")
+
+	validLvls := []string{
+		"1",
+		"2",
+		"3",
+		"4",
+		"5",
+		"6",
+		"7",
+		"7+",
+		"8",
+		"8+",
+		"9",
+		"9+",
+		"10",
+		"10+",
+		"11",
+		"11+",
+		"12",
+	}
+
+	if slices.Contains(validLvls, levelStr) {
+		return levelStr, true
+	} else {
+		return "", false
+	}
+}
+
+func getFullDiffName(diffKey string) string {
+	switch diffKey {
+	case "pst":
+		return "Past"
+	case "prs":
+		return "Present"
+	case "ftr":
+		return "Future"
+	case "etr":
+		return "Eternal"
+	case "byd":
+		return "Beyond"
+	default:
+		return ""
 	}
 }
 

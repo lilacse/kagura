@@ -47,6 +47,7 @@ func handleCommand(e *gateway.MessageCreateEvent, h *onMessageCreateHandler) {
 		commands.NewUnsaveHandler(h.store, h.db, h.datasvcs.SongData()).Handle,
 		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).Handle,
 		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).HandleTextCommand,
+		commands.NewRandomHandler(h.store, h.datasvcs.SongData()).Handle,
 	}
 
 	defer func() {
