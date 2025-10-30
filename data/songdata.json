@@ -18683,5 +18683,293 @@
       "fandom": "https://arcaea.fandom.com/wiki/Viola_Illyria",
       "mcd.blue": "https://arcwiki.mcd.blue/Viola_Illyria"
     }
+  },
+  {
+    "id": 500,
+    "title": "Angel's Boundary",
+    "altTitle": "Angel's Boundary",
+    "artist": "MEMODEMO",
+    "charts": [
+      {
+        "id": 1599,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.0,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1600,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1601,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.2,
+        "ver": "6.10.0"
+      }
+    ],
+    "searchKeys": [
+      "angel's boundary"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Angel%27s_Boundary",
+      "mcd.blue": "https://arcwiki.mcd.blue/Angel%27s_Boundary"
+    }
+  },
+  {
+    "id": 501,
+    "title": "Mod",
+    "altTitle": "Mod",
+    "artist": "kalsoer",
+    "charts": [
+      {
+        "id": 1602,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1603,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1604,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "6.10.0"
+      }
+    ],
+    "searchKeys": [
+      "mod"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Mod",
+      "mcd.blue": "https://arcwiki.mcd.blue/Mod"
+    }
+  },
+  {
+    "id": 502,
+    "title": "Paradox Palette",
+    "altTitle": "Paradox Palette",
+    "artist": "Aethoro",
+    "charts": [
+      {
+        "id": 1605,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1606,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1607,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1608,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.10.0"
+      }
+    ],
+    "searchKeys": [
+      "paradox palette"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Paradox_Palette",
+      "mcd.blue": "https://arcwiki.mcd.blue/Paradox_Palette"
+    }
+  },
+  {
+    "id": 503,
+    "title": "Particle",
+    "altTitle": "Particle",
+    "artist": "Lime / Kankitsu",
+    "charts": [
+      {
+        "id": 1609,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1610,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1611,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1612,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.10.0"
+      }
+    ],
+    "searchKeys": [
+      "particle"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Particle",
+      "mcd.blue": "https://arcwiki.mcd.blue/Particle"
+    }
+  },
+  {
+    "id": 504,
+    "title": "Wake in Hour",
+    "altTitle": "Wake in Hour",
+    "artist": "\u6709\u6751\u4eac\u609f feat.July",
+    "charts": [
+      {
+        "id": 1613,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1614,
+        "diff": "prs",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1615,
+        "diff": "ftr",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1616,
+        "diff": "etr",
+        "level": "8+",
+        "cc": 8.7,
+        "ver": "6.10.0"
+      }
+    ],
+    "searchKeys": [
+      "wake in hour"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Wake_in_Hour",
+      "mcd.blue": "https://arcwiki.mcd.blue/Wake_in_Hour"
+    }
+  },
+  {
+    "id": 505,
+    "title": "Xterfusion",
+    "altTitle": "Xterfusion",
+    "artist": "REDALiCE \u00d7 t+pazolite",
+    "charts": [
+      {
+        "id": 1617,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1618,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1619,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1620,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.7,
+        "ver": "6.10.0"
+      }
+    ],
+    "searchKeys": [
+      "xterfusion"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Xterfusion",
+      "mcd.blue": "https://arcwiki.mcd.blue/Xterfusion"
+    }
+  },
+  {
+    "id": 506,
+    "title": "Xxium and Purple haze",
+    "altTitle": "Xxium and Purple haze",
+    "artist": "D.watt",
+    "charts": [
+      {
+        "id": 1621,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1622,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1623,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.10.0"
+      },
+      {
+        "id": 1624,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "6.10.0"
+      }
+    ],
+    "searchKeys": [
+      "xxium and purple haze",
+      "opium and purple haze"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Xxium_and_Purple_haze",
+      "mcd.blue": "https://arcwiki.mcd.blue/Xxium_and_Purple_haze"
+    }
   }
 ]
