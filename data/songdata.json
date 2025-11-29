@@ -19230,5 +19230,84 @@
       "fandom": "https://arcaea.fandom.com/wiki/\u039bZ\u039bLE\u039b",
       "mcd.blue": "https://arcwiki.mcd.blue/\u039bZ\u039bLE\u039b"
     }
+  }, 
+  {
+    "id": 513,
+    "title": "Grandspell",
+    "altTitle": "Grandspell",
+    "artist": "Hylen",
+    "charts": [
+      {
+        "id": 1649,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.11.0"
+      },
+      {
+        "id": 1650,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.4,
+        "ver": "6.11.0"
+      },
+      {
+        "id": 1651,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.2,
+        "ver": "6.11.0"
+      }
+    ],
+    "searchKeys": [
+      "grandspell"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Grandspell",
+      "mcd.blue": "https://arcwiki.mcd.blue/Grandspell"
+    }
+  },
+  {
+    "id": 514,
+    "title": "taboo tears you up 2017",
+    "altTitle": "taboo tears you up 2017",
+    "artist": "REDALiCE",
+    "charts": [
+      {
+        "id": 1652,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "6.11.0"
+      },
+      {
+        "id": 1653,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.11.0"
+      },
+      {
+        "id": 1654,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.4,
+        "ver": "6.11.0"
+      },
+      {
+        "id": 1655,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.11.0"
+      }
+    ],
+    "searchKeys": [
+      "taboo tears you up 2017"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Taboo_tears_you_up_2017",
+      "mcd.blue": "https://arcwiki.mcd.blue/Taboo_tears_you_up_2017"
+    }
   }
 ]
