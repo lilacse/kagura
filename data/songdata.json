@@ -18971,5 +18971,264 @@
       "fandom": "https://arcaea.fandom.com/wiki/Xxium_and_Purple_haze",
       "mcd.blue": "https://arcwiki.mcd.blue/Xxium_and_Purple_haze"
     }
+  },
+  {
+    "id": 507,
+    "title": "Code: Oblivion",
+    "altTitle": "Code: Oblivion",
+    "artist": "Kobaryo \u00d7 Gram",
+    "charts": [
+      {
+        "id": 1625,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1626,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1627,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1628,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "6.10.8"
+      }
+    ],
+    "searchKeys": [
+      "code: oblivion"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Code:_Oblivion",
+      "mcd.blue": "https://arcwiki.mcd.blue/Code:_Oblivion"
+    }
+  },
+  {
+    "id": 508,
+    "title": "INCARNATOR\u2080\u2080",
+    "altTitle": "INCARNATOR\u2080\u2080",
+    "artist": "Silentroom \u00d7 N\u00b2",
+    "charts": [
+      {
+        "id": 1629,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1630,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1631,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.9,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1632,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "6.10.8"
+      }
+    ],
+    "searchKeys": [
+      "incarnator",
+      "incarnator00"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/INCARNATOR\u2080\u2080",
+      "mcd.blue": "https://arcwiki.mcd.blue/INCARNATOR\u2080\u2080"
+    }
+  },
+  {
+    "id": 509,
+    "title": "INFINITE DIMENSION",
+    "altTitle": "INFINITE DIMENSION",
+    "artist": "DJ Noriken \u00d7 P*Light",
+    "charts": [
+      {
+        "id": 1633,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1634,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1635,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.6,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1636,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.10.8"
+      }
+    ],
+    "searchKeys": [
+      "infinite dimension"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/INFINITE_DIMENSION",
+      "mcd.blue": "https://arcwiki.mcd.blue/INFINITE_DIMENSION"
+    }
+  },
+  {
+    "id": 510,
+    "title": "MARENYX",
+    "altTitle": "MARENYX",
+    "artist": "BlackY \u00d7 Aoi",
+    "charts": [
+      {
+        "id": 1637,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1638,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1639,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1640,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.8,
+        "ver": "6.10.8"
+      }
+    ],
+    "searchKeys": [
+      "marenyx"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MARENYX",
+      "mcd.blue": "https://arcwiki.mcd.blue/MARENYX"
+    }
+  },
+  {
+    "id": 511,
+    "title": "zephyrlasting",
+    "altTitle": "zephyrlasting",
+    "artist": "s-don \u00d7 nitro (lowiro)",
+    "charts": [
+      {
+        "id": 1641,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1642,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1643,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1644,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "6.10.8"
+      }
+    ],
+    "searchKeys": [
+      "zephyrlasting"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Zephyrlasting",
+      "mcd.blue": "https://arcwiki.mcd.blue/Zephyrlasting"
+    }
+  },
+  {
+    "id": 512,
+    "title": "\u039bZ\u039bLE\u039b",
+    "altTitle": "\u039bZ\u039bLE\u039b",
+    "artist": "ak+q \u00d7 onoken",
+    "charts": [
+      {
+        "id": 1645,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1646,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1647,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "6.10.8"
+      },
+      {
+        "id": 1648,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.0,
+        "ver": "6.10.8"
+      }
+    ],
+    "searchKeys": [
+      "azalea"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/\u039bZ\u039bLE\u039b",
+      "mcd.blue": "https://arcwiki.mcd.blue/\u039bZ\u039bLE\u039b"
+    }
   }
 ]
