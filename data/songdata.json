@@ -19309,5 +19309,121 @@
       "fandom": "https://arcaea.fandom.com/wiki/Taboo_tears_you_up_2017",
       "mcd.blue": "https://arcwiki.mcd.blue/Taboo_tears_you_up_2017"
     }
+  },
+  {
+    "id": 515,
+    "title": "Paranoid Arc",
+    "altTitle": "Paranoid Arc",
+    "artist": "t+pazolite",
+    "charts": [
+      {
+        "id": 1656,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.11.2"
+      },
+      {
+        "id": 1657,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.11.2"
+      },
+      {
+        "id": 1658,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "6.11.2"
+      },
+      {
+        "id": 1659,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "6.11.2"
+      }
+    ],
+    "searchKeys": [
+      "paranoid arc"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Paranoid_Arc",
+      "mcd.blue": "https://wiki.arcaea.cn/Paranoid_Arc"
+    }
+  },
+  {
+    "id": 516,
+    "title": "undefined",
+    "altTitle": "undefined",
+    "artist": "planless & \u4e43\u82b1\u3053\u3088\u308a",
+    "charts": [
+      {
+        "id": 1660,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.11.2"
+      },
+      {
+        "id": 1661,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "6.11.2"
+      },
+      {
+        "id": 1662,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "6.11.2"
+      }
+    ],
+    "searchKeys": [
+      "undefined"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Undefined",
+      "mcd.blue": "https://wiki.arcaea.cn/Undefined"
+    }
+  },
+  {
+    "id": 517,
+    "title": "~_+",
+    "altTitle": "~_+",
+    "artist": "AQUASINE ~ MEMODEMO + METAROOM",
+    "charts": [
+      {
+        "id": 1663,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.11.2"
+      },
+      {
+        "id": 1664,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.0,
+        "ver": "6.11.2"
+      },
+      {
+        "id": 1665,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.11.2"
+      }
+    ],
+    "searchKeys": [
+      "~_+",
+      "mask"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/~_%2B",
+      "mcd.blue": "https://wiki.arcaea.cn/~_%2B"
+    }
   }
 ]
