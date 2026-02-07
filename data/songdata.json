@@ -5913,7 +5913,7 @@
         "level": "9+",
         "cc": 9.8,
         "ver": "3.0.0"
-      }, 
+      },
       {
         "id": 1454,
         "diff": "byd",
@@ -17198,7 +17198,7 @@
       }
     ],
     "searchKeys": [
-      "t (tau)", 
+      "t (tau)",
       "tau"
     ],
     "urls": {
@@ -17535,7 +17535,7 @@
       "fandom": "https://arcaea.fandom.com/wiki/Won't_Back_Down",
       "mcd.blue": "https://arcwiki.mcd.blue/Won't_Back_Down"
     }
-  }, 
+  },
   {
     "id": 472,
     "title": "BlythE",
@@ -17548,21 +17548,21 @@
         "level": "3",
         "cc": 3.0,
         "ver": "6.6.0"
-      }, 
+      },
       {
         "id": 1496,
         "diff": "prs",
         "level": "7",
         "cc": 7.5,
         "ver": "6.6.0"
-      }, 
+      },
       {
         "id": 1497,
         "diff": "ftr",
         "level": "9",
         "cc": 9.4,
         "ver": "6.6.0"
-      }, 
+      },
       {
         "id": 1498,
         "diff": "etr",
@@ -19230,7 +19230,7 @@
       "fandom": "https://arcaea.fandom.com/wiki/\u039bZ\u039bLE\u039b",
       "mcd.blue": "https://arcwiki.mcd.blue/\u039bZ\u039bLE\u039b"
     }
-  }, 
+  },
   {
     "id": 513,
     "title": "Grandspell",
@@ -19424,6 +19424,336 @@
     "urls": {
       "fandom": "https://arcaea.fandom.com/wiki/~_%2B",
       "mcd.blue": "https://wiki.arcaea.cn/~_%2B"
+    }
+  },
+  {
+    "id": 518,
+    "title": "Subsphere in Eclosion",
+    "altTitle": "Subsphere in Eclosion",
+    "artist": "\u7a93\u8fba\u30ea\u30ab",
+    "charts": [
+      {
+        "id": 1666,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.0,
+        "ver": "6.11.6"
+      },
+      {
+        "id": 1667,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.1,
+        "ver": "6.11.6"
+      },
+      {
+        "id": 1668,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "6.11.6"
+      },
+      {
+        "id": 1669,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.6,
+        "ver": "6.11.6"
+      }
+    ],
+    "searchKeys": [
+      "subsphere in eclosion"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Subsphere_in_Eclosion",
+      "mcd.blue": "https://wiki.arcaea.cn/Subsphere_in_Eclosion"
+    }
+  },
+  {
+    "id": 519,
+    "title": "The 'Raft' taught me: your heart will always find a way.",
+    "altTitle": "The 'Raft' taught me: your heart will always find a way.",
+    "artist": "\u5ead\u5e2b",
+    "charts": [
+      {
+        "id": 1670,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.11.8"
+      },
+      {
+        "id": 1671,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.11.8"
+      },
+      {
+        "id": 1672,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.11.8"
+      },
+      {
+        "id": 1673,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "6.11.8"
+      }
+    ],
+    "searchKeys": [
+      "the 'raft' taught me: your heart will always find a way."
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/The_%27Raft%27_taught_me:_your_heart_will_always_find_a_way.",
+      "mcd.blue": "https://wiki.arcaea.cn/The_%27Raft%27_taught_me:_your_heart_will_always_find_a_way."
+    }
+  },
+  {
+    "id": 520,
+    "title": "CHAIN2NITE",
+    "altTitle": "CHAIN2NITE",
+    "artist": "asuzora feat. cyber milk \u3061\u3083\u3093",
+    "charts": [
+      {
+        "id": 1674,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1675,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1676,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.6,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1677,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.12.0"
+      }
+    ],
+    "searchKeys": [
+      "chain2nite"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/CHAIN2NITE",
+      "mcd.blue": "https://wiki.arcaea.cn/CHAIN2NITE"
+    }
+  },
+  {
+    "id": 521,
+    "title": "Melty Rhapsody",
+    "altTitle": "Melty Rhapsody",
+    "artist": "lapix feat. PANXI",
+    "charts": [
+      {
+        "id": 1678,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1679,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1680,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1681,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "6.12.0"
+      }
+    ],
+    "searchKeys": [
+      "melty rhapsody"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Melty_Rhapsody",
+      "mcd.blue": "https://wiki.arcaea.cn/Melty_Rhapsody"
+    }
+  },
+  {
+    "id": 522,
+    "title": "My life is mine alone!",
+    "altTitle": "My life is mine alone!",
+    "artist": "Mylta feat. \u306d\u3093\u306d",
+    "charts": [
+      {
+        "id": 1682,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1683,
+        "diff": "prs",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1684,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1685,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.12.0"
+      }
+    ],
+    "searchKeys": [
+      "my life is mine alone!"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/My_life_is_mine_alone!",
+      "mcd.blue": "https://wiki.arcaea.cn/My_life_is_mine_alone!"
+    }
+  },
+  {
+    "id": 523,
+    "title": "OMAJINAI",
+    "altTitle": "OMAJINAI",
+    "artist": "Tsubusare BOZZ \u00d7 Madoka*",
+    "charts": [
+      {
+        "id": 1686,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1687,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1688,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "6.12.0"
+      }
+    ],
+    "searchKeys": [
+      "omajinai"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/OMAJINAI",
+      "mcd.blue": "https://wiki.arcaea.cn/OMAJINAI"
+    }
+  },
+  {
+    "id": 524,
+    "title": "One Step Closer",
+    "altTitle": "One Step Closer",
+    "artist": "Mameyudoufu \u00d7 \u85cd\u6708\u306a\u304f\u308b",
+    "charts": [
+      {
+        "id": 1689,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1690,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1691,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.12.0"
+      }
+    ],
+    "searchKeys": [
+      "one step closer"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/One_Step_Closer",
+      "mcd.blue": "https://wiki.arcaea.cn/One_Step_Closer"
+    }
+  },
+  {
+    "id": 525,
+    "title": "Signal",
+    "altTitle": "Signal",
+    "artist": "rejection feat. Such",
+    "charts": [
+      {
+        "id": 1692,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1693,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1694,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.12.0"
+      },
+      {
+        "id": 1695,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.7,
+        "ver": "6.12.0"
+      }
+    ],
+    "searchKeys": [
+      "signal"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Signal",
+      "mcd.blue": "https://wiki.arcaea.cn/Signal"
     }
   }
 ]
