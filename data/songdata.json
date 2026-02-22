@@ -19755,5 +19755,120 @@
       "fandom": "https://arcaea.fandom.com/wiki/Signal",
       "mcd.blue": "https://wiki.arcaea.cn/Signal"
     }
+  },
+  {
+    "id": 526,
+    "title": "+1(UNKNOWN)-NUMBER",
+    "altTitle": "+1(UNKNOWN)-NUMBER",
+    "artist": "MEMODEMO \u00d7 AQUASINE ^ (hackerling)",
+    "charts": [
+      {
+        "id": 1696,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.12.10"
+      },
+      {
+        "id": 1697,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "6.12.10"
+      },
+      {
+        "id": 1698,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.12.10"
+      }
+    ],
+    "searchKeys": [
+      "+1(unknown)-number"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/%2B1(UNKNOWN)-NUMBER",
+      "mcd.blue": "https://wiki.arcaea.cn/%2B1(UNKNOWN)-NUMBER"
+    }
+  },
+  {
+    "id": 527,
+    "title": "Gimme Caramel Popcorn!",
+    "altTitle": "Gimme Caramel Popcorn!",
+    "artist": "\u30e4\u30df\u30ca\u30d9\u30ec\u30b3\u30fc\u30ba feat. \u7e6d\u7cf8",
+    "charts": [
+      {
+        "id": 1699,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.12.10"
+      },
+      {
+        "id": 1700,
+        "diff": "prs",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.12.10"
+      },
+      {
+        "id": 1701,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.1,
+        "ver": "6.12.10"
+      },
+      {
+        "id": 1702,
+        "diff": "etr",
+        "level": "9",
+        "cc": 9.1,
+        "ver": "6.12.10"
+      }
+    ],
+    "searchKeys": [
+      "gimme caramel popcorn!"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Gimme_Caramel_Popcorn!",
+      "mcd.blue": "https://wiki.arcaea.cn/Gimme_Caramel_Popcorn!"
+    }
+  },
+  {
+    "id": 528,
+    "title": "The Forgotten Forest Haven",
+    "altTitle": "The Forgotten Forest Haven",
+    "artist": "ShiBa",
+    "charts": [
+      {
+        "id": 1703,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.12.10"
+      },
+      {
+        "id": 1704,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.12.10"
+      },
+      {
+        "id": 1705,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.12.10"
+      }
+    ],
+    "searchKeys": [
+      "the forgotten forest haven"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/The_Forgotten_Forest_Haven",
+      "mcd.blue": "https://wiki.arcaea.cn/The_Forgotten_Forest_Haven"
+    }
   }
 ]
