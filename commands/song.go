@@ -2,6 +2,7 @@ package commands
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"net/url"
 	"slices"
@@ -18,6 +19,8 @@ type songHandler struct {
 	store    *store.Store
 	songdata *songdata.Service
 }
+
+var noMatchError = errors.New("no matching song found")
 
 func NewSongHandler(store *store.Store, songdata *songdata.Service) *songHandler {
 	return &songHandler{
@@ -36,7 +39,7 @@ func NewSongHandler(store *store.Store, songdata *songdata.Service) *songHandler
 	}
 }
 
-func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
+func (h *songHandler) HandleTextCommand(ctx context.Context, e *gateway.MessageCreateEvent) bool {
 	params, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
 	if !ok {
 		return false
@@ -49,10 +52,50 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		return true
 	}
 
-	matched := h.songdata.Search(params, 1)
-	if len(matched) == 0 {
+	res, err := getSongCmdResultEmbed(h, params)
+	if err == noMatchError {
 		sendSongQueryError(st, params, e)
 		return true
+	}
+
+	sendReply(st, res, e)
+
+	return true
+}
+
+func (h *songHandler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	var data *discord.CommandInteraction
+
+	switch e.Data.(type) {
+	case *discord.CommandInteraction:
+		data = e.Data.(*discord.CommandInteraction)
+	default:
+		return false
+	}
+
+	if data.Name != "song" {
+		return false
+	}
+
+	st := h.store.Bot.State()
+
+	query := data.Options.Find("query").String()
+	res, err := getSongCmdResultEmbed(h, query)
+
+	if err == noMatchError {
+		sendSongQueryCommandError(st, query, e)
+		return true
+	}
+
+	sendInteractionResponse(st, res, []discord.ContainerComponent{}, e)
+
+	return true
+}
+
+func getSongCmdResultEmbed(h *songHandler, query string) (discord.Embed, error) {
+	matched := h.songdata.Search(query, 1)
+	if len(matched) == 0 {
+		return discord.Embed{}, noMatchError
 	}
 
 	song := matched[0]
@@ -115,7 +158,5 @@ func (h *songHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		Fields: embedFields,
 	}
 
-	sendReply(st, embedbuilder.Info(songEmbed), e)
-
-	return true
+	return embedbuilder.Info(songEmbed), nil
 }

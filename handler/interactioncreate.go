@@ -23,6 +23,13 @@ type onInteractionCreateHandler struct {
 	datasvcs *dataservices.Provider
 }
 
+type interactionType int
+
+const (
+	componentInteraction interactionType = iota
+	commandInteraction
+)
+
 type interactionHandler func(ctx context.Context, e *gateway.InteractionCreateEvent) bool
 
 func (h *onInteractionCreateHandler) Handle(e *gateway.InteractionCreateEvent) {
@@ -35,31 +42,53 @@ func (h *onInteractionCreateHandler) Handle(e *gateway.InteractionCreateEvent) {
 		case *discord.ButtonInteraction:
 			params := strings.Split(string(e.Data.(*discord.ButtonInteraction).CustomID), ",")
 			if params[0] == e.SenderID().String() {
-				handleInteraction(e, h)
+				handleInteraction(e, h, componentInteraction)
 			}
+		}
+	} else if e.Data.InteractionType() == discord.CommandInteractionType {
+		switch e.Data.(type) {
+		case *discord.CommandInteraction:
+			handleInteraction(e, h, commandInteraction)
 		}
 	}
 }
 
-func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreateHandler) {
+func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreateHandler, t interactionType) {
 	traceId := uuid.NewString()
 	ctx := context.WithValue(h.store.Bot.Context(), logger.TraceId, traceId)
 
-	handlers := []interactionHandler{
+	componentHandlers := []interactionHandler{
 		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).HandleScorePageSelect,
 		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).HandleB30PageSelect,
+	}
+
+	commandHandlers := []interactionHandler{
+		commands.NewSongHandler(h.store, h.datasvcs.SongData()).HandleSlashCommand,
 	}
 
 	defer func() {
 		r := recover()
 		if r != nil {
 			logger.Error(ctx, fmt.Sprintf("error handling interaction: %s\nstack trace: %s", r, debug.Stack()))
-			sendHandleError(ctx, r, h.store.Bot.State(), e.Message.ID, e.ChannelID)
+			switch t {
+			case componentInteraction:
+				sendHandleError(ctx, r, h.store.Bot.State(), e.Message.ID, e.ChannelID)
+			case commandInteraction:
+				sendCommandError(ctx, r, h.store.Bot.State(), e)
+			}
 		}
 	}()
 
-	for _, handler := range handlers {
-		handled := handler(ctx, e)
+	var hs []interactionHandler
+	switch t {
+	case componentInteraction:
+		hs = componentHandlers
+	case commandInteraction:
+		hs = commandHandlers
+	}
+
+	for _, h := range hs {
+		handled := h(ctx, e)
 		if handled {
 			return
 		}

@@ -6,6 +6,7 @@ import (
 
 	"github.com/diamondburned/arikawa/v3/api"
 	"github.com/diamondburned/arikawa/v3/discord"
+	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/diamondburned/arikawa/v3/state"
 	"github.com/diamondburned/arikawa/v3/utils/json/option"
 	"github.com/lilacse/kagura/database"
@@ -58,4 +59,20 @@ func sendHandleError(ctx context.Context, r any, st *state.State, messageId disc
 	}
 
 	st.SendMessageComplex(channelId, d)
+}
+
+func sendCommandError(ctx context.Context, r any, st *state.State, e *gateway.InteractionCreateEvent) {
+	d := api.InteractionResponse{
+		Type: api.MessageInteractionWithSource,
+		Data: &api.InteractionResponseData{
+			Embeds: &[]discord.Embed{
+				embedbuilder.Error(ctx, fmt.Sprintf("%s", r)),
+			},
+			AllowedMentions: &api.AllowedMentions{
+				RepliedUser: option.False,
+			},
+		},
+	}
+
+	st.RespondInteraction(e.InteractionEvent.ID, e.InteractionEvent.Token, d)
 }

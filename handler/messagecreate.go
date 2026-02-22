@@ -40,7 +40,7 @@ func handleCommand(e *gateway.MessageCreateEvent, h *onMessageCreateHandler) {
 	ctx := context.WithValue(h.store.Bot.Context(), logger.TraceId, traceId)
 
 	handlers := []commandHandler{
-		commands.NewSongHandler(h.store, h.datasvcs.SongData()).Handle,
+		commands.NewSongHandler(h.store, h.datasvcs.SongData()).HandleTextCommand,
 		commands.NewPttHandler(h.store, h.datasvcs.SongData()).Handle,
 		commands.NewStepHandler(h.store, h.datasvcs.SongData()).Handle,
 		commands.NewSaveHandler(h.store, h.db, h.datasvcs.SongData()).Handle,

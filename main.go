@@ -8,6 +8,7 @@ import (
 
 	"github.com/diamondburned/arikawa/v3/gateway"
 	"github.com/diamondburned/arikawa/v3/state"
+	"github.com/lilacse/kagura/commands"
 	"github.com/lilacse/kagura/database"
 	"github.com/lilacse/kagura/dataservices"
 	"github.com/lilacse/kagura/handler"
@@ -67,6 +68,10 @@ func main() {
 		logger.Fatal(ctx, "failed to insert chart cc to db with error "+err.Error())
 	}
 	logger.Info(ctx, "completed inserting chart cc to db")
+
+	logger.Info(ctx, "registering slash commands")
+	commands.RegisterCommands(ctx, s);
+	logger.Info(ctx, "completed registering slash commands")
 
 	hfactory := handler.NewFactory(store, db, datasvcs)
 	s.AddHandler(hfactory.NewOnMessageCreateHandler().Handle)

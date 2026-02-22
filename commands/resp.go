@@ -20,6 +20,10 @@ func sendInteractionReply(st *state.State, em discord.Embed, e *gateway.Interact
 	sendReplyWithComponents(st, em, []discord.ContainerComponent{}, e.ChannelID, e.Message.ID)
 }
 
+func sendCommandReply(st *state.State, em discord.Embed, e *gateway.InteractionCreateEvent) {
+	sendInteractionResponse(st, em, []discord.ContainerComponent{}, e)
+}
+
 func sendReplyWithComponents(st *state.State, em discord.Embed, cc []discord.ContainerComponent, channelId discord.ChannelID, replyId discord.MessageID) {
 	d := api.SendMessageData{
 		Embeds: []discord.Embed{
@@ -35,6 +39,28 @@ func sendReplyWithComponents(st *state.State, em discord.Embed, cc []discord.Con
 	}
 
 	st.SendMessageComplex(channelId, d)
+}
+
+func sendInteractionResponse(st *state.State, em discord.Embed, cc []discord.ContainerComponent, e *gateway.InteractionCreateEvent) {
+	ccs := discord.ContainerComponents{}
+	for _, c := range cc {
+		ccs = append(ccs, c)
+	}
+
+	d := api.InteractionResponse{
+		Type: api.MessageInteractionWithSource,
+		Data: &api.InteractionResponseData{
+			Embeds: &[]discord.Embed{
+				em,
+			},
+			Components: &ccs,
+			AllowedMentions: &api.AllowedMentions{
+				RepliedUser: option.False,
+			},
+		},
+	}
+
+	st.RespondInteraction(e.InteractionEvent.ID, e.InteractionEvent.Token, d)
 }
 
 func sendFormatError(st *state.State, prefix string, handler cmd, e *gateway.MessageCreateEvent) {
@@ -67,6 +93,10 @@ func sendFormatError(st *state.State, prefix string, handler cmd, e *gateway.Mes
 
 func sendSongQueryError(st *state.State, query string, e *gateway.MessageCreateEvent) {
 	sendReply(st, embedbuilder.UserError(fmt.Sprintf("No matching song found for query `%s`!", query)), e)
+}
+
+func sendSongQueryCommandError(st *state.State, query string, e *gateway.InteractionCreateEvent) {
+	sendCommandReply(st, embedbuilder.UserError(fmt.Sprintf("No matching song found for query `%s`!", query)), e)
 }
 
 func sendInvalidDiffError(st *state.State, diffStr string, e *gateway.MessageCreateEvent) {
