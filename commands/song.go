@@ -2,7 +2,6 @@ package commands
 
 import (
 	"context"
-	"errors"
 	"fmt"
 	"net/url"
 	"slices"
@@ -20,8 +19,6 @@ type songHandler struct {
 	songdata *songdata.Service
 }
 
-var noMatchError = errors.New("no matching song found")
-
 func NewSongHandler(store *store.Store, songdata *songdata.Service) *songHandler {
 	return &songHandler{
 		cmd: cmd{
@@ -37,30 +34,6 @@ func NewSongHandler(store *store.Store, songdata *songdata.Service) *songHandler
 		store:    store,
 		songdata: songdata,
 	}
-}
-
-func (h *songHandler) HandleTextCommand(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
-	if !ok {
-		return false
-	}
-
-	st := h.store.Bot.State()
-
-	if params == "" {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
-
-	res, err := getSongCmdResultEmbed(h, params)
-	if err == noMatchError {
-		sendSongQueryError(st, params, e)
-		return true
-	}
-
-	sendReply(st, res, e)
-
-	return true
 }
 
 func (h *songHandler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
@@ -80,22 +53,9 @@ func (h *songHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 	st := h.store.Bot.State()
 
 	query := data.Options.Find("query").String()
-	res, err := getSongCmdResultEmbed(h, query)
-
-	if err == noMatchError {
-		sendSongQueryCommandError(st, query, e)
-		return true
-	}
-
-	sendInteractionResponse(st, res, []discord.ContainerComponent{}, e)
-
-	return true
-}
-
-func getSongCmdResultEmbed(h *songHandler, query string) (discord.Embed, error) {
 	matched := h.songdata.Search(query, 1)
 	if len(matched) == 0 {
-		return discord.Embed{}, noMatchError
+		sendSongQueryCommandError(st, query, e)
 	}
 
 	song := matched[0]
@@ -157,6 +117,9 @@ func getSongCmdResultEmbed(h *songHandler, query string) (discord.Embed, error) 
 	songEmbed := discord.Embed{
 		Fields: embedFields,
 	}
+	res := embedbuilder.Info(songEmbed)
 
-	return embedbuilder.Info(songEmbed), nil
+	sendInteractionResponse(st, res, []discord.ContainerComponent{}, e)
+
+	return true
 }
