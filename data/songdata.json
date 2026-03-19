@@ -2962,6 +2962,13 @@
         "level": "9",
         "cc": 9.4,
         "ver": "1.6.4"
+      },
+      {
+        "id": 1710,
+        "diff": "byd",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "6.13.0"
       }
     ],
     "searchKeys": [
@@ -5279,6 +5286,13 @@
         "level": "9+",
         "cc": 9.8,
         "ver": "2.4.3"
+      },
+      {
+        "id": 1724,
+        "diff": "byd",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "6.13.0"
       }
     ],
     "searchKeys": [
@@ -6906,6 +6920,13 @@
         "level": "8",
         "cc": 8.4,
         "ver": "3.3.0"
+      },
+      {
+        "id": 1718,
+        "diff": "byd",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.13.0"
       }
     ],
     "searchKeys": [
@@ -8318,6 +8339,13 @@
         "level": "9",
         "cc": 9.3,
         "ver": "3.7.0"
+      },
+      {
+        "id": 1719,
+        "diff": "byd",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.13.0"
       }
     ],
     "searchKeys": [
@@ -8426,6 +8454,13 @@
         "level": "9",
         "cc": 9.3,
         "ver": "3.7.0"
+      },
+      {
+        "id": 1726,
+        "diff": "byd",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "6.13.0"
       }
     ],
     "searchKeys": [
@@ -15651,6 +15686,13 @@
         "level": "8+",
         "cc": 8.8,
         "ver": "5.10.4"
+      },
+      {
+        "id": 1725,
+        "diff": "byd",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "6.13.0"
       }
     ],
     "searchKeys": [
@@ -19869,6 +19911,222 @@
     "urls": {
       "fandom": "https://arcaea.fandom.com/wiki/The_Forgotten_Forest_Haven",
       "mcd.blue": "https://wiki.arcaea.cn/The_Forgotten_Forest_Haven"
+    }
+  },
+  {
+    "id": 529,
+    "title": "3rd Avenue",
+    "altTitle": "3rd Avenue",
+    "artist": "Sound Souler",
+    "charts": [
+      {
+        "id": 1706,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1707,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.1,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1708,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.2,
+        "ver": "6.13.0"
+      }
+    ],
+    "searchKeys": [
+      "3rd avenue"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/3rd_Avenue",
+      "mcd.blue": "https://wiki.arcaea.cn/3rd_Avenue"
+    }
+  },
+  {
+    "id": 530,
+    "title": "Axium Divergence",
+    "altTitle": "Axium Divergence",
+    "artist": "ak+q (lowiro)",
+    "charts": [
+      {
+        "id": 1709,
+        "diff": "byd",
+        "level": "11",
+        "cc": 11.3,
+        "ver": "6.13.0"
+      }
+    ],
+    "searchKeys": [
+      "axium divergence"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Axium_Crisis",
+      "mcd.blue": "https://wiki.arcaea.cn/Axium_Crisis"
+    }
+  },
+  {
+    "id": 531,
+    "title": "Cryogenic",
+    "altTitle": "Cryogenic",
+    "artist": "Camellia ft. Petra Gurin",
+    "charts": [
+      {
+        "id": 1711,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.0,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1712,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1713,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.2,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1714,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.13.0"
+      }
+    ],
+    "searchKeys": [
+      "cryogenic"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Cryogenic",
+      "mcd.blue": "https://wiki.arcaea.cn/Cryogenic"
+    }
+  },
+  {
+    "id": 532,
+    "title": "Desertrealm",
+    "altTitle": "Desertrealm",
+    "artist": "Masahiro \"Godspeed\" Aoki",
+    "charts": [
+      {
+        "id": 1715,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1716,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.5,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1717,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.6,
+        "ver": "6.13.0"
+      }
+    ],
+    "searchKeys": [
+      "desertrealm"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Desertrealm",
+      "mcd.blue": "https://wiki.arcaea.cn/Desertrealm"
+    }
+  },
+  {
+    "id": 533,
+    "title": "GOODRAGE",
+    "altTitle": "GOODRAGE",
+    "artist": "EBIMAYO",
+    "charts": [
+      {
+        "id": 1720,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1721,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1722,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.3,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1723,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.2,
+        "ver": "6.13.0"
+      }
+    ],
+    "searchKeys": [
+      "goodrage"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/GOODRAGE",
+      "mcd.blue": "https://wiki.arcaea.cn/GOODRAGE"
+    }
+  },
+  {
+    "id": 534,
+    "title": "Vallista",
+    "altTitle": "Vallista",
+    "artist": "Sakuzyo",
+    "charts": [
+      {
+        "id": 1727,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1728,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.13.0"
+      },
+      {
+        "id": 1729,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.13.0"
+      }
+    ],
+    "searchKeys": [
+      "vallista"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Vallista",
+      "mcd.blue": "https://wiki.arcaea.cn/Vallista"
     }
   }
 ]
