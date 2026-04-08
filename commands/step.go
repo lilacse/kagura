@@ -45,72 +45,52 @@ func NewStepHandler(store *store.Store, songdata *songdata.Service) *stepHandler
 	}
 }
 
-func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
-	if !ok {
+func (h *stepHandler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	var data *discord.CommandInteraction
+
+	switch e.Data.(type) {
+	case *discord.CommandInteraction:
+		data = e.Data.(*discord.CommandInteraction)
+	default:
+		return false
+	}
+
+	if data.Name != "step" {
 		return false
 	}
 
 	st := h.store.Bot.State()
 
-	params, stepStr, ok := extractParamForward(params, 1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
+	query := data.Options.Find("song").String()
+	matched := h.songdata.Search(query, 1)
+	if len(matched) == 0 {
+		sendSongQueryCommandError(st, query, e)
 		return true
 	}
 
-	params, scoreStr, ok := extractParamBackwards(params, 1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
+	song := matched[0]
 
-	params, diffStr, ok := extractParamBackwards(params, 1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
-
-	_, songStr, ok := extractParamBackwards(params, -1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
-
-	step, ok := parseStep(stepStr)
-	if !ok {
-		sendReply(st, embedbuilder.UserError(fmt.Sprintf("Invalid step `%s`!", stepStr)), e)
-		return true
-	}
-
-	score, errMsg, ok := parseShortScore(scoreStr)
-	if !ok {
-		sendReply(st, embedbuilder.UserError(errMsg), e)
-		return true
-	}
-
-	matchSong := h.songdata.Search(songStr, 1)
-	if len(matchSong) == 0 {
-		sendSongQueryError(st, songStr, e)
-		return true
-	}
-
-	song := matchSong[0]
-
-	diffKey, ok := parseDiffKey(diffStr)
-	if !ok {
-		sendInvalidDiffError(st, diffStr, e)
-		return true
-	}
-
+	diffKey := data.Options.Find("diff").String()
 	chart, ok := song.GetChart(diffKey)
 	if !ok {
-		sendDiffNotExistError(st, diffKey, song.EscapedAltTitle(), e)
+		sendDiffNotExistCommandError(st, diffKey, song.EscapedAltTitle(), e)
 		return true
 	}
 
 	if chart.CC == 0.0 {
-		sendCcUnknownError(st, diffKey, song.EscapedAltTitle(), e)
+		sendCcUnknownCommandError(st, diffKey, song.EscapedAltTitle(), e)
+		return true
+	}
+
+	step, err := data.Options.Find("stat").FloatValue()
+	if err != nil {
+		sendCommandErrorReply(st, fmt.Sprintf("Invalid step `%s`!", data.Options.Find("stat").String()), e)
+		return true
+	}
+
+	score, errStr, ok := parseShortScore(data.Options.Find("score").String())
+	if !ok {
+		sendCommandErrorReply(st, fmt.Sprintf("Invalid score `%s`!", errStr), e)
 		return true
 	}
 
@@ -142,7 +122,7 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 			},
 			{
 				Name:   "Step stat",
-				Value:  strconv.Itoa(step),
+				Value:  strconv.FormatFloat(step, 'f', -1, 64),
 				Inline: true,
 			},
 			{
@@ -156,7 +136,8 @@ func (h *stepHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		},
 	}
 
-	sendReply(st, embedbuilder.Info(embed), e)
+	res := embedbuilder.Info(embed)
+	sendInteractionResponse(st, res, []discord.ContainerComponent{}, e)
 
 	return true
 }

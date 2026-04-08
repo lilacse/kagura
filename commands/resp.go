@@ -24,6 +24,10 @@ func sendCommandReply(st *state.State, em discord.Embed, e *gateway.InteractionC
 	sendInteractionResponse(st, em, []discord.ContainerComponent{}, e)
 }
 
+func sendCommandErrorReply(st *state.State, msg string, e *gateway.InteractionCreateEvent) {
+	sendCommandReply(st, embedbuilder.UserError(msg), e)
+}
+
 func sendReplyWithComponents(st *state.State, em discord.Embed, cc []discord.ContainerComponent, channelId discord.ChannelID, replyId discord.MessageID) {
 	d := api.SendMessageData{
 		Embeds: []discord.Embed{
@@ -96,7 +100,7 @@ func sendSongQueryError(st *state.State, query string, e *gateway.MessageCreateE
 }
 
 func sendSongQueryCommandError(st *state.State, query string, e *gateway.InteractionCreateEvent) {
-	sendCommandReply(st, embedbuilder.UserError(fmt.Sprintf("No matching song found for query `%s`!", query)), e)
+	sendCommandErrorReply(st, fmt.Sprintf("No matching song found for query `%s`!", query), e)
 }
 
 func sendInvalidDiffError(st *state.State, diffStr string, e *gateway.MessageCreateEvent) {
@@ -107,6 +111,14 @@ func sendDiffNotExistError(st *state.State, diffKey string, songAltTitle string,
 	sendReply(st, embedbuilder.UserError(fmt.Sprintf("Difficulty %s does not exist for the song %s!", strings.ToUpper(diffKey), songAltTitle)), e)
 }
 
+func sendDiffNotExistCommandError(st *state.State, diffKey string, songAltTitle string, e *gateway.InteractionCreateEvent) {
+	sendCommandErrorReply(st, fmt.Sprintf("Difficulty %s does not exist for the song %s!", strings.ToUpper(diffKey), songAltTitle), e)
+}
+
 func sendCcUnknownError(st *state.State, diffKey string, songAltTitle string, e *gateway.MessageCreateEvent) {
 	sendReply(st, embedbuilder.UserError(fmt.Sprintf("Chart constant is unknown for the difficulty %s for the song %s!", strings.ToUpper(diffKey), songAltTitle)), e)
+}
+
+func sendCcUnknownCommandError(st *state.State, diffKey string, songAltTitle string, e *gateway.InteractionCreateEvent) {
+	sendCommandErrorReply(st, fmt.Sprintf("Chart constant is unknown for the difficulty %s for the song %s!", strings.ToUpper(diffKey), songAltTitle), e)
 }
