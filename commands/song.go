@@ -56,6 +56,7 @@ func (h *songHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 	matched := h.songdata.Search(query, 1)
 	if len(matched) == 0 {
 		sendSongQueryCommandError(st, query, e)
+		return true
 	}
 
 	song := matched[0]
