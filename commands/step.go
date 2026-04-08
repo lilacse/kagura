@@ -90,7 +90,7 @@ func (h *stepHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 
 	score, errStr, ok := parseShortScore(data.Options.Find("score").String())
 	if !ok {
-		sendCommandErrorReply(st, fmt.Sprintf("Invalid score `%s`!", errStr), e)
+		sendCommandErrorReply(st, errStr, e)
 		return true
 	}
 
