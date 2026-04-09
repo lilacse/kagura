@@ -46,74 +46,60 @@ func NewSaveHandler(store *store.Store, db *database.Service, songdata *songdata
 	}
 }
 
-func (h *saveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
-	if !ok {
+func (h *saveHandler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	var data *discord.CommandInteraction
+
+	switch e.Data.(type) {
+	case *discord.CommandInteraction:
+		data = e.Data.(*discord.CommandInteraction)
+	default:
+		return false
+	}
+
+	if data.Name != "save" {
 		return false
 	}
 
 	st := h.store.Bot.State()
 
-	params, scoreStr, ok := extractParamBackwards(params, 1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
+	query := data.Options.Find("song").String()
+	matched := h.songdata.Search(query, 1)
+	if len(matched) == 0 {
+		sendSongQueryCommandError(st, query, e)
 		return true
 	}
 
-	params, diffStr, ok := extractParamBackwards(params, 1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
+	song := matched[0]
 
-	_, songStr, ok := extractParamBackwards(params, -1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
-
-	score, errMsg, ok := parseFullScore(scoreStr)
-	if !ok {
-		sendReply(st, embedbuilder.UserError(errMsg), e)
-		return true
-	}
-
-	matchSong := h.songdata.Search(songStr, 1)
-	if len(matchSong) == 0 {
-		sendSongQueryError(st, songStr, e)
-		return true
-	}
-
-	song := matchSong[0]
-
-	diffKey, ok := parseDiffKey(diffStr)
-	if !ok {
-		sendInvalidDiffError(st, diffStr, e)
-		return true
-	}
-
+	diffKey := data.Options.Find("diff").String()
 	chart, ok := song.GetChart(diffKey)
 	if !ok {
-		sendDiffNotExistError(st, diffKey, song.EscapedAltTitle(), e)
+		sendDiffNotExistCommandError(st, diffKey, song.EscapedAltTitle(), e)
+		return true
+	}
+
+	score, errStr, ok := parseFullScore(data.Options.Find("score").String())
+	if !ok {
+		sendCommandErrorReply(st, errStr, e)
 		return true
 	}
 
 	sess, err := h.db.NewSession(ctx)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
 	defer func() {
 		err := sess.Conn.Close()
 		if err != nil {
-			logAndSendError(ctx, st, err, e)
+			logAndSendCommandError(ctx, st, err, e)
 		}
 	}()
 
 	tx, err := sess.Conn.BeginTx(ctx, nil)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
@@ -123,16 +109,16 @@ func (h *saveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		if !isCommit {
 			err := tx.Rollback()
 			if err != nil {
-				logAndSendError(ctx, st, err, e)
+				logAndSendCommandError(ctx, st, err, e)
 			}
 		}
 	}()
 
 	scoresRepo := sess.GetScoresRepo()
 
-	userScores, err := scoresRepo.GetByUserAndChart(ctx, int64(e.Author.ID), chart.Id)
+	userScores, err := scoresRepo.GetByUserAndChart(ctx, int64(e.Sender().ID), chart.Id)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
@@ -160,17 +146,17 @@ func (h *saveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 
 	ts := time.Now()
 
-	res, err := scoresRepo.Insert(ctx, int64(e.Author.ID), chart.Id, score, ts.UnixMilli())
+	insertRes, err := scoresRepo.Insert(ctx, int64(e.Sender().ID), chart.Id, score, ts.UnixMilli())
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
-	newId, _ := res.LastInsertId()
+	newId, _ := insertRes.LastInsertId()
 
 	err = tx.Commit()
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
@@ -208,7 +194,8 @@ func (h *saveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent)
 		},
 	}
 
-	sendReply(st, embedbuilder.Info(embed), e)
+	res := embedbuilder.Info(embed)
+	sendCommandReply(st, res, e)
 
 	return true
 }

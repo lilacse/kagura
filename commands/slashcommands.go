@@ -11,6 +11,14 @@ import (
 )
 
 func RegisterCommands(ctx context.Context, st *state.State) {
+	diffChoices := []discord.StringChoice{
+		{Name: "Past", Value: "pst"},
+		{Name: "Present", Value: "prs"},
+		{Name: "Future", Value: "ftr"},
+		{Name: "Beyond", Value: "byd"},
+		{Name: "Eternal", Value: "etr"},
+	}
+
 	cmds := []api.CreateCommandData{
 		{
 			Name:        "song",
@@ -41,17 +49,33 @@ func RegisterCommands(ctx context.Context, st *state.State) {
 					OptionName:  "diff",
 					Description: "The difficulty of the chart",
 					Required:    true,
-					Choices: []discord.StringChoice{
-						{Name: "Past", Value: "pst"},
-						{Name: "Present", Value: "prs"},
-						{Name: "Future", Value: "ftr"},
-						{Name: "Beyond", Value: "byd"},
-						{Name: "Eternal", Value: "etr"},
-					},
+					Choices:     diffChoices,
 				},
 				&discord.IntegerOption{
 					OptionName:  "score",
 					Description: "The score of the play, supports short score format (e.g. 980 instead of 9800000)",
+					Required:    true,
+				},
+			},
+		},
+		{
+			Name:        "save",
+			Description: "Saves a score",
+			Options: []discord.CommandOption{
+				&discord.StringOption{
+					OptionName:  "song",
+					Description: "Search term for the song",
+					Required:    true,
+				},
+				&discord.StringOption{
+					OptionName:  "diff",
+					Description: "The difficulty of the chart",
+					Required:    true,
+					Choices:     diffChoices,
+				},
+				&discord.IntegerOption{
+					OptionName:  "score",
+					Description: "The score of the play",
 					Required:    true,
 				},
 			},

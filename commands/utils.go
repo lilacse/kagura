@@ -293,6 +293,11 @@ func logAndSendError(ctx context.Context, st *state.State, err error, e *gateway
 	sendReply(st, embedbuilder.Error(ctx, err.Error()), e)
 }
 
+func logAndSendCommandError(ctx context.Context, st *state.State, err error, e *gateway.InteractionCreateEvent) {
+	logger.Error(ctx, fmt.Sprintf("error when handling slash command: %s", err.Error()))
+	sendCommandErrorReply(st, err.Error(), e)
+}
+
 func logAndSendInteractionError(ctx context.Context, st *state.State, err error, e *gateway.InteractionCreateEvent) {
 	logger.Error(ctx, fmt.Sprintf("error when handling interaction: %s", err.Error()))
 	sendInteractionReply(st, embedbuilder.Error(ctx, err.Error()), e)
