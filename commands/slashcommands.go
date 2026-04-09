@@ -80,6 +80,17 @@ func RegisterCommands(ctx context.Context, st *state.State) {
 				},
 			},
 		},
+		{
+			Name:        "unsave",
+			Description: "Unsaves a score",
+			Options: []discord.CommandOption{
+				&discord.IntegerOption{
+					OptionName:  "score_id",
+					Description: "The ID of the score to unsave",
+					Required:    true,
+				},
+			},
+		},
 	}
 
 	err := cmdroute.OverwriteCommands(st, cmds)

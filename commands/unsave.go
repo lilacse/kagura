@@ -38,43 +38,46 @@ func NewUnsaveHandler(store *store.Store, db *database.Service, songdata *songda
 	}
 }
 
-func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
-	if !ok {
+func (h *unsaveHandler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	var data *discord.CommandInteraction
+
+	switch e.Data.(type) {
+	case *discord.CommandInteraction:
+		data = e.Data.(*discord.CommandInteraction)
+	default:
+		return false
+	}
+
+	if data.Name != "unsave" {
 		return false
 	}
 
 	st := h.store.Bot.State()
-	prefix := h.store.Bot.Prefix()
 
-	_, idStr, ok := extractParamBackwards(params, -1)
-	if !ok {
-		sendFormatError(st, prefix, h.cmd, e)
-		return true
-	}
+	idStr := data.Options.Find("score_id").String()
 
 	id, ok := parseScoreId(idStr)
 	if !ok {
-		sendReply(st, embedbuilder.UserError(fmt.Sprintf("Invalid score ID `%s`!", idStr)), e)
+		sendCommandErrorReply(st, fmt.Sprintf("Invalid score ID `%s`!", idStr), e)
 		return true
 	}
 
 	sess, err := h.db.NewSession(ctx)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
 	defer func() {
 		err := sess.Conn.Close()
 		if err != nil {
-			logAndSendError(ctx, st, err, e)
+			logAndSendCommandError(ctx, st, err, e)
 		}
 	}()
 
 	tx, err := sess.Conn.BeginTx(ctx, nil)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
@@ -84,7 +87,7 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 		if !isCommit {
 			err := tx.Rollback()
 			if err != nil {
-				logAndSendError(ctx, st, err, e)
+				logAndSendCommandError(ctx, st, err, e)
 			}
 		}
 	}()
@@ -93,31 +96,31 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 
 	currRecs, err := scoresRepo.GetById(ctx, id)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
-	if len(currRecs) == 0 || currRecs[0].UserId != int64(e.Author.ID) {
-		sendReply(st, embedbuilder.UserError(fmt.Sprintf("You don't have a score with ID `%s`!", idStr)), e)
+	if len(currRecs) == 0 || currRecs[0].UserId != int64(e.Sender().ID) {
+		sendCommandErrorReply(st, fmt.Sprintf("You don't have a score with ID `%s`!", idStr), e)
 		return true
 	}
 
 	currRec := currRecs[0]
 	chart, song, ok := h.songdata.GetChartById(currRec.ChartId)
 	if !ok {
-		logAndSendError(ctx, st, fmt.Errorf("chart id %v is not found in songdata", currRec.ChartId), e)
+		logAndSendCommandError(ctx, st, fmt.Errorf("chart id %v is not found in songdata", currRec.ChartId), e)
 		return true
 	}
 
 	_, err = scoresRepo.Delete(ctx, id)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
 	err = tx.Commit()
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
@@ -147,7 +150,8 @@ func (h *unsaveHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 		},
 	}
 
-	sendReply(st, embedbuilder.Info(embed), e)
+	res := embedbuilder.Info(embed)
+	sendCommandReply(st, res, e)
 
 	return true
 }
