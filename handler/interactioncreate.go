@@ -70,6 +70,7 @@ func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreate
 		commands.NewPttHandler(h.store, h.datasvcs.SongData()).HandleSlashCommand,
 		commands.NewRandomHandler(h.store, h.datasvcs.SongData()).HandleSlashCommand,
 		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
+		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
 	}
 
 	defer func() {

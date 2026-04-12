@@ -155,6 +155,23 @@ func RegisterCommands(ctx context.Context, st *state.State) {
 			Name:        "b30",
 			Description: "Shows your top scores alongside a b30 summary",
 		},
+		{
+			Name:        "scores",
+			Description: "Shows the scores you saved for a song",
+			Options: []discord.CommandOption{
+				&discord.StringOption{
+					OptionName:  "song",
+					Description: "Search term for the song",
+					Required:    true,
+				},
+				&discord.StringOption{
+					OptionName:  "diff",
+					Description: "The difficulty of the chart",
+					Required:    true,
+					Choices:     diffChoices,
+				},
+			},
+		},
 	}
 
 	err := cmdroute.OverwriteCommands(st, cmds)

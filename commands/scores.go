@@ -43,81 +43,73 @@ func NewScoresHandler(store *store.Store, db *database.Service, songdata *songda
 	}
 }
 
-func (h *scoresHandler) HandleTextCommand(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
-	if !ok {
+func (h *scoresHandler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	var data *discord.CommandInteraction
+
+	switch e.Data.(type) {
+	case *discord.CommandInteraction:
+		data = e.Data.(*discord.CommandInteraction)
+	default:
+		return false
+	}
+
+	if data.Name != "scores" {
 		return false
 	}
 
 	st := h.store.Bot.State()
 
-	params, diffStr, ok := extractParamBackwards(params, 1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
+	query := data.Options.Find("song").String()
+	matched := h.songdata.Search(query, 1)
+	if len(matched) == 0 {
+		sendSongQueryCommandError(st, query, e)
 		return true
 	}
 
-	_, songStr, ok := extractParamBackwards(params, -1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
+	song := matched[0]
 
-	matchSong := h.songdata.Search(songStr, 1)
-	if len(matchSong) == 0 {
-		sendSongQueryError(st, songStr, e)
-		return true
-	}
-
-	song := matchSong[0]
-
-	diffKey, ok := parseDiffKey(diffStr)
-	if !ok {
-		sendInvalidDiffError(st, diffStr, e)
-		return true
-	}
-
+	diffKey := data.Options.Find("diff").String()
 	chart, ok := song.GetChart(diffKey)
 	if !ok {
-		sendDiffNotExistError(st, diffKey, song.EscapedAltTitle(), e)
+		sendDiffNotExistCommandError(st, diffKey, song.EscapedAltTitle(), e)
 		return true
 	}
 
 	sess, err := h.db.NewSession(ctx)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
 	scoresRepo := sess.GetScoresRepo()
 
-	count, err := scoresRepo.GetScoreCountByUserAndChart(ctx, int64(e.Author.ID), chart.Id)
+	count, err := scoresRepo.GetScoreCountByUserAndChart(ctx, int64(e.Sender().ID), chart.Id)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
 	if count == 0 {
-		sendReply(st, embedbuilder.UserError("You don't have any scores saved for this chart!"), e)
+		sendCommandErrorReply(st, "You don't have any scores saved for this chart!", e)
 		return true
 	}
 
-	bestScore, err := scoresRepo.GetBestScoreByUserAndChart(ctx, int64(e.Author.ID), chart.Id)
+	bestScore, err := scoresRepo.GetBestScoreByUserAndChart(ctx, int64(e.Sender().ID), chart.Id)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
-	recentScores, err := scoresRepo.GetByUserAndChartWithOffset(ctx, int64(e.Author.ID), chart.Id, 0, 5)
+	recentScores, err := scoresRepo.GetByUserAndChartWithOffset(ctx, int64(e.Sender().ID), chart.Id, 0, 5)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
 	embed := createScoresEmbed(song, chart, bestScore, recentScores, 0)
-	components := createScoresPageButtons(int64(e.Author.ID), chart.Id, count, 0)
+	components := createScoresPageButtons(int64(e.Sender().ID), chart.Id, count, 0)
 
-	sendReplyWithComponents(st, embedbuilder.Info(embed), components, e.ChannelID, e.ID)
+	sendInteractionResponse(st, embedbuilder.Info(embed), components, e)
 
 	return true
 }
@@ -187,7 +179,7 @@ func createScoresEmbed(song songdata.Song, chart songdata.Chart, best database.S
 	recentsBuilder := strings.Builder{}
 
 	for i, s := range recents {
-		recentsBuilder.WriteString(fmt.Sprintf("%v. %v (<t:%v:R>)\n  -# Score ID: %v\n", idx+i+1, s.Score, s.Timestamp/1000, s.Id))
+		fmt.Fprintf(&recentsBuilder, "%v. %v (<t:%v:R>)\n  -# Score ID: %v\n", idx+i+1, s.Score, s.Timestamp/1000, s.Id)
 	}
 
 	embed := discord.Embed{
