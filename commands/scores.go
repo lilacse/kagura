@@ -67,6 +67,13 @@ func (h *scoresHandler) HandleSlashCommand(ctx context.Context, e *gateway.Inter
 		return true
 	}
 
+	defer func() {
+		err := sess.Conn.Close()
+		if err != nil {
+			logAndSendCommandError(ctx, st, err, e)
+		}
+	}()
+
 	scoresRepo := sess.GetScoresRepo()
 
 	count, err := scoresRepo.GetScoreCountByUserAndChart(ctx, int64(e.Sender().ID), chart.Id)
@@ -124,6 +131,13 @@ func (h *scoresHandler) HandleScorePageSelect(ctx context.Context, e *gateway.In
 		logAndSendInteractionError(ctx, st, err, e)
 		return true
 	}
+
+	defer func() {
+		err := sess.Conn.Close()
+		if err != nil {
+			logAndSendInteractionError(ctx, st, err, e)
+		}
+	}()
 
 	scoresRepo := sess.GetScoresRepo()
 

@@ -51,6 +51,13 @@ func (h *b30Handler) HandleSlashCommand(ctx context.Context, e *gateway.Interact
 		return true
 	}
 
+	defer func() {
+		err := sess.Conn.Close()
+		if err != nil {
+			logAndSendCommandError(ctx, st, err, e)
+		}
+	}()
+
 	scoresRepo := sess.GetScoresRepo()
 
 	count, err := scoresRepo.GetUserPlayedChartCount(ctx, int64(e.Sender().ID))
@@ -105,6 +112,13 @@ func (h *b30Handler) HandleB30PageSelect(ctx context.Context, e *gateway.Interac
 		logAndSendInteractionError(ctx, st, err, e)
 		return true
 	}
+
+	defer func() {
+		err := sess.Conn.Close()
+		if err != nil {
+			logAndSendInteractionError(ctx, st, err, e)
+		}
+	}()
 
 	scoresRepo := sess.GetScoresRepo()
 
