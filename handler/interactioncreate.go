@@ -67,6 +67,7 @@ func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreate
 		commands.NewStepHandler(h.store, h.datasvcs.SongData()).HandleSlashCommand,
 		commands.NewSaveHandler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
 		commands.NewUnsaveHandler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
+		commands.NewPttHandler(h.store, h.datasvcs.SongData()).HandleSlashCommand,
 	}
 
 	defer func() {

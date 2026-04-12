@@ -49,116 +49,47 @@ func NewPttHandler(store *store.Store, songdata *songdata.Service) *pttHandler {
 	}
 }
 
-func (h *pttHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	ok := false
-	params := ""
-	for _, n := range h.cmds {
-		params, ok = extractParamsString(n, e.Message.Content, h.store.Bot.Prefix())
-		if ok {
-			break
-		}
+func (h *pttHandler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	var data *discord.CommandInteraction
+
+	switch e.Data.(type) {
+	case *discord.CommandInteraction:
+		data = e.Data.(*discord.CommandInteraction)
+	default:
+		return false
 	}
 
-	if !ok {
+	if data.Name != "ptt" {
 		return false
 	}
 
 	st := h.store.Bot.State()
 
-	params, scoreStr, ok := extractParamBackwards(params, 1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
+	query := data.Options.Find("song").String()
+	matched := h.songdata.Search(query, 1)
+	if len(matched) == 0 {
+		sendSongQueryCommandError(st, query, e)
 		return true
 	}
 
-	score, errMsg, ok := parseShortScore(scoreStr)
-	if !ok {
-		sendReply(st, embedbuilder.UserError(errMsg), e)
-		return true
-	}
+	song := matched[0]
 
-	_, ccStr, ok := extractParamBackwards(params, -1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
-
-	cc, isCc := parseCc(ccStr)
-	if isCc {
-		handleCcQuery(h, e, score, cc)
-		return true
-	}
-
-	params, diffStr, ok := extractParamBackwards(params, 1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
-
-	_, songStr, ok := extractParamBackwards(params, -1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
-
-	handleChartQuery(h, e, score, songStr, diffStr)
-	return true
-}
-
-func handleCcQuery(h *pttHandler, e *gateway.MessageCreateEvent, score int, cc float64) {
-	st := h.store.Bot.State()
-
-	ptt := getPttFromCc(score, cc)
-	formula := getPttFormula(score, cc, ptt)
-
-	embed := discord.Embed{
-		Fields: []discord.EmbedField{
-			{
-				Name:   "Score",
-				Value:  strconv.Itoa(score),
-				Inline: true,
-			},
-			{
-				Name:   "Chart Constant",
-				Value:  fmt.Sprintf("%.1f", cc),
-				Inline: true,
-			},
-			{
-				Name:  "Play Rating",
-				Value: formula,
-			},
-		},
-	}
-
-	sendReply(st, embedbuilder.Info(embed), e)
-}
-
-func handleChartQuery(h *pttHandler, e *gateway.MessageCreateEvent, score int, songStr string, diffStr string) {
-	st := h.store.Bot.State()
-
-	matchSong := h.songdata.Search(songStr, 1)
-	if len(matchSong) == 0 {
-		sendSongQueryError(st, songStr, e)
-		return
-	}
-
-	song := matchSong[0]
-
-	diffKey, ok := parseDiffKey(diffStr)
-	if !ok {
-		sendInvalidDiffError(st, diffStr, e)
-		return
-	}
-
+	diffKey := data.Options.Find("diff").String()
 	chart, ok := song.GetChart(diffKey)
 	if !ok {
-		sendDiffNotExistError(st, diffKey, song.AltTitle, e)
-		return
+		sendDiffNotExistCommandError(st, diffKey, song.EscapedAltTitle(), e)
+		return true
 	}
 
 	if chart.CC == 0.0 {
-		sendCcUnknownError(st, diffKey, song.AltTitle, e)
-		return
+		sendCcUnknownCommandError(st, diffKey, song.EscapedAltTitle(), e)
+		return true
+	}
+
+	score, errStr, ok := parseShortScore(data.Options.Find("score").String())
+	if !ok {
+		sendCommandErrorReply(st, errStr, e)
+		return true
 	}
 
 	ptt := chart.GetScoreRating(score)
@@ -185,17 +116,10 @@ func handleChartQuery(h *pttHandler, e *gateway.MessageCreateEvent, score int, s
 		},
 	}
 
-	sendReply(st, embedbuilder.Info(embed), e)
-}
+	res := embedbuilder.Info(embed)
+	sendCommandReply(st, res, e)
 
-func getPttFromCc(score int, cc float64) float64 {
-	if score >= 10000000 {
-		return cc + 2.0
-	} else if score >= 9800000 && score < 10000000 {
-		return cc + 1.0 + ((float64(score) - 9800000) / 200000)
-	} else {
-		return cc + (float64(score)-9500000)/300000
-	}
+	return true
 }
 
 func getPttFormula(score int, cc float64, ptt float64) string {

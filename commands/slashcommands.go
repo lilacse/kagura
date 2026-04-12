@@ -91,6 +91,28 @@ func RegisterCommands(ctx context.Context, st *state.State) {
 				},
 			},
 		},
+		{
+			Name:        "ptt",
+			Description: "Calculates the rating of a play",
+			Options: []discord.CommandOption{
+				&discord.StringOption{
+					OptionName:  "song",
+					Description: "Search term for the song",
+					Required:    true,
+				},
+				&discord.StringOption{
+					OptionName:  "diff",
+					Description: "The difficulty of the chart",
+					Required:    true,
+					Choices:     diffChoices,
+				},
+				&discord.IntegerOption{
+					OptionName:  "score",
+					Description: "The score of the play, supports short score format (e.g. 980 instead of 9800000)",
+					Required:    true,
+				},
+			},
+		},
 	}
 
 	err := cmdroute.OverwriteCommands(st, cmds)
