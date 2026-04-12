@@ -34,9 +34,17 @@ func NewB30Handler(store *store.Store, db *database.Service, songdata *songdata.
 	}
 }
 
-func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	_, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
-	if !ok {
+func (h *b30Handler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	var data *discord.CommandInteraction
+
+	switch e.Data.(type) {
+	case *discord.CommandInteraction:
+		data = e.Data.(*discord.CommandInteraction)
+	default:
+		return false
+	}
+
+	if data.Name != "b30" {
 		return false
 	}
 
@@ -44,39 +52,39 @@ func (h *b30Handler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) 
 
 	sess, err := h.db.NewSession(ctx)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
 	scoresRepo := sess.GetScoresRepo()
 
-	count, err := scoresRepo.GetUserPlayedChartCount(ctx, int64(e.Author.ID))
+	count, err := scoresRepo.GetUserPlayedChartCount(ctx, int64(e.Sender().ID))
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
 	if count == 0 {
-		sendReply(st, embedbuilder.UserError("You don't have any scores saved!"), e)
+		sendCommandErrorReply(st, "You don't have any scores saved!", e)
 		return true
 	}
 
-	avgRt, avgScore, err := scoresRepo.GetBestScoreRatingsAverage(ctx, int64(e.Author.ID), 30)
+	avgRt, avgScore, err := scoresRepo.GetBestScoreRatingsAverage(ctx, int64(e.Sender().ID), 30)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
-	entries, err := scoresRepo.GetBestScoresByUserWithOffset(ctx, int64(e.Author.ID), 0, 5)
+	entries, err := scoresRepo.GetBestScoresByUserWithOffset(ctx, int64(e.Sender().ID), 0, 5)
 	if err != nil {
-		logAndSendError(ctx, st, err, e)
+		logAndSendCommandError(ctx, st, err, e)
 		return true
 	}
 
 	embed := createB30Embed(h, avgRt, avgScore, entries, 0)
-	components := createB30PageButtons(int64(e.Author.ID), count, 0)
+	components := createB30PageButtons(int64(e.Sender().ID), count, 0)
 
-	sendReplyWithComponents(st, embedbuilder.Info(embed), components, e.ChannelID, e.ID)
+	sendInteractionResponse(st, embedbuilder.Info(embed), components, e)
 
 	return true
 }
@@ -145,8 +153,7 @@ func createB30Embed(h *b30Handler, avgRt float64, avgScore float64, entries []da
 	for i, s := range entries {
 		chart, song, _ := h.songdata.GetChartById(s.ChartId)
 
-		entriesBuilder.WriteString(fmt.Sprintf(
-			"%v. %v ▸ %v Lv%v (%.1f)\n  %v - **%.4f** (<t:%v:R>)\n  -# Score ID: %v\n",
+		fmt.Fprintf(&entriesBuilder, "%v. %v ▸ %v Lv%v (%.1f)\n  %v - **%.4f** (<t:%v:R>)\n  -# Score ID: %v\n",
 			idx+i+1,
 			song.AltTitle,
 			chart.GetDiffDisplayName(),
@@ -155,8 +162,7 @@ func createB30Embed(h *b30Handler, avgRt float64, avgScore float64, entries []da
 			s.Score,
 			s.Rating,
 			s.Timestamp/1000,
-			s.Id,
-		))
+			s.Id)
 	}
 
 	embed := discord.Embed{
