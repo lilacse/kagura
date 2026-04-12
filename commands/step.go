@@ -14,32 +14,12 @@ import (
 )
 
 type stepHandler struct {
-	cmd
 	store    *store.Store
 	songdata *songdata.Service
 }
 
 func NewStepHandler(store *store.Store, songdata *songdata.Service) *stepHandler {
 	return &stepHandler{
-		cmd: cmd{
-			cmds: []string{"step"},
-			params: [][]param{
-				{
-					{
-						name: "stat",
-					},
-					{
-						name: "song",
-					},
-					{
-						name: "diff",
-					},
-					{
-						name: "score",
-					},
-				},
-			},
-		},
 		store:    store,
 		songdata: songdata,
 	}

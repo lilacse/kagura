@@ -16,7 +16,6 @@ import (
 )
 
 type b30Handler struct {
-	cmd
 	store    *store.Store
 	db       *database.Service
 	songdata *songdata.Service
@@ -24,10 +23,6 @@ type b30Handler struct {
 
 func NewB30Handler(store *store.Store, db *database.Service, songdata *songdata.Service) *b30Handler {
 	return &b30Handler{
-		cmd: cmd{
-			cmds:   []string{"b30", "top", "best"},
-			params: [][]param{},
-		},
 		store:    store,
 		db:       db,
 		songdata: songdata,

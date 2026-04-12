@@ -14,27 +14,12 @@ import (
 )
 
 type randomHandler struct {
-	cmd
 	store    *store.Store
 	songdata *songdata.Service
 }
 
 func NewRandomHandler(store *store.Store, songdata *songdata.Service) *randomHandler {
 	return &randomHandler{
-		cmd: cmd{
-			cmds: []string{"random"},
-			params: [][]param{
-				{
-					{
-						name: "level",
-					},
-					{
-						name:     "diff",
-						optional: true,
-					},
-				},
-			},
-		},
 		store:    store,
 		songdata: songdata,
 	}

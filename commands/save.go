@@ -16,7 +16,6 @@ import (
 )
 
 type saveHandler struct {
-	cmd
 	store    *store.Store
 	db       *database.Service
 	songdata *songdata.Service
@@ -24,22 +23,6 @@ type saveHandler struct {
 
 func NewSaveHandler(store *store.Store, db *database.Service, songdata *songdata.Service) *saveHandler {
 	return &saveHandler{
-		cmd: cmd{
-			cmds: []string{"save"},
-			params: [][]param{
-				{
-					{
-						name: "song",
-					},
-					{
-						name: "diff",
-					},
-					{
-						name: "score",
-					},
-				},
-			},
-		},
 		store:    store,
 		db:       db,
 		songdata: songdata,

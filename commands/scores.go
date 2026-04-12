@@ -16,7 +16,6 @@ import (
 )
 
 type scoresHandler struct {
-	cmd
 	store    *store.Store
 	db       *database.Service
 	songdata *songdata.Service
@@ -24,19 +23,6 @@ type scoresHandler struct {
 
 func NewScoresHandler(store *store.Store, db *database.Service, songdata *songdata.Service) *scoresHandler {
 	return &scoresHandler{
-		cmd: cmd{
-			cmds: []string{"scores"},
-			params: [][]param{
-				{
-					{
-						name: "song",
-					},
-					{
-						name: "diff",
-					},
-				},
-			},
-		},
 		store:    store,
 		db:       db,
 		songdata: songdata,

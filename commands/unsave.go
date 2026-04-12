@@ -14,7 +14,6 @@ import (
 )
 
 type unsaveHandler struct {
-	cmd
 	store    *store.Store
 	db       *database.Service
 	songdata *songdata.Service
@@ -22,16 +21,6 @@ type unsaveHandler struct {
 
 func NewUnsaveHandler(store *store.Store, db *database.Service, songdata *songdata.Service) *unsaveHandler {
 	return &unsaveHandler{
-		cmd: cmd{
-			cmds: []string{"unsave"},
-			params: [][]param{
-				{
-					{
-						name: "score id",
-					},
-				},
-			},
-		},
 		store:    store,
 		db:       db,
 		songdata: songdata,

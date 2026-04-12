@@ -14,23 +14,12 @@ import (
 )
 
 type songHandler struct {
-	cmd
 	store    *store.Store
 	songdata *songdata.Service
 }
 
 func NewSongHandler(store *store.Store, songdata *songdata.Service) *songHandler {
 	return &songHandler{
-		cmd: cmd{
-			cmds: []string{"song"},
-			params: [][]param{
-				{
-					{
-						name: "query",
-					},
-				},
-			},
-		},
 		store:    store,
 		songdata: songdata,
 	}

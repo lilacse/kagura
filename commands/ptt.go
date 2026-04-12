@@ -13,37 +13,12 @@ import (
 )
 
 type pttHandler struct {
-	cmd
 	store    *store.Store
 	songdata *songdata.Service
 }
 
 func NewPttHandler(store *store.Store, songdata *songdata.Service) *pttHandler {
 	return &pttHandler{
-		cmd: cmd{
-			cmds: []string{"ptt", "rt"},
-			params: [][]param{
-				{
-					{
-						name: "song",
-					},
-					{
-						name: "diff",
-					},
-					{
-						name: "score",
-					},
-				},
-				{
-					{
-						name: "cc",
-					},
-					{
-						name: "score",
-					},
-				},
-			},
-		},
 		store:    store,
 		songdata: songdata,
 	}
