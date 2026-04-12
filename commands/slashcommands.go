@@ -19,6 +19,26 @@ func RegisterCommands(ctx context.Context, st *state.State) {
 		{Name: "Eternal", Value: "etr"},
 	}
 
+	levelChoices := []discord.StringChoice{
+		{Name: "Lv1", Value: "1"},
+		{Name: "Lv2", Value: "2"},
+		{Name: "Lv3", Value: "3"},
+		{Name: "Lv4", Value: "4"},
+		{Name: "Lv5", Value: "5"},
+		{Name: "Lv6", Value: "6"},
+		{Name: "Lv7", Value: "7"},
+		{Name: "Lv7+", Value: "7+"},
+		{Name: "Lv8", Value: "8"},
+		{Name: "Lv8+", Value: "8+"},
+		{Name: "Lv9", Value: "9"},
+		{Name: "Lv9+", Value: "9+"},
+		{Name: "Lv10", Value: "10"},
+		{Name: "Lv10+", Value: "10+"},
+		{Name: "Lv11", Value: "11"},
+		{Name: "Lv11+", Value: "11+"},
+		{Name: "Lv12", Value: "12"},
+	}
+
 	cmds := []api.CreateCommandData{
 		{
 			Name:        "song",
@@ -110,6 +130,24 @@ func RegisterCommands(ctx context.Context, st *state.State) {
 					OptionName:  "score",
 					Description: "The score of the play, supports short score format (e.g. 980 instead of 9800000)",
 					Required:    true,
+				},
+			},
+		},
+		{
+			Name:        "random",
+			Description: "Returns a random song",
+			Options: []discord.CommandOption{
+				&discord.StringOption{
+					OptionName:  "level",
+					Description: "The level of the chart",
+					Required:    false,
+					Choices:     levelChoices,
+				},
+				&discord.StringOption{
+					OptionName:  "diff",
+					Description: "The difficulty of the chart",
+					Required:    false,
+					Choices:     diffChoices,
 				},
 			},
 		},

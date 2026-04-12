@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"math/rand/v2"
+	"strings"
 
 	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
@@ -39,67 +40,60 @@ func NewRandomHandler(store *store.Store, songdata *songdata.Service) *randomHan
 	}
 }
 
-func (h *randomHandler) Handle(ctx context.Context, e *gateway.MessageCreateEvent) bool {
-	params, ok := extractParamsString(h.cmds[0], e.Message.Content, h.store.Bot.Prefix())
-	if !ok {
+func (h *randomHandler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	var data *discord.CommandInteraction
+
+	switch e.Data.(type) {
+	case *discord.CommandInteraction:
+		data = e.Data.(*discord.CommandInteraction)
+	default:
+		return false
+	}
+
+	if data.Name != "random" {
 		return false
 	}
 
 	st := h.store.Bot.State()
 
-	params, levelStr, ok := extractParamForward(params, 1)
-	if !ok {
-		sendFormatError(st, h.store.Bot.Prefix(), h.cmd, e)
-		return true
-	}
+	level := data.Options.Find("level").String()
+	diff := data.Options.Find("diff").String()
 
-	_, diffStr, hasDiff := extractParamForward(params, 1)
-
-	level, ok := parseLevel(levelStr)
-	if !ok {
-		sendReply(st, embedbuilder.UserError(fmt.Sprintf("Invalid level `%s`!", levelStr)), e)
-		return true
-	}
-
-	diff := ""
-	if hasDiff {
-		diff, ok = parseDiffKey(diffStr)
-		if !ok {
-			sendInvalidDiffError(st, diffStr, e)
-			return true
-		}
-	}
+	hasLevel := level != ""
+	hasDiff := diff != ""
 
 	chartList := make([]struct {
 		*songdata.Song
 		*songdata.Chart
 	}, 0)
 
-	if !hasDiff {
-		for _, song := range h.songdata.GetData() {
-			for _, chart := range song.Charts {
-				if chart.Level == level {
-					chartList = append(chartList, struct {
-						*songdata.Song
-						*songdata.Chart
-					}{&song, &chart})
-				}
+	for _, song := range h.songdata.GetData() {
+		for _, chart := range song.Charts {
+			if hasLevel && chart.Level != level {
+				continue
 			}
-		}
-	} else {
-		for _, song := range h.songdata.GetData() {
-			chart, ok := song.GetChart(diff)
-			if ok && chart.Level == level {
-				chartList = append(chartList, struct {
-					*songdata.Song
-					*songdata.Chart
-				}{&song, &chart})
+			if hasDiff && chart.Diff != diff {
+				continue
 			}
+			chartList = append(chartList, struct {
+				*songdata.Song
+				*songdata.Chart
+			}{&song, &chart})
 		}
 	}
 
 	if len(chartList) == 0 {
-		sendReply(st, embedbuilder.UserError(fmt.Sprintf("There are no Lv%s charts with the difficulty %s!", level, getFullDiffName(diff))), e)
+		errStr := strings.Builder{}
+		errStr.WriteString("There are no charts matching the query:")
+		if hasLevel {
+			fmt.Fprintf(&errStr, " Lv%s", level)
+		}
+		if hasDiff {
+			fmt.Fprintf(&errStr, " %s", getFullDiffName(diff))
+		}
+		errStr.WriteString("!")
+
+		sendCommandErrorReply(st, errStr.String(), e)
 		return true
 	}
 
@@ -115,10 +109,13 @@ func (h *randomHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 			Name:  "Artist",
 			Value: selChart.Artist,
 		},
-		{
+	}
+
+	if hasLevel || hasDiff {
+		embedFields = append(embedFields, discord.EmbedField{
 			Name:  "Difficulty",
 			Value: fmt.Sprintf("%s - Lv%s (%.1f) (v%s)", selChart.GetDiffDisplayName(), selChart.Level, selChart.CC, selChart.Ver),
-		},
+		})
 	}
 
 	songEmbed := discord.Embed{
@@ -126,7 +123,8 @@ func (h *randomHandler) Handle(ctx context.Context, e *gateway.MessageCreateEven
 		Fields: embedFields,
 	}
 
-	sendReply(st, embedbuilder.Info(songEmbed), e)
+	res := embedbuilder.Info(songEmbed)
+	sendCommandReply(st, res, e)
 
 	return true
 }
