@@ -20,7 +20,6 @@ Kagura is mainly configured via environment variables.
 | Environment Variable | Required? |                                                             |
 | -------------------- | --------- | ----------------------------------------------------------- |
 | KAGURA_TOKEN         | Yes       | Sets the authentication token for the app.                  |
-| KAGURA_PREFIX        | No        | Sets the command prefix for text commands. Defaults to `~`. |
 | KAGURA_DBPATH        | No        | Sets the SQLite database path. Defaults to `kagura.db`.     |
 
 ## Credits

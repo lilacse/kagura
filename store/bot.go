@@ -9,7 +9,6 @@ import (
 
 type bot struct {
 	botId  discord.UserID
-	prefix string
 	ctx    context.Context
 	st     *state.State
 }
@@ -20,14 +19,6 @@ func (b *bot) BotId() discord.UserID {
 
 func (b *bot) SetBotId(id discord.UserID) {
 	b.botId = id
-}
-
-func (b *bot) Prefix() string {
-	return b.prefix
-}
-
-func (b *bot) SetPrefix(p string) {
-	b.prefix = p
 }
 
 func (b *bot) Context() context.Context {

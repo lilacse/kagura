@@ -173,7 +173,7 @@ func (h *saveHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 			},
 		},
 		Footer: &discord.EmbedFooter{
-			Text: fmt.Sprintf("Send `%sunsave %v` to delete this score.", h.store.Bot.Prefix(), newId),
+			Text: fmt.Sprintf("Send `/unsave %v` to delete this score.", newId),
 		},
 	}
 

@@ -85,12 +85,6 @@ func main() {
 	logger.Info(ctx, fmt.Sprintf("bot user is: %s#%s (%v)", u.Username, u.Discriminator, u.ID))
 	store.Bot.SetBotId(u.ID)
 
-	prefix := os.Getenv("KAGURA_PREFIX")
-	if prefix == "" {
-		prefix = "~"
-	}
-	store.Bot.SetPrefix(prefix)
-
 	logger.Info(ctx, "starting connection to Discord. bot should be ready!")
 	err = s.Connect(ctx)
 	if err != nil {
