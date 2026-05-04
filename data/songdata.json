@@ -20128,5 +20128,213 @@
       "fandom": "https://arcaea.fandom.com/wiki/Vallista",
       "mcd.blue": "https://wiki.arcaea.cn/Vallista"
     }
+  },
+  {
+    "id": 535,
+    "title": "ASGORE",
+    "altTitle": "ASGORE",
+    "artist": "Toby Fox",
+    "charts": [
+      {
+        "id": 1730,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1731,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1732,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1733,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.2,
+        "ver": "6.14.0"
+      }
+    ],
+    "searchKeys": [
+      "asgore"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/ASGORE",
+      "mcd.blue": "https://wiki.arcaea.cn/ASGORE"
+    }
+  },
+  {
+    "id": 536,
+    "title": "MIRROR - kamome sano remix",
+    "altTitle": "MIRROR - kamome sano remix",
+    "artist": "kamome sano",
+    "charts": [
+      {
+        "id": 1734,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1735,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1736,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.14.0"
+      }
+    ],
+    "searchKeys": [
+      "mirror - kamome sano remix"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/MIRROR_-_kamome_sano_remix",
+      "mcd.blue": "https://wiki.arcaea.cn/MIRROR_-_kamome_sano_remix"
+    }
+  },
+  {
+    "id": 537,
+    "title": "Riot in the System",
+    "altTitle": "Riot in the System",
+    "artist": "Laur & Massive New Krew feat. \u793e\u7bc9",
+    "charts": [
+      {
+        "id": 1737,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1738,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1739,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1740,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.14.0"
+      }
+    ],
+    "searchKeys": [
+      "riot in the system"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Riot_in_the_System",
+      "mcd.blue": "https://wiki.arcaea.cn/Riot_in_the_System"
+    }
+  },
+  {
+    "id": 538,
+    "title": "Spear of Justice",
+    "altTitle": "Spear of Justice",
+    "artist": "Toby Fox",
+    "charts": [
+      {
+        "id": 1741,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1742,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1743,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.8,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1744,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.14.0"
+      }
+    ],
+    "searchKeys": [
+      "spear of justice"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Spear_of_Justice",
+      "mcd.blue": "https://wiki.arcaea.cn/Spear_of_Justice"
+    }
+  },
+  {
+    "id": 539,
+    "title": "Spider Dance",
+    "altTitle": "Spider Dance",
+    "artist": "Toby Fox",
+    "charts": [
+      {
+        "id": 1745,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1746,
+        "diff": "prs",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1747,
+        "diff": "ftr",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.14.0"
+      },
+      {
+        "id": 1748,
+        "diff": "etr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.14.0"
+      }
+    ],
+    "searchKeys": [
+      "spider dance"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Spider_Dance",
+      "mcd.blue": "https://wiki.arcaea.cn/Spider_Dance"
+    }
   }
 ]
