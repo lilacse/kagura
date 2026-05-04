@@ -24,6 +24,6 @@ Kagura is mainly configured via environment variables.
 
 ## Credits
 
-Kagura uses song and chart data obtained from the [Arcaea Fandom wiki](https://arcaea.fandom.com/) and the [Arcaea Chinese wiki](https://arcwiki.mcd.blue). Several formulas (e.g. rating and step calculation) are also implemented referring to the information available on these wikis.
+Kagura uses song and chart data obtained from the [Arcaea Fandom wiki](https://arcaea.fandom.com/) and the [Arcaea Chinese wiki](https://wiki.arcaea.cn). Several formulas (e.g. rating and step calculation) are also implemented referring to the information available on these wikis.
 
 This project depends on several libraries, such as [diamondburned/arikawa](https://github.com/diamondburned/arikawa) and [ncruces/go-sqlite3](https://github.com/ncruces/go-sqlite3). See the [dependency graph](https://github.com/lilacse/kagura/network/dependencies) for more!
