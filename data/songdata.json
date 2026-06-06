@@ -20336,5 +20336,170 @@
       "fandom": "https://arcaea.fandom.com/wiki/Spider_Dance",
       "mcd.blue": "https://wiki.arcaea.cn/Spider_Dance"
     }
+  },
+  {
+    "id": 540,
+    "title": "Altersist",
+    "altTitle": "Altersist",
+    "artist": "void (Mournfinale)",
+    "charts": [
+      {
+        "id": 1749,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1750,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1751,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.4,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1752,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.14.10"
+      }
+    ],
+    "searchKeys": [
+      "altersist"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Altersist",
+      "mcd.blue": "https://wiki.arcaea.cn/Altersist"
+    }
+  },
+  {
+    "id": 541,
+    "title": "c.s.q.n.",
+    "altTitle": "c.s.q.n.",
+    "artist": "Aoi",
+    "charts": [
+      {
+        "id": 1753,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1754,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1755,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1756,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "6.14.10"
+      }
+    ],
+    "searchKeys": [
+      "c.s.q.n."
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/C.s.q.n.",
+      "mcd.blue": "https://wiki.arcaea.cn/C.s.q.n."
+    }
+  },
+  {
+    "id": 542,
+    "title": "Cosmogyral",
+    "altTitle": "Cosmogyral",
+    "artist": "Darren + Altermis",
+    "charts": [
+      {
+        "id": 1757,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1758,
+        "diff": "prs",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1759,
+        "diff": "ftr",
+        "level": "8",
+        "cc": 8.6,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1760,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.14.10"
+      }
+    ],
+    "searchKeys": [
+      "cosmogyral"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Cosmogyral",
+      "mcd.blue": "https://wiki.arcaea.cn/Cosmogyral"
+    }
+  },
+  {
+    "id": 543,
+    "title": "flexidefine",
+    "altTitle": "flexidefine",
+    "artist": "Lamanya",
+    "charts": [
+      {
+        "id": 1761,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.0,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1762,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "6.14.10"
+      },
+      {
+        "id": 1763,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.14.10"
+      }
+    ],
+    "searchKeys": [
+      "flexidefine"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Flexidefine",
+      "mcd.blue": "https://wiki.arcaea.cn/Flexidefine"
+    }
   }
 ]
