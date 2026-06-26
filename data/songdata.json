@@ -20501,5 +20501,263 @@
       "fandom": "https://arcaea.fandom.com/wiki/Flexidefine",
       "mcd.blue": "https://wiki.arcaea.cn/Flexidefine"
     }
+  },
+  {
+    "id": 544,
+    "title": "God-ish",
+    "altTitle": "God-ish",
+    "artist": "\u30d4\u30ce\u30ad\u30aa\u30d4\u30fc",
+    "charts": [
+      {
+        "id": 1764,
+        "diff": "pst",
+        "level": "4",
+        "cc": 3.5,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1765,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.0,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1766,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.3,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1767,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.0,
+        "ver": "6.15.0"
+      }
+    ],
+    "searchKeys": [
+      "god-ish"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/God-ish",
+      "mcd.blue": "https://wiki.arcaea.cn/God-ish"
+    }
+  },
+  {
+    "id": 545,
+    "title": "Lavie",
+    "altTitle": "Lavie",
+    "artist": "\u3059\u308a\u3043",
+    "charts": [
+      {
+        "id": 1768,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1769,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.0,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1770,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1771,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.15.0"
+      }
+    ],
+    "searchKeys": [
+      "lavie"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Lavie",
+      "mcd.blue": "https://wiki.arcaea.cn/Lavie"
+    }
+  },
+  {
+    "id": 546,
+    "title": "Love me, Love me, Love me",
+    "altTitle": "Love me, Love me, Love me",
+    "artist": "\u304d\u304f\u304a",
+    "charts": [
+      {
+        "id": 1772,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1773,
+        "diff": "prs",
+        "level": "7",
+        "cc": 6.5,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1774,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.7,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1775,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "6.15.0"
+      }
+    ],
+    "searchKeys": [
+      "love me, love me, love me"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Love_me,_Love_me,_Love_me",
+      "mcd.blue": "https://wiki.arcaea.cn/Love_me,_Love_me,_Love_me"
+    }
+  },
+  {
+    "id": 547,
+    "title": "Override",
+    "altTitle": "Override",
+    "artist": "\u5409\u7530\u591c\u4e16",
+    "charts": [
+      {
+        "id": 1776,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1777,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1778,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1779,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.2,
+        "ver": "6.15.0"
+      }
+    ],
+    "searchKeys": [
+      "override"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Override",
+      "mcd.blue": "https://wiki.arcaea.cn/Override"
+    }
+  },
+  {
+    "id": 548,
+    "title": "Sucromania",
+    "altTitle": "Sucromania",
+    "artist": "STEAKA",
+    "charts": [
+      {
+        "id": 1780,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.0,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1781,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1782,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.1,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1783,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "6.15.0"
+      }
+    ],
+    "searchKeys": [
+      "sucromania"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Sucromania",
+      "mcd.blue": "https://wiki.arcaea.cn/Sucromania"
+    }
+  },
+  {
+    "id": 549,
+    "title": "Telepathy",
+    "altTitle": "Telepathy",
+    "artist": "DECO*27",
+    "charts": [
+      {
+        "id": 1784,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1785,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1786,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "6.15.0"
+      },
+      {
+        "id": 1787,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "6.15.0"
+      }
+    ],
+    "searchKeys": [
+      "telepathy"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Telepathy",
+      "mcd.blue": "https://wiki.arcaea.cn/Telepathy"
+    }
   }
 ]
