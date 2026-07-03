@@ -1,0 +1,10 @@
+services:
+  kagura:
+    build: .
+    volumes:
+      - kagura-data:/data
+    environment:
+      KAGURA_DBPATH: /data/kagura.db
+
+volumes:
+  kagura-data:
