@@ -1,10 +1,10 @@
 package songdata
 
 import (
+	_ "embed"
 	"context"
 	"encoding/json"
 	"fmt"
-	"os"
 	"time"
 
 	"github.com/lilacse/kagura/logger"
@@ -20,6 +20,9 @@ type Service struct {
 	songIdMap    map[int]Song
 	chartSongMap map[int]int
 }
+
+//go:embed data/songdata.json
+var dataBytes []byte
 
 const datapath = "data/songdata.json"
 
@@ -43,23 +46,17 @@ func (svc *Service) GetData() []Song {
 }
 
 func loadData(ctx context.Context) (songData, error) {
-	logger.Info(ctx, "reloading song data")
+	logger.Info(ctx, "preparing song data")
 	st := time.Now()
-
-	buf, err := os.ReadFile(datapath)
-
-	if err != nil {
-		return nil, fmt.Errorf("failed to open and read %s: %w", datapath, err)
-	}
 
 	data := make(songData, 0)
 
-	err = json.Unmarshal(buf, &data)
+	err := json.Unmarshal(dataBytes, &data)
 	if err != nil {
 		return nil, fmt.Errorf("failed to unmarshal %s: %s", datapath, err)
 	}
 
-	logger.Info(ctx, fmt.Sprintf("song data reloaded in %s", time.Since(st)))
+	logger.Info(ctx, fmt.Sprintf("song data ready in %s", time.Since(st)))
 
 	return data, nil
 }
