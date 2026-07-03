@@ -8,6 +8,8 @@ RUN go build -o /out/kagura .
 
 FROM debian:bookworm-slim
 
+RUN apt update && apt install -y --no-install-recommends ca-certificates && rm -rf /var/lib/apt/lists/*
+
 RUN groupadd -r app && useradd -g app -m app
 RUN mkdir -p /data && chown app:app /data
 
