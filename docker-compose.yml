@@ -5,6 +5,7 @@ services:
       - kagura-data:/data
     environment:
       KAGURA_DBPATH: /data/kagura.db
+    env_file: ./kagura.env
 
 volumes:
   kagura-data:
