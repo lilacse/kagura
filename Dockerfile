@@ -21,4 +21,4 @@ VOLUME /data
 
 USER app
 
-ENTRYPOINT /usr/local/bin/kagura
+ENTRYPOINT ["/usr/local/bin/kagura"]
