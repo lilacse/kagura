@@ -109,7 +109,7 @@ func (h *songHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 	}
 	res := embedbuilder.Info(songEmbed)
 
-	sendInteractionResponse(st, res, []discord.ContainerComponent{}, e)
+	sendInteractionResponse(st, res, []discord.TopLevelComponent{}, e)
 
 	return true
 }

@@ -166,7 +166,7 @@ func (h *scoresHandler) HandleScorePageSelect(ctx context.Context, e *gateway.In
 		Type: api.UpdateMessage,
 		Data: &api.InteractionResponseData{
 			Embeds:     &[]discord.Embed{embedbuilder.Info(embed)},
-			Components: (*discord.ContainerComponents)(&components),
+			Components: (*discord.TopLevelComponents)(&components),
 		},
 	}
 
@@ -199,11 +199,11 @@ func createScoresEmbed(song songdata.Song, chart songdata.Chart, best database.S
 	return embed
 }
 
-func createScoresPageButtons(userId int64, chartId int, count int, pageIdx int) []discord.ContainerComponent {
+func createScoresPageButtons(userId int64, chartId int, count int, pageIdx int) []discord.TopLevelComponent {
 	prevOffset := (pageIdx - 1) * 5
 	nextOffset := (pageIdx + 1) * 5
 
-	return []discord.ContainerComponent{
+	return []discord.TopLevelComponent{
 		&discord.ActionRowComponent{
 			&discord.ButtonComponent{
 				CustomID: discord.ComponentID(fmt.Sprintf("%v,scores,%v,%v", userId, chartId, prevOffset)),

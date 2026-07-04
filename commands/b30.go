@@ -147,7 +147,7 @@ func (h *b30Handler) HandleB30PageSelect(ctx context.Context, e *gateway.Interac
 		Type: api.UpdateMessage,
 		Data: &api.InteractionResponseData{
 			Embeds:     &[]discord.Embed{embedbuilder.Info(embed)},
-			Components: (*discord.ContainerComponents)(&components),
+			Components: (*discord.TopLevelComponents)(&components),
 		},
 	}
 
@@ -191,11 +191,11 @@ func createB30Embed(h *b30Handler, avgRt float64, avgScore float64, entries []da
 	return embed
 }
 
-func createB30PageButtons(userId int64, count int, pageIdx int) []discord.ContainerComponent {
+func createB30PageButtons(userId int64, count int, pageIdx int) []discord.TopLevelComponent {
 	prevOffset := (pageIdx - 1) * 5
 	nextOffset := (pageIdx + 1) * 5
 
-	return []discord.ContainerComponent{
+	return []discord.TopLevelComponent{
 		&discord.ActionRowComponent{
 			&discord.ButtonComponent{
 				CustomID: discord.ComponentID(fmt.Sprintf("%v,b30,%v", userId, prevOffset)),

@@ -8,7 +8,6 @@ import (
 
 	"github.com/lilacse/kagura/logger"
 	_ "github.com/ncruces/go-sqlite3/driver"
-	_ "github.com/ncruces/go-sqlite3/embed"
 )
 
 type Service struct {
@@ -41,13 +40,13 @@ func setupDb(db *sql.DB) error {
 	ddls := []string{
 		`create table if not exists scores (
 			id integer primary key,
-			user_id integer, 
-			chart_id integer, 
-			score integer, 
+			user_id integer,
+			chart_id integer,
+			score integer,
 			timestamp integer
 		)`,
 		`create index if not exists scores_idx on scores (
-			user_id, 
+			user_id,
 			chart_id
 		)`,
 		`create table if not exists charts (

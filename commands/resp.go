@@ -13,18 +13,18 @@ import (
 )
 
 func sendInteractionReply(st *state.State, em discord.Embed, e *gateway.InteractionCreateEvent) {
-	sendReplyWithComponents(st, em, []discord.ContainerComponent{}, e.ChannelID, e.Message.ID)
+	sendReplyWithComponents(st, em, []discord.TopLevelComponent{}, e.ChannelID, e.Message.ID)
 }
 
 func sendCommandReply(st *state.State, em discord.Embed, e *gateway.InteractionCreateEvent) {
-	sendInteractionResponse(st, em, []discord.ContainerComponent{}, e)
+	sendInteractionResponse(st, em, []discord.TopLevelComponent{}, e)
 }
 
 func sendCommandErrorReply(st *state.State, msg string, e *gateway.InteractionCreateEvent) {
 	sendCommandReply(st, embedbuilder.UserError(msg), e)
 }
 
-func sendReplyWithComponents(st *state.State, em discord.Embed, cc []discord.ContainerComponent, channelId discord.ChannelID, replyId discord.MessageID) {
+func sendReplyWithComponents(st *state.State, em discord.Embed, cc []discord.TopLevelComponent, channelId discord.ChannelID, replyId discord.MessageID) {
 	d := api.SendMessageData{
 		Embeds: []discord.Embed{
 			em,
@@ -41,8 +41,8 @@ func sendReplyWithComponents(st *state.State, em discord.Embed, cc []discord.Con
 	st.SendMessageComplex(channelId, d)
 }
 
-func sendInteractionResponse(st *state.State, em discord.Embed, cc []discord.ContainerComponent, e *gateway.InteractionCreateEvent) {
-	ccs := discord.ContainerComponents{}
+func sendInteractionResponse(st *state.State, em discord.Embed, cc []discord.TopLevelComponent, e *gateway.InteractionCreateEvent) {
+	ccs := discord.TopLevelComponents{}
 	for _, c := range cc {
 		ccs = append(ccs, c)
 	}

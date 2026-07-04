@@ -117,7 +117,7 @@ func (h *stepHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 	}
 
 	res := embedbuilder.Info(embed)
-	sendInteractionResponse(st, res, []discord.ContainerComponent{}, e)
+	sendInteractionResponse(st, res, []discord.TopLevelComponent{}, e)
 
 	return true
 }
