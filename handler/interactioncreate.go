@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"runtime/debug"
 	"strings"
-	"time"
 
 	"github.com/diamondburned/arikawa/v3/discord"
 	"github.com/diamondburned/arikawa/v3/gateway"
@@ -28,16 +27,13 @@ type interactionType int
 const (
 	componentInteraction interactionType = iota
 	commandInteraction
+	modalInteraction
 )
 
 type interactionHandler func(ctx context.Context, e *gateway.InteractionCreateEvent) bool
 
 func (h *onInteractionCreateHandler) Handle(e *gateway.InteractionCreateEvent) {
 	if e.Data.InteractionType() == discord.ComponentInteractionType {
-		if !e.Message.Timestamp.Time().After(time.Now().Add(-10 * time.Minute)) {
-			return
-		}
-
 		switch e.Data.(type) {
 		case *discord.ButtonInteraction:
 			params := strings.Split(string(e.Data.(*discord.ButtonInteraction).CustomID), ",")
@@ -50,6 +46,11 @@ func (h *onInteractionCreateHandler) Handle(e *gateway.InteractionCreateEvent) {
 		case *discord.CommandInteraction:
 			handleInteraction(e, h, commandInteraction)
 		}
+	} else if e.Data.InteractionType() == discord.ModalInteractionType {
+		switch e.Data.(type) {
+		case *discord.ModalInteraction:
+			handleInteraction(e, h, modalInteraction)
+		}
 	}
 }
 
@@ -60,6 +61,7 @@ func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreate
 	componentHandlers := []interactionHandler{
 		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).HandleScorePageSelect,
 		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).HandleB30PageSelect,
+		commands.NewSaveHandler(h.store, h.db, h.datasvcs.SongData()).HandleSaveAnother,
 	}
 
 	commandHandlers := []interactionHandler{
@@ -71,6 +73,10 @@ func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreate
 		commands.NewRandomHandler(h.store, h.datasvcs.SongData()).HandleSlashCommand,
 		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
 		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
+	}
+
+	modalHandlers := []interactionHandler{
+		commands.NewSaveHandler(h.store, h.db, h.datasvcs.SongData()).HandleSaveAnotherModalSubmit,
 	}
 
 	defer func() {
@@ -92,6 +98,8 @@ func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreate
 		hs = componentHandlers
 	case commandInteraction:
 		hs = commandHandlers
+	case modalInteraction:
+		hs = modalHandlers
 	}
 
 	for _, h := range hs {

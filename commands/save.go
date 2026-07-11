@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"slices"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/diamondburned/arikawa/v3/discord"
@@ -67,10 +68,33 @@ func (h *saveHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 		return true
 	}
 
+	newId, ts := saveScore(ctx, h, int64(e.Sender().ID), chart.Id, score, e)
+
+	res := createSaveResponseEmbed(song, chart, score, newId, ts)
+	components := createSaveButtons(int64(e.Sender().ID), chart.Id)
+	sendInteractionResponse(st, res, components, e)
+
+	return true
+}
+
+func createSaveButtons(userId int64, chartId int) []discord.TopLevelComponent {
+	return []discord.TopLevelComponent{
+		&discord.ActionRowComponent{
+			&discord.ButtonComponent{
+				Label:    "Save another score",
+				CustomID: discord.ComponentID(fmt.Sprintf("%v,save,%v", userId, chartId)),
+			},
+		},
+	}
+}
+
+func saveScore(ctx context.Context, h *saveHandler, userId int64, chartId int, score int, e *gateway.InteractionCreateEvent) (int64, time.Time) {
+	st := h.store.Bot.State()
+
 	sess, err := h.db.NewSession(ctx)
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return true
+		return 0, time.Time{}
 	}
 
 	defer func() {
@@ -83,7 +107,7 @@ func (h *saveHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 	tx, err := sess.Conn.BeginTx(ctx, nil)
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return true
+		return 0, time.Time{}
 	}
 
 	isCommit := false
@@ -99,10 +123,10 @@ func (h *saveHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 
 	scoresRepo := sess.GetScoresRepo()
 
-	userScores, err := scoresRepo.GetByUserAndChart(ctx, int64(e.Sender().ID), chart.Id)
+	userScores, err := scoresRepo.GetByUserAndChart(ctx, int64(e.Sender().ID), chartId)
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return true
+		return 0, time.Time{}
 	}
 
 	// we store up to the 30th recently saved score and the user's best score.
@@ -129,10 +153,10 @@ func (h *saveHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 
 	ts := time.Now()
 
-	insertRes, err := scoresRepo.Insert(ctx, int64(e.Sender().ID), chart.Id, score, ts.UnixMilli())
+	insertRes, err := scoresRepo.Insert(ctx, int64(e.Sender().ID), chartId, score, ts.UnixMilli())
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return true
+		return 0, time.Time{}
 	}
 
 	newId, _ := insertRes.LastInsertId()
@@ -140,11 +164,14 @@ func (h *saveHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 	err = tx.Commit()
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return true
+		return 0, time.Time{}
 	}
 
 	isCommit = true
+	return newId, ts
+}
 
+func createSaveResponseEmbed(song songdata.Song, chart songdata.Chart, score int, newId int64, ts time.Time) discord.Embed {
 	embed := discord.Embed{
 		Title: "Score saved",
 		Fields: []discord.EmbedField{
@@ -177,8 +204,72 @@ func (h *saveHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 		},
 	}
 
-	res := embedbuilder.Info(embed)
-	sendCommandReply(st, res, e)
+	return embedbuilder.Info(embed)
+}
+
+func (h *saveHandler) HandleSaveAnother(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	st := h.store.Bot.State()
+
+	val := e.Data.(*discord.ButtonInteraction).CustomID
+
+	params := strings.Split(string(val), ",")
+	receiver := params[1]
+	if receiver != "save" {
+		return false
+	}
+
+	userId, _ := strconv.ParseInt(params[0], 10, 64)
+	chartId, _ := strconv.Atoi(params[2])
+
+	ccs := []discord.TopLevelComponent{
+		&discord.LabelComponent{
+			Label: "Score",
+			Component: &discord.TextInputComponent{
+				CustomID:     discord.ComponentID("save_another_score_input"),
+				Style:        discord.TextInputShortStyle,
+				LengthLimits: [2]int{4, 8},
+				Required:     true,
+				Placeholder:  "10002221",
+			},
+		},
+	}
+
+	sendModalResponse(st, fmt.Sprintf("%v,save_another_score,%v", userId, chartId), "Save another score", ccs, e)
+	return true
+}
+
+func (h *saveHandler) HandleSaveAnotherModalSubmit(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+	st := h.store.Bot.State()
+
+	in := e.Data.(*discord.ModalInteraction)
+	val := in.CustomID
+
+	params := strings.Split(string(val), ",")
+	receiver := params[1]
+	if receiver != "save_another_score" {
+		return false
+	}
+
+	userId, _ := strconv.ParseInt(params[0], 10, 64)
+	chartId, _ := strconv.Atoi(params[2])
+
+	chart, song, _ := h.songdata.GetChartById(chartId)
+
+	// workaround: .Find() does not seem to work for components that are nested.
+	scoreInput := in.Components[0].(*discord.LabelComponent).Component.(*discord.TextInputComponent)
+	scoreValue := scoreInput.Value
+
+	score, err, ok := parseFullScore(scoreValue)
+	if !ok {
+		sendInteractionResponse(st, embedbuilder.UserError(err), []discord.TopLevelComponent{}, e)
+		return true
+	}
+
+	newId, ts := saveScore(ctx, h, userId, chartId, score, e)
+
+	res := createSaveResponseEmbed(song, chart, score, newId, ts)
+	components := createSaveButtons(int64(e.Sender().ID), chart.Id)
+	sendInteractionResponse(st, res, components, e)
 
 	return true
 }

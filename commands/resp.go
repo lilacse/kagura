@@ -63,6 +63,24 @@ func sendInteractionResponse(st *state.State, em discord.Embed, cc []discord.Top
 	st.RespondInteraction(e.InteractionEvent.ID, e.InteractionEvent.Token, d)
 }
 
+func sendModalResponse(st *state.State, customId string, title string, cc []discord.TopLevelComponent, e *gateway.InteractionCreateEvent) {
+	ccs := discord.TopLevelComponents{}
+	for _, c := range cc {
+		ccs = append(ccs, c)
+	}
+
+	d := api.InteractionResponse{
+		Type: api.ModalResponse,
+		Data: &api.InteractionResponseData{
+			CustomID:   option.NewNullableString(customId),
+			Title:      option.NewNullableString(title),
+			Components: &ccs,
+		},
+	}
+
+	st.RespondInteraction(e.InteractionEvent.ID, e.InteractionEvent.Token, d)
+}
+
 func sendSongQueryCommandError(st *state.State, query string, e *gateway.InteractionCreateEvent) {
 	sendCommandErrorReply(st, fmt.Sprintf("No matching song found for query `%s`!", query), e)
 }
