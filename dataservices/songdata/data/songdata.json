@@ -20759,5 +20759,134 @@
       "fandom": "https://arcaea.fandom.com/wiki/Telepathy",
       "mcd.blue": "https://wiki.arcaea.cn/Telepathy"
     }
+  },
+  {
+    "id": 550,
+    "title": "Acid God",
+    "altTitle": "Acid God",
+    "artist": "Yuta Imai",
+    "charts": [
+      {
+        "id": 1788,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.16.0"
+      },
+      {
+        "id": 1789,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.16.0"
+      },
+      {
+        "id": 1790,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "6.16.0"
+      },
+      {
+        "id": 1791,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "6.16.0"
+      }
+    ],
+    "searchKeys": [
+      "acid god"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Acid_God",
+      "mcd.blue": "https://wiki.arcaea.cn/Acid_God"
+    }
+  },
+  {
+    "id": 551,
+    "title": "chronologia",
+    "altTitle": "chronologia",
+    "artist": "lowiro Sound Team (ak+q x nitro)",
+    "charts": [
+      {
+        "id": 1792,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "6.16.0"
+      },
+      {
+        "id": 1793,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "6.16.0"
+      },
+      {
+        "id": 1794,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "6.16.0"
+      },
+      {
+        "id": 1795,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.8,
+        "ver": "6.16.0"
+      }
+    ],
+    "searchKeys": [
+      "chronologia"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Chronologia",
+      "mcd.blue": "https://wiki.arcaea.cn/Chronologia"
+    }
+  },
+  {
+    "id": 552,
+    "title": "Synthesis.",
+    "altTitle": "Synthesis.",
+    "artist": "tn-shi",
+    "charts": [
+      {
+        "id": 1796,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.0,
+        "ver": "6.16.0"
+      },
+      {
+        "id": 1797,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.2,
+        "ver": "6.16.0"
+      },
+      {
+        "id": 1798,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.7,
+        "ver": "6.16.0"
+      },
+      {
+        "id": 1799,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "6.16.0"
+      }
+    ],
+    "searchKeys": [
+      "synthesis."
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Synthesis.",
+      "mcd.blue": "https://wiki.arcaea.cn/Synthesis."
+    }
   }
 ]
