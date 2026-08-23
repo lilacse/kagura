@@ -15,21 +15,21 @@ import (
 	"github.com/lilacse/kagura/store"
 )
 
-type b30Handler struct {
+type b50Handler struct {
 	store    *store.Store
 	db       *database.Service
 	songdata *songdata.Service
 }
 
-func NewB30Handler(store *store.Store, db *database.Service, songdata *songdata.Service) *b30Handler {
-	return &b30Handler{
+func NewB50Handler(store *store.Store, db *database.Service, songdata *songdata.Service) *b50Handler {
+	return &b50Handler{
 		store:    store,
 		db:       db,
 		songdata: songdata,
 	}
 }
 
-func (h *b30Handler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+func (h *b50Handler) HandleSlashCommand(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
 	var data *discord.CommandInteraction
 
 	switch e.Data.(type) {
@@ -39,7 +39,7 @@ func (h *b30Handler) HandleSlashCommand(ctx context.Context, e *gateway.Interact
 		return false
 	}
 
-	if data.Name != "b30" {
+	if data.Name != "b50" {
 		return false
 	}
 
@@ -71,7 +71,7 @@ func (h *b30Handler) HandleSlashCommand(ctx context.Context, e *gateway.Interact
 		return true
 	}
 
-	avgRt, avgScore, err := scoresRepo.GetBestScoreRatingsAverage(ctx, int64(e.Sender().ID), 30)
+	avgRt, avgScore, err := scoresRepo.GetBestScoreRatingsAverage(ctx, int64(e.Sender().ID))
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
 		return true
@@ -83,22 +83,22 @@ func (h *b30Handler) HandleSlashCommand(ctx context.Context, e *gateway.Interact
 		return true
 	}
 
-	embed := createB30Embed(h, avgRt, avgScore, entries, 0)
-	components := createB30PageButtons(int64(e.Sender().ID), count, 0)
+	embed := createB50Embed(h, avgRt, avgScore, entries, 0)
+	components := createB50PageButtons(int64(e.Sender().ID), count, 0)
 
 	sendInteractionResponse(st, embedbuilder.Info(embed), components, e)
 
 	return true
 }
 
-func (h *b30Handler) HandleB30PageSelect(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
+func (h *b50Handler) HandleB50PageSelect(ctx context.Context, e *gateway.InteractionCreateEvent) bool {
 	st := h.store.Bot.State()
 
 	val := e.Data.(*discord.ButtonInteraction).CustomID
 
 	params := strings.Split(string(val), ",")
 	receiver := params[1]
-	if receiver != "b30" {
+	if receiver != "b50" {
 		return false
 	}
 
@@ -128,7 +128,7 @@ func (h *b30Handler) HandleB30PageSelect(ctx context.Context, e *gateway.Interac
 		return true
 	}
 
-	avgRt, avgScore, err := scoresRepo.GetBestScoreRatingsAverage(ctx, userId, 30)
+	avgRt, avgScore, err := scoresRepo.GetBestScoreRatingsAverage(ctx, userId)
 	if err != nil {
 		logAndSendInteractionError(ctx, st, err, e)
 		return true
@@ -140,8 +140,8 @@ func (h *b30Handler) HandleB30PageSelect(ctx context.Context, e *gateway.Interac
 		return true
 	}
 
-	embed := createB30Embed(h, avgRt, avgScore, entries, offset)
-	components := createB30PageButtons(userId, count, pageIdx)
+	embed := createB50Embed(h, avgRt, avgScore, entries, offset)
+	components := createB50PageButtons(userId, count, pageIdx)
 
 	resp := api.InteractionResponse{
 		Type: api.UpdateMessage,
@@ -156,7 +156,7 @@ func (h *b30Handler) HandleB30PageSelect(ctx context.Context, e *gateway.Interac
 	return true
 }
 
-func createB30Embed(h *b30Handler, avgRt float64, avgScore float64, entries []database.ScoreRecordRating, idx int) discord.Embed {
+func createB50Embed(h *b50Handler, avgRt float64, avgScore float64, entries []database.ScoreRecordRating, idx int) discord.Embed {
 	entriesBuilder := strings.Builder{}
 
 	for i, s := range entries {
@@ -178,8 +178,8 @@ func createB30Embed(h *b30Handler, avgRt float64, avgScore float64, entries []da
 		Title: "Highest Play Ratings from Saved Scores",
 		Fields: []discord.EmbedField{
 			{
-				Name:  "Best-30 Stats",
-				Value: fmt.Sprintf("**Average rating: %.4f**\nAverage score: %.2f", avgRt, avgScore),
+				Name:  "Best-50 Stats",
+				Value: fmt.Sprintf("**Calculated Potential\\*: %.4f**\nAverage score: %.2f\n\n-# *Tentative, formula will be adjusted once confirmed.", avgRt, avgScore),
 			},
 			{
 				Name:  "Top Play Ratings",
@@ -191,19 +191,19 @@ func createB30Embed(h *b30Handler, avgRt float64, avgScore float64, entries []da
 	return embed
 }
 
-func createB30PageButtons(userId int64, count int, pageIdx int) []discord.TopLevelComponent {
+func createB50PageButtons(userId int64, count int, pageIdx int) []discord.TopLevelComponent {
 	prevOffset := (pageIdx - 1) * 5
 	nextOffset := (pageIdx + 1) * 5
 
 	return []discord.TopLevelComponent{
 		&discord.ActionRowComponent{
 			&discord.ButtonComponent{
-				CustomID: discord.ComponentID(fmt.Sprintf("%v,b30,%v", userId, prevOffset)),
+				CustomID: discord.ComponentID(fmt.Sprintf("%v,b50,%v", userId, prevOffset)),
 				Label:    "<",
 				Disabled: prevOffset < 0,
 			},
 			&discord.ButtonComponent{
-				CustomID: discord.ComponentID(fmt.Sprintf("%v,b30,%v", userId, nextOffset)),
+				CustomID: discord.ComponentID(fmt.Sprintf("%v,b50,%v", userId, nextOffset)),
 				Label:    ">",
 				Disabled: nextOffset >= count,
 			},

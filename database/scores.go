@@ -159,11 +159,14 @@ func (repo *ScoresRepo) GetBestScoresByUserWithOffset(ctx context.Context, userI
 	return scanToScoreRatings(rows)
 }
 
-func (repo *ScoresRepo) GetBestScoreRatingsAverage(ctx context.Context, userId int64, limit int) (float64, float64, error) {
+func (repo *ScoresRepo) GetBestScoreRatingsAverage(ctx context.Context, userId int64) (float64, float64, error) {
 	res, err := repo.conn.QueryContext(
 		ctx,
-		`select avg(rating), avg(score) from (`+SCORE_RATING_QUERY+`)`,
-		userId, limit, 0,
+		`select sum(rating * weight) / sum(weight), sum(score) / count(1) from (
+			select rating, score, case when row_number() over (order by rating desc) <= 10 then 2 else 1 end weight
+			from (`+SCORE_RATING_QUERY+`)
+		)`,
+		userId, 50, 0,
 	)
 
 	if err != nil {

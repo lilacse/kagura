@@ -152,8 +152,8 @@ func RegisterCommands(ctx context.Context, st *state.State) {
 			},
 		},
 		{
-			Name:        "b30",
-			Description: "Shows your top scores alongside a b30 summary",
+			Name:        "b50",
+			Description: "Shows your top scores alongside a b50 summary",
 		},
 		{
 			Name:        "scores",

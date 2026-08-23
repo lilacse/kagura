@@ -60,7 +60,7 @@ func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreate
 
 	componentHandlers := []interactionHandler{
 		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).HandleScorePageSelect,
-		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).HandleB30PageSelect,
+		commands.NewB50Handler(h.store, h.db, h.datasvcs.SongData()).HandleB50PageSelect,
 		commands.NewSaveHandler(h.store, h.db, h.datasvcs.SongData()).HandleSaveAnother,
 	}
 
@@ -71,7 +71,7 @@ func handleInteraction(e *gateway.InteractionCreateEvent, h *onInteractionCreate
 		commands.NewUnsaveHandler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
 		commands.NewPttHandler(h.store, h.datasvcs.SongData()).HandleSlashCommand,
 		commands.NewRandomHandler(h.store, h.datasvcs.SongData()).HandleSlashCommand,
-		commands.NewB30Handler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
+		commands.NewB50Handler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
 		commands.NewScoresHandler(h.store, h.db, h.datasvcs.SongData()).HandleSlashCommand,
 	}
 
