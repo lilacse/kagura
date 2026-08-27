@@ -109,6 +109,8 @@ func (h *stepHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 				Name: "Progress gained",
 				Value: fmt.Sprintf(`%s
 
+**Clear bonus is included in calculations, result may be incorrect until confirmed.**
+
 -# - There might be a ±0.1 difference in actual progress gained due to differences in calculation performed by the game.
 -# - For partner progression bonuses, __add__ them to the value above before calculating Play+ and fragment boosts.
 -# - For Play+ boost, __multiply__ the value by stamina used. For fragment boost, further __multiply__ the value by boost multiplier.`, formula),

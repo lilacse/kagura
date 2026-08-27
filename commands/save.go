@@ -200,7 +200,7 @@ func createSaveResponseEmbed(song songdata.Song, chart songdata.Chart, score int
 			},
 		},
 		Footer: &discord.EmbedFooter{
-			Text: fmt.Sprintf("Send `/unsave %v` to delete this score.", newId),
+			Text: fmt.Sprintf("Clear bonus included if play rating > 0.0.\nSend `/unsave %v` to delete this score.", newId),
 		},
 	}
 

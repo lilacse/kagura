@@ -44,10 +44,13 @@ func (c *Chart) GetScoreRating(score int) float64 {
 }
 
 // Similar to ScoreRating, but automatically converts negative rating to 0.0.
+// Also adds Clear bonus if ptt is not zero.
 func (c *Chart) GetActualScoreRating(score int) float64 {
 	ptt := c.GetScoreRating(score)
 	if ptt < 0.0 {
 		ptt = 0.0
+	} else if ptt > 0.0 {
+		ptt += 0.2
 	}
 
 	return ptt

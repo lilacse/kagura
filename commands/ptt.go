@@ -89,6 +89,9 @@ func (h *pttHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interact
 				Value: formula,
 			},
 		},
+		Footer: &discord.EmbedFooter{
+			Text: "Add 0.2 to the result for Clear bonus.",
+		},
 	}
 
 	res := embedbuilder.Info(embed)

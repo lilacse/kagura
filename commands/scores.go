@@ -194,6 +194,9 @@ func createScoresEmbed(song songdata.Song, chart songdata.Chart, best database.S
 				Value: recentsBuilder.String(),
 			},
 		},
+		Footer: &discord.EmbedFooter{
+			Text: "Clear bonus included if play rating > 0.0.",
+		},
 	}
 
 	return embed

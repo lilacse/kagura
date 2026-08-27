@@ -179,7 +179,7 @@ func createB50Embed(h *b50Handler, avgRt float64, avgScore float64, entries []da
 		Fields: []discord.EmbedField{
 			{
 				Name:  "Best-50 Stats",
-				Value: fmt.Sprintf("**Calculated Potential\\*: %.4f**\nAverage score: %.2f\n\n-# *Tentative, formula will be adjusted once confirmed.", avgRt, avgScore),
+				Value: fmt.Sprintf("**Calculated Potential\\*: %.4f**\nAverage score: %.2f\n\n-# *All scores are currently assumed to have a Clear or above.", avgRt, avgScore),
 			},
 			{
 				Name:  "Top Play Ratings",

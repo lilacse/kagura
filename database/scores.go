@@ -29,9 +29,9 @@ const SCORE_RATING_QUERY string = `select
 		best.score,
 		best.timestamp,
 		case 
-			when best.score < 9800000 then max(charts.cc + (cast(best.score as float)-9500000)/ 300000, 0)
-			when best.score < 10000000 then charts.cc + 1 + (cast(best.score as float)-9800000)/ 200000
-			when best.score >= 10000000 then charts.cc + 2
+			when best.score < 9800000 then max(charts.cc + (cast(best.score as float)-9500000)/ 300000 + 0.2, 0)
+			when best.score < 10000000 then charts.cc + 1 + (cast(best.score as float)-9800000)/ 200000 + 0.2
+			when best.score >= 10000000 then charts.cc + 2 + 0.2
 		end rating
 	from
 		(
