@@ -22,6 +22,8 @@ func (c *Chart) GetDiffDisplayName() string {
 		return "Eternal (ETR)"
 	case "byd":
 		return "Beyond (BYD)"
+	case "ins":
+		return "Inscribed (INS)"
 	default:
 		return ""
 	}

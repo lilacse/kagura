@@ -20888,5 +20888,380 @@
       "fandom": "https://arcaea.fandom.com/wiki/Synthesis.",
       "mcd.blue": "https://wiki.arcaea.cn/Synthesis."
     }
+  },
+  {
+    "id": 553,
+    "title": "Balor",
+    "altTitle": "Balor",
+    "artist": "Redsign",
+    "charts": [
+      {
+        "id": 1800,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1801,
+        "diff": "prs",
+        "level": "6",
+        "cc": 7.5,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1802,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1803,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.1,
+        "ver": "7.0.0"
+      }
+    ],
+    "searchKeys": [
+      "balor"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Balor",
+      "mcd.blue": "https://wiki.arcaea.cn/Balor"
+    }
+  },
+  {
+    "id": 554,
+    "title": "Cataclysm Cry",
+    "altTitle": "Cataclysm Cry",
+    "artist": "Aid",
+    "charts": [
+      {
+        "id": 1804,
+        "diff": "pst",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1805,
+        "diff": "prs",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1806,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.6,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1807,
+        "diff": "ins",
+        "level": "11+",
+        "cc": 11.8,
+        "ver": "7.0.0"
+      }
+    ],
+    "searchKeys": [
+      "cataclysm cry"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Cataclysm_Cry",
+      "mcd.blue": "https://wiki.arcaea.cn/Cataclysm_Cry"
+    }
+  },
+  {
+    "id": 555,
+    "title": "DEINOS PHAINEIN",
+    "altTitle": "DEINOS PHAINEIN",
+    "artist": "Blacklolita vs Juggernaut.",
+    "charts": [
+      {
+        "id": 1808,
+        "diff": "pst",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1809,
+        "diff": "prs",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1810,
+        "diff": "ftr",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1811,
+        "diff": "ins",
+        "level": "12",
+        "cc": 12.0,
+        "ver": "7.0.0"
+      }
+    ],
+    "searchKeys": [
+      "deinos phainein"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/DEINOS_PHAINEIN",
+      "mcd.blue": "https://wiki.arcaea.cn/DEINOS_PHAINEIN"
+    }
+  },
+  {
+    "id": 556,
+    "title": "DIE IN",
+    "altTitle": "DIE IN",
+    "artist": "TAK x Sobrem",
+    "charts": [
+      {
+        "id": 1812,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.0,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1813,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1814,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1815,
+        "diff": "etr",
+        "level": "11",
+        "cc": 11.1,
+        "ver": "7.0.0"
+      }
+    ],
+    "searchKeys": [
+      "die in"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/DIE_IN",
+      "mcd.blue": "https://wiki.arcaea.cn/DIE_IN"
+    }
+  },
+  {
+    "id": 557,
+    "title": "DREAD AREA",
+    "altTitle": "DREAD AREA",
+    "artist": "Ashrount vs. \u6253\u6253\u3060\u3044\u305a",
+    "charts": [
+      {
+        "id": 1816,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1817,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.3,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1818,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1819,
+        "diff": "ins",
+        "level": "11",
+        "cc": 11.4,
+        "ver": "7.0.0"
+      }
+    ],
+    "searchKeys": [
+      "dread area"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/DREAD_AREA",
+      "mcd.blue": "https://wiki.arcaea.cn/DREAD_AREA"
+    }
+  },
+  {
+    "id": 558,
+    "title": "Ember",
+    "altTitle": "Ember",
+    "artist": "Powerless & siqlo feat. Tia",
+    "charts": [
+      {
+        "id": 1820,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.0,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1821,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.1,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1822,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "7.0.0"
+      }
+    ],
+    "searchKeys": [
+      "ember"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ember",
+      "mcd.blue": "https://wiki.arcaea.cn/Ember"
+    }
+  },
+  {
+    "id": 559,
+    "title": "Riven Pilgrimage",
+    "altTitle": "Riven Pilgrimage",
+    "artist": "rejection & Supire feat. eili",
+    "charts": [
+      {
+        "id": 1823,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1824,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.5,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1825,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1826,
+        "diff": "ins",
+        "level": "11",
+        "cc": 11.5,
+        "ver": "7.0.0"
+      }
+    ],
+    "searchKeys": [
+      "riven pilgrimage"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Riven_Pilgrimage",
+      "mcd.blue": "https://wiki.arcaea.cn/Riven_Pilgrimage"
+    }
+  },
+  {
+    "id": 560,
+    "title": "un",
+    "altTitle": "un",
+    "artist": "\u9ed2\u9b54",
+    "charts": [
+      {
+        "id": 1827,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1828,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1829,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "7.0.0"
+      },
+      {
+        "id": 1830,
+        "diff": "etr",
+        "level": "10+",
+        "cc": 10.9,
+        "ver": "7.0.0"
+      }
+    ],
+    "searchKeys": [
+      "un"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Un",
+      "mcd.blue": "https://wiki.arcaea.cn/Un"
+    }
+  },
+  {
+    "id": 561,
+    "title": "\u22a5\u22ac",
+    "altTitle": "\u22a5\u22ac",
+    "artist": "Silentroom Dismantled XOR \u304b\u305f\u304e\u308a",
+    "charts": [
+      {
+        "id": 1831,
+        "diff": "pst",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "7.0.255"
+      },
+      {
+        "id": 1832,
+        "diff": "prs",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "7.0.255"
+      },
+      {
+        "id": 1833,
+        "diff": "ftr",
+        "level": "10+",
+        "cc": 10.7,
+        "ver": "7.0.255"
+      }
+    ],
+    "searchKeys": [
+      "ta",
+      "neweye",
+      "sacrosanct"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/%E2%8A%A5%E2%8A%AC",
+      "mcd.blue": "https://wiki.arcaea.cn/%E2%8A%A5%E2%8A%AC"
+    }
   }
 ]

@@ -57,6 +57,7 @@ func (h *songHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 		"ftr": 3,
 		"etr": 4,
 		"byd": 5,
+		"ins": 6,
 	}
 
 	slices.SortFunc(charts, func(a, b songdata.Chart) int {

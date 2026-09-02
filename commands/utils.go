@@ -63,6 +63,8 @@ func getFullDiffName(diffKey string) string {
 		return "Eternal"
 	case "byd":
 		return "Beyond"
+	case "ins":
+		return "Inscribed"
 	default:
 		return ""
 	}

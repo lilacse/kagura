@@ -17,6 +17,7 @@ func RegisterCommands(ctx context.Context, st *state.State) {
 		{Name: "Future", Value: "ftr"},
 		{Name: "Beyond", Value: "byd"},
 		{Name: "Eternal", Value: "etr"},
+		{Name: "Inscribed", Value: "ins"},
 	}
 
 	levelChoices := []discord.StringChoice{

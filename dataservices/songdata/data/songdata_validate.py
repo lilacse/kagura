@@ -30,7 +30,7 @@ every chart entry must contain the following keys:
 
 additional validation for values:
 - id must be an integer
-- diff must be either "pst", "prs", "ftr", "etr", "byd"
+- diff must be either "pst", "prs", "ftr", "etr", "byd", "ins"
 - level must be either "1", "2", "3", "4", "5", "6", "7", "7+", "8", "8+", "9", "9+", "10", "10+", "11", "11+", "12", "?"
 - cc must be a floating value
 - ver must be a semver compatible string
@@ -108,6 +108,7 @@ diff_ordering = {
     "ftr": 2,
     "etr": 3,
     "byd": 4,
+    "ins": 5,
 }
 
 expected_levels = [
