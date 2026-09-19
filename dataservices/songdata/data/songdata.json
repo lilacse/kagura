@@ -21263,5 +21263,48 @@
       "fandom": "https://arcaea.fandom.com/wiki/%E2%8A%A5%E2%8A%AC",
       "mcd.blue": "https://wiki.arcaea.cn/%E2%8A%A5%E2%8A%AC"
     }
+  },
+  {
+    "id": 562,
+    "title": "Ch\u00e2teau de cartes",
+    "altTitle": "Ch\u00e2teau de cartes",
+    "artist": "Inverted Silence ft. Pernelle",
+    "charts": [
+      {
+        "id": 1834,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "7.0.260"
+      },
+      {
+        "id": 1835,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "7.0.260"
+      },
+      {
+        "id": 1836,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "7.0.260"
+      },
+      {
+        "id": 1837,
+        "diff": "ftr",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "7.0.260"
+      }
+    ],
+    "searchKeys": [
+      "chateau de cartes"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ch\u00e2teau_de_cartes",
+      "mcd.blue": "https://wiki.arcaea.cn/Ch\u00e2teau_de_cartes"
+    }
   }
 ]
