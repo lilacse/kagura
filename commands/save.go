@@ -13,6 +13,7 @@ import (
 	"github.com/lilacse/kagura/database"
 	"github.com/lilacse/kagura/dataservices/songdata"
 	"github.com/lilacse/kagura/embedbuilder"
+	"github.com/lilacse/kagura/logger"
 	"github.com/lilacse/kagura/store"
 )
 
@@ -68,9 +69,9 @@ func (h *saveHandler) HandleSlashCommand(ctx context.Context, e *gateway.Interac
 		return true
 	}
 
-	newId, ts := saveScore(ctx, h, int64(e.Sender().ID), chart.Id, score, e)
+	newId, ts, b50Pos := saveScore(ctx, h, int64(e.Sender().ID), chart.Id, score, e)
 
-	res := createSaveResponseEmbed(song, chart, score, newId, ts)
+	res := createSaveResponseEmbed(song, chart, score, newId, ts, b50Pos)
 	components := createSaveButtons(int64(e.Sender().ID), chart.Id)
 	sendInteractionResponse(st, res, components, e)
 
@@ -88,13 +89,13 @@ func createSaveButtons(userId int64, chartId int) []discord.TopLevelComponent {
 	}
 }
 
-func saveScore(ctx context.Context, h *saveHandler, userId int64, chartId int, score int, e *gateway.InteractionCreateEvent) (int64, time.Time) {
+func saveScore(ctx context.Context, h *saveHandler, userId int64, chartId int, score int, e *gateway.InteractionCreateEvent) (int64, time.Time, int) {
 	st := h.store.Bot.State()
 
 	sess, err := h.db.NewSession(ctx)
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return 0, time.Time{}
+		return 0, time.Time{}, 0
 	}
 
 	defer func() {
@@ -107,7 +108,7 @@ func saveScore(ctx context.Context, h *saveHandler, userId int64, chartId int, s
 	tx, err := sess.Conn.BeginTx(ctx, nil)
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return 0, time.Time{}
+		return 0, time.Time{}, 0
 	}
 
 	isCommit := false
@@ -126,7 +127,7 @@ func saveScore(ctx context.Context, h *saveHandler, userId int64, chartId int, s
 	userScores, err := scoresRepo.GetByUserAndChart(ctx, int64(e.Sender().ID), chartId)
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return 0, time.Time{}
+		return 0, time.Time{}, 0
 	}
 
 	// we store up to the 30th recently saved score and the user's best score.
@@ -156,7 +157,7 @@ func saveScore(ctx context.Context, h *saveHandler, userId int64, chartId int, s
 	insertRes, err := scoresRepo.Insert(ctx, int64(e.Sender().ID), chartId, score, ts.UnixMilli())
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return 0, time.Time{}
+		return 0, time.Time{}, 0
 	}
 
 	newId, _ := insertRes.LastInsertId()
@@ -164,14 +165,27 @@ func saveScore(ctx context.Context, h *saveHandler, userId int64, chartId int, s
 	err = tx.Commit()
 	if err != nil {
 		logAndSendCommandError(ctx, st, err, e)
-		return 0, time.Time{}
+		return 0, time.Time{}, 0
 	}
 
 	isCommit = true
-	return newId, ts
+
+	b50Entries, err := scoresRepo.GetBestScoresByUserWithOffset(ctx, userId, 0, 50)
+	if err != nil {
+		logger.Error(ctx, fmt.Sprintf("error when querying b50 after saving score: %s", err.Error()))
+		return newId, ts, 0
+	}
+
+	for i, entry := range b50Entries {
+		if entry.Id == newId {
+			return newId, ts, i + 1
+		}
+	}
+
+	return newId, ts, 0
 }
 
-func createSaveResponseEmbed(song songdata.Song, chart songdata.Chart, score int, newId int64, ts time.Time) discord.Embed {
+func createSaveResponseEmbed(song songdata.Song, chart songdata.Chart, score int, newId int64, ts time.Time, b50Pos int) discord.Embed {
 	embed := discord.Embed{
 		Title: "Score saved",
 		Fields: []discord.EmbedField{
@@ -202,6 +216,10 @@ func createSaveResponseEmbed(song songdata.Song, chart songdata.Chart, score int
 		Footer: &discord.EmbedFooter{
 			Text: fmt.Sprintf("Clear bonus included if play rating > 0.0.\nSend `/unsave %v` to delete this score.", newId),
 		},
+	}
+
+	if b50Pos > 0 {
+		embed.Description = fmt.Sprintf("**#%v in your Best-50!**", b50Pos)
 	}
 
 	return embedbuilder.Info(embed)
@@ -265,9 +283,9 @@ func (h *saveHandler) HandleSaveAnotherModalSubmit(ctx context.Context, e *gatew
 		return true
 	}
 
-	newId, ts := saveScore(ctx, h, userId, chartId, score, e)
+	newId, ts, b50Pos := saveScore(ctx, h, userId, chartId, score, e)
 
-	res := createSaveResponseEmbed(song, chart, score, newId, ts)
+	res := createSaveResponseEmbed(song, chart, score, newId, ts, b50Pos)
 	components := createSaveButtons(int64(e.Sender().ID), chart.Id)
 	sendInteractionResponse(st, res, components, e)
 
