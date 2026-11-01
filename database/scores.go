@@ -38,7 +38,7 @@ const SCORE_RATING_QUERY string = `select
 		select
 			row_number() over (partition by chart_id
 		order by
-			score desc) score_order,
+			score desc, timestamp desc) score_order,
 			id,
 			user_id,
 			chart_id,
@@ -54,7 +54,8 @@ const SCORE_RATING_QUERY string = `select
 	where
 		best.score_order = 1
 	order by 
-		rating desc
+		rating desc,
+		timestamp asc
 	limit ?
 	offset ?`
 
