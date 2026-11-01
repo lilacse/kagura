@@ -21293,7 +21293,7 @@
       },
       {
         "id": 1837,
-        "diff": "ftr",
+        "diff": "etr",
         "level": "10",
         "cc": 10.3,
         "ver": "7.0.260"
@@ -21305,6 +21305,308 @@
     "urls": {
       "fandom": "https://arcaea.fandom.com/wiki/Ch\u00e2teau_de_cartes",
       "mcd.blue": "https://wiki.arcaea.cn/Ch\u00e2teau_de_cartes"
+    }
+  },
+  {
+    "id": 563,
+    "title": "Ether Drive",
+    "altTitle": "Ether Drive",
+    "artist": "crayvxn",
+    "charts": [
+      {
+        "id": 1838,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1839,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1840,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.8,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1841,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.3,
+        "ver": "7.1.0"
+      }
+    ],
+    "searchKeys": [
+      "ether drive"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ether_Drive",
+      "mcd.blue": "https://wiki.arcaea.cn/Ether_Drive"
+    }
+  },
+  {
+    "id": 564,
+    "title": "Fatality",
+    "altTitle": "Fatality",
+    "artist": "Renpul",
+    "charts": [
+      {
+        "id": 1842,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1843,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1844,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1845,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.4,
+        "ver": "7.1.0"
+      }
+    ],
+    "searchKeys": [
+      "fatality"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Fatality",
+      "mcd.blue": "https://wiki.arcaea.cn/Fatality"
+    }
+  },
+  {
+    "id": 565,
+    "title": "Parallax",
+    "altTitle": "Parallax",
+    "artist": "xi vs ak+q (lowiro)",
+    "charts": [
+      {
+        "id": 1846,
+        "diff": "pst",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1847,
+        "diff": "prs",
+        "level": "8",
+        "cc": 8.4,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1848,
+        "diff": "ftr",
+        "level": "9+",
+        "cc": 9.9,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1849,
+        "diff": "etr",
+        "level": "11",
+        "cc": 11.3,
+        "ver": "7.1.0"
+      }
+    ],
+    "searchKeys": [
+      "parallax"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Parallax",
+      "mcd.blue": "https://wiki.arcaea.cn/Parallax"
+    }
+  },
+  {
+    "id": 566,
+    "title": "Ran",
+    "altTitle": "Ran",
+    "artist": "Feryquitous",
+    "charts": [
+      {
+        "id": 1850,
+        "diff": "pst",
+        "level": "3",
+        "cc": 3.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1851,
+        "diff": "prs",
+        "level": "6",
+        "cc": 6.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1852,
+        "diff": "ftr",
+        "level": "8+",
+        "cc": 8.9,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1853,
+        "diff": "etr",
+        "level": "9+",
+        "cc": 9.8,
+        "ver": "7.1.0"
+      }
+    ],
+    "searchKeys": [
+      "ran"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Ran",
+      "mcd.blue": "https://wiki.arcaea.cn/Ran"
+    }
+  },
+  {
+    "id": 567,
+    "title": "Schra Go (Uchina Time)",
+    "altTitle": "Schra Go (Uchina Time)",
+    "artist": "REMO-CON",
+    "charts": [
+      {
+        "id": 1854,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1855,
+        "diff": "prs",
+        "level": "7",
+        "cc": 7.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1856,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1857,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.2,
+        "ver": "7.1.0"
+      }
+    ],
+    "searchKeys": [
+      "schra go (uchina time)"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Schra_Go_(Uchina_Time)",
+      "mcd.blue": "https://wiki.arcaea.cn/Schra_Go_(Uchina_Time)"
+    }
+  },
+  {
+    "id": 568,
+    "title": "Tr!cK Ma?tEr",
+    "altTitle": "Tr!cK Ma?tEr",
+    "artist": "Nothing But Requiem",
+    "charts": [
+      {
+        "id": 1858,
+        "diff": "pst",
+        "level": "4",
+        "cc": 4.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1859,
+        "diff": "prs",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1860,
+        "diff": "ftr",
+        "level": "9",
+        "cc": 9.6,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1861,
+        "diff": "etr",
+        "level": "10",
+        "cc": 10.5,
+        "ver": "7.1.0"
+      }
+    ],
+    "searchKeys": [
+      "tr!ck ma?ter",
+      "trick matter"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Tr!cK_Ma%3FtEr",
+      "mcd.blue": "https://wiki.arcaea.cn/Tr!cK_Ma%3FtEr"
+    }
+  },
+  {
+    "id": 569,
+    "title": "Voyage to the Future",
+    "altTitle": "Voyage to the Future",
+    "artist": "Shunji Fujii feat. \u5343\u82b1",
+    "charts": [
+      {
+        "id": 1862,
+        "diff": "pst",
+        "level": "2",
+        "cc": 2.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1863,
+        "diff": "prs",
+        "level": "5",
+        "cc": 5.5,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1864,
+        "diff": "ftr",
+        "level": "7+",
+        "cc": 7.8,
+        "ver": "7.1.0"
+      },
+      {
+        "id": 1865,
+        "diff": "etr",
+        "level": "9",
+        "cc": 9.4,
+        "ver": "7.1.0"
+      }
+    ],
+    "searchKeys": [
+      "voyage to the future"
+    ],
+    "urls": {
+      "fandom": "https://arcaea.fandom.com/wiki/Voyage_to_the_Future",
+      "mcd.blue": "https://wiki.arcaea.cn/Voyage_to_the_Future"
     }
   }
 ]
